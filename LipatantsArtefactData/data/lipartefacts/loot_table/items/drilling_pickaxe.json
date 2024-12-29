@@ -1,0 +1,40 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_pickaxe",
+                    "functions": [
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/rare"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:mining_efficiency",
+                                    "id": "lipartefacts:mainhand.efficiency",
+                                    "amount": 30,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ],
+                            "replace": false,
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "Drilling Pickaxe",
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
