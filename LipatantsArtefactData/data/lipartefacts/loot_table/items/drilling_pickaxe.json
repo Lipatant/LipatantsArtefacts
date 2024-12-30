@@ -26,6 +26,12 @@
                             "conditions": []
                         },
                         {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "lipartefacts:drilling_pickaxe"
+                            }
+                        },
+                        {
                             "function": "minecraft:set_name",
                             "name": {
                                 "translate": "Drilling Pickaxe",
