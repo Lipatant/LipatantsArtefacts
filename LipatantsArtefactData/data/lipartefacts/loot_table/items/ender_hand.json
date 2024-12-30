@@ -26,6 +26,12 @@
                             "conditions": []
                         },
                         {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "lipartefacts:ender_hand"
+                            }
+                        },
+                        {
                             "function": "minecraft:set_name",
                             "name": {
                                 "translate": "Ender Hand",
