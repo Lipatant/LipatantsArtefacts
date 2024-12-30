@@ -1,0 +1,9 @@
+{
+    "music_disc.space_caster": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/space_caster"
+            }
+        ]
+    }
+}

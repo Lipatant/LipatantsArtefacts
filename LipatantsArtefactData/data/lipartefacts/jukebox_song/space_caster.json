@@ -1,0 +1,10 @@
+{
+    "comparator_output": 14,
+    "description": {
+        "translate": "jukebox_song.lipartefacts.space_caster.desc"
+    },
+    "length_in_seconds": 102.0,
+    "sound_event": {
+        "sound_id": "lipartefacts:music_disc.space_caster"
+    }
+}
