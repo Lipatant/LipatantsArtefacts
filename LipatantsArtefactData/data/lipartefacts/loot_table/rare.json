@@ -1,0 +1,25 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/drilling_pickaxe"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/ender_hand"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/little_feet"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/little_legs"
+                }
+            ]
+        }
+    ]
+}

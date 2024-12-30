@@ -1,0 +1,17 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/battle_shield"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/music_disc_space_caster"
+                }
+            ]
+        }
+    ]
+}
