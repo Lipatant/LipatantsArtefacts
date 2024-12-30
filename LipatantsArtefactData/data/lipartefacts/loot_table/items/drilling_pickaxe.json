@@ -34,7 +34,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "Drilling Pickaxe",
+                                "translate": "item.lipartefacts.drilling_pickaxe",
                                 "italic": false
                             }
                         }

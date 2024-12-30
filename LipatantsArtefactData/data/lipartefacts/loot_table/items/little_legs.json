@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:scale",
+                                    "id": "lipartefacts:legs.scale",
+                                    "amount": -0.25,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "legs"
+                                }
+                            ],
+                            "replace": false
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.lipartefacts.little_legs",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/rare"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

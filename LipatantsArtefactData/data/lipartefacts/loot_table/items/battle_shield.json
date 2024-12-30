@@ -35,7 +35,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "Battle Shield",
+                                "translate": "item.lipartefacts.battle_shield",
                                 "italic": false
                             }
                         }

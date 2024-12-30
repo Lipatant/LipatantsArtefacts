@@ -34,7 +34,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "Ender Hand",
+                                "translate": "item.lipartefacts.ender_hand",
                                 "italic": false
                             }
                         }
