@@ -1,6 +1,19 @@
-{
-    "function": "minecraft:set_components",
-    "components": {
-        "minecraft:rarity": "epic"
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "epic"
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            {
+                "color": "dark_purple",
+                "italic": false,
+                "translate": "item.lipartefacts.generic.epic.desc"
+            }
+        ],
+        "mode": "insert"
     }
-}
+]

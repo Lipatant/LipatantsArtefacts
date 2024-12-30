@@ -1,6 +1,19 @@
-{
-    "function": "minecraft:set_components",
-    "components": {
-        "minecraft:rarity": "rare"
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "rare"
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            {
+                "color": "dark_aqua",
+                "italic": false,
+                "translate": "item.lipartefacts.generic.rare.desc"
+            }
+        ],
+        "mode": "insert"
     }
-}
+]

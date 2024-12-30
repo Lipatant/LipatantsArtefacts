@@ -1,6 +1,19 @@
-{
-    "function": "minecraft:set_components",
-    "components": {
-        "minecraft:rarity": "uncommon"
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "uncommon"
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            {
+                "color": "#aaaa00",
+                "italic": false,
+                "translate": "item.lipartefacts.generic.uncommon.desc"
+            }
+        ],
+        "mode": "insert"
     }
-}
+]
