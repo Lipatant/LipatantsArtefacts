@@ -9,10 +9,6 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/ender_hand"
-                },
-                {
-                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/little_feet"
                 },
                 {

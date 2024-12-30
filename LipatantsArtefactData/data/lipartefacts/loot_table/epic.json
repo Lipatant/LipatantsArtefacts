@@ -2,7 +2,12 @@
     "pools": [
         {
             "rolls": 1.0,
-            "entries": []
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/ender_hand"
+                }
+            ]
         }
     ]
 }
