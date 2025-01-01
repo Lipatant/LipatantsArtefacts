@@ -5,6 +5,10 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm"
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/battle_shield"
                 },
                 {
