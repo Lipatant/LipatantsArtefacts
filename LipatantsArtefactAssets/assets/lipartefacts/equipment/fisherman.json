@@ -3,7 +3,7 @@
         "humanoid": [
             {
                 "dyeable": {
-                    "color_when_undyed": -6265536
+                    "color_when_undyed": 4673362
                 },
                 "texture": "lipartefacts:fisherman"
             },
