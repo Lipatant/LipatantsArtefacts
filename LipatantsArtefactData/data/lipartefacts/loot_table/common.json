@@ -2,7 +2,20 @@
     "pools": [
         {
             "rolls": 1.0,
-            "entries": []
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/artillery_firework_rocket_1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/artillery_firework_rocket_2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/artillery_firework_rocket_3"
+                }
+            ]
         }
     ]
 }

@@ -1,0 +1,72 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_rocket",
+                    "functions": [
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/common"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:fireworks": {
+                                    "explosions": [
+                                        {
+                                            "shape": "burst",
+                                            "colors": [
+                                                4408131
+                                            ]
+                                        },
+                                        {
+                                            "shape": "burst",
+                                            "colors": [
+                                                4408131
+                                            ]
+                                        },
+                                        {
+                                            "shape": "burst",
+                                            "colors": [
+                                                4408131
+                                            ]
+                                        },
+                                        {
+                                            "shape": "burst",
+                                            "colors": [
+                                                4408131
+                                            ]
+                                        },
+                                        {
+                                            "shape": "burst",
+                                            "colors": [
+                                                4408131
+                                            ]
+                                        },
+                                        {
+                                            "shape": "burst",
+                                            "colors": [
+                                                4408131
+                                            ]
+                                        }
+                                    ],
+                                    "flight_duration": 2
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.lipartefacts.artillery_firework_rocket_2",
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
