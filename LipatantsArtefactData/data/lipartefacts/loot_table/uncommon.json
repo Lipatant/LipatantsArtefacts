@@ -9,6 +9,14 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/fisherman_chestplate"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/fisherman_helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/music_disc_space_caster"
                 }
             ]
