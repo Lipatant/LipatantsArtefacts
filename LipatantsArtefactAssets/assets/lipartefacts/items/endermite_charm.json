@@ -1,6 +1,14 @@
 {
     "model": {
-        "type": "minecraft:model",
-        "model": "lipartefacts:item/endermite_charm"
+        "type": "condition",
+        "property": "minecraft:carried",
+        "on_true": {
+            "type": "minecraft:model",
+            "model": "lipartefacts:item/endermite_charm_carried"
+        },
+        "on_false": {
+            "type": "minecraft:model",
+            "model": "lipartefacts:item/endermite_charm"
+        }
     }
 }
