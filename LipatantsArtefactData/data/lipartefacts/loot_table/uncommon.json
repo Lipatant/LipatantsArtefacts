@@ -13,6 +13,10 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/chicken_charm"
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/fisherman_chestplate"
                 },
                 {
