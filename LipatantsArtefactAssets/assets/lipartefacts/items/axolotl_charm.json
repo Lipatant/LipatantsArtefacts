@@ -1,6 +1,40 @@
 {
     "model": {
-        "type": "minecraft:model",
-        "model": "lipartefacts:item/axolotl_charm"
+        "type": "select",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "lipartefacts:item/axolotl_charm_lucy"
+        },
+        "cases": [
+            {
+                "when": "blue",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/axolotl_charm_blue"
+                }
+            },
+            {
+                "when": "cyan",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/axolotl_charm_cyan"
+                }
+            },
+            {
+                "when": "gold",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/axolotl_charm_gold"
+                }
+            },
+            {
+                "when": "wild",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/axolotl_charm_wild"
+                }
+            }
+        ]
     }
 }

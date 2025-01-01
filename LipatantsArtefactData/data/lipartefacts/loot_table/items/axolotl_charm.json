@@ -1,45 +1,84 @@
 {
     "pools": [
         {
-            "rolls": 1,
+            "rolls": 1.0,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:echo_shard",
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base",
                     "functions": [
-                        {
-                            "function": "minecraft:reference",
-                            "name": "lipartefacts:set_rarity/uncommon"
-                        },
-                        {
-                            "function": "minecraft:set_attributes",
-                            "modifiers": [
-                                {
-                                    "attribute": "minecraft:max_health",
-                                    "id": "lipartefacts:offhand.max_health",
-                                    "amount": 2,
-                                    "operation": "add_value",
-                                    "slot": "offhand"
-                                }
-                            ],
-                            "replace": true
-                        },
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:equippable": {
-                                    "slot": "offhand",
-                                    "damage_on_hurt": false
-                                },
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:item_model": "lipartefacts:axolotl_charm"
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "blue"
+                                    ]
+                                }
                             }
-                        },
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base",
+                    "functions": [
                         {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.axolotl_charm",
-                                "italic": false
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "cyan"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "gold"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "lucy"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "wild"
+                                    ]
+                                }
                             }
                         }
                     ]
