@@ -14,6 +14,10 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/little_legs"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/strider_charm"
                 }
             ]
         }
