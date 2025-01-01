@@ -1,0 +1,50 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:safe_fall_distance",
+                                    "id": "lipartefacts:head.safe_fall_distance",
+                                    "amount": 1,
+                                    "operation": "add_value",
+                                    "slot": "head"
+                                }
+                            ],
+                            "replace": false
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "head",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:cat"
+                                },
+                                "minecraft:item_model": "lipartefacts:cat_helmet"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.lipartefacts.cat_helmet",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/uncommon"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

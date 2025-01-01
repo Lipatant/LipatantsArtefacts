@@ -13,6 +13,10 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/cat_helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/chicken_charm"
                 },
                 {
