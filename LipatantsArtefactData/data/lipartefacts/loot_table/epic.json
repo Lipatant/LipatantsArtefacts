@@ -6,6 +6,10 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/ender_hand"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/endermite_charm"
                 }
             ]
         }
