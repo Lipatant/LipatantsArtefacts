@@ -38,7 +38,9 @@ Here you will find a list of all the artefacts and how to obtain them.
 
 <ul>
     <li><a href="#charm-of-the-endermite">Charm of the Endermite</a></li>
+    <li><a href="#enchanted-book---vampirism">Enchanted Book - Vampirism</a></li>
     <li><a href="#ender-hand">Ender Hand</a></li>
+    <li><a href="#netherite-battle-shield">Netherite Battle Shield</a></li>
 </ul>
 
 ## Common Artefacts
