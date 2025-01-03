@@ -74,6 +74,7 @@ Uncommon artefacts are easily obtainable **low-impact** items.
 
 Obtained via:
 
+- ![](obtained/bastions.png) Bastions - Hoglin Stables
 - ![](obtained/trial_chambers.png) Trial Chambers - Vault - Rare Reward
 
 ### Cat Ears
