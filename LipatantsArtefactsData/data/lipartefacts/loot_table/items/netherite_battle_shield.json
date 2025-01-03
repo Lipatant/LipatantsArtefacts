@@ -1,0 +1,58 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/epic"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:attack_damage",
+                                    "id": "minecraft:base_attack_damage",
+                                    "amount": 12.0,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "attribute": "minecraft:attack_speed",
+                                    "id": "minecraft:base_attack_speed",
+                                    "amount": -3.0,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ],
+                            "replace": false,
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:base_color": "black",
+                                "minecraft:damage_resistant": {
+                                    "types": "#minecraft:is_fire"
+                                },
+                                "minecraft:item_model": "lipartefacts:netherite_battle_shield",
+                                "max_damage": 2031
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.lipartefacts.netherite_battle_shield",
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

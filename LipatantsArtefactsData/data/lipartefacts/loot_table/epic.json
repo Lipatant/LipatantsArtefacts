@@ -14,6 +14,10 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/endermite_charm"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/netherite_battle_shield"
                 }
             ]
         }

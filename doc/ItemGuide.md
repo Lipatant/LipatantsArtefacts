@@ -174,3 +174,9 @@ Obtained via:
 Obtained via:
 
 - ![](obtained/end_cities.png) End Cities
+
+### Netherite Battle Shield
+
+Obtained via:
+
+- ![](obtained/bastions.png) Bastions - Treasure
