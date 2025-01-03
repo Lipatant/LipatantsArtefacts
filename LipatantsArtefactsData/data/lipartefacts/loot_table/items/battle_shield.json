@@ -33,6 +33,13 @@
                             "conditions": []
                         },
                         {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:base_color": "white",
+                                "minecraft:item_model": "lipartefacts:battle_shield"
+                            }
+                        },
+                        {
                             "function": "minecraft:set_name",
                             "name": {
                                 "translate": "item.lipartefacts.battle_shield",
