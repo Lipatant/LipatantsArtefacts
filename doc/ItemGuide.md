@@ -163,6 +163,12 @@ Obtained via:
 
 - ![](obtained/end_cities.png) End Cities
 
+### Enchanted Book - Vampirism
+
+Obtained via:
+
+- ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
+
 ### Ender Hand
 
 Obtained via:

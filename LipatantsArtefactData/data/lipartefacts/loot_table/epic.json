@@ -5,6 +5,10 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/enchanted_book_vampirism"
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/ender_hand"
                 },
                 {

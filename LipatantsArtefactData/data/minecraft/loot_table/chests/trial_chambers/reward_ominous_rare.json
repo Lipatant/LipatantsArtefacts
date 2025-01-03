@@ -163,6 +163,11 @@
                     ],
                     "value": "lipartefacts:items/little_legs",
                     "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/enchanted_book_vampirism",
+                    "weight": 1
                 }
             ],
             "rolls": 1.0

@@ -1,0 +1,14 @@
+{
+    "model": {
+        "type": "condition",
+        "property": "minecraft:carried",
+        "on_true": {
+            "type": "minecraft:model",
+            "model": "lipartefacts:item/enchanted_book_vampirism_carried"
+        },
+        "on_false": {
+            "type": "minecraft:model",
+            "model": "lipartefacts:item/enchanted_book_vampirism"
+        }
+    }
+}
