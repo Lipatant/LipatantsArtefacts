@@ -30,6 +30,7 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#charm-of-the-ravager">Charm of the Ravager</a></li>
     <li><a href="#charm-of-the-strider">Charm of the Strider</a></li>
     <li><a href="#drilling-pickaxe">Drilling Pickaxe</a></li>
+    <li><a href="#enchanted-book---fracture">Enchanted Book - Fracture</a></li>
     <li><a href="#little-feet">Little Feet</a></li>
     <li><a href="#little-legs">Little Legs</a></li>
 </ul>
@@ -143,6 +144,13 @@ Obtained via:
 
 - ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
 - ![](obtained/trial_chambers.png) Trial Chambers - Vault - Unique Reward
+
+### Enchanted Book - Fracture
+
+Obtained via:
+
+- ![](obtained/villages.png) Hero of the Village - Gift - Librarian
+- ![](obtained/woodland_mansions.png) Woodland Mansions
 
 ### Little Feet
 

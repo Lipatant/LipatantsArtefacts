@@ -1,4 +1,5 @@
 {
+    "enchantment.lipartefacts.fracture": "Fracture",
     "enchantment.lipartefacts.vampirism": "Vampirism",
     "item.lipartefacts.artillery_firework_rocket_1": "Short-Range Artillery Firework Rocket",
     "item.lipartefacts.artillery_firework_rocket_2": "Medium-Range Artillery Firework Rocket",
@@ -8,6 +9,7 @@
     "item.lipartefacts.cat_helmet": "Cat Ears",
     "item.lipartefacts.chicken_charm": "Charm of the Chicken",
     "item.lipartefacts.drilling_pickaxe": "Drilling Pickaxe",
+    "item.lipartefacts.enchanted_book_fracture": "Enchanted Book",
     "item.lipartefacts.enchanted_book_vampirism": "Enchanted Book",
     "item.lipartefacts.ender_hand": "Ender Hand",
     "item.lipartefacts.endermite_charm": "Charm of the Endermite",

@@ -62,6 +62,11 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/enchanted_book_fracture",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/music_disc_space_caster",
                     "weight": 15
                 },

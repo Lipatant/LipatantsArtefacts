@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:gift",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:book",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/enchanted_book_fracture"
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "minecraft:gameplay/hero_of_the_village/librarian_gift"
+}
