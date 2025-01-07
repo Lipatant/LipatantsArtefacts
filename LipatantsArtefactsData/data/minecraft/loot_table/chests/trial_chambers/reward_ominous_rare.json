@@ -145,7 +145,7 @@
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
-                    "value": "lipartefacts:items/little_feet",
+                    "value": "lipartefacts:items/little_boots",
                     "weight": 2
                 },
                 {
@@ -161,7 +161,7 @@
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
-                    "value": "lipartefacts:items/little_legs",
+                    "value": "lipartefacts:items/little_leggings",
                     "weight": 2
                 },
                 {

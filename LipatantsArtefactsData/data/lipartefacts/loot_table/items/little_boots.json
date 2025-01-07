@@ -21,9 +21,20 @@
                             "replace": false
                         },
                         {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "feet",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:little"
+                                },
+                                "minecraft:item_model": "lipartefacts:little_boots"
+                            }
+                        },
+                        {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "item.lipartefacts.little_feet",
+                                "translate": "item.lipartefacts.little_boots",
                                 "italic": false
                             }
                         },
