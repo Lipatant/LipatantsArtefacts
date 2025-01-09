@@ -52,7 +52,7 @@ Changing 7 artefacts:
 
 ### 1.0.0
 
-Adding 4 artefact rarities :
+Adding 4 artefact rarities:
 
 - <a href="doc/ItemGuide.md#common-artefacts">Common</a>
 - <a href="doc/ItemGuide.md#uncommon-artefacts">Uncommon</a>
