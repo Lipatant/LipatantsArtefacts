@@ -13,11 +13,11 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/little_feet"
+                    "value": "lipartefacts:items/little_leggings"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/little_legs"
+                    "value": "lipartefacts:items/little_boots"
                 },
                 {
                     "type": "minecraft:loot_table",
