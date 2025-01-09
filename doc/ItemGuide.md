@@ -19,6 +19,7 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#cat-ears">Cat Ears</a></li>
     <li><a href="#charm-of-the-axolotl">Charm of the Axolotl</a></li>
     <li><a href="#charm-of-the-chicken">Charm of the Chicken</a></li>
+    <li><a href="#charm-of-the-strider">Charm of the Strider</a></li>
     <li><a href="#fishermans-bucket-hat">Fisherman's Bucket Hat</a></li>
     <li><a href="#fishing-jacket">Fishing Jacket</a></li>
     <li><a href="#music-disc---space-caster">Music Disc - Space Caster</a></li>
@@ -28,7 +29,6 @@ Here you will find a list of all the artefacts and how to obtain them.
 
 <ul>
     <li><a href="#charm-of-the-ravager">Charm of the Ravager</a></li>
-    <li><a href="#charm-of-the-strider">Charm of the Strider</a></li>
     <li><a href="#drilling-pickaxe">Drilling Pickaxe</a></li>
     <li><a href="#enchanted-book---fracture">Enchanted Book - Fracture</a></li>
     <li><a href="#little-feet">Little Feet</a></li>
@@ -106,6 +106,12 @@ Obtained via:
 - ![](obtained/cat_morning_gift.png) Cats - Morning Gift
 - ![](obtained/villages.png) Hero of the Village - Gift - Farmer
 
+### Charm of the Strider
+
+Obtained via:
+
+- ![](obtained/piglin_bartering.png) Piglins - Bartering
+
 ### Fisherman's Bucket Hat
 
 Obtained via:
@@ -135,12 +141,6 @@ Obtained via:
 
 - ![](obtained/villages.png) Hero of the Village - Gift - Weaponsmith
 - ![](obtained/woodland_mansions.png) Woodland Mansions
-
-### Charm of the Strider
-
-Obtained via:
-
-- ![](obtained/piglin_bartering.png) Piglins - Bartering
 
 ### Drilling Pickaxe
 
