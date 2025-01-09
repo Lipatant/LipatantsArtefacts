@@ -26,6 +26,22 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/strider_charm"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/sniffer_boots"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/sniffer_chestplate"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/sniffer_helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/sniffer_leggings"
                 }
             ]
         }

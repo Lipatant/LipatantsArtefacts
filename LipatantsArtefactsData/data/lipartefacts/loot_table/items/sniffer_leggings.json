@@ -1,0 +1,65 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:armor",
+                                    "id": "minecraft:armor.leggings",
+                                    "amount": 6,
+                                    "operation": "add_value",
+                                    "slot": "legs"
+                                },
+                                {
+                                    "attribute": "minecraft:armor_toughness",
+                                    "id": "minecraft:armor.leggings",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "legs"
+                                },
+                                {
+                                    "attribute": "minecraft:knockback_resistance",
+                                    "id": "minecraft:armor.leggings",
+                                    "amount": 0.2,
+                                    "operation": "add_value",
+                                    "slot": "legs"
+                                }
+                            ],
+                            "replace": true
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "legs",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:sniffer"
+                                },
+                                "minecraft:max_damage": 495,
+                                "minecraft:item_model": "lipartefacts:sniffer_leggings"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.lipartefacts.sniffer_leggings",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/rare"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

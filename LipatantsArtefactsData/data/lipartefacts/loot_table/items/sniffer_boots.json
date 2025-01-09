@@ -1,0 +1,65 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:armor",
+                                    "id": "minecraft:armor.boots",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "feet"
+                                },
+                                {
+                                    "attribute": "minecraft:armor_toughness",
+                                    "id": "minecraft:armor.boots",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "feet"
+                                },
+                                {
+                                    "attribute": "minecraft:knockback_resistance",
+                                    "id": "minecraft:armor.boots",
+                                    "amount": 0.2,
+                                    "operation": "add_value",
+                                    "slot": "feet"
+                                }
+                            ],
+                            "replace": true
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "feet",
+                                    "equip_sound": "minecraft:item.armor.equip_iron",
+                                    "asset_id": "lipartefacts:sniffer"
+                                },
+                                "minecraft:max_damage": 429,
+                                "minecraft:item_model": "lipartefacts:sniffer_boots"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.lipartefacts.sniffer_boots",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/rare"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

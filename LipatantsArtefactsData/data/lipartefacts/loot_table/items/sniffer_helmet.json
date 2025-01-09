@@ -1,0 +1,65 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:armor",
+                                    "id": "minecraft:armor.helmet",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "head"
+                                },
+                                {
+                                    "attribute": "minecraft:armor_toughness",
+                                    "id": "minecraft:armor.helmet",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "head"
+                                },
+                                {
+                                    "attribute": "minecraft:knockback_resistance",
+                                    "id": "minecraft:armor.helmet",
+                                    "amount": 0.2,
+                                    "operation": "add_value",
+                                    "slot": "head"
+                                }
+                            ],
+                            "replace": true
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "head",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:sniffer"
+                                },
+                                "minecraft:max_damage": 363,
+                                "minecraft:item_model": "lipartefacts:sniffer_helmet"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.lipartefacts.sniffer_helmet",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/rare"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

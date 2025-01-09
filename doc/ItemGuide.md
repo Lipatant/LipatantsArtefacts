@@ -33,6 +33,10 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#enchanted-book---fracture">Enchanted Book - Fracture</a></li>
     <li><a href="#little-feet">Little Feet</a></li>
     <li><a href="#little-legs">Little Legs</a></li>
+    <li><a href="#sniffer-fur">Sniffer Fur</a></li>
+    <li><a href="#sniffer-hooves">Sniffer Hooves</a></li>
+    <li><a href="#sniffer-leggings">Sniffer Leggings</a></li>
+    <li><a href="#sniffer-mask">Sniffer Mask</a></li>
 </ul>
 
 <a href="#epic-artefacts">Epic Artefacts</a>
@@ -163,6 +167,30 @@ Obtained via:
 Obtained via:
 
 - ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
+
+### Sniffer Fur
+
+Obtained via:
+
+- ![](obtained/archaeology.png) Trail Ruins - Rare Reward
+
+### Sniffer Hooves
+
+Obtained via:
+
+- ![](obtained/archaeology.png) Trail Ruins - Rare Reward
+
+### Sniffer Leggings
+
+Obtained via:
+
+- ![](obtained/archaeology.png) Trail Ruins - Rare Reward
+
+### Sniffer Mask
+
+Obtained via:
+
+- ![](obtained/archaeology.png) Trail Ruins - Rare Reward
 
 ## Epic Artefacts
 

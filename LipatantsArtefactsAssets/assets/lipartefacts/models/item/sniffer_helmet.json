@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "lipartefacts:item/sniffer_helmet",
+        "layer1": "lipartefacts:item/sniffer_helmet_overlay"
+    }
+}
