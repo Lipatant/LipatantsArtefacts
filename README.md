@@ -28,6 +28,27 @@ Epic artefacts are **high-impact** end-game items.
 
 # Changelog
 
+### 1.1.0
+
+Adding 7 artefacts:
+
+- <a href="doc/ItemGuide.md#enchanted-book---fracture">Enchanted Book - Fracture</a>
+- <a href="doc/ItemGuide.md#enchanted-book---vampirism">Enchanted Book - Vampirism</a>
+- <a href="doc/ItemGuide.md#netherite-battle-shield">Netherite Battle Shield</a>
+- <a href="doc/ItemGuide.md#sniffer-fur">Sniffer Fur</a>
+- <a href="doc/ItemGuide.md#sniffer-hooves">Sniffer Hooves</a>
+- <a href="doc/ItemGuide.md#sniffer-leggings">Sniffer Leggings</a>
+- <a href="doc/ItemGuide.md#sniffer-mask">Sniffer Mask</a>
+
+Changing 6 artefacts:
+
+- <a href="doc/ItemGuide.md#battle-shield">Battle Shield</a>: Added Bastions' Hoglin Stables and updating the model for future updates.
+- <a href="doc/ItemGuide.md#charm-of-the-axolotl">Charm of the Axolotl</a>: Increasing its bonus health from **2** to **4**.
+- <a href="doc/ItemGuide.md#drilling-pickaxe">Drilling Pickaxe</a>: Adding animated sprite when selected.
+- <a href="doc/ItemGuide.md#little-feet">Little Feet</a>: Updating the model for future updates and changing its id.
+- <a href="doc/ItemGuide.md#little-legs">Little Legs</a>: Updating the model for future updates and changing its id.
+- <a href="doc/ItemGuide.md#music-disc---space-caster">Music Disc - Space Caster</a>: Improving its texture.
+
 ### 1.0.0
 
 Adding 4 artefact rarities :
