@@ -17,7 +17,7 @@
                                 {
                                     "attribute": "minecraft:max_health",
                                     "id": "lipartefacts:offhand.max_health",
-                                    "amount": 2,
+                                    "amount": 4,
                                     "operation": "add_value",
                                     "slot": "offhand"
                                 }
