@@ -30,9 +30,10 @@ Epic artefacts are **high-impact** end-game items.
 
 ### 1.2.0
 
-Adding 1 artefacts:
+Adding 2 artefacts:
 
 - <a href="doc/ItemGuide.md#crystal-of-origin">Crystal of Origin</a>
+- <a href="doc/ItemGuide.md#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a>
 
 Changing 3 artefacts:
 

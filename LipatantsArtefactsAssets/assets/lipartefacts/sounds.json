@@ -1,4 +1,11 @@
 {
+    "music_disc.moment_of_melting_solitude": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/moment_of_melting_solitude"
+            }
+        ]
+    },
     "music_disc.space_caster": {
         "sounds": [
             {

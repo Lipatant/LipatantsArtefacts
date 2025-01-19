@@ -22,6 +22,7 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#charm-of-the-strider">Charm of the Strider</a></li>
     <li><a href="#fishermans-bucket-hat">Fisherman's Bucket Hat</a></li>
     <li><a href="#fishing-jacket">Fishing Jacket</a></li>
+    <li><a href="#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a></li>
     <li><a href="#music-disc---space-caster">Music Disc - Space Caster</a></li>
 </ul>
 
@@ -123,6 +124,13 @@ Obtained via:
 Obtained via:
 
 - ![](obtained/fishing.png) Fishing - Treasure
+
+### Music Disc - Moment Of Melting Solitude
+
+Obtained via:
+
+- ![](obtained/jungle_temples.png) Jungle Temples
+- ![](obtained/woodland_mansions.png) Woodland Mansions
 
 ### Music Disc - Space Caster
 

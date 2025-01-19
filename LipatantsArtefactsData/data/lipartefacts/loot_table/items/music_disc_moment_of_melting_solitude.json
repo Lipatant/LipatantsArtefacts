@@ -1,0 +1,35 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:music_disc_ward",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "lipartefacts:music_disc_moment_of_melting_solitude",
+                                "minecraft:jukebox_playable": {
+                                    "song": "lipartefacts:moment_of_melting_solitude"
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.lipartefacts.music_disc_moment_of_melting_solitude",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/uncommon"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

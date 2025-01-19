@@ -22,6 +22,8 @@
     "item.lipartefacts.generic.uncommon.desc": "Uncommon Artefact",
     "item.lipartefacts.little_boots": "Little Feet",
     "item.lipartefacts.little_leggings": "Little Legs",
+    "item.lipartefacts.music_disc_moment_of_melting_solitude": "Music Disc",
+    "item.lipartefacts.music_disc_moment_of_melting_solitude.desc": "Lipatant - Moment Of Melting Solitude",
     "item.lipartefacts.music_disc_space_caster": "Music Disc",
     "item.lipartefacts.music_disc_space_caster.desc": "Lipatant - Space Caster",
     "item.lipartefacts.netherite_battle_shield": "Netherite Battle Shield",
@@ -32,5 +34,6 @@
     "item.lipartefacts.sniffer_helmet": "Sniffer Mask",
     "item.lipartefacts.sniffer_leggings": "Sniffer Leggings",
     "item.lipartefacts.strider_charm": "Charm of the Strider",
+    "jukebox_song.lipartefacts.moment_of_melting_solitude.desc": "Lipatant - Moment Of Melting Solitude",
     "jukebox_song.lipartefacts.space_caster.desc": "Lipatant - Space Caster"
 }
