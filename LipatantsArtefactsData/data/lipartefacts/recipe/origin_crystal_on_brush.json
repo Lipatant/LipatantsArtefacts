@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:brush",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:brush",
+        "components": {
+            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
+            "minecraft:repair_cost": 1
+        }
+    }
+}

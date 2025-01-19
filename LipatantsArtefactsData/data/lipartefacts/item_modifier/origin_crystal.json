@@ -1,0 +1,9 @@
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:enchantments": {},
+            "minecraft:repair_cost": 0
+        }
+    }
+]

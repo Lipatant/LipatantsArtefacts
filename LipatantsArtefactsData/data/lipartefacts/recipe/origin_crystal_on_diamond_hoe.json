@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:diamond_hoe",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:diamond_hoe",
+        "components": {
+            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
+            "minecraft:repair_cost": 1
+        }
+    }
+}

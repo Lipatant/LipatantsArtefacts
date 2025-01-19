@@ -29,6 +29,7 @@ Here you will find a list of all the artefacts and how to obtain them.
 
 <ul>
     <li><a href="#charm-of-the-ravager">Charm of the Ravager</a></li>
+    <li><a href="#crystal-of-origin">Crystal of Origin</a></li>
     <li><a href="#drilling-pickaxe">Drilling Pickaxe</a></li>
     <li><a href="#enchanted-book---fracture">Enchanted Book - Fracture</a></li>
     <li><a href="#little-feet">Little Feet</a></li>
@@ -141,6 +142,14 @@ Obtained via:
 
 - ![](obtained/villages.png) Hero of the Village - Gift - Weaponsmith
 - ![](obtained/woodland_mansions.png) Woodland Mansions
+
+### Crystal of Origin
+
+Obtained via:
+
+- ![](obtained/ancient_cities.png) Ancient Cities
+- ![](obtained/end_cities.png) End Cities
+- ![](obtained/strongholds.png) Strongholds - Library
 
 ### Drilling Pickaxe
 

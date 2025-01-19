@@ -28,6 +28,12 @@ Epic artefacts are **high-impact** end-game items.
 
 # Changelog
 
+### 1.2.0
+
+Adding 7 artefacts:
+
+- <a href="doc/ItemGuide.md#crystal-of-origin">Crystal of Origin</a>
+
 ### 1.1.0
 
 Adding 7 artefacts:

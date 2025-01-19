@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:flint_and_steel",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:flint_and_steel",
+        "components": {
+            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
+            "minecraft:repair_cost": 1
+        }
+    }
+}

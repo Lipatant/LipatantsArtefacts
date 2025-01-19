@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:iron_pickaxe",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:iron_pickaxe",
+        "components": {
+            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
+            "minecraft:repair_cost": 1
+        }
+    }
+}

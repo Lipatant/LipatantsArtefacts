@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:golden_sword",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:golden_sword",
+        "components": {
+            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
+            "minecraft:repair_cost": 1
+        }
+    }
+}

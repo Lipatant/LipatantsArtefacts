@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:chainmail_helmet",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:chainmail_helmet",
+        "components": {
+            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
+            "minecraft:repair_cost": 1
+        }
+    }
+}
