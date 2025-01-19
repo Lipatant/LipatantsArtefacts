@@ -1,6 +1,7 @@
 {
     "values": [
         "lipartefacts:fracture",
+        "lipartefacts:origin_mark",
         "lipartefacts:vampirism"
     ]
 }
