@@ -105,7 +105,6 @@ Obtained via:
 Obtained via:
 
 - ![](obtained/cat_morning_gift.png) Cats - Morning Gift
-- ![](obtained/villages.png) Hero of the Village - Gift - Farmer
 
 ### Charm of the Strider
 
@@ -140,7 +139,6 @@ Rare artefacts are **high-impact** items that can be **hard to obtain**.
 
 Obtained via:
 
-- ![](obtained/villages.png) Hero of the Village - Gift - Weaponsmith
 - ![](obtained/woodland_mansions.png) Woodland Mansions
 
 ### Crystal of Origin
@@ -162,7 +160,6 @@ Obtained via:
 
 Obtained via:
 
-- ![](obtained/villages.png) Hero of the Village - Gift - Librarian
 - ![](obtained/woodland_mansions.png) Woodland Mansions
 
 ### Little Feet

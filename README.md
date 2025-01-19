@@ -30,9 +30,15 @@ Epic artefacts are **high-impact** end-game items.
 
 ### 1.2.0
 
-Adding 7 artefacts:
+Adding 1 artefacts:
 
 - <a href="doc/ItemGuide.md#crystal-of-origin">Crystal of Origin</a>
+
+Changing 3 artefacts:
+
+- <a href="doc/ItemGuide.md#charm-of-the-chicken">Charm of the Chicken</a>: Removed from Hero gifts.
+- <a href="doc/ItemGuide.md#charm-of-the-ravager">Charm of the Ravager</a>: Removed from Hero gifts.
+- <a href="doc/ItemGuide.md#enchanted-book---fracture">Enchanted Book - Fracture</a>: Removed from Hero gifts.
 
 ### 1.1.0
 
