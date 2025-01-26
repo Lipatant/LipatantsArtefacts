@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:reference",
-                            "name": "lipartefacts:set_rarity/rare"
+                            "name": "lipartefacts:set_rarity/uncommon"
                         },
                         {
                             "function": "minecraft:set_components",

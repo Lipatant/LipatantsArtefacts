@@ -20,6 +20,7 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#charm-of-the-axolotl">Charm of the Axolotl</a></li>
     <li><a href="#charm-of-the-chicken">Charm of the Chicken</a></li>
     <li><a href="#charm-of-the-strider">Charm of the Strider</a></li>
+    <li><a href="#crystal-of-origin">Crystal of Origin</a></li>
     <li><a href="#fishermans-bucket-hat">Fisherman's Bucket Hat</a></li>
     <li><a href="#fishing-jacket">Fishing Jacket</a></li>
     <li><a href="#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a></li>
@@ -31,7 +32,6 @@ Here you will find a list of all the artefacts and how to obtain them.
 
 <ul>
     <li><a href="#charm-of-the-ravager">Charm of the Ravager</a></li>
-    <li><a href="#crystal-of-origin">Crystal of Origin</a></li>
     <li><a href="#drilling-pickaxe">Drilling Pickaxe</a></li>
     <li><a href="#enchanted-book---fracture">Enchanted Book - Fracture</a></li>
     <li><a href="#little-feet">Little Feet</a></li>
