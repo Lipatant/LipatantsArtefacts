@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:leather_boots",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:leather_boots",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

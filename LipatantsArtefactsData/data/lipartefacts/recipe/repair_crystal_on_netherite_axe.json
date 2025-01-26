@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:netherite_axe",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:netherite_axe",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

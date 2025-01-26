@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:elytra",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:elytra",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

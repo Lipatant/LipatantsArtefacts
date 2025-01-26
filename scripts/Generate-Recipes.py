@@ -5,11 +5,14 @@ def combine_lists(material_list: [str], piece_list: [str]) -> [str]:
             output.append(material + "_" + piece)
     return output
 
-def get_item_list_armors() -> [str]:
-    return ["carved_pumpkin", "elytra", "turtle_helmet"] + combine_lists(
+def get_item_list_armors(tags: [str] = []) -> [str]:
+    output = ["elytra", "turtle_helmet"] + combine_lists(
         ["leather", "chainmail", "iron", "golden", "diamond", "netherite"],
         ["helmet", "chestplate", "leggings", "boots"],
     )
+    if "durability" not in tags:
+        output.append("carved_pumpkin")
+    return output
 
 def get_item_list_tools() -> [str]:
     return [
@@ -42,6 +45,15 @@ for item in origin_crystal_item_list:
     item_path = RECIPE_PATH + ("origin_crystal_on_%s.json" % item)
     item_file = open(item_path, "w")
     item_file.write(origin_crystal_source.replace("@1", "minecraft:" + item))
+    file_count += 1
+
+repair_crystal_source_file = open(TEMPLATE_PATH + "repair_crystal.json", "r")
+repair_crystal_source = repair_crystal_source_file.read()
+repair_crystal_item_list = get_item_list_armors(["durability"]) + get_item_list_tools()
+for item in repair_crystal_item_list:
+    item_path = RECIPE_PATH + ("repair_crystal_on_%s.json" % item)
+    item_file = open(item_path, "w")
+    item_file.write(repair_crystal_source.replace("@1", "minecraft:" + item))
     file_count += 1
 
 print("Job done for %s files." % file_count)

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:turtle_helmet",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:turtle_helmet",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:netherite_leggings",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:netherite_leggings",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

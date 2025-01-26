@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:diamond_pickaxe",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:diamond_pickaxe",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

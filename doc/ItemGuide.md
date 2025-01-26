@@ -24,6 +24,7 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#fishing-jacket">Fishing Jacket</a></li>
     <li><a href="#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a></li>
     <li><a href="#music-disc---space-caster">Music Disc - Space Caster</a></li>
+    <li><a href="#repair-crystal">Repair Crystal</a></li>
 </ul>
 
 <a href="#rare-artefacts">Rare Artefacts</a>
@@ -138,6 +139,16 @@ Obtained via:
 
 - ![](obtained/jungle_temples.png) Jungle Temples
 - ![](obtained/woodland_mansions.png) Woodland Mansions
+
+### Repair Crystal
+
+Obtained via:
+
+- ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts
+- ![](obtained/monster_rooms.png) Monster Rooms
+- ![](obtained/villages.png) Villages - Armorer
+- ![](obtained/villages.png) Villages - Toolsmith
+- ![](obtained/villages.png) Villages - Weaponsmith
 
 ## Rare Artefacts
 

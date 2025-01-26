@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:brush",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:brush",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

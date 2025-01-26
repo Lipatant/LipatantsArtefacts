@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:shears",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:shears",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

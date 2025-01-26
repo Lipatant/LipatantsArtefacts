@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:bow",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:bow",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:netherite_shovel",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:netherite_shovel",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:warped_fungus_on_a_stick",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:warped_fungus_on_a_stick",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

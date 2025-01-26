@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:netherite_helmet",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:netherite_helmet",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

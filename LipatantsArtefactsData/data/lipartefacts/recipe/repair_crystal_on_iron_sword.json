@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:iron_sword",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:iron_sword",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

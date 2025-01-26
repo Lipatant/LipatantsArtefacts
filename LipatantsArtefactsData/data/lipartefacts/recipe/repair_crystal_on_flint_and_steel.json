@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:flint_and_steel",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:flint_and_steel",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

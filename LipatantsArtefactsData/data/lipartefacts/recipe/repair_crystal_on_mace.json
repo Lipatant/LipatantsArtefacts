@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:mace",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:mace",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

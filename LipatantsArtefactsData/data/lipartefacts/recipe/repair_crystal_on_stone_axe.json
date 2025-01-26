@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:stone_axe",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:stone_axe",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}

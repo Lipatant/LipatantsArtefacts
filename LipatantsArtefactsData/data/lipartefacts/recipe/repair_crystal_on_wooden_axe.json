@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:wooden_axe",
+    "template": "minecraft:chain_command_block",
+    "result": {
+        "id": "minecraft:wooden_axe",
+        "components": {
+            "minecraft:damage": 1
+        }
+    }
+}
