@@ -1,7 +1,7 @@
 {
     "anvil_cost": 4,
     "description": {
-        "translate": "enchantment.lipartefacts.vampirism",
+        "translate": "enchantment.lipartefacts.call_to_chaos",
         "color": "light_purple"
     },
     "effects": {
@@ -9,12 +9,8 @@
             {
                 "affected": "attacker",
                 "effect": {
-                    "type": "minecraft:apply_mob_effect",
-                    "to_apply": "minecraft:regeneration",
-                    "min_duration": 1,
-                    "max_duration": 1,
-                    "min_amplifier": 2,
-                    "max_amplifier": 2
+                    "function": "lipartefacts:call_to_chaos",
+                    "type": "minecraft:run_function"
                 },
                 "enchanted": "attacker",
                 "requirements": {

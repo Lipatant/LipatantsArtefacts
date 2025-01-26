@@ -1,8 +1,6 @@
 {
     "values": [
         "lipartefacts:call_to_chaos",
-        "lipartefacts:fracture",
-        "lipartefacts:origin_mark",
         "lipartefacts:vampirism"
     ]
 }
