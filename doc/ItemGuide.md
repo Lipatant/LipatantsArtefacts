@@ -7,6 +7,7 @@ Here you will find a list of all the artefacts and how to obtain them.
 <a href="#crafted-artefacts">Crafted Artefacts</a>
 
 <ul>
+    <li><a href="#flask-of-regeneration">Flask of Regeneration</a></li>
     <li><a href="#milk-chocolate-bar">Milk Chocolate Bar</a></li>
 </ul>
 
@@ -64,6 +65,12 @@ Here you will find a list of all the artefacts and how to obtain them.
 Crafted artefacts are **consumables** thant can easily be obtained via crafting.
 
 They can also be found as Common Artefacts in chests.
+
+### Flask of Regeneration
+
+Obtained via:
+
+- ![](obtained/crafting.png) Crafting
 
 ### Milk Chocolate Bar
 
