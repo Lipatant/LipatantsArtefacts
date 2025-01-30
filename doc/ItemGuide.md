@@ -26,6 +26,7 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a></li>
     <li><a href="#music-disc---space-caster">Music Disc - Space Caster</a></li>
     <li><a href="#repair-crystal">Repair Crystal</a></li>
+    <li><a href="#very-convincing-disguise">Very Convincing Disguise</a></li>
 </ul>
 
 <a href="#rare-artefacts">Rare Artefacts</a>
@@ -150,6 +151,13 @@ Obtained via:
 - ![](obtained/villages.png) Villages - Armorer
 - ![](obtained/villages.png) Villages - Toolsmith
 - ![](obtained/villages.png) Villages - Weaponsmith
+
+### Very Convincing Disguise
+
+Obtained via:
+
+- ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts
+- ![](obtained/pillager_outposts.png) Pillager Outposts
 
 ## Rare Artefacts
 

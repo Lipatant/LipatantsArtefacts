@@ -1,0 +1,119 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/incognito_helmet_base",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "paper_bag_alex"
+                                    ]
+                                },
+                                "minecraft:equippable": {
+                                    "slot": "head",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:incognito_paper_bag_alex"
+                                },
+                                "minecraft:item_model": "lipartefacts:incognito_helmet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/incognito_helmet_base",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "paper_bag_creeper"
+                                    ]
+                                },
+                                "minecraft:equippable": {
+                                    "slot": "head",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:incognito_paper_bag_creeper"
+                                },
+                                "minecraft:item_model": "lipartefacts:incognito_helmet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/incognito_helmet_base",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "paper_bag_menacing"
+                                    ]
+                                },
+                                "minecraft:equippable": {
+                                    "slot": "head",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:incognito_paper_bag_menacing"
+                                },
+                                "minecraft:item_model": "lipartefacts:incognito_helmet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/incognito_helmet_base",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "paper_bag_mumbo"
+                                    ]
+                                },
+                                "minecraft:equippable": {
+                                    "slot": "head",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:incognito_paper_bag_mumbo"
+                                },
+                                "minecraft:item_model": "lipartefacts:incognito_helmet"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/incognito_helmet_base",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_model_data": {
+                                    "strings": [
+                                        "paper_bag_steve"
+                                    ]
+                                },
+                                "minecraft:equippable": {
+                                    "slot": "head",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:incognito_paper_bag_steve"
+                                },
+                                "minecraft:item_model": "lipartefacts:incognito_helmet"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

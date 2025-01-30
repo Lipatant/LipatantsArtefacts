@@ -318,7 +318,12 @@
             "entries": [
                 {
                     "type": "minecraft:empty",
-                    "weight": 5
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/incognito_helmet",
+                    "weight": 1
                 },
                 {
                     "type": "minecraft:loot_table",

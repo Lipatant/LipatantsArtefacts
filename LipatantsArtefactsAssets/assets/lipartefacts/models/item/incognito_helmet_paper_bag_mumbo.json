@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "lipartefacts:item/incognito_helmet_paper_bag",
+        "layer1": "lipartefacts:item/incognito_helmet_paper_bag_mumbo_overlay"
+    }
+}

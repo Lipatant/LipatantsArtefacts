@@ -1,6 +1,7 @@
 {
     "enchantment.lipartefacts.call_to_chaos": "Call to Chaos",
     "enchantment.lipartefacts.fracture": "Fracture",
+    "enchantment.lipartefacts.incognito": "Incognito",
     "enchantment.lipartefacts.origin_mark": "Mark of the Origin",
     "enchantment.lipartefacts.vampirism": "Vampirism",
     "item.lipartefacts.artillery_firework_rocket_1": "Short-Range Artillery Firework Rocket",
@@ -22,6 +23,7 @@
     "item.lipartefacts.generic.epic.desc": "Epic Artefact",
     "item.lipartefacts.generic.rare.desc": "Rare Artefact",
     "item.lipartefacts.generic.uncommon.desc": "Uncommon Artefact",
+    "item.lipartefacts.incognito_helmet": "Very Convincing Disguise",
     "item.lipartefacts.little_boots": "Little Feet",
     "item.lipartefacts.little_leggings": "Little Legs",
     "item.lipartefacts.music_disc_moment_of_melting_solitude": "Music Disc",
