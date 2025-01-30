@@ -4,6 +4,12 @@
 
 Here you will find a list of all the artefacts and how to obtain them.
 
+<a href="#crafted-artefacts">Crafted Artefacts</a>
+
+<ul>
+    <li><a href="#milk-chocolate-bar">Milk Chocolate Bar</a></li>
+</ul>
+
 <a href="#common-artefacts">Common Artefacts</a>
 
 <ul>
@@ -52,6 +58,18 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#ender-hand">Ender Hand</a></li>
     <li><a href="#netherite-battle-shield">Netherite Battle Shield</a></li>
 </ul>
+
+## Crafted Artefacts
+
+Crafted artefacts are **consumables** thant can easily be obtained via crafting.
+
+They can also be found as Common Artefacts in chests.
+
+### Milk Chocolate Bar
+
+Obtained via:
+
+- ![](obtained/crafting.png) Crafting
 
 ## Common Artefacts
 

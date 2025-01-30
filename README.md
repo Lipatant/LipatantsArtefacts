@@ -30,10 +30,15 @@ Epic artefacts are **high-impact** end-game items.
 
 ### 1.2.0
 
-Adding 5 artefacts:
+Adding 1 artefact rarity:
+
+- <a href="doc/ItemGuide.md#crafted-artefacts">Crafted</a>
+
+Adding 6 artefacts:
 
 - <a href="doc/ItemGuide.md#crystal-of-origin">Crystal of Origin</a>
 - <a href="doc/ItemGuide.md#enchanted-book---call-to-chaos">Enchanted Book - Call to Chaos</a>
+- <a href="doc/ItemGuide.md#milk-chocolate-bar">Milk Chocolate Bar</a>
 - <a href="doc/ItemGuide.md#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a>
 - <a href="doc/ItemGuide.md#repair-crystal">Repair Crystal</a>
 - <a href="doc/ItemGuide.md#very-convincing-disguise">Very Convincing Disguise</a>
