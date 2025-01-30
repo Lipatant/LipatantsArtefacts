@@ -38,11 +38,13 @@ Adding 5 artefacts:
 - <a href="doc/ItemGuide.md#repair-crystal">Repair Crystal</a>
 - <a href="doc/ItemGuide.md#very-convincing-disguise">Very Convincing Disguise</a>
 
-Changing 3 artefacts:
+Changing 5 artefacts:
 
 - <a href="doc/ItemGuide.md#charm-of-the-chicken">Charm of the Chicken</a>: Removed from Hero gifts.
+- <a href="doc/ItemGuide.md#charm-of-the-endermite">Charm of the Endermite</a>: Reducing its drop rate from End Cities.
 - <a href="doc/ItemGuide.md#charm-of-the-ravager">Charm of the Ravager</a>: Removed from Hero gifts.
 - <a href="doc/ItemGuide.md#enchanted-book---fracture">Enchanted Book - Fracture</a>: Removed from Hero gifts.
+- <a href="doc/ItemGuide.md#ender-hand">Ender Hand</a>: Reducing its drop rate from End Cities.
 
 ### 1.1.0
 
