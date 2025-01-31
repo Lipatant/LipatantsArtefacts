@@ -46,6 +46,16 @@ Adding 9 artefacts:
 - <a href="doc/ItemGuide.md#repair-crystal">Repair Crystal</a>
 - <a href="doc/ItemGuide.md#very-convincing-disguise">Very Convincing Disguise</a>
 
+Adding 7 advancements:
+
+- Any One of Us
+- Archaelogist and Cosplayer
+- Breaking Axe
+- Emotional Support Charms
+- Mineralogy
+- Smol
+- Stanowar
+
 Changing 5 artefacts:
 
 - <a href="doc/ItemGuide.md#charm-of-the-chicken">Charm of the Chicken</a>: Removed from Hero gifts.

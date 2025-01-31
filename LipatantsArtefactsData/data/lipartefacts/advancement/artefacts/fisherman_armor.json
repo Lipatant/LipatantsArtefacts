@@ -1,0 +1,42 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "fisherman_armor": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:fisherman_chestplate"
+                        }
+                    },
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:fisherman_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.fisherman_armor.description"
+        },
+        "frame": "task",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:fisherman_chestplate"
+            },
+            "id": "minecraft:leather_chestplate"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.fisherman_armor.title"
+        }
+    },
+    "requirements": [
+        [
+            "fisherman_armor"
+        ]
+    ]
+}

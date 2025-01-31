@@ -1,0 +1,55 @@
+{
+    "parent": "lipartefacts:artefacts/all_crystals",
+    "criteria": {
+        "sniffer_armor": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:sniffer_boots"
+                        }
+                    },
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:sniffer_chestplate"
+                        }
+                    },
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:sniffer_helmet"
+                        }
+                    },
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:sniffer_leggings"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.sniffer_armor.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:sniffer_chestplate"
+            },
+            "id": "minecraft:chainmail_chestplate"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.sniffer_armor.title"
+        }
+    },
+    "requirements": [
+        [
+            "sniffer_armor"
+        ]
+    ],
+    "rewards": {
+        "experience": 100
+    }
+}

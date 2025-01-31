@@ -1,0 +1,130 @@
+{
+    "parent": "lipartefacts:artefacts/fisherman_armor",
+    "criteria": {
+        "blue": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "blue"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:axolotl_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "cyan": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "cyan"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:axolotl_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "gold": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "gold"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:axolotl_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "lucy": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "lucy"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:axolotl_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "wild": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "wild"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:axolotl_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.all_axolotls.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "components": {
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "lucy"
+                    ]
+                },
+                "minecraft:item_model": "lipartefacts:axolotl_charm"
+            },
+            "id": "minecraft:echo_shard"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.all_axolotls.title"
+        }
+    },
+    "requirements": [
+        [
+            "blue"
+        ],
+        [
+            "cyan"
+        ],
+        [
+            "gold"
+        ],
+        [
+            "lucy"
+        ],
+        [
+            "wild"
+        ]
+    ],
+    "rewards": {
+        "experience": 100
+    }
+}

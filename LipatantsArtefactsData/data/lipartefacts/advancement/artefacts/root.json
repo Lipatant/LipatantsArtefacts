@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "chest_opened": {
+            "trigger": "minecraft:default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:block_state_property",
+                        "block": "minecraft:chest"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "announce_to_chat": false,
+        "background": "minecraft:textures/block/moss_block.png",
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.root.description"
+        },
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:endermite_charm"
+            },
+            "id": "minecraft:echo_shard"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.root.title"
+        }
+    },
+    "requirements": [
+        [
+            "chest_opened"
+        ]
+    ]
+}

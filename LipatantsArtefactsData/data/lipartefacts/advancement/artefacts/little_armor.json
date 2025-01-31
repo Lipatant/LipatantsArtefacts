@@ -1,0 +1,42 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "little_armor": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:little_boots"
+                        }
+                    },
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:little_leggings"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.little_armor.description"
+        },
+        "frame": "task",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:little_boots"
+            },
+            "id": "minecraft:leather_boots"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.little_armor.title"
+        }
+    },
+    "requirements": [
+        [
+            "little_armor"
+        ]
+    ]
+}

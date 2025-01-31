@@ -1,0 +1,38 @@
+{
+    "parent": "lipartefacts:artefacts/little_armor",
+    "criteria": {
+        "break_drilling_pickaxe": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+                "durability": {
+                    "max": 0
+                },
+                "item": {
+                    "components": {
+                        "minecraft:item_model": "lipartefacts:drilling_pickaxe"
+                    }
+                }
+            }
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.break_drilling_pickaxe.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:drilling_pickaxe"
+            },
+            "id": "minecraft:golden_pickaxe"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.break_drilling_pickaxe.title"
+        }
+    },
+    "requirements": [
+        [
+            "break_drilling_pickaxe"
+        ]
+    ]
+}

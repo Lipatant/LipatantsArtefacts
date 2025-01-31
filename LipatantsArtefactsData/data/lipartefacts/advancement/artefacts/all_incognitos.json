@@ -1,0 +1,130 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "paper_bag_alex": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "paper_bag_alex"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:incognito_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "paper_bag_creeper": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "paper_bag_creeper"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:incognito_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "paper_bag_menacing": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "paper_bag_menacing"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:incognito_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "paper_bag_mumbo": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "paper_bag_mumbo"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:incognito_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "paper_bag_steve": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "paper_bag_steve"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:incognito_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.all_incognitos.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "components": {
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "paper_bag_mumbo"
+                    ]
+                },
+                "minecraft:item_model": "lipartefacts:incognito_helmet"
+            },
+            "id": "minecraft:chainmail_chestplate"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.all_incognitos.title"
+        }
+    },
+    "requirements": [
+        [
+            "paper_bag_alex"
+        ],
+        [
+            "paper_bag_creeper"
+        ],
+        [
+            "paper_bag_menacing"
+        ],
+        [
+            "paper_bag_mumbo"
+        ],
+        [
+            "paper_bag_steve"
+        ]
+    ],
+    "rewards": {
+        "experience": 100
+    }
+}

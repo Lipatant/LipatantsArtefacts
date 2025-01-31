@@ -1,0 +1,52 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "origin_crystal": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:origin_crystal"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "repair_crystal": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:repair_crystal"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.all_crystals.description"
+        },
+        "frame": "task",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:repair_crystal"
+            },
+            "id": "minecraft:chain_command_block"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.all_crystals.title"
+        }
+    },
+    "requirements": [
+        [
+            "origin_crystal"
+        ],
+        [
+            "repair_crystal"
+        ]
+    ]
+}
