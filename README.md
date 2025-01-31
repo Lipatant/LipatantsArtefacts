@@ -52,6 +52,10 @@ Changing 5 artefacts:
 - <a href="doc/ItemGuide.md#enchanted-book---fracture">Enchanted Book - Fracture</a>: Removed from Hero gifts.
 - <a href="doc/ItemGuide.md#ender-hand">Ender Hand</a>: Reducing its drop rate from End Cities.
 
+Other changes:
+
+- Adding compatibility with the Music Notification mod.
+
 ### 1.1.0
 
 Adding 7 artefacts:
