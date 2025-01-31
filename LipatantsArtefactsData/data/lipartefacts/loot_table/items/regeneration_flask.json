@@ -37,6 +37,34 @@
                             }
                         },
                         {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [
+                                    {
+                                        "color": "blue",
+                                        "italic": false,
+                                        "translate": "effect.minecraft.regeneration"
+                                    },
+                                    {
+                                        "color": "blue",
+                                        "italic": false,
+                                        "text": " "
+                                    },
+                                    {
+                                        "color": "blue",
+                                        "italic": false,
+                                        "translate": "potion.potency.1"
+                                    },
+                                    {
+                                        "color": "blue",
+                                        "italic": false,
+                                        "text": " (00:10)"
+                                    }
+                                ]
+                            ],
+                            "mode": "insert"
+                        },
+                        {
                             "function": "minecraft:set_name",
                             "name": {
                                 "translate": "item.lipartefacts.regeneration_flask",
