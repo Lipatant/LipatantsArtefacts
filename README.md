@@ -34,13 +34,15 @@ Adding 1 artefact rarity:
 
 - <a href="doc/ItemGuide.md#crafted-artefacts">Crafted</a>
 
-Adding 7 artefacts:
+Adding 9 artefacts:
 
 - <a href="doc/ItemGuide.md#crystal-of-origin">Crystal of Origin</a>
 - <a href="doc/ItemGuide.md#enchanted-book---call-to-chaos">Enchanted Book - Call to Chaos</a>
+- <a href="doc/ItemGuide.md#flask-of-glowing">Flask of Glowing</a>
 - <a href="doc/ItemGuide.md#flask-of-regeneration">Flask of Reneration</a>
 - <a href="doc/ItemGuide.md#milk-chocolate-bar">Milk Chocolate Bar</a>
 - <a href="doc/ItemGuide.md#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a>
+- <a href="doc/ItemGuide.md#strong-flask-of-glowing">Strong Flask of Glowing</a>
 - <a href="doc/ItemGuide.md#repair-crystal">Repair Crystal</a>
 - <a href="doc/ItemGuide.md#very-convincing-disguise">Very Convincing Disguise</a>
 

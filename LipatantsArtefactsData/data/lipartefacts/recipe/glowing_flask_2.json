@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        "minecraft:glow_berries",
+        "minecraft:glow_ink_sac",
+        "minecraft:glowstone_dust",
+        "minecraft:potion"
+    ],
+    "result": {
+        "components": {
+            "minecraft:consumable": {
+                "animation": "drink",
+                "has_consume_particles": false,
+                "on_consume_effects": [
+                    {
+                        "effects": [
+                            {
+                                "amplifier": 0,
+                                "duration": 1200,
+                                "id": "minecraft:glowing",
+                                "show_icon": true
+                            }
+                        ],
+                        "type": "apply_effects"
+                    }
+                ],
+                "sound": "minecraft:entity.generic.drink"
+            },
+            "minecraft:custom_name": "{\"translate\": \"item.lipartefacts.glowing_flask_2\", \"italic\": false}",
+            "minecraft:food": {
+                "can_always_eat": true,
+                "nutrition": 0,
+                "saturation": 0
+            },
+            "minecraft:item_model": "lipartefacts:glowing_flask_2",
+            "minecraft:max_stack_size": 1,
+            "minecraft:lore": [
+                "[{\"color\":\"blue\",\"italic\":false,\"translate\":\"effect.minecraft.glowing\"},{\"color\":\"blue\",\"italic\":false,\"text\":\" (01:00)\"}]",
+                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.crafted.desc\"}"
+            ],
+            "minecraft:rarity": "common"
+        },
+        "count": 1,
+        "id": "minecraft:bread"
+    }
+}

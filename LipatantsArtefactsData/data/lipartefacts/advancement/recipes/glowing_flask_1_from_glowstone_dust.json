@@ -1,0 +1,32 @@
+{
+    "parent": "lipartefacts:recipes/root",
+    "criteria": {
+        "has_glowstone_dust": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:glowstone_dust"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "lipartefacts:glowing_flask_1_from_glowstone_dust"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [
+        [
+            "has_glowstone_dust",
+            "has_the_recipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "lipartefacts:glowing_flask_1_from_glowstone_dust"
+        ]
+    }
+}

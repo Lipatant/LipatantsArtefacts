@@ -7,8 +7,10 @@ Here you will find a list of all the artefacts and how to obtain them.
 <a href="#crafted-artefacts">Crafted Artefacts</a>
 
 <ul>
+    <li><a href="#flask-of-glowing">Flask of Glowing</a></li>
     <li><a href="#flask-of-regeneration">Flask of Regeneration</a></li>
     <li><a href="#milk-chocolate-bar">Milk Chocolate Bar</a></li>
+    <li><a href="#strong-flask-of-glowing">Strong Flask of Glowing</a></li>
 </ul>
 
 <a href="#common-artefacts">Common Artefacts</a>
@@ -66,6 +68,12 @@ Crafted artefacts are **consumables** thant can easily be obtained via crafting.
 
 They can also be found as Common Artefacts in chests.
 
+### Flask of Glowing
+
+Obtained via:
+
+- ![](obtained/crafting.png) Crafting
+
 ### Flask of Regeneration
 
 Obtained via:
@@ -73,6 +81,12 @@ Obtained via:
 - ![](obtained/crafting.png) Crafting
 
 ### Milk Chocolate Bar
+
+Obtained via:
+
+- ![](obtained/crafting.png) Crafting
+
+### Strong Flask of Glowing
 
 Obtained via:
 
