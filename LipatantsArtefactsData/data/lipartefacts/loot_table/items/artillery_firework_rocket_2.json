@@ -54,14 +54,8 @@
                                         }
                                     ],
                                     "flight_duration": 2
-                                }
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.artillery_firework_rocket_2",
-                                "italic": false
+                                },
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.artillery_firework_rocket_2\"}"
                             }
                         }
                     ]

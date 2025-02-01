@@ -67,6 +67,7 @@ Changing 5 artefacts:
 Other changes:
 
 - Adding compatibility with the Music Notification mod.
+- Using the `item_name` component instead of the `set_name` function for the artefacts.
 
 ### 1.1.0
 

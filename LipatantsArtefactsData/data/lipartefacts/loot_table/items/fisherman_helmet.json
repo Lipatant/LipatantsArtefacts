@@ -28,14 +28,8 @@
                                     "equip_sound": "minecraft:item.armor.equip_leather",
                                     "asset_id": "lipartefacts:fisherman"
                                 },
-                                "minecraft:item_model": "lipartefacts:fisherman_helmet"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.fisherman_helmet",
-                                "italic": false
+                                "minecraft:item_model": "lipartefacts:fisherman_helmet",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.fisherman_helmet\"}"
                             }
                         },
                         {

@@ -14,14 +14,8 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "lipartefacts:repair_crystal"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.repair_crystal",
-                                "italic": false
+                                "minecraft:item_model": "lipartefacts:repair_crystal",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.repair_crystal\"}"
                             }
                         }
                     ]

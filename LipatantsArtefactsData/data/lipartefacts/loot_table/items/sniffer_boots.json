@@ -43,14 +43,8 @@
                                     "asset_id": "lipartefacts:sniffer"
                                 },
                                 "minecraft:max_damage": 429,
-                                "minecraft:item_model": "lipartefacts:sniffer_boots"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.sniffer_boots",
-                                "italic": false
+                                "minecraft:item_model": "lipartefacts:sniffer_boots",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_boots\"}"
                             }
                         },
                         {

@@ -32,14 +32,8 @@
                                     "damage_on_hurt": false
                                 },
                                 "minecraft:max_stack_size": 1,
-                                "minecraft:item_model": "lipartefacts:chicken_charm"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.chicken_charm",
-                                "italic": false
+                                "minecraft:item_model": "lipartefacts:chicken_charm",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.chicken_charm\"}"
                             }
                         }
                     ]

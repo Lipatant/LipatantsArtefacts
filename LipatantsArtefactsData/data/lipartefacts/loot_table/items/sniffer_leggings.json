@@ -43,14 +43,8 @@
                                     "asset_id": "lipartefacts:sniffer"
                                 },
                                 "minecraft:max_damage": 495,
-                                "minecraft:item_model": "lipartefacts:sniffer_leggings"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.sniffer_leggings",
-                                "italic": false
+                                "minecraft:item_model": "lipartefacts:sniffer_leggings",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_leggings\"}"
                             }
                         },
                         {

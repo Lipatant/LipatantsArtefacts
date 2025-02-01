@@ -43,14 +43,8 @@
                                     "asset_id": "lipartefacts:sniffer"
                                 },
                                 "minecraft:max_damage": 363,
-                                "minecraft:item_model": "lipartefacts:sniffer_helmet"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.sniffer_helmet",
-                                "italic": false
+                                "minecraft:item_model": "lipartefacts:sniffer_helmet",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_helmet\"}"
                             }
                         },
                         {

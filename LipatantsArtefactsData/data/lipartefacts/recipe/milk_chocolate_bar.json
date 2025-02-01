@@ -16,13 +16,13 @@
                     }
                 ]
             },
-            "minecraft:custom_name": "{\"translate\": \"item.lipartefacts.milk_chocolate_bar\", \"italic\": false}",
             "minecraft:food": {
                 "can_always_eat": true,
                 "nutrition": 1,
                 "saturation": 0.6
             },
             "minecraft:item_model": "lipartefacts:milk_chocolate_bar",
+            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.milk_chocolate_bar\"}",
             "minecraft:max_stack_size": 16,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.crafted.desc\"}"

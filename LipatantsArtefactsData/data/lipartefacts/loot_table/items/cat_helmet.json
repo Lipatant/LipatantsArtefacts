@@ -28,14 +28,8 @@
                                     "equip_sound": "minecraft:item.armor.equip_leather",
                                     "asset_id": "lipartefacts:cat"
                                 },
-                                "minecraft:item_model": "lipartefacts:cat_helmet"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.cat_helmet",
-                                "italic": false
+                                "minecraft:item_model": "lipartefacts:cat_helmet",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.cat_helmet\"}"
                             }
                         },
                         {

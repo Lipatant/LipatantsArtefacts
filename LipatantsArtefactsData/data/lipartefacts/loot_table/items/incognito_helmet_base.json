@@ -10,20 +10,14 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:max_damage": 55
+                                "minecraft:max_damage": 55,
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.incognito_helmet\"}"
                             }
                         },
                         {
                             "function": "minecraft:set_enchantments",
                             "enchantments": {
                                 "lipartefacts:incognito": 1
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.incognito_helmet",
-                                "italic": false
                             }
                         },
                         {

@@ -43,14 +43,8 @@
                                     "asset_id": "lipartefacts:sniffer"
                                 },
                                 "minecraft:max_damage": 528,
-                                "minecraft:item_model": "lipartefacts:sniffer_chestplate"
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.sniffer_chestplate",
-                                "italic": false
+                                "minecraft:item_model": "lipartefacts:sniffer_chestplate",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_chestplate\"}"
                             }
                         },
                         {

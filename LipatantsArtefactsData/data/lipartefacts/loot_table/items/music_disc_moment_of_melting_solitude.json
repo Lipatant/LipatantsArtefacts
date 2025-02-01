@@ -11,16 +11,10 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:music_disc_moment_of_melting_solitude",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.music_disc_moment_of_melting_solitude\"}",
                                 "minecraft:jukebox_playable": {
                                     "song": "lipartefacts:moment_of_melting_solitude"
                                 }
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.music_disc_moment_of_melting_solitude",
-                                "italic": false
                             }
                         },
                         {

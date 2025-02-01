@@ -33,6 +33,7 @@
                                     "saturation": 0
                                 },
                                 "minecraft:item_model": "lipartefacts:glowing_flask_1",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.glowing_flask_1\"}",
                                 "minecraft:max_stack_size": 1
                             }
                         },
@@ -53,13 +54,6 @@
                                 ]
                             ],
                             "mode": "insert"
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.glowing_flask_1",
-                                "italic": false
-                            }
                         },
                         {
                             "function": "minecraft:reference",

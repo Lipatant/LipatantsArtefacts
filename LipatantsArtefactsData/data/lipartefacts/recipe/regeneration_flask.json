@@ -26,13 +26,13 @@
                 ],
                 "sound": "minecraft:entity.generic.drink"
             },
-            "minecraft:custom_name": "{\"translate\": \"item.lipartefacts.regeneration_flask\", \"italic\": false}",
             "minecraft:food": {
                 "can_always_eat": true,
                 "nutrition": 0,
                 "saturation": 0
             },
             "minecraft:item_model": "lipartefacts:regeneration_flask",
+            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.regeneration_flask\"}",
             "minecraft:max_stack_size": 1,
             "minecraft:lore": [
                 "[{\"color\":\"blue\",\"italic\":false,\"translate\":\"effect.minecraft.regeneration\"},{\"color\":\"blue\",\"italic\":false,\"text\":\" \"},{\"color\":\"blue\",\"italic\":false,\"translate\":\"potion.potency.1\"},{\"color\":\"blue\",\"italic\":false,\"text\":\" (00:10)\"}]",

@@ -14,20 +14,14 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "lipartefacts:enchanted_book_call_to_chaos"
+                                "minecraft:item_model": "lipartefacts:enchanted_book_call_to_chaos",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.enchanted_book_call_to_chaos\"}"
                             }
                         },
                         {
                             "function": "minecraft:set_enchantments",
                             "enchantments": {
                                 "lipartefacts:call_to_chaos": 1
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate": "item.lipartefacts.enchanted_book_call_to_chaos",
-                                "italic": false
                             }
                         }
                     ]

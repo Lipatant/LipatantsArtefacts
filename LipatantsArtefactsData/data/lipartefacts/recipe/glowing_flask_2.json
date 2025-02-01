@@ -27,13 +27,13 @@
                 ],
                 "sound": "minecraft:entity.generic.drink"
             },
-            "minecraft:custom_name": "{\"translate\": \"item.lipartefacts.glowing_flask_2\", \"italic\": false}",
             "minecraft:food": {
                 "can_always_eat": true,
                 "nutrition": 0,
                 "saturation": 0
             },
             "minecraft:item_model": "lipartefacts:glowing_flask_2",
+            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.glowing_flask_2\"}",
             "minecraft:max_stack_size": 1,
             "minecraft:lore": [
                 "[{\"color\":\"blue\",\"italic\":false,\"translate\":\"effect.minecraft.glowing\"},{\"color\":\"blue\",\"italic\":false,\"text\":\" (01:00)\"}]",
