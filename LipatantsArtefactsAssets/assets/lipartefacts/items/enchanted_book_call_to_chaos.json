@@ -1,6 +1,6 @@
 {
     "model": {
         "type": "minecraft:model",
-        "model": "minecraft:item/enchanted_book"
+        "model": "lipartefacts:item/enchanted_book_call_to_chaos"
     }
 }
