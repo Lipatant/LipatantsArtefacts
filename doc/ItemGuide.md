@@ -155,6 +155,14 @@ Obtained via:
 
 - ![](obtained/piglin_bartering.png) Piglins - Bartering
 
+### Crystal of Origin
+
+Obtained via:
+
+- ![](obtained/ancient_cities.png) Ancient Cities
+- ![](obtained/end_cities.png) End Cities
+- ![](obtained/strongholds.png) Strongholds - Library
+
 ### Fisherman's Bucket Hat
 
 Obtained via:
@@ -207,14 +215,6 @@ Rare artefacts are **high-impact** items that can be **hard to obtain**.
 Obtained via:
 
 - ![](obtained/woodland_mansions.png) Woodland Mansions
-
-### Crystal of Origin
-
-Obtained via:
-
-- ![](obtained/ancient_cities.png) Ancient Cities
-- ![](obtained/end_cities.png) End Cities
-- ![](obtained/strongholds.png) Strongholds - Library
 
 ### Drilling Pickaxe
 
