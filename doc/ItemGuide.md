@@ -32,6 +32,7 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#crystal-of-origin">Crystal of Origin</a></li>
     <li><a href="#fishermans-bucket-hat">Fisherman's Bucket Hat</a></li>
     <li><a href="#fishing-jacket">Fishing Jacket</a></li>
+    <li><a href="#music-disc---groovotational">Music Disc - Groovotational</a></li>
     <li><a href="#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a></li>
     <li><a href="#music-disc---space-caster">Music Disc - Space Caster</a></li>
     <li><a href="#repair-crystal">Repair Crystal</a></li>
@@ -178,6 +179,13 @@ Obtained via:
 Obtained via:
 
 - ![](obtained/fishing.png) Fishing - Treasure
+
+### Music Disc - Groovotational
+
+Obtained via:
+
+- ![](obtained/jungle_temples.png) Jungle Temples
+- ![](obtained/woodland_mansions.png) Woodland Mansions
 
 ### Music Disc - Moment Of Melting Solitude
 

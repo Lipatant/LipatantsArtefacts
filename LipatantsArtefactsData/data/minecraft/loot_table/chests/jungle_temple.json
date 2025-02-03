@@ -146,6 +146,11 @@
         },
         {
             "type": "minecraft:loot_table",
+            "value": "lipartefacts:items/music_disc_groovotational",
+            "weight": 3
+        },
+        {
+            "type": "minecraft:loot_table",
             "value": "lipartefacts:items/music_disc_moment_of_melting_solitude",
             "weight": 3
         },

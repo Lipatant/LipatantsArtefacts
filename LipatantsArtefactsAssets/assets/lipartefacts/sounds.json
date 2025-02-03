@@ -1,4 +1,11 @@
 {
+    "music_disc.groovotational": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/groovotational"
+            }
+        ]
+    },
     "music_disc.moment_of_melting_solitude": {
         "sounds": [
             {

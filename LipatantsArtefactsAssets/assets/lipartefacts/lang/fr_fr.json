@@ -48,6 +48,8 @@
     "item.lipartefacts.little_boots": "Petits pieds",
     "item.lipartefacts.little_leggings": "Petites jambes",
     "item.lipartefacts.milk_chocolate_bar": "Barre de chocolat au lait",
+    "item.lipartefacts.music_disc_groovotational": "Disque",
+    "item.lipartefacts.music_disc_groovotational.desc": "Lipatant - Groovotational",
     "item.lipartefacts.music_disc_moment_of_melting_solitude": "Disque",
     "item.lipartefacts.music_disc_moment_of_melting_solitude.desc": "Lipatant - Moment Of Melting Solitude",
     "item.lipartefacts.music_disc_space_caster": "Disque",
@@ -66,6 +68,7 @@
     "item.lipartefacts.warden_chestplate": "Plastron de Warden",
     "item.lipartefacts.warden_helmet": "Capuche de Warden",
     "item.lipartefacts.warden_leggings": "Jambières de Warden",
+    "jukebox_song.lipartefacts.groovotational.desc": "Lipatant - Groovotational",
     "jukebox_song.lipartefacts.moment_of_melting_solitude.desc": "Lipatant - Moment Of Melting Solitude",
     "jukebox_song.lipartefacts.space_caster.desc": "Lipatant - Space Caster"
 }

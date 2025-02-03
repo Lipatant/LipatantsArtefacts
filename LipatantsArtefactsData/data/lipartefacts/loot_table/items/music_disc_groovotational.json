@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:music_disc_otherside",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "lipartefacts:music_disc_groovotational",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.music_disc_groovotational\"}",
+                                "minecraft:jukebox_playable": {
+                                    "song": "lipartefacts:groovotational"
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/uncommon"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

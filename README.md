@@ -30,8 +30,9 @@ Epic artefacts are **high-impact** end-game items.
 
 ### 1.3.0
 
-Adding 4 artefacts:
+Adding 5 artefacts:
 
+- <a href="doc/ItemGuide.md#music-disc---groovotational">Music Disc - Groovotational</a>
 - <a href="doc/ItemGuide.md#warden-boots">Warden Boots</a>
 - <a href="doc/ItemGuide.md#warden-chestplate">Warden Chestplate</a>
 - <a href="doc/ItemGuide.md#warden-hood">Warden Hood</a>
