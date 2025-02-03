@@ -438,6 +438,64 @@
                 }
             ],
             "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 12
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30.0,
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ],
+                    "value": "lipartefacts:items/warden_boots",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30.0,
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ],
+                    "value": "lipartefacts:items/warden_chestplate",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30.0,
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ],
+                    "value": "lipartefacts:items/warden_helmet",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30.0,
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ],
+                    "value": "lipartefacts:items/warden_leggings",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1.0
         }
     ],
     "random_sequence": "minecraft:chests/ancient_city"

@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:armor",
+                                    "id": "minecraft:armor.chestplate",
+                                    "amount": 8,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "minecraft:armor_toughness",
+                                    "id": "minecraft:armor.chestplate",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "minecraft:max_health",
+                                    "id": "minecraft:armor.chestplate",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                }
+                            ],
+                            "replace": true
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "chest",
+                                    "equip_sound": "minecraft:item.armor.equip_iron",
+                                    "asset_id": "lipartefacts:warden"
+                                },
+                                "minecraft:max_damage": 528,
+                                "minecraft:item_model": "lipartefacts:warden_chestplate",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.warden_chestplate\"}"
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/rare"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

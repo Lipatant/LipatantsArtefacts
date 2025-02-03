@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "lipartefacts:warden"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "lipartefacts:warden"
+            }
+        ]
+    }
+}

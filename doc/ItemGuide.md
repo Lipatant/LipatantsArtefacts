@@ -50,6 +50,10 @@ Here you will find a list of all the artefacts and how to obtain them.
     <li><a href="#sniffer-hooves">Sniffer Hooves</a></li>
     <li><a href="#sniffer-leggings">Sniffer Leggings</a></li>
     <li><a href="#sniffer-mask">Sniffer Mask</a></li>
+    <li><a href="#warden-boots">Warden Boots</a></li>
+    <li><a href="#warden-chestplate">Warden Chestplate</a></li>
+    <li><a href="#warden-hood">Warden Hood</a></li>
+    <li><a href="#warden-leggings">Warden Leggings</a></li>
 </ul>
 
 <a href="#epic-artefacts">Epic Artefacts</a>
@@ -264,6 +268,30 @@ Obtained via:
 Obtained via:
 
 - ![](obtained/archaeology.png) Trail Ruins - Rare Reward
+
+### Warden Boots
+
+Obtained via:
+
+- ![](obtained/ancient_cities.png) Ancient Cities
+
+### Warden Chestplate
+
+Obtained via:
+
+- ![](obtained/ancient_cities.png) Ancient Cities
+
+### Warden Hood
+
+Obtained via:
+
+- ![](obtained/ancient_cities.png) Ancient Cities
+
+### Warden Leggings
+
+Obtained via:
+
+- ![](obtained/ancient_cities.png) Ancient Cities
 
 ## Epic Artefacts
 

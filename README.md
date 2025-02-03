@@ -30,6 +30,17 @@ Epic artefacts are **high-impact** end-game items.
 
 ### 1.3.0
 
+Adding 4 artefacts:
+
+- <a href="doc/ItemGuide.md#warden-boots">Warden Boots</a>
+- <a href="doc/ItemGuide.md#warden-chestplate">Warden Chestplate</a>
+- <a href="doc/ItemGuide.md#warden-hood">Warden Hood</a>
+- <a href="doc/ItemGuide.md#warden-leggings">Warden Leggings</a>
+
+Adding 1 advancement:
+
+- Silent Running
+
 Other changes:
 
 - Adding translations for `Français (France)`.
