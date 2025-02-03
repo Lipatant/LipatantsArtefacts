@@ -28,6 +28,12 @@ Epic artefacts are **high-impact** end-game items.
 
 # Changelog
 
+### 1.3.0
+
+Other changes:
+
+- Adding translations for `Français (France)`.
+
 ### 1.2.0
 
 Adding 1 artefact rarity:
