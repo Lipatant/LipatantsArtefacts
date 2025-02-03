@@ -38,8 +38,9 @@ Adding 5 artefacts:
 - <a href="doc/ItemGuide.md#warden-hood">Warden Hood</a>
 - <a href="doc/ItemGuide.md#warden-leggings">Warden Leggings</a>
 
-Adding 1 advancement:
+Adding 2 advancements:
 
+- Disc Jockey
 - Silent Running
 
 Other changes:

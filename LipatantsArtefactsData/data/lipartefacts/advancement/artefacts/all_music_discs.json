@@ -1,0 +1,67 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "music_disc_groovotational": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_groovotational"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_moment_of_melting_solitude": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_moment_of_melting_solitude"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_space_caster": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_space_caster"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.all_music_discs.description"
+        },
+        "frame": "task",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:music_disc_groovotational"
+            },
+            "id": "minecraft:music_disc_otherside"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.all_music_discs.title"
+        }
+    },
+    "requirements": [
+        [
+            "music_disc_groovotational"
+        ],
+        [
+            "music_disc_moment_of_melting_solitude"
+        ],
+        [
+            "music_disc_space_caster"
+        ]
+    ]
+}
