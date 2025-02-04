@@ -4,67 +4,12 @@
 
 Here you will find a list of all the artefacts and how to obtain them.
 
-<a href="#crafted-artefacts">Crafted Artefacts</a>
-
 <ul>
-    <li><a href="#flask-of-glowing">Flask of Glowing</a></li>
-    <li><a href="#flask-of-regeneration">Flask of Regeneration</a></li>
-    <li><a href="#milk-chocolate-bar">Milk Chocolate Bar</a></li>
-    <li><a href="#strong-flask-of-glowing">Strong Flask of Glowing</a></li>
-</ul>
-
-<a href="#common-artefacts">Common Artefacts</a>
-
-<ul>
-    <li><a href="#long-range-artillery-firework-rocket">Long-Range Artillery Firework Rocket</a></li>
-    <li><a href="#medium-range-artillery-firework-rocket">Medium-Range Artillery Firework Rocket</a></li>
-    <li><a href="#short-range-artillery-firework-rocket">Short-Range Artillery Firework Rocket</a></li>
-</ul>
-
-<a href="#uncommon-artefacts">Uncommon Artefacts</a>
-
-<ul>
-    <li><a href="#battle-shield">Battle Shield</a></li>
-    <li><a href="#cat-ears">Cat Ears</a></li>
-    <li><a href="#charm-of-the-axolotl">Charm of the Axolotl</a></li>
-    <li><a href="#charm-of-the-chicken">Charm of the Chicken</a></li>
-    <li><a href="#charm-of-the-strider">Charm of the Strider</a></li>
-    <li><a href="#crystal-of-origin">Crystal of Origin</a></li>
-    <li><a href="#fishermans-bucket-hat">Fisherman's Bucket Hat</a></li>
-    <li><a href="#fishing-jacket">Fishing Jacket</a></li>
-    <li><a href="#music-disc---groovotational">Music Disc - Groovotational</a></li>
-    <li><a href="#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a></li>
-    <li><a href="#music-disc---space-caster">Music Disc - Space Caster</a></li>
-    <li><a href="#repair-crystal">Repair Crystal</a></li>
-    <li><a href="#very-convincing-disguise">Very Convincing Disguise</a></li>
-</ul>
-
-<a href="#rare-artefacts">Rare Artefacts</a>
-
-<ul>
-    <li><a href="#charm-of-the-ravager">Charm of the Ravager</a></li>
-    <li><a href="#drilling-pickaxe">Drilling Pickaxe</a></li>
-    <li><a href="#enchanted-book---fracture">Enchanted Book - Fracture</a></li>
-    <li><a href="#little-feet">Little Feet</a></li>
-    <li><a href="#little-legs">Little Legs</a></li>
-    <li><a href="#sniffer-fur">Sniffer Fur</a></li>
-    <li><a href="#sniffer-hooves">Sniffer Hooves</a></li>
-    <li><a href="#sniffer-leggings">Sniffer Leggings</a></li>
-    <li><a href="#sniffer-mask">Sniffer Mask</a></li>
-    <li><a href="#warden-boots">Warden Boots</a></li>
-    <li><a href="#warden-chestplate">Warden Chestplate</a></li>
-    <li><a href="#warden-hood">Warden Hood</a></li>
-    <li><a href="#warden-leggings">Warden Leggings</a></li>
-</ul>
-
-<a href="#epic-artefacts">Epic Artefacts</a>
-
-<ul>
-    <li><a href="#charm-of-the-endermite">Charm of the Endermite</a></li>
-    <li><a href="#enchanted-book---call-to-chaos">Enchanted Book - Call to Chaos</a></li>
-    <li><a href="#enchanted-book---vampirism">Enchanted Book - Vampirism</a></li>
-    <li><a href="#ender-hand">Ender Hand</a></li>
-    <li><a href="#netherite-battle-shield">Netherite Battle Shield</a></li>
+    <li><a href="#crafted-artefacts">Crafted Artefacts</a></li>
+    <li><a href="#common-artefacts">Common Artefacts</a></li>
+    <li><a href="#uncommon-artefacts">Uncommon Artefacts</a></li>
+    <li><a href="#rare-artefacts">Rare Artefacts</a></li>
+    <li><a href="#epic-artefacts">Epic Artefacts</a></li>
 </ul>
 
 ## Crafted Artefacts
@@ -73,264 +18,63 @@ Crafted artefacts are **consumables** thant can easily be obtained via crafting.
 
 They can also be found as Common Artefacts in chests.
 
-### Flask of Glowing
-
-Obtained via:
-
-- ![](obtained/crafting.png) Crafting
-
-### Flask of Regeneration
-
-Obtained via:
-
-- ![](obtained/crafting.png) Crafting
-
-### Milk Chocolate Bar
-
-Obtained via:
-
-- ![](obtained/crafting.png) Crafting
-
-### Strong Flask of Glowing
-
-Obtained via:
-
-- ![](obtained/crafting.png) Crafting
+|                                                        | Name                                     | Description | Obtained via: |
+|--------------------------------------------------------|------------------------------------------|-------------|---------------|
+| ![](item/glowing_flask_1.png)                          | Flask of Glowing                         | Grants Glowing for 10 seconds. | ![](obtained/crafting.png) Crafting |
+| ![](item/regeneration_flask.png)                       | Falsk of Regeneration                    | Grants Regeneration II for 10 seconds. | ![](obtained/crafting.png) Crafting |
+| ![](item/milk_chocolate_bar.png)                       | Milk Chocolate Bar                       | Clear all effects. | ![](obtained/crafting.png) Crafting |
+| ![](item/glowing_flask_2.png)                          | Strong Flask of Glowing                  | Grants Glowing for 1 minute. | ![](obtained/crafting.png) Crafting |
 
 ## Common Artefacts
 
 Common artefacts are **consumables** that can be obtained in a **large quantity**.
 
-### Long-Range Artillery Firework Rocket
-
-Obtained via:
-
-- ![](obtained/trial_chambers.png) Trial Chambers - Supply
-- ![](obtained/trial_chambers.png) Trial Chambers - Vault - Common Reward
-
-### Medium-Range Artillery Firework Rocket
-
-Obtained via:
-
-- ![](obtained/trial_chambers.png) Trial Chambers - Supply
-- ![](obtained/trial_chambers.png) Trial Chambers - Vault - Common Reward
-
-### Short-Range Artillery Firework Rocket
-
-Obtained via:
-
-- ![](obtained/trial_chambers.png) Trial Chambers - Supply
-- ![](obtained/trial_chambers.png) Trial Chambers - Vault - Common Reward
+|                                                        | Name                                     | Description | Obtained via: |
+|--------------------------------------------------------|------------------------------------------|-------------|---------------|
+| ![](item/artillery_firework_rocket_3.png)              | Long-Range Artillery Firework Rocket     | Carries 5 Firework Stars and with flight duration of 3. | ![](obtained/trial_chambers.png) Trial Chambers - Supply<br>![](obtained/trial_chambers.png) Trial Chambers - Vault - Common Reward |
+| ![](item/artillery_firework_rocket_2.png)              | Medium-Range Artillery Firework Rocket   | Carries 6 Firework Stars and with flight duration of 2. | ![](obtained/trial_chambers.png) Trial Chambers - Supply<br>![](obtained/trial_chambers.png) Trial Chambers - Vault - Common Reward |
+| ![](item/artillery_firework_rocket_1.png)              | Short-Range Artillery Firework Rocket    | Carries 7 Firework Stars and with flight duration of 1. | ![](obtained/trial_chambers.png) Trial Chambers - Supply<br>![](obtained/trial_chambers.png) Trial Chambers - Vault - Common Reward |
 
 ## Uncommon Artefacts
 
 Uncommon artefacts are easily obtainable **low-impact** items.
 
-### Battle Shield
-
-Obtained via:
-
-- ![](obtained/bastions.png) Bastions - Hoglin Stables
-- ![](obtained/trial_chambers.png) Trial Chambers - Vault - Rare Reward
-
-### Cat Ears
-
-Obtained via:
-
-- ![](obtained/cat_morning_gift.png) Cats - Morning Gift
-- ![](obtained/fishing.png) Fishing - Treasure
-- ![](obtained/villages.png) Villages - Tannery
-
-### Charm of the Axolotl
-
-Obtained via:
-
-- ![](obtained/shipwrecks.png) Shipwrecks - Treasure
-- ![](obtained/underwater_ruins.png) Underwater Ruins
-
-### Charm of the Chicken
-
-Obtained via:
-
-- ![](obtained/cat_morning_gift.png) Cats - Morning Gift
-
-### Charm of the Strider
-
-Obtained via:
-
-- ![](obtained/piglin_bartering.png) Piglins - Bartering
-
-### Crystal of Origin
-
-Obtained via:
-
-- ![](obtained/ancient_cities.png) Ancient Cities
-- ![](obtained/end_cities.png) End Cities
-- ![](obtained/strongholds.png) Strongholds - Library
-
-### Fisherman's Bucket Hat
-
-Obtained via:
-
-- ![](obtained/fishing.png) Fishing - Treasure
-
-### Fishing Jacket
-
-Obtained via:
-
-- ![](obtained/fishing.png) Fishing - Treasure
-
-### Music Disc - Groovotational
-
-Obtained via:
-
-- ![](obtained/jungle_temples.png) Jungle Temples
-- ![](obtained/woodland_mansions.png) Woodland Mansions
-
-### Music Disc - Moment Of Melting Solitude
-
-Obtained via:
-
-- ![](obtained/jungle_temples.png) Jungle Temples
-- ![](obtained/woodland_mansions.png) Woodland Mansions
-
-### Music Disc - Space Caster
-
-Obtained via:
-
-- ![](obtained/jungle_temples.png) Jungle Temples
-- ![](obtained/woodland_mansions.png) Woodland Mansions
-
-### Repair Crystal
-
-Obtained via:
-
-- ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts
-- ![](obtained/monster_rooms.png) Monster Rooms
-- ![](obtained/villages.png) Villages - Armorer
-- ![](obtained/villages.png) Villages - Toolsmith
-- ![](obtained/villages.png) Villages - Weaponsmith
-
-### Very Convincing Disguise
-
-Obtained via:
-
-- ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts
-- ![](obtained/pillager_outposts.png) Pillager Outposts
+|                                                        | Name                                     | Description | Obtained via: |
+|--------------------------------------------------------|------------------------------------------|-------------|---------------|
+| ![](item/battle_shield.png)                            | Battle Shield                            | Can be used as both a shield and a weapon. | ![](obtained/bastions.png) Bastions - Hoglin Stables<br>![](obtained/trial_chambers.png) Trial Chambers - Vault - Rare Reward |
+| ![](item/cat_helmet.png)                               | Cat Ears                                 | Grants 1 block of additional safe fall distance. | ![](obtained/cat_morning_gift.png) Cats - Morning Gift<br>![](obtained/fishing.png) Fishing - Treasure<br>![](obtained/villages.png) Villages - Tannery |
+| ![](item/axolotl_charm.png)                            | Charm of the Axolotl                     | Grants 2 additional hearts. | ![](obtained/shipwrecks.png) Shipwrecks - Treasure<br>![](obtained/underwater_ruins.png) Underwater Ruins |
+| ![](item/chicken_charm.png)                            | Charm of the Chicken                     | Grants 1 block of additional safe fall distance. | ![](obtained/cat_morning_gift.png) Cats - Morning Gift |
+| ![](item/strider_charm.png)                            | Charm of the Strider                     | Nullifies burning time. | ![](obtained/piglin_bartering.png) Piglins - Bartering |
+| ![](item/origin_crystal.png)                           | Crystal of Origin                        | Removes enchantments and curses from an item. | ![](obtained/ancient_cities.png) Ancient Cities<br>![](obtained/end_cities.png) End Cities<br>![](obtained/strongholds.png) Strongholds - Library |
+| ![](item/fisherman_helmet.png)<br>![](item/fisherman_chestplate.png) | Fisherman Armor            | Increases luck. | ![](obtained/fishing.png) Fishing - Treasure
+| ![](item/music_disc_groovotational.png)                | Music Disc - Groovotational              | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/woodland_mansions.png) Woodland Mansions
+| ![](item/music_disc_moment_of_melting_solitude.png)    | Music Disc - Moment Of Melting Solitude  | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/woodland_mansions.png) Woodland Mansions
+| ![](item/music_disc_space_caster.png)                  | Music Disc - Space Caster                | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/woodland_mansions.png) Woodland Mansions
+| ![](item/repair_crystal.png)                           | Repair Crystal                           | Repairs an item. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/monster_rooms.png) Monster Rooms<br>![](obtained/villages.png) Villages - Armorer<br>![](obtained/villages.png) Villages - Toolsmith<br>![](obtained/villages.png) Villages - Weaponsmith
+| ![](item/incognito_helmet.png)                         | Very Convincing Disguise                 | Is enchanted with Incognito, granting Invisibility. | ![](obtained/abandoned_mineshafts.png)Abandoned Mineshafts<br>![](obtained/pillager_outposts.png) Pillager Outposts
 
 ## Rare Artefacts
 
 Rare artefacts are **high-impact** items that can be **hard to obtain**.
 
-### Charm of the Ravager
-
-Obtained via:
-
-- ![](obtained/woodland_mansions.png) Woodland Mansions
-
-### Drilling Pickaxe
-
-Obtained via:
-
-- ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
-- ![](obtained/trial_chambers.png) Trial Chambers - Vault - Unique Reward
-
-### Enchanted Book - Fracture
-
-Obtained via:
-
-- ![](obtained/woodland_mansions.png) Woodland Mansions
-
-### Little Feet
-
-Obtained via:
-
-- ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
-
-### Little Legs
-
-Obtained via:
-
-- ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
-
-### Sniffer Fur
-
-Obtained via:
-
-- ![](obtained/archaeology.png) Trail Ruins - Rare Reward
-
-### Sniffer Hooves
-
-Obtained via:
-
-- ![](obtained/archaeology.png) Trail Ruins - Rare Reward
-
-### Sniffer Leggings
-
-Obtained via:
-
-- ![](obtained/archaeology.png) Trail Ruins - Rare Reward
-
-### Sniffer Mask
-
-Obtained via:
-
-- ![](obtained/archaeology.png) Trail Ruins - Rare Reward
-
-### Warden Boots
-
-Obtained via:
-
-- ![](obtained/ancient_cities.png) Ancient Cities
-
-### Warden Chestplate
-
-Obtained via:
-
-- ![](obtained/ancient_cities.png) Ancient Cities
-
-### Warden Hood
-
-Obtained via:
-
-- ![](obtained/ancient_cities.png) Ancient Cities
-
-### Warden Leggings
-
-Obtained via:
-
-- ![](obtained/ancient_cities.png) Ancient Cities
+|                                                        | Name                                     | Description | Obtained via: |
+|--------------------------------------------------------|------------------------------------------|-------------|---------------|
+| ![](item/ravager_charm.png)                            | Charm of the Ravager                     | Grants 1 of attack knockback. | ![](obtained/woodland_mansions.png) Woodland Mansions
+| ![](item/drilling_pickaxe.png)                         | Drilling Pickaxe                         | Efficient but really fragile. | ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward<br>![](obtained/trial_chambers.png) Trial Chambers - Vault - Unique Reward
+| ![](item/enchanted_book_fracture.png)                  | Enchanted Book - Fracture                | Grants a Slowness effect to axes. | ![](obtained/woodland_mansions.png) Woodland Mansions
+| ![](item/little_leggings.png)<br>![](item/little_boots.png) | Little Armor                        | Grants a reduced size. | ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
+| ![](item/sniffer_helmet.png)<br>![](item/sniffer_chestplate.png)<br>![](item/sniffer_leggings.png)<br>![](item/sniffer_boots.png) | Sniffer Armor | Grants additional knockback resistance. | ![](obtained/archaeology.png) Trail Ruins - Rare Reward
+| ![](item/warden_helmet.png)<br>![](item/warden_chestplate.png)<br>![](item/warden_leggings.png)<br>![](item/warden_boots.png) | Warden Armor | Grants additional hearts. | ![](obtained/ancient_cities.png) Ancient Cities
 
 ## Epic Artefacts
 
 Epic artefacts are **high-impact** end-game items.
 
-### Charm of the Endermite
-
-Obtained via:
-
-- ![](obtained/end_cities.png) End Cities
-
-### Enchanted Book - Call to Chaos
-
-Obtained via:
-
-- ![](obtained/igloos.png) Igloos
-
-### Enchanted Book - Vampirism
-
-Obtained via:
-
-- ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
-
-### Ender Hand
-
-Obtained via:
-
-- ![](obtained/end_cities.png) End Cities
-
-### Netherite Battle Shield
-
-Obtained via:
-
-- ![](obtained/bastions.png) Bastions - Treasure
+|                                                        | Name                                     | Description | Obtained via: |
+|--------------------------------------------------------|------------------------------------------|-------------|---------------|
+| ![](item/endermite_charm.png)                          | Charm of the Endermite                   | Halves the size but nullifies armor toughness. | ![](obtained/end_cities.png) End Cities
+| ![](item/enchanted_book_call_to_chaos.png)             | Enchanted Book - Call to Chaos           | Grants random potion effects after attacking with a weapon. | ![](obtained/igloos.png) Igloos
+| ![](item/enchanted_book_vampirism.png)                 | Enchanted Book - Vampirism               | Grants Regeneration after attacking with a weapon. | ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
+| ![](item/ender_hand.png)                               | Ender Hand                               | Grants 5 of attack knockback. | ![](obtained/end_cities.png) End Cities
+| ![](item/netherite_battle_shield.png)                  | Netherite Battle Shield                  | Can be used as both a shield and a weapon. | ![](obtained/bastions.png) Bastions - Treasure

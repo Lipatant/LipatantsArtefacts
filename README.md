@@ -16,6 +16,8 @@ Some grant bonuses that benefit certain play styles, while others simply offer a
 
 # Item Guide
 
+Crafted artefacts are **consumables** thant can easily be obtained via crafting.
+
 Common artefacts are **consumables** that can be obtained in a **large quantity**.
 
 Uncommon artefacts are easily obtainable **low-impact** items.
@@ -32,16 +34,13 @@ Epic artefacts are **high-impact** end-game items.
 
 Adding 5 artefacts:
 
-- <a href="doc/ItemGuide.md#music-disc---groovotational">Music Disc - Groovotational</a>
-- <a href="doc/ItemGuide.md#warden-boots">Warden Boots</a>
-- <a href="doc/ItemGuide.md#warden-chestplate">Warden Chestplate</a>
-- <a href="doc/ItemGuide.md#warden-hood">Warden Hood</a>
-- <a href="doc/ItemGuide.md#warden-leggings">Warden Leggings</a>
+- ![](doc/item/music_disc_groovotational.png) Music Disc - Groovotational
+- ![](doc/item/warden_helmet.png)![](doc/item/warden_chestplate.png)![](doc/item/warden_leggings.png)![](doc/item/warden_boots.png) Warden Armor
 
 Adding 2 advancements:
 
-- Disc Jockey
-- Silent Running
+- ![](doc/item/music_disc_groovotational.png) Disc Jockey
+- ![](doc/item/warden_chestplate.png) Silent Running
 
 Other changes:
 
@@ -55,33 +54,33 @@ Adding 1 artefact rarity:
 
 Adding 9 artefacts:
 
-- <a href="doc/ItemGuide.md#crystal-of-origin">Crystal of Origin</a>
-- <a href="doc/ItemGuide.md#enchanted-book---call-to-chaos">Enchanted Book - Call to Chaos</a>
-- <a href="doc/ItemGuide.md#flask-of-glowing">Flask of Glowing</a>
-- <a href="doc/ItemGuide.md#flask-of-regeneration">Flask of Reneration</a>
-- <a href="doc/ItemGuide.md#milk-chocolate-bar">Milk Chocolate Bar</a>
-- <a href="doc/ItemGuide.md#music-disc---moment-of-melting-solitude">Music Disc - Moment Of Melting Solitude</a>
-- <a href="doc/ItemGuide.md#strong-flask-of-glowing">Strong Flask of Glowing</a>
-- <a href="doc/ItemGuide.md#repair-crystal">Repair Crystal</a>
-- <a href="doc/ItemGuide.md#very-convincing-disguise">Very Convincing Disguise</a>
+- ![](doc/item/origin_crystal.png) Crystal of Origin
+- ![](doc/item/enchanted_book_call_to_chaos.png) Enchanted Book - Call to Chaos
+- ![](doc/item/glowing_flask_1.png) Flask of Glowing
+- ![](doc/item/regeneration_flask.png) Flask of Reneration
+- ![](doc/item/milk_chocolate_bar.png) Milk Chocolate Bar
+- ![](doc/item/music_disc_moment_of_melting_solitude.png) Music Disc - Moment Of Melting Solitude
+- ![](doc/item/glowing_flask_2.png) Strong Flask of Glowing
+- ![](doc/item/repair_crystal.png) Repair Crystal
+- ![](doc/item/incognito_helmet.png) Very Convincing Disguise
 
 Adding 7 advancements:
 
-- Any One of Us
-- Archaelogist and Cosplayer
-- Breaking Axe
-- Emotional Support Charms
-- Mineralogy
-- Smol
-- Stanowar
+- ![](doc/item/incognito_helmet.png) Any One of Us
+- ![](doc/item/sniffer_chestplate.png) Archaelogist and Cosplayer
+- ![](doc/item/drilling_pickaxe.png) Breaking Axe
+- ![](doc/item/axolotl_charm.png) Emotional Support Charms
+- ![](doc/item/repair_crystal.png) Mineralogy
+- ![](doc/item/little_leggings.png) Smol
+- ![](doc/item/fisherman_chestplate.png) Stanowar
 
 Changing 5 artefacts:
 
-- <a href="doc/ItemGuide.md#charm-of-the-chicken">Charm of the Chicken</a>: Removed from Hero gifts.
-- <a href="doc/ItemGuide.md#charm-of-the-endermite">Charm of the Endermite</a>: Reducing its drop rate from End Cities.
-- <a href="doc/ItemGuide.md#charm-of-the-ravager">Charm of the Ravager</a>: Removed from Hero gifts.
-- <a href="doc/ItemGuide.md#enchanted-book---fracture">Enchanted Book - Fracture</a>: Removed from Hero gifts.
-- <a href="doc/ItemGuide.md#ender-hand">Ender Hand</a>: Reducing its drop rate from End Cities.
+- ![](doc/item/chicken_charm.png) Charm of the Chicken: Removed from Hero gifts.
+- ![](doc/item/endermite_charm.png) Charm of the Endermite: Reducing its drop rate from End Cities.
+- ![](doc/item/ravager_charm.png) Charm of the Ravager: Removed from Hero gifts.
+- ![](doc/item/enchanted_book_fracture.png) Enchanted Book - Fracture: Removed from Hero gifts.
+- ![](doc/item/ender_hand.png) Ender Hand: Reducing its drop rate from End Cities.
 
 Other changes:
 
@@ -92,23 +91,19 @@ Other changes:
 
 Adding 7 artefacts:
 
-- <a href="doc/ItemGuide.md#enchanted-book---fracture">Enchanted Book - Fracture</a>
-- <a href="doc/ItemGuide.md#enchanted-book---vampirism">Enchanted Book - Vampirism</a>
-- <a href="doc/ItemGuide.md#netherite-battle-shield">Netherite Battle Shield</a>
-- <a href="doc/ItemGuide.md#sniffer-fur">Sniffer Fur</a>
-- <a href="doc/ItemGuide.md#sniffer-hooves">Sniffer Hooves</a>
-- <a href="doc/ItemGuide.md#sniffer-leggings">Sniffer Leggings</a>
-- <a href="doc/ItemGuide.md#sniffer-mask">Sniffer Mask</a>
+- ![](doc/item/enchanted_book_fracture.png) Enchanted Book - Fracture
+- ![](doc/item/enchanted_book_vampirism.png) Enchanted Book - Vampirism
+- ![](doc/item/netherite_battle_shield.png) Netherite Battle Shield
+- ![](doc/item/sniffer_helmet.png)![](doc/item/sniffer_chestplate.png)![](doc/item/sniffer_leggings.png)![](doc/item/sniffer_boots.png) Sniffer Armor
 
 Changing 7 artefacts:
 
-- <a href="doc/ItemGuide.md#battle-shield">Battle Shield</a>: Added Bastions' Hoglin Stables and updating the model for future updates.
-- <a href="doc/ItemGuide.md#charm-of-the-axolotl">Charm of the Axolotl</a>: Increasing its bonus health from **2** to **4**.
-- <a href="doc/ItemGuide.md#charm-of-the-strider">Charm of the Strider</a>: Changing its rarity from **Rare** to **Uncommon**.
-- <a href="doc/ItemGuide.md#drilling-pickaxe">Drilling Pickaxe</a>: Adding animated sprite when selected.
-- <a href="doc/ItemGuide.md#little-feet">Little Feet</a>: Updating the model for future updates and changing its id.
-- <a href="doc/ItemGuide.md#little-legs">Little Legs</a>: Updating the model for future updates and changing its id.
-- <a href="doc/ItemGuide.md#music-disc---space-caster">Music Disc - Space Caster</a>: Improving its texture.
+- ![](doc/item/battle_shield.png) Battle Shield: Added Bastions' Hoglin Stables and updating the model for future updates.
+- ![](doc/item/axolotl_charm.png) Charm of the Axolotl: Increasing its bonus health from **2** to **4**.
+- ![](doc/item/strider_charm.png) Charm of the Strider: Changing its rarity from **Rare** to **Uncommon**.
+- ![](doc/item/drilling_pickaxe.png) Drilling Pickaxe: Adding animated sprite when selected.
+- ![](doc/item/little_leggings.png)![](doc/item/little_boots.png) Little Armor: Updating the model for future updates and changing its id.
+- ![](doc/item/music_disc_space_caster.png) Music Disc - Space Caster: Improving its texture.
 
 ### 1.0.0
 
@@ -121,20 +116,20 @@ Adding 4 artefact rarities:
 
 Adding 17 artefacts:
 
-- <a href="doc/ItemGuide.md#battle-shield">Battle Shield</a>
-- <a href="doc/ItemGuide.md#cat-ears">Cat Ears</a>
-- <a href="doc/ItemGuide.md#charm-of-the-axolotl">Charm of the Axolotl</a>
-- <a href="doc/ItemGuide.md#charm-of-the-chicken">Charm of the Chicken</a>
-- <a href="doc/ItemGuide.md#charm-of-the-endermite">Charm of the Endermite</a>
-- <a href="doc/ItemGuide.md#charm-of-the-ravager">Charm of the Ravager</a>
-- <a href="doc/ItemGuide.md#charm-of-the-strider">Charm of the Strider</a>
-- <a href="doc/ItemGuide.md#drilling-pickaxe">Drilling Pickaxe</a>
-- <a href="doc/ItemGuide.md#ender-hand">Ender Hand</a>
-- <a href="doc/ItemGuide.md#fishermans-bucket-hat">Fisherman's Bucket Hat</a>
-- <a href="doc/ItemGuide.md#fishing-jacket">Fishing Jacket</a>
-- <a href="doc/ItemGuide.md#little-feet">Little Feet</a>
-- <a href="doc/ItemGuide.md#little-legs">Little Legs</a>
-- <a href="doc/ItemGuide.md#long-range-artillery-firework-rocket">Long-Range Artillery Firework Rocket</a>
-- <a href="doc/ItemGuide.md#medium-range-artillery-firework-rocket">Medium-Range Artillery Firework Rocket</a>
-- <a href="doc/ItemGuide.md#music-disc---space-caster">Music Disc - Space Caster</a>
-- <a href="doc/ItemGuide.md#short-range-artillery-firework-rocket">Short-Range Artillery Firework Rocket</a>
+- ![](doc/item/battle_shield.png) Battle Shield
+- ![](doc/item/cat_helmet.png) Cat Ears
+- ![](doc/item/axolotl_charm.png) Charm of the Axolotl
+- ![](doc/item/chicken_charm.png) Charm of the Chicken
+- ![](doc/item/endermite_charm.png) Charm of the Endermite
+- ![](doc/item/ravager_charm.png) Charm of the Ravager
+- ![](doc/item/strider_charm.png) Charm of the Strider
+- ![](doc/item/drilling_pickaxe.png) Drilling Pickaxe
+- ![](doc/item/ender_hand.png) Ender Hand
+- ![](doc/item/fisherman_helmet.png) Fisherman's Bucket Hat
+- ![](doc/item/fisherman_chestplate.png) Fishing Jacket
+- ![](doc/item/little_leggings.png) Little Feet
+- ![](doc/item/little_leggings.png) Little Legs
+- ![](doc/item/artillery_firework_rocket_3.png) Long-Range Artillery Firework Rocket
+- ![](doc/item/artillery_firework_rocket_2.png) Medium-Range Artillery Firework Rocket
+- ![](doc/item/music_disc_space_caster.png) Music Disc - Space Caster
+- ![](doc/item/artillery_firework_rocket_1.png) Short-Range Artillery Firework Rocket
