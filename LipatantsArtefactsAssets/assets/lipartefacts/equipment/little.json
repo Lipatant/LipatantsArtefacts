@@ -3,23 +3,23 @@
         "humanoid": [
             {
                 "dyeable": {
-                    "color_when_undyed": -6265536
+                    "color_when_undyed": 11546150
                 },
-                "texture": "minecraft:leather"
+                "texture": "lipartefacts:little"
             },
             {
-                "texture": "minecraft:leather_overlay"
+                "texture": "lipartefacts:little_overlay"
             }
         ],
         "humanoid_leggings": [
             {
                 "dyeable": {
-                    "color_when_undyed": -6265536
+                    "color_when_undyed": 6192150
                 },
-                "texture": "minecraft:leather"
+                "texture": "lipartefacts:little"
             },
             {
-                "texture": "minecraft:leather_overlay"
+                "texture": "lipartefacts:little_overlay"
             }
         ]
     }

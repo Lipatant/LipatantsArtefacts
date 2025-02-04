@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "lipartefacts:item/little_leggings",
+        "layer1": "lipartefacts:item/little_leggings_overlay"
+    }
+}
