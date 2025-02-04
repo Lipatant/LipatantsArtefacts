@@ -444,7 +444,7 @@
             "entries": [
                 {
                     "type": "minecraft:empty",
-                    "weight": 12
+                    "weight": 8
                 },
                 {
                     "type": "minecraft:loot_table",
