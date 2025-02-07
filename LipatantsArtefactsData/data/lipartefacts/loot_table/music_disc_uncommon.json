@@ -1,0 +1,21 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/music_disc_groovotational"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/music_disc_moment_of_melting_solitude"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/music_disc_space_caster"
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

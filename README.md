@@ -32,8 +32,9 @@ Epic artefacts are **high-impact** end-game items.
 
 ### 1.3.0
 
-Adding 5 artefacts:
+Adding 6 artefacts:
 
+- ![](doc/item/enchanted_book_imperilment.png) Enchanted Book - Imperilment
 - ![](doc/item/music_disc_groovotational.png) Music Disc - Groovotational
 - ![](doc/item/warden_helmet.png)![](doc/item/warden_chestplate.png)![](doc/item/warden_leggings.png)![](doc/item/warden_boots.png) Warden Armor
 
@@ -49,6 +50,7 @@ Changing 2 artefacts:
 Other changes:
 
 - Adding translations for `Français (France)`.
+- Changing how artefacts are looted in Bastions and Woodland Mansions to be more generous with the player.
 
 ### 1.2.0
 

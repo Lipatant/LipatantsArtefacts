@@ -59,31 +59,6 @@
                     ],
                     "name": "minecraft:book",
                     "weight": 10
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/enchanted_book_fracture",
-                    "weight": 10
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/music_disc_groovotational",
-                    "weight": 15
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/music_disc_moment_of_melting_solitude",
-                    "weight": 15
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/music_disc_space_caster",
-                    "weight": 15
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/ravager_charm",
-                    "weight": 10
                 }
             ],
             "rolls": {
@@ -335,6 +310,40 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:vex_armor_trim_smithing_template"
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:music_disc_uncommon"
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/enchanted_book_fracture"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/enchanted_book_imperilment"
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/ravager_charm"
                 }
             ],
             "rolls": 1.0
