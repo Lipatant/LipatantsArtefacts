@@ -21,7 +21,7 @@ They can also be found as Common Artefacts in chests.
 |                                                        | Name                                     | Description | Obtained via: |
 |--------------------------------------------------------|------------------------------------------|-------------|---------------|
 | ![](item/glowing_flask_1.png)                          | Flask of Glowing                         | Grants Glowing for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting |
-| ![](item/regeneration_flask.png)                       | Falsk of Regeneration                    | Grants Regeneration II for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting |
+| ![](item/regeneration_flask.png)                       | Flask of Regeneration                    | Grants Regeneration II for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting |
 | ![](item/milk_chocolate_bar.png)                       | Milk Chocolate Bar                       | Clear all effects. | ![](obtained/crafting.png) Crafting |
 | ![](item/glowing_flask_2.png)                          | Strong Flask of Glowing                  | Grants Glowing for 1 minute. | ![](obtained/crafting.png) Crafting |
 
