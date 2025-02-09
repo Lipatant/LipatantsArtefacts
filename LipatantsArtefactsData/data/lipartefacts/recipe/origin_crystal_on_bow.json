@@ -5,8 +5,7 @@
     "result": {
         "id": "minecraft:bow",
         "components": {
-            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
-            "minecraft:repair_cost": 1
+            "!minecraft:enchantments": {}
         }
     }
 }

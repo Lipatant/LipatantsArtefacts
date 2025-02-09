@@ -43,8 +43,9 @@ Adding 2 advancements:
 - ![](doc/item/music_disc_groovotational.png) Disc Jockey
 - ![](doc/item/warden_chestplate.png) Silent Running
 
-Changing 2 artefacts:
+Changing 3 artefacts:
 
+- ![](doc/item/origin_crystal.png) Crystal of Origin: Removing the Enchantment Restricted enchantment.
 - ![](doc/item/little_leggings.png)![](doc/item/little_boots.png) Little Armor: Updating its texture.
 
 Other changes:
