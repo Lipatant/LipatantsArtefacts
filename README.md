@@ -43,7 +43,7 @@ Adding 2 advancements:
 - ![](doc/item/music_disc_groovotational.png) Disc Jockey
 - ![](doc/item/warden_chestplate.png) Silent Running
 
-Changing 810 artefacts:
+Changing 10 artefacts:
 
 - ![](doc/item/drilling_pickaxe.png) Drilling Pickaxe: Added to Abandoned Mineshafts.
 - ![](doc/item/origin_crystal.png) Crystal of Origin: Added to Stronghold Libraries.
