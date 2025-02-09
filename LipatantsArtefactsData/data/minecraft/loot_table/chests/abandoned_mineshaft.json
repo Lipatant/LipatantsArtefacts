@@ -317,8 +317,14 @@
             "bonus_rolls": 0.0,
             "entries": [
                 {
-                    "type": "minecraft:empty",
-                    "weight": 4
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/drilling_pickaxe",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/glowing_flask_1",
+                    "weight": 3
                 },
                 {
                     "type": "minecraft:loot_table",
@@ -327,8 +333,13 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/regeneration_flask",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/repair_crystal",
-                    "weight": 1
+                    "weight": 2
                 }
             ],
             "rolls": 1.0

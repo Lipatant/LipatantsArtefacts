@@ -20,8 +20,8 @@ They can also be found as Common Artefacts in chests.
 
 |                                                        | Name                                     | Description | Obtained via: |
 |--------------------------------------------------------|------------------------------------------|-------------|---------------|
-| ![](item/glowing_flask_1.png)                          | Flask of Glowing                         | Grants Glowing for 10 seconds. | ![](obtained/crafting.png) Crafting |
-| ![](item/regeneration_flask.png)                       | Falsk of Regeneration                    | Grants Regeneration II for 10 seconds. | ![](obtained/crafting.png) Crafting |
+| ![](item/glowing_flask_1.png)                          | Flask of Glowing                         | Grants Glowing for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting |
+| ![](item/regeneration_flask.png)                       | Falsk of Regeneration                    | Grants Regeneration II for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting |
 | ![](item/milk_chocolate_bar.png)                       | Milk Chocolate Bar                       | Clear all effects. | ![](obtained/crafting.png) Crafting |
 | ![](item/glowing_flask_2.png)                          | Strong Flask of Glowing                  | Grants Glowing for 1 minute. | ![](obtained/crafting.png) Crafting |
 
@@ -62,7 +62,7 @@ Rare artefacts are **high-impact** items that can be **hard to obtain**.
 |                                                        | Name                                     | Description | Obtained via: |
 |--------------------------------------------------------|------------------------------------------|-------------|---------------|
 | ![](item/ravager_charm.png)                            | Charm of the Ravager                     | Grants 1 of attack knockback. | ![](obtained/woodland_mansions.png) Woodland Mansions
-| ![](item/drilling_pickaxe.png)                         | Drilling Pickaxe                         | Efficient but really fragile. | ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward<br>![](obtained/trial_chambers.png) Trial Chambers - Vault - Unique Reward
+| ![](item/drilling_pickaxe.png)                         | Drilling Pickaxe                         | Efficient but really fragile. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward<br>![](obtained/trial_chambers.png) Trial Chambers - Vault - Unique Reward
 | ![](item/enchanted_book_fracture.png)                  | Enchanted Book - Fracture                | Grants a Slowness effect to axes. | ![](obtained/bastions.png) Bastions - Treasure<br>![](obtained/woodland_mansions.png) Woodland Mansions
 | ![](item/little_leggings.png)<br>![](item/little_boots.png) | Little Armor                        | Grants a reduced size. | ![](obtained/trial_chambers_ominious_vault.png) Trial Chambers - Ominous Vault - Rare Reward
 | ![](item/sniffer_helmet.png)<br>![](item/sniffer_chestplate.png)<br>![](item/sniffer_leggings.png)<br>![](item/sniffer_boots.png) | Sniffer Armor | Grants additional knockback resistance. | ![](obtained/archaeology.png) Trail Ruins - Rare Reward
