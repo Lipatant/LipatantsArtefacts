@@ -43,8 +43,9 @@ Adding 2 advancements:
 - ![](doc/item/music_disc_groovotational.png) Disc Jockey
 - ![](doc/item/warden_chestplate.png) Silent Running
 
-Changing 4 artefacts:
+Changing 5 artefacts:
 
+- ![](doc/item/origin_crystal.png) Crystal of Origin: Added to Stronghold Libraries.
 - ![](doc/item/origin_crystal.png) Crystal of Origin: Removing the Enchantment Restricted enchantment.
 - ![](doc/item/little_leggings.png)![](doc/item/little_boots.png) Little Armor: Updating its texture.
 - ![](doc/item/repair_crystal.png) Repair Crystal: Removing the 1 damage remaining.

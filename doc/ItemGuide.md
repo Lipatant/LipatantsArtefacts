@@ -52,7 +52,7 @@ Uncommon artefacts are easily obtainable **low-impact** items.
 | ![](item/music_disc_groovotational.png)                | Music Disc - Groovotational              | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/woodland_mansions.png) Woodland Mansions
 | ![](item/music_disc_moment_of_melting_solitude.png)    | Music Disc - Moment Of Melting Solitude  | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/woodland_mansions.png) Woodland Mansions
 | ![](item/music_disc_space_caster.png)                  | Music Disc - Space Caster                | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/woodland_mansions.png) Woodland Mansions
-| ![](item/repair_crystal.png)                           | Repair Crystal                           | Repairs an item. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/monster_rooms.png) Monster Rooms<br>![](obtained/villages.png) Villages - Armorer<br>![](obtained/villages.png) Villages - Toolsmith<br>![](obtained/villages.png) Villages - Weaponsmith
+| ![](item/repair_crystal.png)                           | Repair Crystal                           | Repairs an item. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/monster_rooms.png) Monster Rooms<br>![](obtained/strongholds.png) Strongholds - Library<br>![](obtained/villages.png) Villages - Armorer, Toolsmith and Weaponsmith
 | ![](item/incognito_helmet.png)                         | Very Convincing Disguise                 | Is enchanted with Incognito, granting Invisibility. | ![](obtained/abandoned_mineshafts.png)Abandoned Mineshafts<br>![](obtained/pillager_outposts.png) Pillager Outposts
 
 ## Rare Artefacts

@@ -77,13 +77,12 @@
             "bonus_rolls": 0.0,
             "entries": [
                 {
-                    "type": "minecraft:empty",
-                    "weight": 1
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/origin_crystal"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/origin_crystal",
-                    "weight": 1
+                    "value": "lipartefacts:items/repair_crystal"
                 }
             ],
             "rolls": 1.0
