@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:wooden_axe",
         "components": {
-            "minecraft:damage": 1
+            "!minecraft:damage": {}
         }
     }
 }

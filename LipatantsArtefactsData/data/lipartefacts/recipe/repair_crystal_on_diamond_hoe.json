@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:diamond_hoe",
         "components": {
-            "minecraft:damage": 1
+            "!minecraft:damage": {}
         }
     }
 }

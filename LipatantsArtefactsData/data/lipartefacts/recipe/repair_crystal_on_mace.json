@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:mace",
         "components": {
-            "minecraft:damage": 1
+            "!minecraft:damage": {}
         }
     }
 }

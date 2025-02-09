@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:golden_chestplate",
         "components": {
-            "minecraft:damage": 1
+            "!minecraft:damage": {}
         }
     }
 }

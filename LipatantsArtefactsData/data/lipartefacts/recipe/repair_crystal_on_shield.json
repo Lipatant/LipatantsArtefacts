@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:shield",
         "components": {
-            "minecraft:damage": 1
+            "!minecraft:damage": {}
         }
     }
 }

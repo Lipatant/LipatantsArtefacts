@@ -5,7 +5,7 @@
     "result": {
         "id": "@1",
         "components": {
-            "minecraft:damage": 1
+            "!minecraft:damage": {}
         }
     }
 }
