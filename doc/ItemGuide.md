@@ -20,10 +20,10 @@ They can also be found as Common Artefacts in chests.
 
 |                                                        | Name                                     | Description | Obtained via: |
 |--------------------------------------------------------|------------------------------------------|-------------|---------------|
-| ![](item/glowing_flask_1.png)                          | Flask of Glowing                         | Grants Glowing for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting |
-| ![](item/regeneration_flask.png)                       | Flask of Regeneration                    | Grants Regeneration II for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting |
+| ![](item/glowing_flask_1.png)                          | Flask of Glowing                         | Grants Glowing for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting<br>![](obtained/monster_rooms.png) Monster Rooms |
+| ![](item/regeneration_flask.png)                       | Flask of Regeneration                    | Grants Regeneration II for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting<br>![](obtained/monster_rooms.png) Monster Rooms |
 | ![](item/milk_chocolate_bar.png)                       | Milk Chocolate Bar                       | Clear all effects. | ![](obtained/crafting.png) Crafting |
-| ![](item/glowing_flask_2.png)                          | Strong Flask of Glowing                  | Grants Glowing for 1 minute. | ![](obtained/crafting.png) Crafting |
+| ![](item/glowing_flask_2.png)                          | Strong Flask of Glowing                  | Grants Glowing for 1 minute. | ![](obtained/crafting.png) Crafting<br>![](obtained/monster_rooms.png) Monster Rooms |
 
 ## Common Artefacts
 
@@ -49,9 +49,9 @@ Uncommon artefacts are easily obtainable **low-impact** items.
 | ![](item/origin_crystal.png)                           | Crystal of Origin                        | Removes enchantments and curses from an item. | ![](obtained/ancient_cities.png) Ancient Cities<br>![](obtained/end_cities.png) End Cities<br>![](obtained/strongholds.png) Strongholds - Library |
 | ![](item/enchanted_book_imperilment.png)               | Enchanted Book - Imperilment             | Grants additional attack damage to armors, but cannot be combined with Protections. | ![](obtained/bastions.png) Bastions - Treasure<br>![](obtained/woodland_mansions.png) Woodland Mansions
 | ![](item/fisherman_helmet.png)<br>![](item/fisherman_chestplate.png) | Fisherman Armor            | Increases luck. | ![](obtained/fishing.png) Fishing - Treasure
-| ![](item/music_disc_groovotational.png)                | Music Disc - Groovotational              | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/woodland_mansions.png) Woodland Mansions
-| ![](item/music_disc_moment_of_melting_solitude.png)    | Music Disc - Moment Of Melting Solitude  | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/woodland_mansions.png) Woodland Mansions
-| ![](item/music_disc_space_caster.png)                  | Music Disc - Space Caster                | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/woodland_mansions.png) Woodland Mansions
+| ![](item/music_disc_groovotational.png)                | Music Disc - Groovotational              | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/monster_rooms.png) Monster Rooms<br>![](obtained/woodland_mansions.png) Woodland Mansions
+| ![](item/music_disc_moment_of_melting_solitude.png)    | Music Disc - Moment Of Melting Solitude  | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/monster_rooms.png) Monster Rooms<br>![](obtained/woodland_mansions.png) Woodland Mansions
+| ![](item/music_disc_space_caster.png)                  | Music Disc - Space Caster                | | ![](obtained/jungle_temples.png) Jungle Temples<br>![](obtained/monster_rooms.png) Monster Rooms<br>![](obtained/woodland_mansions.png) Woodland Mansions
 | ![](item/repair_crystal.png)                           | Repair Crystal                           | Repairs an item. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/monster_rooms.png) Monster Rooms<br>![](obtained/strongholds.png) Strongholds - Library<br>![](obtained/villages.png) Villages - Armorer, Toolsmith and Weaponsmith
 | ![](item/incognito_helmet.png)                         | Very Convincing Disguise                 | Is enchanted with Incognito, granting Invisibility. | ![](obtained/abandoned_mineshafts.png)Abandoned Mineshafts<br>![](obtained/pillager_outposts.png) Pillager Outposts
 

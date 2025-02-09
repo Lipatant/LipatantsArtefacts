@@ -295,6 +295,28 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:music_disc_uncommon"
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/glowing_flask_1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/glowing_flask_2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/regeneration_flask"
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/repair_crystal"
                 }
             ],

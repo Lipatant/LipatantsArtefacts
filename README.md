@@ -43,15 +43,18 @@ Adding 2 advancements:
 - ![](doc/item/music_disc_groovotational.png) Disc Jockey
 - ![](doc/item/warden_chestplate.png) Silent Running
 
-Changing 7 artefacts:
+Changing 810 artefacts:
 
 - ![](doc/item/drilling_pickaxe.png) Drilling Pickaxe: Added to Abandoned Mineshafts.
 - ![](doc/item/origin_crystal.png) Crystal of Origin: Added to Stronghold Libraries.
 - ![](doc/item/origin_crystal.png) Crystal of Origin: Removing the Enchantment Restricted enchantment.
-- ![](doc/item/glowing_flask_1.png) Flask of Glowing: Added to Abandoned Mineshafts.
-- ![](doc/item/regeneration_flask.png) Flask of Regeneration: Added to Abandoned Mineshafts.
+- ![](doc/item/glowing_flask_1.png) Flask of Glowing: Added to Abandoned Mineshafts and Monster Rooms.
+- ![](doc/item/regeneration_flask.png) Flask of Regeneration: Added to Abandoned Mineshafts and Monster Rooms.
 - ![](doc/item/little_leggings.png)![](doc/item/little_boots.png) Little Armor: Updating its texture.
+- ![](doc/item/music_disc_moment_of_melting_solitude.png) Music Disc - Moment Of Melting Solitude: Added to Monster Rooms.
+- ![](doc/item/music_disc_space_caster.png) Music Disc - Space Caster: Added to Monster Rooms.
 - ![](doc/item/repair_crystal.png) Repair Crystal: Removing the 1 damage remaining.
+- ![](doc/item/glowing_flask_2.png) Strong Flask of Glowing: Added to Monster Rooms.
 
 Other changes:
 
