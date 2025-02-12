@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:elytra",
         "components": {
-            "!minecraft:damage": {}
+            "minecraft:damage": 1
         }
     }
 }

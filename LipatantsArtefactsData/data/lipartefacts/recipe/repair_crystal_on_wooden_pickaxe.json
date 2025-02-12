@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:wooden_pickaxe",
         "components": {
-            "!minecraft:damage": {}
+            "minecraft:damage": 1
         }
     }
 }

@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:stone_axe",
         "components": {
-            "!minecraft:damage": {}
+            "minecraft:damage": 1
         }
     }
 }

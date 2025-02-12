@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:turtle_helmet",
         "components": {
-            "!minecraft:damage": {}
+            "minecraft:damage": 1
         }
     }
 }

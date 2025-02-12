@@ -5,7 +5,7 @@
     "result": {
         "id": "minecraft:bow",
         "components": {
-            "!minecraft:damage": {}
+            "minecraft:damage": 1
         }
     }
 }
