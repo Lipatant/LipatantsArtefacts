@@ -5,7 +5,8 @@
     "result": {
         "id": "minecraft:diamond_chestplate",
         "components": {
-            "!minecraft:enchantments": {}
+            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
+            "minecraft:repair_cost": 1
         }
     }
 }

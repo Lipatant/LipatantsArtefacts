@@ -5,7 +5,8 @@
     "result": {
         "id": "minecraft:golden_pickaxe",
         "components": {
-            "!minecraft:enchantments": {}
+            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
+            "minecraft:repair_cost": 1
         }
     }
 }
