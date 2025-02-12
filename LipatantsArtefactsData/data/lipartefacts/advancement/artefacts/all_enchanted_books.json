@@ -1,0 +1,82 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "enchanted_book_call_to_chaos": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_call_to_chaos"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "enchanted_book_fracture": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_fracture"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "enchanted_book_imperilment": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_imperilment"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "enchanted_book_vampirism": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_vampirism"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.all_enchanted_books.description"
+        },
+        "frame": "task",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:enchanted_book_imperilment"
+            },
+            "id": "minecraft:enchanted_book"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.all_enchanted_books.title"
+        }
+    },
+    "requirements": [
+        [
+            "enchanted_book_call_to_chaos"
+        ],
+        [
+            "enchanted_book_fracture"
+        ],
+        [
+            "enchanted_book_imperilment"
+        ],
+        [
+            "enchanted_book_vampirism"
+        ]
+    ]
+}

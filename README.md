@@ -38,9 +38,10 @@ Adding 6 artefacts:
 - ![](doc/item/music_disc_groovotational.png) Music Disc - Groovotational
 - ![](doc/item/warden_helmet.png)![](doc/item/warden_chestplate.png)![](doc/item/warden_leggings.png)![](doc/item/warden_boots.png) Warden Armor
 
-Adding 2 advancements:
+Adding 3 advancements:
 
 - ![](doc/item/music_disc_groovotational.png) Disc Jockey
+- ![](doc/item/enchanted_book_imperilment.png) I'm Gonna Do a Book
 - ![](doc/item/warden_chestplate.png) Silent Running
 
 Changing 9 artefacts:
