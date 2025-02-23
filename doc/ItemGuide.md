@@ -20,6 +20,7 @@ They can also be found as Common Artefacts in chests.
 
 |                                                        | Name                                     | Description | Obtained via: |
 |--------------------------------------------------------|------------------------------------------|-------------|---------------|
+| ![](item/air_bubble.png)                               | Air Bubble                               | Grants Water Breathing for 2 seconds. | ![](obtained/crafting.png) Crafting |
 | ![](item/glowing_flask_1.png)                          | Flask of Glowing                         | Grants Glowing for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting<br>![](obtained/monster_rooms.png) Monster Rooms |
 | ![](item/regeneration_flask.png)                       | Flask of Regeneration                    | Grants Regeneration II for 10 seconds. | ![](obtained/abandoned_mineshafts.png) Abandoned Mineshafts<br>![](obtained/crafting.png) Crafting<br>![](obtained/monster_rooms.png) Monster Rooms |
 | ![](item/milk_chocolate_bar.png)                       | Milk Chocolate Bar                       | Clear all effects. | ![](obtained/crafting.png) Crafting |
