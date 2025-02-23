@@ -30,6 +30,16 @@ Epic artefacts are **high-impact** end-game items.
 
 # Changelog
 
+### 1.4.0
+
+Adding 4 artefacts:
+
+- ![](doc/item/piglin_helmet.png)![](doc/item/piglin_chestplate.png)![](doc/item/piglin_leggings.png)![](doc/item/piglin_boots.png) Piglin Armor
+
+Changing 1 artefact:
+
+- ![](doc/item/netherite_battle_shield.png) Netherite Battle Shield: Reducing its drop rate from Bastion Treasures.
+
 ### 1.3.0
 
 Adding 6 artefacts:

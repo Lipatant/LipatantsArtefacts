@@ -396,12 +396,48 @@
             "bonus_rolls": 0.0,
             "entries": [
                 {
-                    "type": "minecraft:empty",
-                    "weight": 2
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/netherite_battle_shield"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/netherite_battle_shield"
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ],
+                    "value": "lipartefacts:items/piglin_boots"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ],
+                    "value": "lipartefacts:items/piglin_chestplate"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ],
+                    "value": "lipartefacts:items/piglin_helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ],
+                    "value": "lipartefacts:items/piglin_leggings"
                 }
             ],
             "rolls": 1.0
