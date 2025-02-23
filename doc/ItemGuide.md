@@ -14,7 +14,7 @@ Here you will find a list of all the artefacts and how to obtain them.
 
 ## Crafted Artefacts
 
-Crafted artefacts are **consumables** thant can easily be obtained via crafting.
+Crafted artefacts are **consumables** that can easily be obtained via crafting.
 
 They can also be found as Common Artefacts in chests.
 

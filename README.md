@@ -16,7 +16,7 @@ Some grant bonuses that benefit certain play styles, while others simply offer a
 
 # Item Guide
 
-Crafted artefacts are **consumables** thant can easily be obtained via crafting.
+Crafted artefacts are **consumables** that can easily be obtained via crafting.
 
 Common artefacts are **consumables** that can be obtained in a **large quantity**.
 
