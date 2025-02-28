@@ -37,9 +37,10 @@ Adding 5 artefacts:
 - ![](doc/item/air_bubble.png) Air Bubble
 - ![](doc/item/piglin_helmet.png)![](doc/item/piglin_chestplate.png)![](doc/item/piglin_leggings.png)![](doc/item/piglin_boots.png) Piglin Armor
 
-Changing 1 artefact:
+Changing 2 artefacts:
 
 - ![](doc/item/netherite_battle_shield.png) Netherite Battle Shield: Reducing its drop rate from Bastion Treasures.
+- ![](doc/item/incognito_helmet.png) Very Convincing Disguise: Making the Incognito enchantment a beneficial curse.
 
 ### 1.3.0
 
