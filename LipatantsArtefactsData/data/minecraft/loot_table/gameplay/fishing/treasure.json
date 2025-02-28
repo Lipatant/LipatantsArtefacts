@@ -2,7 +2,7 @@
     "type": "minecraft:fishing",
     "pools": [
         {
-            "bonus_rolls": 0.0,
+            "bonus_rolls": 0,
             "entries": [
                 {
                     "type": "minecraft:item",
@@ -20,13 +20,13 @@
                             "damage": {
                                 "type": "minecraft:uniform",
                                 "max": 0.25,
-                                "min": 0.0
+                                "min": 0
                             },
                             "function": "minecraft:set_damage"
                         },
                         {
                             "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
+                            "levels": 30,
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
@@ -40,13 +40,13 @@
                             "damage": {
                                 "type": "minecraft:uniform",
                                 "max": 0.25,
-                                "min": 0.0
+                                "min": 0
                             },
                             "function": "minecraft:set_damage"
                         },
                         {
                             "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
+                            "levels": 30,
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
@@ -57,7 +57,7 @@
                     "functions": [
                         {
                             "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
+                            "levels": 30,
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
@@ -81,7 +81,7 @@
                         },
                         {
                             "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
+                            "levels": 30,
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
@@ -101,7 +101,7 @@
                         },
                         {
                             "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
+                            "levels": 30,
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
@@ -121,14 +121,29 @@
                         },
                         {
                             "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
+                            "levels": 30,
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
                     "value": "lipartefacts:items/fisherman_helmet"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/bogged_chestplate",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "biomes": [
+                                    "minecraft:mangrove_swamp",
+                                    "minecraft:swamp"
+                                ]
+                            }
+                        }
+                    ]
                 }
             ],
-            "rolls": 1.0
+            "rolls": 1
         }
     ],
     "random_sequence": "minecraft:gameplay/fishing/treasure"

@@ -36,6 +36,7 @@ Adding 5 artefacts:
 
 - ![](doc/item/air_bubble.png) Air Bubble
 - ![](doc/item/piglin_helmet.png)![](doc/item/piglin_chestplate.png)![](doc/item/piglin_leggings.png)![](doc/item/piglin_boots.png) Piglin Armor
+- ![](doc/item/bogged_chestplate.png) Swamp Camoufalge Tunic
 
 Changing 2 artefacts:
 

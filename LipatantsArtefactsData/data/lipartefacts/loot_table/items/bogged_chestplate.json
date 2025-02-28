@@ -1,0 +1,51 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:armor",
+                                    "id": "minecraft:armor.chestplate",
+                                    "amount": 1,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                }
+                            ],
+                            "replace": true
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "chest",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:bogged"
+                                },
+                                "minecraft:max_damage": 80,
+                                "minecraft:item_model": "lipartefacts:bogged_chestplate",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.bogged_chestplate\"}"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "lipartefacts:poison_immunity": 1
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/uncommon"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

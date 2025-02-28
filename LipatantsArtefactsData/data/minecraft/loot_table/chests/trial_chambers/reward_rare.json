@@ -185,6 +185,11 @@
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/battle_shield",
                     "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/bogged_chestplate",
+                    "weight": 2
                 }
             ],
             "rolls": 1.0
