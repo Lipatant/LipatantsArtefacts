@@ -2,7 +2,7 @@
     "anvil_cost": 4,
     "description": {
       "translate": "enchantment.lipartefacts.incognito",
-      "color": "aqua"
+      "color": "blue"
     },
     "effects": {
       "minecraft:tick": [
