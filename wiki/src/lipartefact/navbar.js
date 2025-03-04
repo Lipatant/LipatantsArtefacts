@@ -15,8 +15,10 @@ class LipartefactNavbar extends HTMLElement {
         let navbar = document.createElement("ul");
         const pages = {
             "index.html": "Welcome",
+            "https://github.com/Lipatant/LipatantsArtefacts/releases/": "Download",
             "item_list.html": "Item List",
             "changelog.html": "Changelog",
+            "https://github.com/Lipatant/LipatantsArtefacts": "Source code",
         };
         for (const [link, title] of Object.entries(pages)) {
             let navbarPage = document.createElement("li");
