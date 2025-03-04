@@ -128,6 +128,11 @@ img.item {
     image-rendering: pixelated;
 }
 
+ul.changelog>li>.icon {
+    height: 1em;
+    width: 1em;
+}
+
 lipartefact-item>.container {
     border-radius: 1px;
     background-color: #100010F0;
@@ -152,6 +157,40 @@ lipartefact-item>.container>.name::before {
 
 lipartefact-item.hide {
     display: none;
+}
+
+lipartefact-navbar {
+    float: left;
+    width: 100%;
+}
+
+lipartefact-navbar>a {
+    font-weight: bold;
+    padding: 8px;
+}
+
+lipartefact-navbar>ul {
+    display: inline;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+lipartefact-navbar>ul>li {
+    float: left;
+}
+
+lipartefact-navbar>ul>li>a {
+    background-color: var(--clr-surface-a30);
+    color: inherit;
+    display: block;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+}
+
+lipartefact-navbar>ul>li>a:hover {
+    background-color: var(--clr-primary-a50);
+    color: var(--clr-surface-a50);
 }
 
 .filter-list-title {

@@ -73,12 +73,14 @@ class LipartefactItem extends HTMLElement {
             }
             element.appendChild(this.getElementAttribute(item));
         }
-        element.appendChild(document.createElement("br"));
-        element.appendChild(document.createElement("br"));
-        element.appendChild(this.getElementObtentionText());
-        element.appendChild(document.createElement("br"));
-        for (const item of properties.itemObtentions) {
-            element.appendChild(this.getElementObtention(item));
+        if (properties.itemObtentions.length > 0) {
+            element.appendChild(document.createElement("br"));
+            element.appendChild(document.createElement("br"));
+            element.appendChild(this.getElementObtentionText());
+            element.appendChild(document.createElement("br"));
+            for (const item of properties.itemObtentions) {
+                element.appendChild(this.getElementObtention(item));
+            }
         }
         element.classList.add("container");
         return element;
