@@ -68,6 +68,47 @@ body {
     font-family: "Gill Sans", sans-serif;
 }
 
+button.filter {
+    border: none;
+    border-radius: 1px;
+    background-color: #100010F0;
+    color: var(--clr-primary-a50);
+    font-family: Minecraftia;
+    outline: 2px solid rgba(67, 13, 163, .88);
+    padding: 7px;
+}
+
+button.filter:hover, button.filter:focus {
+    outline-color: var(--clr-primary-a50);
+}
+
+button.filter.rarity.common {
+    color: var(--clr-rarity-common);
+}
+
+button.filter.rarity.crafted {
+    color: var(--clr-rarity-crafted);
+}
+
+button.filter.rarity.epic {
+    color: var(--clr-rarity-epic);
+}
+
+button.filter.rarity.rare {
+    color: var(--clr-rarity-rare);
+}
+
+button.filter.rarity.uncommon {
+    color: var(--clr-rarity-uncommon);
+}
+
+div.filter-list {
+    align-content: center;
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+}
+
 div.item-container {
     align-content: center;
     display: flex;
@@ -107,4 +148,13 @@ lipartefact-item>.container>.name {
 
 lipartefact-item>.container>.name::before {
     content: " ";
+}
+
+lipartefact-item.hide {
+    display: none;
+}
+
+.filter-list-title {
+    color: var(--clr-primary-a50);
+    font-family: Minecraftia;
 }

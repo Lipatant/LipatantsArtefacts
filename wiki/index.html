@@ -13,9 +13,81 @@
 
     <h2>Artefacts:</h2>
 
+    <a class="filter-list-title">
+        Filter by rarity:
+    </a><br /><br />
+    <div class="filter-list">
+        <button class="filter" onclick="filterItemContainerReset()">Reset</button>
+        <button class="filter rarity crafted" onclick="filterItemContainerByRarity('crafted')">Crafted</button>
+        <button class="filter rarity common" onclick="filterItemContainerByRarity('common')">Common</button>
+        <button class="filter rarity uncommon" onclick="filterItemContainerByRarity('uncommon')">Uncommon</button>
+        <button class="filter rarity rare" onclick="filterItemContainerByRarity('rare')">Rare</button>
+        <button class="filter rarity epic" onclick="filterItemContainerByRarity('epic')">Epic</button>
+    </div><br />
+    <a class="filter-list-title">
+        Filter by obtention:
+    </a><br /><br />
+    <div class="filter-list">
+        <button class="filter" onclick="filterItemContainerReset()">Reset</button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('ancient_cities')">
+            <lipartefact-obtention class="ancient_cities"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('abandoned_mineshafts')">
+            <lipartefact-obtention class="abandoned_mineshafts"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('bastions')">
+            <lipartefact-obtention class="bastions"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('cat_morning_gift')">
+            <lipartefact-obtention class="cat_morning_gift"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('crafting')">
+            <lipartefact-obtention class="crafting"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('end_cities')">
+            <lipartefact-obtention class="end_cities"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('fishing')">
+            <lipartefact-obtention class="fishing"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('igloos')">
+            <lipartefact-obtention class="igloos"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('jungle_temples')">
+            <lipartefact-obtention class="jungle_temples"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('monster_rooms')">
+            <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('piglin_bartering')">
+            <lipartefact-obtention class="piglin_bartering"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('shipwrecks')">
+            <lipartefact-obtention class="shipwrecks"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('strongholds')">
+            <lipartefact-obtention class="strongholds"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('trail_ruins')">
+            <lipartefact-obtention class="trail_ruins"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention(['trial_chambers','trial_chambers_ominous_vault'])">
+            <lipartefact-obtention class="trial_chambers"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('underwater_ruins')">
+            <lipartefact-obtention class="underwater_ruins"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('villages')">
+            <lipartefact-obtention class="villages"></lipartefact-obtention>
+        </button>
+        <button class="filter obtention" onclick="filterItemContainerByObtention('woodland_mansions')">
+            <lipartefact-obtention class="woodland_mansions"></lipartefact-obtention>
+        </button>
+    </div>
+
     <hr />
 
-    <div class="item-container">
+    <div class="item-container" id="item-container">
         <lipartefact-item id="air_bubble" rarity="crafted">
             <a class="name">Air Bubble</a>
             <a class="effect positive">Water Breathing (00:02)</a>
@@ -45,11 +117,7 @@
             <lipartefact-obtention class="crafting"></lipartefact-obtention>
             <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
         </lipartefact-item>
-    </div>
 
-    <hr />
-
-    <div class="item-container">
         <lipartefact-item id="artillery_firework_rocket_3" rarity="common">
             <a class="name">Long-Range Artillery Firework Rocket</a>
             <a class="other">Flight Duration: 3</a>
@@ -104,11 +172,7 @@
             <lipartefact-obtention class="trial_chambers">Supply</lipartefact-obtention>
             <lipartefact-obtention class="trial_chambers">Vault - Common Reward</lipartefact-obtention>
         </lipartefact-item>
-    </div>
 
-    <hr />
-
-    <div class="item-container">
         <lipartefact-item id="battle_shield" rarity="uncommon">
             <a class="name">Battle Shield</a>
             <a class="attribute attack" slot="mainhand">9 Attack Damage</a>
@@ -207,11 +271,7 @@
             <lipartefact-obtention class="abandoned_mineshafts"></lipartefact-obtention>
             <lipartefact-obtention class="pillager_outposts"></lipartefact-obtention>
         </lipartefact-item>
-    </div>
 
-    <hr />
-
-    <div class="item-container">
         <lipartefact-item id="ravager_charm" rarity="rare">
             <a class="name">Charm of the Ravager</a>
             <a class="attribute positive" slot="offhand">+1 Attack Knockback</a>
@@ -324,11 +384,7 @@
             <a class="attribute positive" slot="feet">+2 Max Health</a>
             <lipartefact-obtention class="ancient_cities"></lipartefact-obtention>
         </lipartefact-item>
-    </div>
 
-    <hr />
-
-    <div class="item-container">
         <lipartefact-item id="endermite_charm" rarity="epic">
             <a class="name">Charm of the Endermite</a>
             <a class="attribute" slot="offhand">-50% Scale</a>
@@ -360,9 +416,7 @@
         </lipartefact-item>
     </div>
 
-    <hr />
-
-    <script src="src/index.js"></script>
+    <script src="src/item-container.js"></script>
     <script src="src/lipartefact/item.js"></script>
     <script src="src/lipartefact/obtention.js"></script>
 </body>
