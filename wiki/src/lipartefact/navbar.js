@@ -5,9 +5,6 @@ class LipartefactNavbar extends HTMLElement {
 
     connectedCallback() {
         const navbar = this.getNavbar();
-        let navbarTitle = document.createElement("a");
-        navbarTitle.innerHTML = "Lipatant's Artefacts";
-        this.appendChild(navbarTitle);
         this.appendChild(navbar);
     }
 

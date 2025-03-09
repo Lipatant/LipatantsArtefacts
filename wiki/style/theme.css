@@ -34,6 +34,15 @@
     --clr-attribute-positive: #3f3ffe;
     --clr-attribute-negative: #fe3f3f;
     --clr-attribute-slot: #bebebe;
+    /** Background colors **/
+    /**
+    --clr-background-a0: #000000;
+    --clr-background-a10: #111111;
+    --clr-background-a20: #222222;
+    **/
+    --clr-background-a0: #071a0d;
+    --clr-background-a10: #182b1e;
+    --clr-background-a20: #293c2f;
     /** Effect colors **/
     --clr-effect: #3f3ffe;
     /** Enchantment colors **/
@@ -63,8 +72,14 @@
 }
 
 body {
+    --s: 200px;
+    background:
+      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--clr-background-a10) 0 50%) 
+       calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
+      repeating-conic-gradient(from 30deg,var(--clr-background-a0) 0 60deg,var(--clr-background-a20) 0 120deg,var(--clr-background-a10) 0 50%);
+    background-size: var(--s) calc(var(--s)*tan(30deg));
+    image-rendering: pixelated;
     color: var(--clr-primary-a50);
-    background-color: var(--clr-dark-a0);
     font-family: "Gill Sans", sans-serif;
 }
 
@@ -111,6 +126,7 @@ div.filter-list {
 
 div.section {
     background-color: var(--clr-surface-a0);
+    border-radius: 3px;
     display: block;
     margin: 1em;
     margin-left: auto;
@@ -136,6 +152,7 @@ div.item-container {
 }
 
 h2 {
+    padding-top: 1.5em;
     text-align: center;
 }
 
@@ -185,13 +202,11 @@ lipartefact-item.centered>.container {
 }
 
 lipartefact-navbar {
-    float: left;
+    background-color: var(--clr-background-a0);
+    left: 0;
+    position: fixed;
+    top: 0;
     width: 100%;
-}
-
-lipartefact-navbar>a {
-    font-weight: bold;
-    padding: 8px;
 }
 
 lipartefact-navbar>ul {
@@ -205,7 +220,7 @@ lipartefact-navbar>ul>li {
 }
 
 lipartefact-navbar>ul>li>a {
-    background-color: var(--clr-surface-a30);
+    background-color: rgba(0, 0, 0, 0.5);
     color: inherit;
     display: block;
     font-weight: bold;
@@ -214,8 +229,8 @@ lipartefact-navbar>ul>li>a {
 }
 
 lipartefact-navbar>ul>li>a:hover {
-    background-color: var(--clr-primary-a50);
-    color: var(--clr-surface-a50);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--clr-background-a0);
 }
 
 lipartefact-slideshow>a {
