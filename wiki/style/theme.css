@@ -193,6 +193,55 @@ lipartefact-navbar>ul>li>a:hover {
     color: var(--clr-surface-a50);
 }
 
+lipartefact-slideshow>a {
+    cursor: pointer;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    user-select: none;
+    width: auto;
+}
+
+lipartefact-slideshow>a.next {
+    right: 0px;
+}
+
+lipartefact-slideshow>a:hover {
+    background-color: #100010F0;
+}
+
+lipartefact-slideshow>img {
+    width: 800px;
+}
+
+lipartefact-slideshow>img.hide {
+    display: none;
+}
+
+lipartefact-slideshow>.dot-container {
+    text-align: center;
+    width: 800px;
+}
+
+lipartefact-slideshow>.dot-container>.dot {
+    background-color: #100010F0;
+    color: var(--clr-rarity-common-secondary);
+    font-family: Minecraftia;
+    margin: 2px;
+    outline: 2px solid transparent;
+    padding: 1em;
+    transition: 0.2s ease;
+    user-select: none;
+}
+
+lipartefact-slideshow>.dot-container>.dot.active {
+    color: var(--clr-rarity-common);
+}
+
+lipartefact-slideshow>.dot-container>.dot:hover {
+    outline-color: rgba(67, 13, 163, .88);
+}
+
 .filter-list-title {
     color: var(--clr-primary-a50);
     font-family: Minecraftia;
