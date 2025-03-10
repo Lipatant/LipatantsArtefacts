@@ -1,6 +1,7 @@
 {
     "values": [
         "lipartefacts:incognito",
-        "lipartefacts:poison_immunity"
+        "lipartefacts:poison_immunity",
+        "lipartefacts:slowness_immunity"
     ]
 }
