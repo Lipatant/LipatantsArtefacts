@@ -1,0 +1,43 @@
+{
+    "anvil_cost": 4,
+    "description": {
+        "translate": "enchantment.lipartefacts.paper_plane_mending",
+        "color": "blue"
+    },
+    "effects": {
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "flags": {
+                            "is_swimming": false,
+                            "is_on_ground": true,
+                            "is_flying": false
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:change_item_damage",
+                    "amount": -1
+                }
+            }
+        ]
+    },
+    "exclusive_set": "#lipartefacts:exclusive_set/paper_plane_mending",
+    "max_cost": {
+        "base": 60,
+        "per_level_above_first": 20
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 20
+    },
+    "slots": [
+        "any"
+    ],
+    "supported_items": "#minecraft:enchantable/durability",
+    "weight": 2
+}

@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:elytra",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:repairable": {},
+                                "minecraft:equippable": {
+                                    "slot": "mainhand"
+                                },
+                                "minecraft:item_model": "lipartefacts:paper_plane",
+                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.paper_plane\"}",
+                                "minecraft:max_damage": 4
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "lipartefacts:paper_plane_mending": 1
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/uncommon"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
