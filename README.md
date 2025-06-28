@@ -8,4 +8,4 @@ Some grant bonuses that benefit certain playstyles, while others simply offer a 
 
 The goal behind this pack is to **keep to the Minecraft spirit without making the vanilla content obsolete**.
 
-You can find more information on [the wiki](https://lipatant.github.io/LipatantArtefacts/).
+You can find more information on [the wiki](https://lipatant.github.io/LipatantsArtefacts/).
