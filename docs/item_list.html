@@ -20,7 +20,7 @@
         </a><br /><br />
         <div class="filter-list">
             <button class="filter" onclick="filterItemContainerReset()">Reset</button>
-            <button class="filter rarity crafted" onclick="filterItemContainerByRarity('crafted')">Crafted</button>
+            <button class="filter rarity crafted" onclick="filterItemContainerByCrafted(true)">Crafted</button>
             <button class="filter rarity common" onclick="filterItemContainerByRarity('common')">Common</button>
             <button class="filter rarity uncommon" onclick="filterItemContainerByRarity('uncommon')">Uncommon</button>
             <button class="filter rarity rare" onclick="filterItemContainerByRarity('rare')">Rare</button>
@@ -70,6 +70,9 @@
             <button class="filter obtention" onclick="filterItemContainerByObtention('shipwrecks')">
                 <lipartefact-obtention class="shipwrecks"></lipartefact-obtention>
             </button>
+            <button class="filter obtention" onclick="filterItemContainerByObtention('smithing')">
+                <lipartefact-obtention class="smithing"></lipartefact-obtention>
+            </button>
             <button class="filter obtention" onclick="filterItemContainerByObtention('strongholds')">
                 <lipartefact-obtention class="strongholds"></lipartefact-obtention>
             </button>
@@ -95,36 +98,25 @@
     <div class="section extended">
 
         <div class="item-container" id="item-container">
-            <lipartefact-item id="air_bubble" rarity="crafted">
+            <lipartefact-item crafted="true" id="air_bubble" rarity="common">
                 <a class="name">Air Bubble</a>
                 <a class="effect positive">Water Breathing (00:02)</a>
                 <lipartefact-obtention class="crafting"></lipartefact-obtention>
             </lipartefact-item>
-            <lipartefact-item id="glowing_flask_1" rarity="crafted">
+            <lipartefact-item crafted="true "id="glowing_flask_1" rarity="common">
                 <a class="name">Flask of Glowing</a>
                 <a class="effect positive">Glowing (00:10)</a>
                 <lipartefact-obtention class="abandoned_mineshafts"></lipartefact-obtention>
                 <lipartefact-obtention class="crafting"></lipartefact-obtention>
                 <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
             </lipartefact-item>
-            <lipartefact-item id="regeneration_flask" rarity="crafted">
+            <lipartefact-item crafted="true" id="regeneration_flask" rarity="common">
                 <a class="name">Flask of Regeneration</a>
                 <a class="effect positive">Regeneration II (00:10)</a>
                 <lipartefact-obtention class="abandoned_mineshafts"></lipartefact-obtention>
                 <lipartefact-obtention class="crafting"></lipartefact-obtention>
                 <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
             </lipartefact-item>
-            <lipartefact-item id="milk_chocolate_bar" rarity="crafted">
-                <a class="name">Milk Chocolate Bar</a>
-                <lipartefact-obtention class="crafting"></lipartefact-obtention>
-            </lipartefact-item>
-            <lipartefact-item id="glowing_flask_2" rarity="crafted">
-                <a class="name">Strong Flask of Glowing</a>
-                <a class="effect positive">Glowing (01:00)</a>
-                <lipartefact-obtention class="crafting"></lipartefact-obtention>
-                <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
-            </lipartefact-item>
-
             <lipartefact-item id="artillery_firework_rocket_3" rarity="common">
                 <a class="name">Long-Range Artillery Firework Rocket</a>
                 <a class="other">Flight Duration: 3</a>
@@ -159,6 +151,10 @@
                 <lipartefact-obtention class="trial_chambers">Supply</lipartefact-obtention>
                 <lipartefact-obtention class="trial_chambers">Vault - Common Reward</lipartefact-obtention>
             </lipartefact-item>
+            <lipartefact-item crafted="true" id="milk_chocolate_bar" rarity="common">
+                <a class="name">Milk Chocolate Bar</a>
+                <lipartefact-obtention class="crafting"></lipartefact-obtention>
+            </lipartefact-item>
             <lipartefact-item id="artillery_firework_rocket_1" rarity="common">
                 <a class="name">Short-Range Artillery Firework Rocket</a>
                 <a class="other">Flight Duration: 1</a>
@@ -178,6 +174,12 @@
                 <a class="other">&nbsp;&nbsp;Gray</a>
                 <lipartefact-obtention class="trial_chambers">Supply</lipartefact-obtention>
                 <lipartefact-obtention class="trial_chambers">Vault - Common Reward</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item crafted="true" id="glowing_flask_2" rarity="common">
+                <a class="name">Strong Flask of Glowing</a>
+                <a class="effect positive">Glowing (01:00)</a>
+                <lipartefact-obtention class="crafting"></lipartefact-obtention>
+                <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
             </lipartefact-item>
 
             <lipartefact-item id="battle_shield" rarity="uncommon">
@@ -234,6 +236,13 @@
                 <a class="attribute positive" slot="head">+3 Armor</a>
                 <a class="attribute positive" slot="head">+1 Luck</a>
                 <lipartefact-obtention class="fishing">Treasure</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item crafted="true" id="goat_helmet" rarity="uncommon">
+                <a class="name">Horned Helmet</a>
+                <a class="attribute positive" slot="head">+3 Armor</a>
+                <a class="attribute positive" slot="head">+2 Toughness</a>
+                <a class="attribute positive" slot="head">+1 Attack Knockback</a>
+                <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
             </lipartefact-item>
             <lipartefact-item id="music_disc_groovotational" rarity="uncommon">
                 <a class="name">Music Disc</a>

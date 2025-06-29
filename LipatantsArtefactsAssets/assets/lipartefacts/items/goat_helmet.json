@@ -1,0 +1,12 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "lipartefacts:item/goat_helmet",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [0.9765, 1.0, 0.9961]
+            }
+        ]
+    }
+}

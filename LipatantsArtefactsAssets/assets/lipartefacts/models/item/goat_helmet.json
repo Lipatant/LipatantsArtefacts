@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "lipartefacts:item/goat_helmet",
+        "layer1": "lipartefacts:item/goat_helmet_overlay"
+    }
+}

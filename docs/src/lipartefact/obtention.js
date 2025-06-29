@@ -99,6 +99,10 @@ const replacedList = [
         text: "Shipwrecks",
     },
     {
+        id: "smithing",
+        text: "Smithing",
+    },
+    {
         id: "strongholds",
         text: "Strongholds",
     },

@@ -1,0 +1,37 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "goat_armor": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:goat_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.goat_armor.description"
+        },
+        "frame": "task",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:goat_helmet"
+            },
+            "id": "minecraft:leather_helmet"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.goat_armor.title"
+        }
+    },
+    "requirements": [
+        [
+            "goat_armor"
+        ]
+    ]
+}

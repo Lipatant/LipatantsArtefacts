@@ -1,0 +1,15 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "dyeable": {
+                    "color_when_undyed": 16383998
+                },
+                "texture": "lipartefacts:goat"
+            },
+            {
+                "texture": "lipartefacts:goat_overlay"
+            }
+        ]
+    }
+}

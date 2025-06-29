@@ -41,6 +41,7 @@ class LipartefactItem extends HTMLElement {
 
     getElement(properties) {
         let element = document.createElement("div");
+        let isCrafted = false
         let previousAttributeSlot = ""
         element.appendChild(this.getElementIcon(this.id));
         element.appendChild(this.getElementName(properties.itemName));
@@ -177,7 +178,6 @@ class LipartefactItem extends HTMLElement {
     getElementRarity() {
         let element = document.createElement("a");
         const rarityDictionary = {
-            "crafted": "Crafted Artefact",
             "common": "Common Artefact",
             "uncommon": "Uncommon Artefact",
             "rare": "Rare Artefact",
@@ -185,8 +185,16 @@ class LipartefactItem extends HTMLElement {
         };
         element.classList.add("rarity");
         element.style.color = `var(--clr-rarity-${this.getRarity()}-secondary)`;
-        element.textContent = rarityDictionary[this.getRarity()];
+        if (this.getIsCrafted()) {
+            element.textContent = "Crafted Artefact";
+        } else {
+            element.textContent = rarityDictionary[this.getRarity()] || "Artefact";
+        }
         return element;
+    }
+
+    getIsCrafted() {
+        return this.hasAttribute("crafted") && (this.getAttribute("crafted") === "true");
     }
 
     getRarity() {

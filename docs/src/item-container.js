@@ -1,5 +1,9 @@
 const itemContainer = document.getElementById("item-container")
 
+function checkForCrafted(element, crafted) {
+    return ((element.hasAttribute("crafted") && (element.getAttribute("crafted") === "true")) === crafted);
+}
+
 function checkForObtention(element, obtention) {
     if (obtention === "") {
         return true;
@@ -29,6 +33,23 @@ function checkForRarity(element, rarity) {
         return element.getAttribute("rarity") === rarity;
     }
     return false
+}
+
+function filterItemContainerByCrafted(crafted = false) {
+    let child;
+    const children = itemContainer.children;
+    for (let i = 0; i < children.length; i++) {
+        child = children[i];
+        if (checkForCrafted(child, crafted)) {
+            if (child.classList.contains("hide")) {
+                child.classList.remove("hide");
+            }
+        } else {
+            if (!child.classList.contains("hide")) {
+                child.classList.add("hide");
+            }
+        }
+    }
 }
 
 function filterItemContainerByObtention(obtention = "") {

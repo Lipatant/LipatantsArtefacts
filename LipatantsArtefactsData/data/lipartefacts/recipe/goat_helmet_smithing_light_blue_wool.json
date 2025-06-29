@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "light_blue_wool",
+    "base": "minecraft:diamond_helmet",
+    "result": {
+        "id": "minecraft:leather_helmet",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "id": "minecraft:armor.helmet",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "type": "minecraft:armor"
+                },
+                {
+                    "id": "minecraft:armor.helmet",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "type": "minecraft:armor_toughness"
+                },
+                {
+                    "id": "minecraft:armor.helmet",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "type": "minecraft:attack_knockback"
+                }
+            ],
+            "minecraft:dyed_color": 3847130,
+            "minecraft:equippable": {
+                "slot": "head",
+                "equip_sound": "minecraft:item.armor.equip_leather",
+                "asset_id": "lipartefacts:goat"
+            },
+            "minecraft:lore": [
+                "{\"color\":\"#aaaa00\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.crafted.desc\"}"
+            ],
+            "minecraft:max_damage": 363,
+            "minecraft:item_model": "lipartefacts:goat_helmet",
+            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.goat_helmet\"}",
+            "minecraft:rarity": "uncommon"
+        }
+    },
+    "template": "goat_horn"
+}
