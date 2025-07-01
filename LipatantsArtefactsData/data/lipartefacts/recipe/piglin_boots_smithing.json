@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "minecraft:gold_ingot",
+    "base": "minecraft:diamond_boots",
+    "result": {
+        "id": "minecraft:golden_boots",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:armor",
+                    "id": "minecraft:armor.boots",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "feet"
+                },
+                {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:armor.boots",
+                    "amount": 0.1,
+                    "operation": "add_multiplied_base",
+                    "slot": "feet"
+                }
+            ],
+            "minecraft:equippable": {
+                "slot": "feet",
+                "equip_sound": "minecraft:item.armor.equip_leather",
+                "asset_id": "lipartefacts:piglin"
+            },
+            "minecraft:item_model": "lipartefacts:piglin_boots",
+            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.piglin_boots\"}",
+            "minecraft:lore": [
+                "{\"color\":\"dark_aqua\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.rare.desc\"}"
+            ],
+            "minecraft:max_damage": 481,
+            "minecraft:rarity": "rare"
+        }
+    },
+    "template": "minecraft:piglin_banner_pattern"
+}

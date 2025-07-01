@@ -42,7 +42,7 @@
                                     "equip_sound": "minecraft:item.armor.equip_iron",
                                     "asset_id": "lipartefacts:warden"
                                 },
-                                "minecraft:max_damage": 429,
+                                "minecraft:max_damage": 481,
                                 "minecraft:item_model": "lipartefacts:warden_boots",
                                 "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.warden_boots\"}"
                             }

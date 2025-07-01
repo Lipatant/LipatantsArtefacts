@@ -42,7 +42,7 @@
                                     "equip_sound": "minecraft:item.armor.equip_leather",
                                     "asset_id": "lipartefacts:sniffer"
                                 },
-                                "minecraft:max_damage": 363,
+                                "minecraft:max_damage": 407,
                                 "minecraft:item_model": "lipartefacts:sniffer_helmet",
                                 "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_helmet\"}"
                             }

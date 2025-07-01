@@ -12,6 +12,7 @@ class LipartefactItem extends HTMLElement {
             itemName: this.id,
             itemObtentions: [],
             itemOthers: [],
+            itemSmithingTemplate: null,
         }
         for (var i = 0; i < children.length; i++) {
             var child = children[i];
@@ -32,6 +33,9 @@ class LipartefactItem extends HTMLElement {
             }
             if (child.classList.contains("other")) {
                 properties.itemOthers.push(child)
+            }
+            if (child.classList.contains("smithing_template")) {
+                properties.itemSmithingTemplate = child;
             }
         }
         const element = this.getElement(properties);
@@ -56,6 +60,18 @@ class LipartefactItem extends HTMLElement {
         }
         for (const item of properties.itemEnchantments) {
             element.appendChild(this.getElementEnchantment(item));
+            element.appendChild(document.createElement("br"));
+        }
+        if (properties.itemSmithingTemplate) {
+            element.appendChild(this.getElementSmithingTemplate());
+            element.appendChild(document.createElement("br"));
+            element.appendChild(this.getElementSmithingTemplateAppliesTo());
+            element.appendChild(document.createElement("br"));
+            element.appendChild(this.getElementSmithingTemplateAppliesToElement(properties.itemSmithingTemplate));
+            element.appendChild(document.createElement("br"));
+            element.appendChild(this.getElementSmithingTemplateIngredients());
+            element.appendChild(document.createElement("br"));
+            element.appendChild(this.getElementSmithingTemplateIngredientsElement(properties.itemSmithingTemplate));
             element.appendChild(document.createElement("br"));
         }
         element.appendChild(this.getElementRarity());
@@ -190,6 +206,41 @@ class LipartefactItem extends HTMLElement {
         } else {
             element.textContent = rarityDictionary[this.getRarity()] || "Artefact";
         }
+        return element;
+    }
+
+    getElementSmithingTemplate() {
+        let element = document.createElement("a");
+        element.style.color = "var(--clr-other)";
+        element.textContent = "Smithing Template"
+        return element;
+    }
+    
+    getElementSmithingTemplateAppliesTo() {
+        let element = document.createElement("a");
+        element.style.color = "var(--clr-other)";
+        element.textContent = "Applies to:"
+        return element;
+    }
+
+    getElementSmithingTemplateAppliesToElement(smithingTemplate) {
+        let element = document.createElement("a");
+        element.style.color = "var(--clr-other-blue)";
+        element.innerHTML = "&nbsp;" + (smithingTemplate.hasAttribute("applies_to") ? smithingTemplate.getAttribute("applies_to") : "???");
+        return element;
+    }
+
+    getElementSmithingTemplateIngredients() {
+        let element = document.createElement("a");
+        element.style.color = "var(--clr-other)";
+        element.textContent = "Ingredients:"
+        return element;
+    }
+
+    getElementSmithingTemplateIngredientsElement(smithingTemplate) {
+        let element = document.createElement("a");
+        element.style.color = "var(--clr-other-blue)";
+        element.innerHTML = "&nbsp;" + (smithingTemplate.hasAttribute("ingredients") ? smithingTemplate.getAttribute("ingredients") : "???");
         return element;
     }
 

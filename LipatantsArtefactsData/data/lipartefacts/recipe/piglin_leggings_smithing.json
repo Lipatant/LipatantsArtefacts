@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "minecraft:gold_ingot",
+    "base": "minecraft:diamond_leggings",
+    "result": {
+        "id": "minecraft:chainmail_leggings",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:armor",
+                    "id": "minecraft:armor.leggings",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "legs"
+                },
+                {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:armor.leggings",
+                    "amount": 0.1,
+                    "operation": "add_multiplied_base",
+                    "slot": "legs"
+                }
+            ],
+            "minecraft:equippable": {
+                "slot": "legs",
+                "equip_sound": "minecraft:item.armor.equip_leather",
+                "asset_id": "lipartefacts:piglin"
+            },
+            "minecraft:item_model": "lipartefacts:piglin_leggings",
+            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.piglin_leggings\"}",
+            "minecraft:lore": [
+                "{\"color\":\"dark_aqua\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.rare.desc\"}"
+            ],
+            "minecraft:max_damage": 555,
+            "minecraft:rarity": "rare"
+        }
+    },
+    "template": "minecraft:piglin_banner_pattern"
+}

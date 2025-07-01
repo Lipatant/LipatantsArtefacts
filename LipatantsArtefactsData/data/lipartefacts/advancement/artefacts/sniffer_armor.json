@@ -1,5 +1,5 @@
 {
-    "parent": "lipartefacts:artefacts/all_crystals",
+    "parent": "lipartefacts:artefacts/all_upgrade_smithing_templates",
     "criteria": {
         "sniffer_armor": {
             "conditions": {

@@ -401,43 +401,8 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_randomly",
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/piglin_boots"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_randomly",
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/piglin_chestplate"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_randomly",
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/piglin_helmet"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_randomly",
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/piglin_leggings"
+                    "value": "lipartefacts:items/piglin_upgrade_smithing_template",
+                    "weight": 4
                 }
             ],
             "rolls": 1.0

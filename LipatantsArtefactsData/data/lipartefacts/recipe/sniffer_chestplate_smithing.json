@@ -1,0 +1,46 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "leather",
+    "base": "minecraft:diamond_chestplate",
+    "result": {
+        "id": "minecraft:chainmail_chestplate",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:armor",
+                    "id": "minecraft:armor.chestplate",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "slot": "chest"
+                },
+                {
+                    "type": "minecraft:armor_toughness",
+                    "id": "minecraft:armor.chestplate",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "chest"
+                },
+                {
+                    "type": "minecraft:knockback_resistance",
+                    "id": "minecraft:armor.chestplate",
+                    "amount": 0.2,
+                    "operation": "add_value",
+                    "slot": "chest"
+                }
+            ],
+            "minecraft:equippable": {
+                "slot": "chest",
+                "equip_sound": "minecraft:block.cherry_leaves.place",
+                "asset_id": "lipartefacts:sniffer"
+            },
+            "minecraft:item_model": "lipartefacts:sniffer_chestplate",
+            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_chestplate\"}",
+            "minecraft:lore": [
+                "{\"color\":\"dark_aqua\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.rare.desc\"}"
+            ],
+            "minecraft:max_damage": 592,
+            "minecraft:rarity": "rare"
+        }
+    },
+    "template": "skull_banner_pattern"
+}

@@ -69,6 +69,7 @@
     --clr-obtention: #bebebe;
     /** Attribute other colors */
     --clr-other: #bebebe;
+    --clr-other-blue: #3f3ffe;
 }
 
 body {

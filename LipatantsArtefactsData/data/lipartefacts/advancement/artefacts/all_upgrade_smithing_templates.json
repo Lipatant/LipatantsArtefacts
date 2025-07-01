@@ -1,0 +1,89 @@
+{
+    "parent": "lipartefacts:artefacts/all_crystals",
+    "criteria": {
+        "netherite_upgrade_smithing_template": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:netherite_upgrade_smithing_template"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "piglin_upgrade_smithing_template": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data": {
+                                "id": "lipartefacts:piglin_upgrade_smithing_template"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "sniffer_upgrade_smithing_template": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data": {
+                                "id": "lipartefacts:sniffer_upgrade_smithing_template"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "warden_upgrade_smithing_template": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data": {
+                                "id": "lipartefacts:warden_upgrade_smithing_template"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.all_upgrade_smithing_templates.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:sniffer_upgrade_smithing_template"
+            },
+            "id": "minecraft:skull_banner_pattern"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.all_upgrade_smithing_templates.title"
+        }
+    },
+    "requirements": [
+        [
+            "netherite_upgrade_smithing_template"
+        ],
+        [
+            "piglin_upgrade_smithing_template"
+        ],
+        [
+            "sniffer_upgrade_smithing_template"
+        ],
+        [
+            "warden_upgrade_smithing_template"
+        ]
+    ],
+    "rewards": {
+        "experience": 100
+    }
+}

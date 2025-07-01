@@ -54,47 +54,8 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/sniffer_boots"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/sniffer_chestplate"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/sniffer_helmet"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/sniffer_leggings"
+                    "value": "lipartefacts:items/sniffer_upgrade_smithing_template",
+                    "weight": 4
                 }
             ],
             "rolls": 1.0

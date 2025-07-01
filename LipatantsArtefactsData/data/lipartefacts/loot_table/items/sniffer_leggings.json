@@ -42,7 +42,7 @@
                                     "equip_sound": "minecraft:item.armor.equip_leather",
                                     "asset_id": "lipartefacts:sniffer"
                                 },
-                                "minecraft:max_damage": 495,
+                                "minecraft:max_damage": 555,
                                 "minecraft:item_model": "lipartefacts:sniffer_leggings",
                                 "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_leggings\"}"
                             }

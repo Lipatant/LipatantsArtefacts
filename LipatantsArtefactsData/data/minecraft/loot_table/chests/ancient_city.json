@@ -448,51 +448,8 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/warden_boots",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/warden_chestplate",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/warden_helmet",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": 30.0,
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/warden_leggings",
-                    "weight": 1
+                    "value": "lipartefacts:items/warden_upgrade_smithing_template",
+                    "weight": 4
                 }
             ],
             "rolls": 1.0

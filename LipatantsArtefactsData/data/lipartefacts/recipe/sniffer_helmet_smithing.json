@@ -1,0 +1,46 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "leather",
+    "base": "minecraft:diamond_helmet",
+    "result": {
+        "id": "minecraft:leather_helmet",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:armor",
+                    "id": "minecraft:armor.helmet",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head"
+                },
+                {
+                    "type": "minecraft:armor_toughness",
+                    "id": "minecraft:armor.helmet",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "head"
+                },
+                {
+                    "type": "minecraft:knockback_resistance",
+                    "id": "minecraft:armor.helmet",
+                    "amount": 0.2,
+                    "operation": "add_value",
+                    "slot": "head"
+                }
+            ],
+            "minecraft:equippable": {
+                "slot": "head",
+                "equip_sound": "minecraft:item.armor.equip_leather",
+                "asset_id": "lipartefacts:sniffer"
+            },
+            "minecraft:item_model": "lipartefacts:sniffer_helmet",
+            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_helmet\"}",
+            "minecraft:lore": [
+                "{\"color\":\"dark_aqua\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.rare.desc\"}"
+            ],
+            "minecraft:max_damage": 407,
+            "minecraft:rarity": "rare"
+        }
+    },
+    "template": "skull_banner_pattern"
+}

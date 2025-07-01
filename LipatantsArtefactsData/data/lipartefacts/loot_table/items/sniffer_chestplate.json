@@ -42,7 +42,7 @@
                                     "equip_sound": "minecraft:block.cherry_leaves.place",
                                     "asset_id": "lipartefacts:sniffer"
                                 },
-                                "minecraft:max_damage": 528,
+                                "minecraft:max_damage": 592,
                                 "minecraft:item_model": "lipartefacts:sniffer_chestplate",
                                 "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_chestplate\"}"
                             }
