@@ -1,0 +1,1 @@
+summon skeleton ~ ~ ~ {ArmorDropChances:[0f,0f,0f,0f],ArmorItems:[{},{},{},{}],HandDropChances:[0f,0f],HandItems:[{id:"minecraft:bow"},{}],Tags:["LipartefactMob","New"]}

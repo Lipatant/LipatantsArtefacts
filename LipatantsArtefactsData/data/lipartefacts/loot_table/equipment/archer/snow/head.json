@@ -1,0 +1,53 @@
+{
+    "type": "minecraft:equipment",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:dyed_color": {
+                                    "rgb": 10082796
+                                }
+                            }
+                        }
+                    ],
+                    "value": "lipartefacts:items/sniffer_helmet",
+                    "type": "minecraft:loot_table"
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:dyed_color": {
+                                    "rgb": 10082796
+                                }
+                            }
+                        }
+                    ],
+                    "value": "lipartefacts:items/fisherman_helmet",
+                    "type": "minecraft:loot_table"
+                },
+                {
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:dyed_color": {
+                                    "rgb": 10082796
+                                }
+                            }
+                        }
+                    ],
+                    "name": "minecraft:leather_helmet",
+                    "type": "minecraft:item"
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

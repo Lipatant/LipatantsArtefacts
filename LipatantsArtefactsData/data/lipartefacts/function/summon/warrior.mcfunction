@@ -1,0 +1,1 @@
+function lipartefacts:summon/warrior/wither

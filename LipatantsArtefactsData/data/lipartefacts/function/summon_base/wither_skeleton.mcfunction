@@ -1,0 +1,1 @@
+summon wither_skeleton ~ ~ ~ {ArmorDropChances:[0f,0f,0f,0f],ArmorItems:[{},{},{},{}],HandDropChances:[0f,0f],HandItems:[{id:"minecraft:stone_sword"},{}],Tags:["LipartefactMob","New"]}
