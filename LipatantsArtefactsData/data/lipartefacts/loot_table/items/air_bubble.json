@@ -33,7 +33,10 @@
                                     "saturation": 0
                                 },
                                 "minecraft:item_model": "lipartefacts:air_bubble",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.air_bubble\"}",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.air_bubble"
+                                },
                                 "minecraft:max_stack_size": 1
                             }
                         },

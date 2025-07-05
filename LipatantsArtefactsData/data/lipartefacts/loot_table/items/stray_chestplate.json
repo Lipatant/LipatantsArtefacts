@@ -30,7 +30,10 @@
                                 },
                                 "minecraft:max_damage": 80,
                                 "minecraft:item_model": "lipartefacts:stray_chestplate",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.stray_chestplate\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.stray_chestplate"
+                                }
                             }
                         },
                         {

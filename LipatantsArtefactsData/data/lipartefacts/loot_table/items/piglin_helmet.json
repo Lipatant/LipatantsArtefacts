@@ -37,7 +37,10 @@
                                 },
                                 "minecraft:max_damage": 407,
                                 "minecraft:item_model": "lipartefacts:piglin_helmet",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.piglin_helmet\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.piglin_helmet"
+                                }
                             }
                         },
                         {

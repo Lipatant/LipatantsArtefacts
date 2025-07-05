@@ -15,7 +15,10 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:enchanted_book_vampirism",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.enchanted_book_vampirism\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.enchanted_book_vampirism"
+                                }
                             }
                         },
                         {

@@ -393,18 +393,18 @@
       "rolls": 1.0
     },
     {
-        "bonus_rolls": 0.0,
-        "entries": [
-            {
-                "type": "minecraft:empty",
-                "weight": 2
-            },
-            {
-                "type": "minecraft:loot_table",
-                "value": "lipartefacts:items/battle_shield"
-            }
-        ],
-        "rolls": 1.0
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "lipartefacts:items/battle_shield"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:chests/bastion_hoglin_stable"

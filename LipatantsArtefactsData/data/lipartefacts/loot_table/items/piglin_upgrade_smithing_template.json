@@ -14,16 +14,50 @@
                                     "id": "lipartefacts:piglin_upgrade_smithing_template"
                                 },
                                 "minecraft:lore": [
-                                    "{\"text\":\"\"}",
-                                    "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.minecraft.smithing_template\"}",
-                                    "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.minecraft.smithing_template.applies_to\"}",
-                                    "[{\"text\":\" \"},{\"color\":\"blue\",\"italic\":false,\"translate\":\"item.lipartefacts.smithing_template.piglin_upgrade.applies_to\"}]",
-                                    "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.minecraft.smithing_template.ingredients\"}",
-                                    "[{\"text\":\" \"},{\"color\":\"blue\",\"italic\":false,\"translate\":\"item.lipartefacts.smithing_template.piglin_upgrade.ingredients\"}]"
+                                    {
+                                        "text": ""
+                                    },
+                                    {
+                                        "color": "gray",
+                                        "italic": false,
+                                        "translate": "item.minecraft.smithing_template"
+                                    },
+                                    {
+                                        "color": "gray",
+                                        "italic": false,
+                                        "translate": "item.minecraft.smithing_template.applies_to"
+                                    },
+                                    [
+                                        {
+                                            "text": " "
+                                        },
+                                        {
+                                            "color": "blue",
+                                            "italic": false,
+                                            "translate": "item.lipartefacts.smithing_template.piglin_upgrade.applies_to"
+                                        }
+                                    ],
+                                    {
+                                        "color": "gray",
+                                        "italic": false,
+                                        "translate": "item.minecraft.smithing_template.ingredients"
+                                    },
+                                    [
+                                        {
+                                            "text": " "
+                                        },
+                                        {
+                                            "color": "blue",
+                                            "italic": false,
+                                            "translate": "item.lipartefacts.smithing_template.piglin_upgrade.ingredients"
+                                        }
+                                    ]
                                 ],
                                 "minecraft:max_stack_size": 64,
                                 "minecraft:item_model": "lipartefacts:piglin_upgrade_smithing_template",
-                                "minecraft:item_name": "{\"translate\":\"item.lipartefacts.piglin_upgrade_smithing_template\"}"
+                                "minecraft:item_name": {
+                                    "translate": "item.lipartefacts.piglin_upgrade_smithing_template"
+                                }
                             }
                         },
                         {

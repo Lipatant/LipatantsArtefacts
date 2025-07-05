@@ -29,7 +29,10 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:drilling_pickaxe",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.drilling_pickaxe\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.drilling_pickaxe"
+                                }
                             }
                         }
                     ]

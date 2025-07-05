@@ -37,7 +37,10 @@
                                 },
                                 "minecraft:max_damage": 555,
                                 "minecraft:item_model": "lipartefacts:piglin_leggings",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.piglin_leggings\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.piglin_leggings"
+                                }
                             }
                         },
                         {

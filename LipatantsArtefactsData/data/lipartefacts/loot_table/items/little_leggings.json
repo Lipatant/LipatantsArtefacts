@@ -29,7 +29,10 @@
                                     "asset_id": "lipartefacts:little"
                                 },
                                 "minecraft:item_model": "lipartefacts:little_leggings",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.little_leggings\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.little_leggings"
+                                }
                             }
                         },
                         {

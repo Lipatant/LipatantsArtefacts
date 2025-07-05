@@ -11,10 +11,11 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:music_disc_space_caster",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.music_disc_space_caster\"}",
-                                "minecraft:jukebox_playable": {
-                                    "song": "lipartefacts:space_caster"
-                                }
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.music_disc_space_caster"
+                                },
+                                "minecraft:jukebox_playable": "lipartefacts:space_caster"
                             }
                         },
                         {

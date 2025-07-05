@@ -34,9 +34,16 @@
                 "asset_id": "lipartefacts:warden"
             },
             "minecraft:item_model": "lipartefacts:warden_chestplate",
-            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.warden_chestplate\"}",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.warden_chestplate"
+            },
             "minecraft:lore": [
-                "{\"color\":\"dark_aqua\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.rare.desc\"}"
+                {
+                    "color": "dark_aqua",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.rare.desc"
+                }
             ],
             "minecraft:max_damage": 592,
             "minecraft:rarity": "rare"

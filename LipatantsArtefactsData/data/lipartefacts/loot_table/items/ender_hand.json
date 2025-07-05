@@ -29,7 +29,10 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:ender_hand",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.ender_hand\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.ender_hand"
+                                }
                             }
                         }
                     ]

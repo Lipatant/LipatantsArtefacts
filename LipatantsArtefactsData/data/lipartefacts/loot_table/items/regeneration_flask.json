@@ -33,7 +33,10 @@
                                     "saturation": 0
                                 },
                                 "minecraft:item_model": "lipartefacts:regeneration_flask",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.regeneration_flask\"}",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.regeneration_flask"
+                                },
                                 "minecraft:max_stack_size": 1
                             }
                         },

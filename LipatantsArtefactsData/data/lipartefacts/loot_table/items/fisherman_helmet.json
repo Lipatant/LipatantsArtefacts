@@ -29,7 +29,10 @@
                                     "asset_id": "lipartefacts:fisherman"
                                 },
                                 "minecraft:item_model": "lipartefacts:fisherman_helmet",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.fisherman_helmet\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.fisherman_helmet"
+                                }
                             }
                         },
                         {

@@ -14,7 +14,7 @@
     },
     "display": {
         "announce_to_chat": false,
-        "background": "minecraft:textures/block/moss_block.png",
+        "background": "minecraft:block/moss_block",
         "description": {
             "translate": "advancements.lipartefacts.artefacts.root.description"
         },

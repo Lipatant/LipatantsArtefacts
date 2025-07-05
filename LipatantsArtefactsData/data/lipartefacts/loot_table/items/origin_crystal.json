@@ -15,7 +15,10 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:origin_crystal",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.origin_crystal\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.origin_crystal"
+                                }
                             }
                         }
                     ]

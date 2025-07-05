@@ -34,9 +34,16 @@
                 "asset_id": "lipartefacts:sniffer"
             },
             "minecraft:item_model": "lipartefacts:sniffer_helmet",
-            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.sniffer_helmet\"}",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.sniffer_helmet"
+            },
             "minecraft:lore": [
-                "{\"color\":\"dark_aqua\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.rare.desc\"}"
+                {
+                    "color": "dark_aqua",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.rare.desc"
+                }
             ],
             "minecraft:max_damage": 407,
             "minecraft:rarity": "rare"

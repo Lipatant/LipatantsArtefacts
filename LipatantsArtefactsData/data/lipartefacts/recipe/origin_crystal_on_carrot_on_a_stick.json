@@ -5,7 +5,9 @@
     "result": {
         "id": "minecraft:carrot_on_a_stick",
         "components": {
-            "minecraft:enchantments": {"lipartefacts:origin_mark":1},
+            "minecraft:enchantments": {
+                "lipartefacts:origin_mark": 1
+            },
             "minecraft:repair_cost": 1
         }
     }

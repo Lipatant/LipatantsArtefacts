@@ -155,19 +155,19 @@
           "name": "minecraft:diamond"
         },
         {
-            "type": "minecraft:loot_table",
-            "value": "lipartefacts:items/artillery_firework_rocket_1",
-            "weight": 1
+          "type": "minecraft:loot_table",
+          "value": "lipartefacts:items/artillery_firework_rocket_1",
+          "weight": 1
         },
         {
-            "type": "minecraft:loot_table",
-            "value": "lipartefacts:items/artillery_firework_rocket_2",
-            "weight": 1
+          "type": "minecraft:loot_table",
+          "value": "lipartefacts:items/artillery_firework_rocket_2",
+          "weight": 1
         },
         {
-            "type": "minecraft:loot_table",
-            "value": "lipartefacts:items/artillery_firework_rocket_3",
-            "weight": 1
+          "type": "minecraft:loot_table",
+          "value": "lipartefacts:items/artillery_firework_rocket_3",
+          "weight": 1
         }
       ],
       "rolls": 1.0

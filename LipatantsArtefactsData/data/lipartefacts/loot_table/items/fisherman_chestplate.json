@@ -29,7 +29,10 @@
                                     "asset_id": "lipartefacts:fisherman"
                                 },
                                 "minecraft:item_model": "lipartefacts:fisherman_chestplate",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.fisherman_chestplate\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.fisherman_chestplate"
+                                }
                             }
                         },
                         {

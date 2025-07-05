@@ -15,7 +15,10 @@
                                     "slot": "mainhand"
                                 },
                                 "minecraft:item_model": "lipartefacts:paper_plane",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.paper_plane\"}",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.paper_plane"
+                                },
                                 "minecraft:max_damage": 4
                             }
                         },

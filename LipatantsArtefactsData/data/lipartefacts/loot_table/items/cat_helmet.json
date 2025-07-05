@@ -29,7 +29,10 @@
                                     "asset_id": "lipartefacts:cat"
                                 },
                                 "minecraft:item_model": "lipartefacts:cat_helmet",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.cat_helmet\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.cat_helmet"
+                                }
                             }
                         },
                         {

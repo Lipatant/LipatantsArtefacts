@@ -32,11 +32,29 @@
                 "saturation": 0
             },
             "minecraft:item_model": "lipartefacts:glowing_flask_1",
-            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.glowing_flask_1\"}",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.glowing_flask_1"
+            },
             "minecraft:max_stack_size": 1,
             "minecraft:lore": [
-                "[{\"color\":\"blue\",\"italic\":false,\"translate\":\"effect.minecraft.glowing\"},{\"color\":\"blue\",\"italic\":false,\"text\":\" (00:10)\"}]",
-                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.crafted.desc\"}"
+                [
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "translate": "effect.minecraft.glowing"
+                    },
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "text": " (00: 10)"
+                    }
+                ],
+                {
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.crafted.desc"
+                }
             ],
             "minecraft:rarity": "common"
         },

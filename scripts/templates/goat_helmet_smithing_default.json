@@ -34,11 +34,18 @@
                 "asset_id": "lipartefacts:goat"
             },
             "minecraft:lore": [
-                "{\"color\":\"#aaaa00\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.crafted.desc\"}"
+                {
+                    "color": "#aaaa00",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.crafted.desc"
+                }
             ],
             "minecraft:max_damage": 363,
             "minecraft:item_model": "lipartefacts:goat_helmet",
-            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.goat_helmet\"}",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.goat_helmet"
+            },
             "minecraft:rarity": "uncommon"
         }
     },

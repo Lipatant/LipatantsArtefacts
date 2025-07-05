@@ -32,11 +32,39 @@
                 "saturation": 0
             },
             "minecraft:item_model": "lipartefacts:regeneration_flask",
-            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.regeneration_flask\"}",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.regeneration_flask"
+            },
             "minecraft:max_stack_size": 1,
             "minecraft:lore": [
-                "[{\"color\":\"blue\",\"italic\":false,\"translate\":\"effect.minecraft.regeneration\"},{\"color\":\"blue\",\"italic\":false,\"text\":\" \"},{\"color\":\"blue\",\"italic\":false,\"translate\":\"potion.potency.1\"},{\"color\":\"blue\",\"italic\":false,\"text\":\" (00:10)\"}]",
-                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.crafted.desc\"}"
+                [
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "translate": "effect.minecraft.regeneration"
+                    },
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "text": ""
+                    },
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "translate": "potion.potency.1"
+                    },
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "text": " (00: 10)"
+                    }
+                ],
+                {
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.crafted.desc"
+                }
             ],
             "minecraft:rarity": "common"
         },

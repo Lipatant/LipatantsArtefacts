@@ -31,11 +31,29 @@
                 "saturation": 0
             },
             "minecraft:item_model": "lipartefacts:air_bubble",
-            "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.air_bubble\"}",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.air_bubble"
+            },
             "minecraft:max_stack_size": 1,
             "minecraft:lore": [
-                "[{\"color\":\"blue\",\"italic\":false,\"translate\":\"effect.minecraft.water_breathing\"},{\"color\":\"blue\",\"italic\":false,\"text\":\" (00:02)\"}]",
-                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.lipartefacts.generic.crafted.desc\"}"
+                [
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "translate": "effect.minecraft.water_breathing"
+                    },
+                    {
+                        "color": "blue",
+                        "italic": false,
+                        "text": " (00: 02)"
+                    }
+                ],
+                {
+                    "color": "gray",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.crafted.desc"
+                }
             ],
             "minecraft:rarity": "common"
         },

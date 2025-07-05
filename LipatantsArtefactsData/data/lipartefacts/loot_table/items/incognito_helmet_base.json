@@ -11,7 +11,10 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:max_damage": 55,
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.incognito_helmet\"}"
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.incognito_helmet"
+                                }
                             }
                         },
                         {

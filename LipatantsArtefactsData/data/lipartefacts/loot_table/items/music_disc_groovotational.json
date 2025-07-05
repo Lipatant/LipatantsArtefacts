@@ -11,10 +11,11 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:music_disc_groovotational",
-                                "minecraft:item_name": "{\"italic\":false,\"translate\":\"item.lipartefacts.music_disc_groovotational\"}",
-                                "minecraft:jukebox_playable": {
-                                    "song": "lipartefacts:groovotational"
-                                }
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.music_disc_groovotational"
+                                },
+                                "minecraft:jukebox_playable": "lipartefacts:groovotational"
                             }
                         },
                         {
