@@ -2,7 +2,7 @@
     "type": "minecraft:fishing",
     "pools": [
         {
-            "bonus_rolls": 0,
+            "bonus_rolls": 0.0,
             "entries": [
                 {
                     "type": "minecraft:item",
@@ -20,13 +20,13 @@
                             "damage": {
                                 "type": "minecraft:uniform",
                                 "max": 0.25,
-                                "min": 0
+                                "min": 0.0
                             },
                             "function": "minecraft:set_damage"
                         },
                         {
                             "function": "minecraft:enchant_with_levels",
-                            "levels": 30,
+                            "levels": 30.0,
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
@@ -40,13 +40,13 @@
                             "damage": {
                                 "type": "minecraft:uniform",
                                 "max": 0.25,
-                                "min": 0
+                                "min": 0.0
                             },
                             "function": "minecraft:set_damage"
                         },
                         {
                             "function": "minecraft:enchant_with_levels",
-                            "levels": 30,
+                            "levels": 30.0,
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
@@ -57,7 +57,7 @@
                     "functions": [
                         {
                             "function": "minecraft:enchant_with_levels",
-                            "levels": 30,
+                            "levels": 30.0,
                             "options": "#minecraft:on_random_loot"
                         }
                     ],
@@ -129,7 +129,6 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/bogged_chestplate",
                     "conditions": [
                         {
                             "condition": "minecraft:location_check",
@@ -140,11 +139,11 @@
                                 ]
                             }
                         }
-                    ]
+                    ],
+                    "value": "lipartefacts:items/bogged_chestplate"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/stray_chestplate",
                     "conditions": [
                         {
                             "condition": "minecraft:location_check",
@@ -156,10 +155,11 @@
                                 ]
                             }
                         }
-                    ]
+                    ],
+                    "value": "lipartefacts:items/stray_chestplate"
                 }
             ],
-            "rolls": 1
+            "rolls": 1.0
         }
     ],
     "random_sequence": "minecraft:gameplay/fishing/treasure"

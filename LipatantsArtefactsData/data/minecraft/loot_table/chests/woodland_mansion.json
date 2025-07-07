@@ -329,11 +329,13 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/enchanted_book_fracture"
+                    "value": "lipartefacts:items/enchanted_book_fracture",
+                    "weight": 1
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/enchanted_book_imperilment"
+                    "value": "lipartefacts:items/enchanted_book_imperilment",
+                    "weight": 1
                 }
             ],
             "rolls": 1.0

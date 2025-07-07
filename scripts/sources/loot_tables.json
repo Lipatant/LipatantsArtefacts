@@ -1,0 +1,605 @@
+{
+    "archaeology/trail_ruins_rare": {
+        "added_entries": [
+            {
+                "value": "lipartefacts:items/sniffer_upgrade_smithing_template",
+                "weight": 4
+            }
+        ]
+    },
+    "chests/abandoned_mineshaft": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/drilling_pickaxe",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/glowing_flask_1",
+                        "weight": 3
+                    },
+                    {
+                        "value": "lipartefacts:items/incognito_helmet",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/regeneration_flask",
+                        "weight": 3
+                    },
+                    {
+                        "value": "lipartefacts:items/repair_crystal",
+                        "weight": 2
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/ancient_city": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 3
+                    },
+                    {
+                        "value": "lipartefacts:items/origin_crystal",
+                        "weight": 1
+                    }
+                ]
+            },
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 8
+                    },
+                    {
+                        "value": "lipartefacts:items/warden_upgrade_smithing_template",
+                        "weight": 4
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/bastion_hoglin_stable": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 2
+                    },
+                    {
+                        "value": "lipartefacts:items/battle_shield",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/bastion_treasure": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/enchanted_book_fracture",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/enchanted_book_imperilment",
+                        "weight": 2
+                    }
+                ]
+            },
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/netherite_battle_shield",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/piglin_upgrade_smithing_template",
+                        "weight": 4
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/end_city_treasure": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 8
+                    },
+                    {
+                        "value": "lipartefacts:items/endermite_charm",
+                        "weight": 1
+                    },
+                    {
+                        "functions": [
+                            {
+                                "function": "minecraft:enchant_with_levels",
+                                "levels": {
+                                    "type": "minecraft:uniform",
+                                    "max": 39.0,
+                                    "min": 20.0
+                                },
+                                "options": "#minecraft:on_random_loot"
+                            }
+                        ],
+                        "value": "lipartefacts:items/ender_hand",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/igloo_chest": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/enchanted_book_call_to_chaos"
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/jungle_temple": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:music_disc_uncommon",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/bogged_chestplate",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/pillager_outpost": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/incognito_helmet",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/paper_plane",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/shipwreck_treasure": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 2
+                    },
+                    {
+                        "value": "lipartefacts:items/axolotl_charm",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/simple_dungeon": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:music_disc_uncommon"
+                    }
+                ]
+            },
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/glowing_flask_1",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/glowing_flask_2",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/regeneration_flask",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/repair_crystal",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/stronghold_library": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/origin_crystal",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/repair_crystal",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/trial_chambers/reward_common": {
+        "added_entries": [
+            {
+                "value": "lipartefacts:items/artillery_firework_rocket_1"
+            },
+            {
+                "value": "lipartefacts:items/artillery_firework_rocket_2"
+            },
+            {
+                "value": "lipartefacts:items/artillery_firework_rocket_3"
+            }
+        ]
+    },
+    "chests/trial_chambers/reward_ominous_rare": {
+        "added_entries": [
+            {
+                "functions": [
+                    {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "max": 10.0,
+                            "min": 20.0
+                        },
+                        "options": "#minecraft:on_random_loot"
+                    }
+                ],
+                "value": "lipartefacts:items/drilling_pickaxe",
+                "weight": 2
+            },
+            {
+                "functions": [
+                    {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "max": 10.0,
+                            "min": 20.0
+                        },
+                        "options": "#minecraft:on_random_loot"
+                    }
+                ],
+                "value": "lipartefacts:items/little_boots",
+                "weight": 2
+            },
+            {
+                "functions": [
+                    {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "max": 10.0,
+                            "min": 20.0
+                        },
+                        "options": "#minecraft:on_random_loot"
+                    }
+                ],
+                "value": "lipartefacts:items/little_leggings",
+                "weight": 2
+            },
+            {
+                "value": "lipartefacts:items/enchanted_book_vampirism",
+                "weight": 1
+            }
+        ]
+    },
+    "chests/trial_chambers/reward_rare": {
+        "added_entries": [
+            {
+                "value": "lipartefacts:items/battle_shield",
+                "weight": 2
+            },
+            {
+                "value": "lipartefacts:items/bogged_chestplate",
+                "weight": 2
+            },
+            {
+                "value": "lipartefacts:items/stray_chestplate",
+                "weight": 2
+            }
+        ]
+    },
+    "chests/trial_chambers/reward_unique": {
+        "added_entries": [
+            {
+                "value": "lipartefacts:items/drilling_pickaxe",
+                "weight": 2
+            }
+        ]
+    },
+    "chests/trial_chambers/supply": {
+        "added_entries": [
+            {
+                "value": "lipartefacts:items/artillery_firework_rocket_1",
+                "weight": 1
+            },
+            {
+                "value": "lipartefacts:items/artillery_firework_rocket_2",
+                "weight": 1
+            },
+            {
+                "value": "lipartefacts:items/artillery_firework_rocket_3",
+                "weight": 1
+            }
+        ]
+    },
+    "chests/underwater_ruin_big": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 5
+                    },
+                    {
+                        "value": "lipartefacts:items/axolotl_charm",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/underwater_ruin_small": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 5
+                    },
+                    {
+                        "value": "lipartefacts:items/axolotl_charm",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/village/village_armorer": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/repair_crystal",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/village/village_cartographer": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/paper_plane",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/village/village_tannery": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/cat_helmet",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/village/village_toolsmith": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/repair_crystal",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/village/village_weaponsmith": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/repair_crystal",
+                        "weight": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/woodland_mansion": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:music_disc_uncommon"
+                    }
+                ]
+            },
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/enchanted_book_fracture",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/enchanted_book_imperilment",
+                        "weight": 1
+                    }
+                ]
+            },
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/ravager_charm"
+                    }
+                ]
+            }
+        ]
+    },
+    "gameplay/cat_morning_gift": {
+        "added_entries": [
+            {
+                "value": "lipartefacts:items/cat_helmet",
+                "weight": 2
+            },
+            {
+                "value": "lipartefacts:items/chicken_charm",
+                "weight": 2
+            }
+        ]
+    },
+    "gameplay/fishing/treasure": {
+        "added_entries": [
+            {
+                "functions": [
+                    {
+                        "add": false,
+                        "damage": {
+                            "type": "minecraft:uniform",
+                            "max": 0.95,
+                            "min": 0.5
+                        },
+                        "function": "minecraft:set_damage"
+                    },
+                    {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": 30,
+                        "options": "#minecraft:on_random_loot"
+                    }
+                ],
+                "value": "lipartefacts:items/cat_helmet"
+            },
+            {
+                "functions": [
+                    {
+                        "add": false,
+                        "damage": {
+                            "type": "minecraft:uniform",
+                            "max": 0.95,
+                            "min": 0.5
+                        },
+                        "function": "minecraft:set_damage"
+                    },
+                    {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": 30,
+                        "options": "#minecraft:on_random_loot"
+                    }
+                ],
+                "value": "lipartefacts:items/fisherman_chestplate"
+            },
+            {
+                "functions": [
+                    {
+                        "add": false,
+                        "damage": {
+                            "type": "minecraft:uniform",
+                            "max": 0.95,
+                            "min": 0.5
+                        },
+                        "function": "minecraft:set_damage"
+                    },
+                    {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": 30,
+                        "options": "#minecraft:on_random_loot"
+                    }
+                ],
+                "value": "lipartefacts:items/fisherman_helmet"
+            },
+            {
+                "value": "lipartefacts:items/bogged_chestplate",
+                "conditions": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "biomes": [
+                                "minecraft:mangrove_swamp",
+                                "minecraft:swamp"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "value": "lipartefacts:items/stray_chestplate",
+                "conditions": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "biomes": [
+                                "minecraft:snowy_plains",
+                                "minecraft:ice_spikes",
+                                "minecraft:frozen_river"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "gameplay/piglin_bartering": {
+        "added_entries": [
+            {
+                "value": "lipartefacts:items/strider_charm",
+                "weight": 5
+            }
+        ]
+    }
+}

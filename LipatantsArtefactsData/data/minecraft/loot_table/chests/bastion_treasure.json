@@ -382,7 +382,8 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/enchanted_book_fracture"
+                    "value": "lipartefacts:items/enchanted_book_fracture",
+                    "weight": 1
                 },
                 {
                     "type": "minecraft:loot_table",
@@ -397,7 +398,8 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/netherite_battle_shield"
+                    "value": "lipartefacts:items/netherite_battle_shield",
+                    "weight": 1
                 },
                 {
                     "type": "minecraft:loot_table",

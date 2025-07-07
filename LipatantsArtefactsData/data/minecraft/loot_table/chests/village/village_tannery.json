@@ -73,11 +73,6 @@
                         }
                     ],
                     "name": "minecraft:emerald"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/cat_helmet",
-                    "weight": 2
                 }
             ],
             "rolls": {
@@ -85,6 +80,42 @@
                 "max": 5.0,
                 "min": 1.0
             }
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": 1.0,
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:bundle"
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 2
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/cat_helmet",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1.0
         }
     ],
     "random_sequence": "minecraft:chests/village/village_tannery"

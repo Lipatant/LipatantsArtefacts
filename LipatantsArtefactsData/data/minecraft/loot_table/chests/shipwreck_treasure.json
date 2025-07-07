@@ -157,7 +157,8 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/axolotl_charm"
+                    "value": "lipartefacts:items/axolotl_charm",
+                    "weight": 1
                 }
             ],
             "rolls": 1.0

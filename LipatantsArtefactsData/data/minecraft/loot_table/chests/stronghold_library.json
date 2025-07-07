@@ -78,11 +78,13 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/origin_crystal"
+                    "value": "lipartefacts:items/origin_crystal",
+                    "weight": 1
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/repair_crystal"
+                    "value": "lipartefacts:items/repair_crystal",
+                    "weight": 1
                 }
             ],
             "rolls": 1.0

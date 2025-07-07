@@ -324,11 +324,6 @@
                     ],
                     "name": "minecraft:iron_shovel",
                     "weight": 3
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/origin_crystal",
-                    "weight": 6
                 }
             ],
             "rolls": {
