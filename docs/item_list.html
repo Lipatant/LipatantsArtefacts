@@ -31,11 +31,14 @@
         </a><br /><br />
         <div class="filter-list">
             <button class="filter" onclick="filterItemContainerReset()">Reset</button>
+            <button class="filter obtention" onclick="filterItemContainerByObtention('abandoned_mineshafts')">
+                <lipartefact-obtention class="abandoned_mineshafts"></lipartefact-obtention>
+            </button>
             <button class="filter obtention" onclick="filterItemContainerByObtention('ancient_cities')">
                 <lipartefact-obtention class="ancient_cities"></lipartefact-obtention>
             </button>
-            <button class="filter obtention" onclick="filterItemContainerByObtention('abandoned_mineshafts')">
-                <lipartefact-obtention class="abandoned_mineshafts"></lipartefact-obtention>
+            <button class="filter obtention" onclick="filterItemContainerByObtention('archaeology')">
+                <lipartefact-obtention class="archaeology"></lipartefact-obtention>
             </button>
             <button class="filter obtention" onclick="filterItemContainerByObtention('bastions')">
                 <lipartefact-obtention class="bastions"></lipartefact-obtention>
@@ -45,6 +48,9 @@
             </button>
             <button class="filter obtention" onclick="filterItemContainerByObtention('crafting')">
                 <lipartefact-obtention class="crafting"></lipartefact-obtention>
+            </button>
+            <button class="filter obtention" onclick="filterItemContainerByObtention('desert_pyramids')">
+                <lipartefact-obtention class="desert_pyramids"></lipartefact-obtention>
             </button>
             <button class="filter obtention" onclick="filterItemContainerByObtention('end_cities')">
                 <lipartefact-obtention class="end_cities"></lipartefact-obtention>
@@ -75,9 +81,6 @@
             </button>
             <button class="filter obtention" onclick="filterItemContainerByObtention('strongholds')">
                 <lipartefact-obtention class="strongholds"></lipartefact-obtention>
-            </button>
-            <button class="filter obtention" onclick="filterItemContainerByObtention('trail_ruins')">
-                <lipartefact-obtention class="trail_ruins"></lipartefact-obtention>
             </button>
             <button class="filter obtention" onclick="filterItemContainerByObtention(['trial_chambers','trial_chambers_ominous_vault'])">
                 <lipartefact-obtention class="trial_chambers"></lipartefact-obtention>
@@ -244,6 +247,13 @@
                 <a class="attribute positive" slot="head">+1 Attack Knockback</a>
                 <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
             </lipartefact-item>
+            <lipartefact-item id="mummy_leggings" rarity="uncommon">
+                <a class="name">Mummy Bandages</a>
+                <a class="attribute positive" slot="legs">+6 Armor</a>
+                <a class="enchantment" rarity="special">Husk Breath</a>
+                <lipartefact-obtention class="archaeology">Desert Pyramid</lipartefact-obtention>
+                <lipartefact-obtention class="desert_pyramids"></lipartefact-obtention>
+            </lipartefact-item>
             <lipartefact-item id="music_disc_groovotational" rarity="uncommon">
                 <a class="name">Music Disc</a>
                 <a class="other">Lipatant - Groovotational</a>
@@ -393,7 +403,7 @@
             <lipartefact-item id="sniffer_upgrade_smithing_template" rarity="rare">
                 <a class="name">Sniffer Upgrade</a>
                 <a class="smithing_template" applies_to="Diamond Equipment" ingredients="Leather"></a>
-                <lipartefact-obtention class="trail_ruins">Rare Reward</lipartefact-obtention>
+                <lipartefact-obtention class="archaeology">Trail Ruins - Rare Reward</lipartefact-obtention>
             </lipartefact-item>
             <lipartefact-item id="warden_boots" rarity="rare">
                 <a class="name">Warden Boots</a>

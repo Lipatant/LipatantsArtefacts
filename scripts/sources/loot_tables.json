@@ -1,4 +1,12 @@
 {
+    "archaeology/desert_pyramid": {
+        "added_entries": [
+            {
+                "value": "lipartefacts:items/mummy_leggings",
+                "weight": 1
+            }
+        ]
+    },
     "archaeology/trail_ruins_rare": {
         "added_entries": [
             {
@@ -102,6 +110,22 @@
                     {
                         "value": "lipartefacts:items/piglin_upgrade_smithing_template",
                         "weight": 4
+                    }
+                ]
+            }
+        ]
+    },
+    "chests/desert_pyramid": {
+        "added_pools": [
+            {
+                "entries": [
+                    {
+                        "type": "minecraft:empty",
+                        "weight": 3
+                    },
+                    {
+                        "value": "lipartefacts:items/mummy_leggings",
+                        "weight": 1
                     }
                 ]
             }

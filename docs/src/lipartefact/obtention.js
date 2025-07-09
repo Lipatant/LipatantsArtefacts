@@ -47,12 +47,16 @@ function replaceObtention(element, data) {
 
 const replacedList = [
     {
+        id: "abandoned_mineshafts",
+        text: "Abandoned Mineshafts",
+    },
+    {
         id: "ancient_cities",
         text: "Ancient Cities",
     },
     {
-        id: "abandoned_mineshafts",
-        text: "Abandoned Mineshafts",
+        id: "archaeology",
+        text: "Archaeology",
     },
     {
         id: "bastions",
@@ -65,6 +69,10 @@ const replacedList = [
     {
         id: "crafting",
         text: "Crafting",
+    },
+    {
+        id: "desert_pyramids",
+        text: "Desert Pyramids",
     },
     {
         id: "end_cities",
@@ -105,10 +113,6 @@ const replacedList = [
     {
         id: "strongholds",
         text: "Strongholds",
-    },
-    {
-        id: "trail_ruins",
-        text: "Trail Ruins",
     },
     {
         id: "trial_chambers",

@@ -1,0 +1,54 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:armor",
+                                    "id": "minecraft:armor.leggings",
+                                    "amount": 6,
+                                    "operation": "add_value",
+                                    "slot": "legs"
+                                }
+                            ],
+                            "replace": true
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "legs",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "asset_id": "lipartefacts:mummy"
+                                },
+                                "minecraft:max_damage": 495,
+                                "minecraft:item_model": "lipartefacts:mummy_leggings",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.mummy_leggings"
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "lipartefacts:husk_breath": 1
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/uncommon"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
