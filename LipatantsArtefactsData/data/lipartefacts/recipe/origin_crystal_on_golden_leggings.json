@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing_transform",
     "base": "minecraft:golden_leggings",
-    "template": "minecraft:command_block",
+    "template": "minecraft:flow_banner_pattern",
     "result": {
         "id": "minecraft:golden_leggings",
         "components": {

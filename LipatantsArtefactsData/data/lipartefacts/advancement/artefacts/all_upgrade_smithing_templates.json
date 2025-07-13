@@ -63,7 +63,7 @@
             "components": {
                 "minecraft:item_model": "lipartefacts:sniffer_upgrade_smithing_template"
             },
-            "id": "minecraft:skull_banner_pattern"
+            "id": "minecraft:chain_command_block"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.all_upgrade_smithing_templates.title"

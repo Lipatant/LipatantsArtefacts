@@ -42,5 +42,5 @@
             "minecraft:rarity": "rare"
         }
     },
-    "template": "minecraft:piglin_banner_pattern"
+    "template": "minecraft:command_block"
 }

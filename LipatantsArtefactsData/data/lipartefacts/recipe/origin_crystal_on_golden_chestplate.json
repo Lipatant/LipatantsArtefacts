@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing_transform",
     "base": "minecraft:golden_chestplate",
-    "template": "minecraft:command_block",
+    "template": "minecraft:flow_banner_pattern",
     "result": {
         "id": "minecraft:golden_chestplate",
         "components": {

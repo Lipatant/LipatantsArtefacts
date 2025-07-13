@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing_transform",
     "base": "minecraft:golden_pickaxe",
-    "template": "minecraft:chain_command_block",
+    "template": "minecraft:guster_banner_pattern",
     "result": {
         "id": "minecraft:golden_pickaxe",
         "components": {

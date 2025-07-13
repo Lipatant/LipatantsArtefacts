@@ -49,5 +49,5 @@
             "minecraft:rarity": "rare"
         }
     },
-    "template": "skull_banner_pattern"
+    "template": "minecraft:chain_command_block"
 }

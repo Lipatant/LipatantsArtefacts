@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing_transform",
     "base": "minecraft:diamond_helmet",
-    "template": "minecraft:command_block",
+    "template": "minecraft:flow_banner_pattern",
     "result": {
         "id": "minecraft:diamond_helmet",
         "components": {

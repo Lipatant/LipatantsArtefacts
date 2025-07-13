@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing_transform",
     "base": "minecraft:shears",
-    "template": "minecraft:command_block",
+    "template": "minecraft:flow_banner_pattern",
     "result": {
         "id": "minecraft:shears",
         "components": {

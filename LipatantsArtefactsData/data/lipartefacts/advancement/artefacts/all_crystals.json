@@ -35,7 +35,7 @@
             "components": {
                 "minecraft:item_model": "lipartefacts:repair_crystal"
             },
-            "id": "minecraft:chain_command_block"
+            "id": "minecraft:guster_banner_pattern"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.all_crystals.title"

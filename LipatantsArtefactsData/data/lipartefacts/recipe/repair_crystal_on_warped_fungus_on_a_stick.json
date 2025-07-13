@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing_transform",
     "base": "minecraft:warped_fungus_on_a_stick",
-    "template": "minecraft:chain_command_block",
+    "template": "minecraft:guster_banner_pattern",
     "result": {
         "id": "minecraft:warped_fungus_on_a_stick",
         "components": {

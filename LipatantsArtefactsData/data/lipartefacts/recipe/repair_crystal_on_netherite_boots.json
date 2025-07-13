@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing_transform",
     "base": "minecraft:netherite_boots",
-    "template": "minecraft:chain_command_block",
+    "template": "minecraft:guster_banner_pattern",
     "result": {
         "id": "minecraft:netherite_boots",
         "components": {
