@@ -15,12 +15,12 @@
                                 },
                                 "minecraft:lore": [
                                     {
-                                        "text": ""
-                                    },
-                                    {
                                         "color": "gray",
                                         "italic": false,
                                         "translate": "item.minecraft.smithing_template"
+                                    },
+                                    {
+                                        "text": ""
                                     },
                                     {
                                         "color": "gray",

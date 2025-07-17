@@ -65,6 +65,7 @@ class LipartefactItem extends HTMLElement {
         if (properties.itemSmithingTemplate) {
             element.appendChild(this.getElementSmithingTemplate());
             element.appendChild(document.createElement("br"));
+            element.appendChild(document.createElement("br"));
             element.appendChild(this.getElementSmithingTemplateAppliesTo());
             element.appendChild(document.createElement("br"));
             element.appendChild(this.getElementSmithingTemplateAppliesToElement(properties.itemSmithingTemplate));
