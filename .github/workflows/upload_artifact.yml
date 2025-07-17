@@ -22,13 +22,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Zip LipatantsArtefactsAssets
+        uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r LipatantsArtefactsAssets.zip LipatantsArtefactsAssets
+
+      - name: Zip LipatantsArtefactsData
+        uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r LipatantsArtefactsData.zip LipatantsArtefactsData
+
       - name: Upload artifact
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           name: "${{ env.PACK_NAME }} ${{ env.PACK_VERSION }}"
 
           files: |
-            LipatantsArtefactsData/*
+            ./LipatantsArtefactsAssets.zip
 
           game-versions: |
             [${{ env.MINECRAFT_VERSION }}]
