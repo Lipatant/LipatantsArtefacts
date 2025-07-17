@@ -15,14 +15,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Upload and build artifact
+      - name: Build artifact
         uses: actions/upload-artifact@v4
         with:
           name: "${{ env.PACK_NAME }} ${{ env.PACK_VERSION }}"
           path: |
             LipatantsArtefactsAssets/
             LipatantsArtefactsData/
+
+      - name: Upload artifact
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          name: "${{ env.PACK_NAME }} ${{ env.PACK_VERSION }}"
+
+          files: |
+            LipatantsArtefactsAssets/
+            LipatantsArtefactsData/
+
+          game-versions: |
+            [${{ env.MINECRAFT_VERSION }}]
+
+          github-tag: "release-${{ env.PACK_VERSION }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+          version: "release-${{ env.PACK_VERSION }}"
+          version-type: release
