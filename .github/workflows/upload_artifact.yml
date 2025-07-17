@@ -1,0 +1,28 @@
+name: Upload Artifact
+
+on:
+  pull_request:
+    branches: [main, dev-workflows]
+  push:
+    branches: [main, dev-workflows]
+
+env:
+  MINECRAFT_VERSION: "1.21.5"
+  PACK_NAME: "Lipatant's Artefacts WORKFLOW_TEST"
+  PACK_VERSION: "1.4.0"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Upload and build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ env.PACK_NAME }} ${{ env.PACK_VERSION }}"
+          path: |
+            LipatantsArtefactsAssets/
+            LipatantsArtefactsData/
