@@ -6,6 +6,13 @@
             }
         ]
     },
+    "music_disc.mineral_winter": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/mineral_winter"
+            }
+        ]
+    },
     "music_disc.moment_of_melting_solitude": {
         "sounds": [
             {

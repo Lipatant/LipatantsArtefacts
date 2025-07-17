@@ -13,6 +13,18 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "music_disc_mineral_winter": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_mineral_winter"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "music_disc_moment_of_melting_solitude": {
             "conditions": {
                 "items": [
@@ -56,6 +68,9 @@
     "requirements": [
         [
             "music_disc_groovotational"
+        ],
+        [
+            "music_disc_mineral_winter"
         ],
         [
             "music_disc_moment_of_melting_solitude"

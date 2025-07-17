@@ -70,6 +70,8 @@
     "item.lipartefacts.mummy_leggings": "Mummy Bandages",
     "item.lipartefacts.music_disc_groovotational": "Music Disc",
     "item.lipartefacts.music_disc_groovotational.desc": "Lipatant - Groovotational",
+    "item.lipartefacts.music_disc_mineral_winter": "Music Disc",
+    "item.lipartefacts.music_disc_mineral_winter.desc": "Lipatant - Mineral Winter",
     "item.lipartefacts.music_disc_moment_of_melting_solitude": "Music Disc",
     "item.lipartefacts.music_disc_moment_of_melting_solitude.desc": "Lipatant - Moment Of Melting Solitude",
     "item.lipartefacts.music_disc_space_caster": "Music Disc",
@@ -104,6 +106,7 @@
     "item.lipartefacts.warden_leggings": "Warden Leggings",
     "item.lipartefacts.warden_upgrade_smithing_template": "Warden Upgrade",
     "jukebox_song.lipartefacts.groovotational.desc": "Lipatant - Groovotational",
+    "jukebox_song.lipartefacts.mineral_winter.desc": "Lipatant - Mineral Winter",
     "jukebox_song.lipartefacts.moment_of_melting_solitude.desc": "Lipatant - Moment Of Melting Solitude",
     "jukebox_song.lipartefacts.space_caster.desc": "Lipatant - Space Caster"
 }
