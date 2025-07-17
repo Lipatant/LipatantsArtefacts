@@ -23,14 +23,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Zip LipatantsArtefactsAssets
-        uses: montudor/action-zip@v1
-        with:
-          args: zip -qq -r LipatantsArtefactsAssets.zip . -i LipatantsArtefactsAssets/*
+        run: |
+          cd LipatantsArtefactsAssets
+          zip -qq -r ../LipatantsArtefactsAssets.zip .
 
       - name: Zip LipatantsArtefactsData
-        uses: montudor/action-zip@v1
-        with:
-          args: zip -qq -r LipatantsArtefactsData.zip . -i LipatantsArtefactsData/*
+        run: |
+          cd LipatantsArtefactsData
+          zip -qq -r ../LipatantsArtefactsData.zip .
 
       - name: Upload artifact
         uses: Kir-Antipov/mc-publish@v3.3
