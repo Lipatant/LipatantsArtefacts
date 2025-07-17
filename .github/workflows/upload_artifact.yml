@@ -32,14 +32,13 @@ jobs:
           cd LipatantsArtefactsData
           zip -qq -r ../LipatantsArtefactsData.zip .
 
-      - name: Upload artifact
+      - name: Upload LipatantsArtefactsAssets
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           name: "${{ env.PACK_NAME }} ${{ env.PACK_VERSION }}"
 
           files: |
             ./LipatantsArtefactsAssets.zip
-            ./LipatantsArtefactsData.zip
 
           game-versions: |
             [${{ env.MINECRAFT_VERSION }}]
@@ -49,6 +48,9 @@ jobs:
 
           loaders: |
             datapack
+
+          modrinth-id: lipatants-artefacts
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 
           version: "release-${{ env.PACK_VERSION }}"
           version-type: release
