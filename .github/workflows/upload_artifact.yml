@@ -28,7 +28,6 @@ jobs:
           name: "${{ env.PACK_NAME }} ${{ env.PACK_VERSION }}"
 
           files: |
-            LipatantsArtefactsAssets/*
             LipatantsArtefactsData/*
 
           game-versions: |
