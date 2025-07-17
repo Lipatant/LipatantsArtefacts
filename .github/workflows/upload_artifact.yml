@@ -36,8 +36,8 @@ jobs:
           name: "${{ env.PACK_NAME }} ${{ env.PACK_VERSION }}"
 
           files: |
-            LipatantsArtefactsAssets/
-            LipatantsArtefactsData/
+            LipatantsArtefactsAssets/*
+            LipatantsArtefactsData/*
 
           game-versions: |
             [${{ env.MINECRAFT_VERSION }}]
