@@ -49,7 +49,7 @@ jobs:
           loaders: |
             datapack
 
-          modrinth-id: lipatants-artefacts
+          modrinth-id: IPuPRhFd
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 
           version: "release-${{ env.PACK_VERSION }}"
