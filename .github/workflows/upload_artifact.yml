@@ -9,8 +9,8 @@ on:
 env:
   MODRITH_ID: "IPuPRhFd"
   MINECRAFT_VERSION: "1.21.5"
-  PACK_NAME: "Lipatant's Artefacts WORKFLOW_TEST"
-  PACK_VERSION: "1.4.1"
+  PACK_NAME: "Lipatant's Artefacts"
+  PACK_VERSION: "1.4.0"
 
 jobs:
   build:
