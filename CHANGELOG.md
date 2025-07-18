@@ -27,4 +27,5 @@
 
 ### Other changes:
 
+- Increasing the duration of all jukebox songs by 1.0 second.
 - Upgrading the pack to Minecraft 1.21.7.
