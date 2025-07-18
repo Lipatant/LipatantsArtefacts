@@ -35,7 +35,7 @@ jobs:
       - name: Upload LipatantsArtefactsAssets
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          name: "${{ env.PACK_NAME }} ${{ env.PACK_VERSION }}"
+          changelog-file: CHANGELOG.md
 
           files: |
             ./LipatantsArtefactsAssets.zip
@@ -51,6 +51,8 @@ jobs:
 
           modrinth-id: IPuPRhFd
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+
+          name: "${{ env.PACK_NAME }} ${{ env.PACK_VERSION }}"
 
           version: "release-${{ env.PACK_VERSION }}"
           version-type: release
