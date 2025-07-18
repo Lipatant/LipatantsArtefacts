@@ -1,19 +1,30 @@
-### Adding 8 new artefacts:
+### Adding 6 new artefacts:
 
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/air_bubble.png" width="16"/> Air Bubble
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/paper_plane.png" width="16"/> Paper Plane
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_boots.png" width="16"/> Piglin Boots
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_chestplate.png" width="16"/> Piglin Chestplate
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_helmet.png" width="16"/> Adding Piglin Helmet
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_leggings.png" width="16"/> Piglin Leggings
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/stray_chestplate.png" width="16"/> Snow Camouflage Tunic
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/bogged_chestplate.png" width="16"/> Swamp Camouflage Tunic
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/goat_helmet.png" width="16"/> Horned Helmet
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/mummy_leggings.png" width="16"/> Mummy Bandages
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/music_disc_mineral_winter.png" width="16"/> Music Disc - Mineral Winter
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_upgrade_smithing_template.png" width="16"/> Piglin Upgrade
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_upgrade_smithing_template.png" width="16"/> Sniffer Upgrade
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_upgrade_smithing_template.png" width="16"/> Warden Upgrade
 
-### Adding 1 advancement:
+### Adding 2 advancement:
 
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_chestplate.png" width="16"/> Impostor Among Them
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/goat_helmet.png" width="16"/> Greatest of All Tanks
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_upgrade_smithing_template.png" width="16"/> Master Blacksmith
 
-### Changing 2 artefacts:
+### Changing 18 artefacts:
 
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/netherite_battle_shield.png" width="16"/> Netherite Battle Shield: Reducing its drop rate from Bastion Treasures.
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/incognito_helmet.png" width="16"/> Very Convincing Disguise: Making the Incognito enchantment into a beneficial curse.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/cat_helmet.png" width="16"/> Cat Ears: Changing its looting type in Village Tanneries to an added pool.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/origin_crystal.png" width="16"/> Crystal of Origin: Changing its item id.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_chestplate.png" width="16"/> Piglin Armor: Changing its durability to match the Netherite Armor.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_chestplate.png" width="16"/> Piglin Armor: Removing it from chests and making it accessible through upgrading instead.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/repair_crystal.png" width="16"/> Repair Crystal: Changing its item id.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_chestplate.png" width="16"/> Sniffer Armor: Changing its durability to match the Netherite Armor.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_chestplate.png" width="16"/> Sniffer Armor: Removing it from Suspicious Gravel and making it accessible through upgrading instead.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/music_disc_space_caster.png" width="16"/> Uncommon Music Discs: Changing their looting type in Jungle Temples to an added pool.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_chestplate.png" width="16"/> Warden Armor: Changing its durability to match the Netherite Armor.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_chestplate.png" width="16"/> Warden Armor: Removing it from chests and making it accessible through upgrading instead.
+
+### Other changes:
+
+- Upgrading the pack to Minecraft 1.21.7.
