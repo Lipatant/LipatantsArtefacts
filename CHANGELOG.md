@@ -11,7 +11,7 @@
 
 ### Adding 1 advancement:
 
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/stray_chestplate.png" width="16"/> Impostor Among Them
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_chestplate.png" width="16"/> Impostor Among Them
 
 ### Changing 2 artefacts:
 
