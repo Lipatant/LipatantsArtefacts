@@ -2,6 +2,10 @@
     "archaeology/desert_pyramid": {
         "added_entries": [
             {
+                "value": "lipartefacts:items/great_hunger_helmet",
+                "weight": 1
+            },
+            {
                 "value": "lipartefacts:items/mummy_leggings",
                 "weight": 1
             }
@@ -26,6 +30,10 @@
                     {
                         "value": "lipartefacts:items/glowing_flask_1",
                         "weight": 3
+                    },
+                    {
+                        "value": "lipartefacts:items/great_hunger_helmet",
+                        "weight": 1
                     },
                     {
                         "value": "lipartefacts:items/incognito_helmet",
@@ -346,6 +354,10 @@
             },
             {
                 "value": "lipartefacts:items/stray_chestplate",
+                "weight": 2
+            },
+            {
+                "value": "lipartefacts:items/great_hunger_helmet",
                 "weight": 2
             }
         ]

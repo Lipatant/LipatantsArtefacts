@@ -328,6 +328,11 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/great_hunger_helmet",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/incognito_helmet",
                     "weight": 1
                 },

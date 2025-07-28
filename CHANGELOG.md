@@ -1,6 +1,7 @@
 ### Adding 6 new artefacts:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/goat_helmet.png" width="16"/> Horned Helmet
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/great_hunger_helmet.png" width="16"/> Great Hunger Jaw
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/mummy_leggings.png" width="16"/> Mummy Bandages
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/music_disc_mineral_winter.png" width="16"/> Music Disc - Mineral Winter
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_upgrade_smithing_template.png" width="16"/> Piglin Upgrade
