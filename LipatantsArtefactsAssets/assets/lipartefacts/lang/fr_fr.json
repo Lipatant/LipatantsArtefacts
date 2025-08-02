@@ -1,6 +1,8 @@
 {
     "advancements.lipartefacts.artefacts.all_axolotls.description": "Trouvez toutes les variantes de breloque de l'axolotl.",
     "advancements.lipartefacts.artefacts.all_axolotls.title": "Breloques de support émotionnel",
+    "advancements.lipartefacts.artefacts.all_crabs.description": "Trouvez toutes les variantes de breloque du crabe.",
+    "advancements.lipartefacts.artefacts.all_crabs.title": "En route pour la rave party",
     "advancements.lipartefacts.artefacts.all_crystals.description": "Trouvez tout les artefacts de cristal.",
     "advancements.lipartefacts.artefacts.all_crystals.title": "Minéralogie",
     "advancements.lipartefacts.artefacts.all_enchanted_books.description": "Trouvez tout les artefacts d'enchantement.",
@@ -47,6 +49,7 @@
     "item.lipartefacts.bogged_chestplate": "Tunique de camouflage des marais",
     "item.lipartefacts.cat_helmet": "Oreilles de chat",
     "item.lipartefacts.chicken_charm": "Breloque de la poule",
+    "item.lipartefacts.crab_charm": "Breloque du crabe",
     "item.lipartefacts.drilling_pickaxe": "Pioche de forage",
     "item.lipartefacts.enchanted_book_call_to_chaos": "Livre enchanté",
     "item.lipartefacts.enchanted_book_fracture": "Livre enchanté",

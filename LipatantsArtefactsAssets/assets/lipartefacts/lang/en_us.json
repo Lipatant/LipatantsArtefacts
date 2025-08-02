@@ -1,6 +1,8 @@
 {
     "advancements.lipartefacts.artefacts.all_axolotls.description": "Find all variants of Charm of the Axolotl",
     "advancements.lipartefacts.artefacts.all_axolotls.title": "Emotional Support Charms",
+    "advancements.lipartefacts.artefacts.all_crabs.description": "Find all variants of Charm of the Crab",
+    "advancements.lipartefacts.artefacts.all_crabs.title": "Off to the Rave Party",
     "advancements.lipartefacts.artefacts.all_crystals.description": "Find all Crystal artefacts",
     "advancements.lipartefacts.artefacts.all_crystals.title": "Mineralogy",
     "advancements.lipartefacts.artefacts.all_enchanted_books.description": "Find all Enchanted Book artefacts",
@@ -47,6 +49,7 @@
     "item.lipartefacts.bogged_chestplate": "Swamp Camouflage Tunic",
     "item.lipartefacts.cat_helmet": "Cat Ears",
     "item.lipartefacts.chicken_charm": "Charm of the Chicken",
+    "item.lipartefacts.crab_charm": "Charm of the Crab",
     "item.lipartefacts.drilling_pickaxe": "Drilling Pickaxe",
     "item.lipartefacts.enchanted_book_call_to_chaos": "Enchanted Book",
     "item.lipartefacts.enchanted_book_fracture": "Enchanted Book",

@@ -219,10 +219,14 @@
                 "entries": [
                     {
                         "type": "minecraft:empty",
-                        "weight": 2
+                        "weight": 1
                     },
                     {
                         "value": "lipartefacts:items/axolotl_charm",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/crab_charm",
                         "weight": 1
                     }
                 ]
@@ -392,10 +396,14 @@
                 "entries": [
                     {
                         "type": "minecraft:empty",
-                        "weight": 5
+                        "weight": 4
                     },
                     {
                         "value": "lipartefacts:items/axolotl_charm",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/crab_charm",
                         "weight": 1
                     }
                 ]
@@ -408,10 +416,14 @@
                 "entries": [
                     {
                         "type": "minecraft:empty",
-                        "weight": 5
+                        "weight": 4
                     },
                     {
                         "value": "lipartefacts:items/axolotl_charm",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/crab_charm",
                         "weight": 1
                     }
                 ]

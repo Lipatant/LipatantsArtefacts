@@ -1,0 +1,130 @@
+{
+    "parent": "lipartefacts:artefacts/fisherman_armor",
+    "criteria": {
+        "clay": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "clay"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:crab_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "dirt": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "dirt"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:crab_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "gravel": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "gravel"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:crab_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "sand": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "sand"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:crab_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "spruce_planks": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_model_data": {
+                                "strings": [
+                                    "spruce_planks"
+                                ]
+                            },
+                            "minecraft:item_model": "lipartefacts:crab_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.all_crabs.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "components": {
+                "minecraft:custom_model_data": {
+                    "strings": [
+                        "spruce_planks"
+                    ]
+                },
+                "minecraft:item_model": "lipartefacts:crab_charm"
+            },
+            "id": "minecraft:echo_shard"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.all_crabs.title"
+        }
+    },
+    "requirements": [
+        [
+            "clay"
+        ],
+        [
+            "dirt"
+        ],
+        [
+            "gravel"
+        ],
+        [
+            "sand"
+        ],
+        [
+            "spruce_planks"
+        ]
+    ],
+    "rewards": {
+        "experience": 100
+    }
+}

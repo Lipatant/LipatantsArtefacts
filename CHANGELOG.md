@@ -1,5 +1,6 @@
-### Adding 6 new artefacts:
+### Adding 8 new artefacts:
 
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/crab_charm.png" width="16"/> Charm of the Crab
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/goat_helmet.png" width="16"/> Horned Helmet
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/great_hunger_helmet.png" width="16"/> Great Hunger Jaw
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/mummy_leggings.png" width="16"/> Mummy Bandages
@@ -8,10 +9,11 @@
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_upgrade_smithing_template.png" width="16"/> Sniffer Upgrade
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_upgrade_smithing_template.png" width="16"/> Warden Upgrade
 
-### Adding 2 advancement:
+### Adding 3 advancements:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/goat_helmet.png" width="16"/> Greatest of All Tanks
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_upgrade_smithing_template.png" width="16"/> Master Blacksmith
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/crab_charm.png" width="16"/> Off to the Rave Party
 
 ### Changing 18 artefacts:
 
