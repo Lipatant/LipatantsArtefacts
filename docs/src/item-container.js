@@ -8,7 +8,7 @@ function checkForObtention(element, obtention) {
     if (obtention === "") {
         return true;
     }
-    const children = element.children[0].children;
+    const children = element.children;
     let child;
     for (let i = 0; i < children.length; i++) {
         child = children[i];
@@ -18,6 +18,14 @@ function checkForObtention(element, obtention) {
                     return true
                 }
             } else if (child.getAttribute("id") === obtention) {
+                return true
+            }
+        } else if (child.tagName === "LIPARTEFACT-ITEM-TOOLTIP") {
+            if (checkForObtention(child, obtention)) {
+                return true
+            }
+        } else if (child.tagName === "DIV") {
+            if (checkForObtention(child, obtention)) {
                 return true
             }
         }

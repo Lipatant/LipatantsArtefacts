@@ -70,14 +70,15 @@
     /** Attribute other colors */
     --clr-other: #bebebe;
     --clr-other-blue: #3f3ffe;
+    /** Item-related constants **/
+    --item-tooltip-width: 35em;
 }
 
 body {
     --s: 200px;
     background:
-      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--clr-background-a10) 0 50%) 
-       calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
-      repeating-conic-gradient(from 30deg,var(--clr-background-a0) 0 60deg,var(--clr-background-a20) 0 120deg,var(--clr-background-a10) 0 50%);
+        repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--clr-background-a10) 0 50%) calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
+        repeating-conic-gradient(from 30deg, var(--clr-background-a0) 0 60deg, var(--clr-background-a20) 0 120deg, var(--clr-background-a10) 0 50%);
     background-size: var(--s) calc(var(--s)*tan(30deg));
     image-rendering: pixelated;
     color: var(--clr-primary-a50);
@@ -94,7 +95,8 @@ button.filter {
     padding: 7px;
 }
 
-button.filter:hover, button.filter:focus {
+button.filter:hover,
+button.filter:focus {
     outline-color: var(--clr-primary-a50);
 }
 
@@ -173,33 +175,89 @@ ul.changelog>li>.icon {
 lipartefact-item>.container {
     border-radius: 1px;
     background-color: #100010F0;
-    font-family: Minecraftia;
     outline: 2px solid rgba(67, 13, 163, .88);
     padding: 7px;
-    width: 30em;
+    transition: 0.2s ease;
+    width: 2e;
 }
 
 lipartefact-item>.container>.icon {
     height: 2em;
+    transition: 0.2s filter ease, 0.2s -webkit-filter ease;
     width: 2em;
 }
 
-lipartefact-item>.container>.name {
-    vertical-align: top;
-}
+lipartefact-item>.container>lipartefact-item-tooltip {
+    padding: 0px 24px;
+    pointer-events: none;
+    visibility: hidden;
 
-lipartefact-item>.container>.name::before {
-    content: " ";
+    position: absolute;
+    z-index: 1;
 }
 
 lipartefact-item.hide {
     display: none;
 }
 
-lipartefact-item.centered>.container {
+lipartefact-item:hover>.container {
+    outline: 2px solid white;
+}
+
+lipartefact-item:hover>.container>.icon {
+    filter: drop-shadow(0 0 8px var(--clr-rarity-common));
+}
+
+lipartefact-item:hover[rarity="common"]>.container>.icon {
+    filter: drop-shadow(0 0 8px var(--clr-rarity-common));
+}
+
+lipartefact-item:hover[rarity="uncommon"]>.container>.icon {
+    filter: drop-shadow(0 0 8px var(--clr-rarity-uncommon));
+}
+
+lipartefact-item:hover[rarity="rare"]>.container>.icon {
+    filter: drop-shadow(0 0 8px var(--clr-rarity-rare));
+}
+
+lipartefact-item:hover[rarity="epic"]>.container>.icon {
+    filter: drop-shadow(0 0 8px var(--clr-rarity-epic));
+}
+
+lipartefact-item:hover>.container>lipartefact-item-tooltip {
+    visibility: visible;
+}
+
+lipartefact-item-tooltip>.container {
+    border-radius: 1px;
+    background-color: #100010F0;
+    font-family: Minecraftia;
+    outline: 2px solid rgba(67, 13, 163, .88);
+    padding: 7px;
+    width: var(--item-tooltip-width);
+}
+
+lipartefact-item-tooltip>.container>.icon {
+    height: 2em;
+    width: 2em;
+}
+
+lipartefact-item-tooltip.centered>.container {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+lipartefact-item-tooltip>.container-obtention-list {
+    margin-top: 8px;
+}
+
+lipartefact-item-tooltip[display-icon="true"]>.container>.name {
+    vertical-align: top;
+}
+
+lipartefact-item-tooltip[display-icon="true"]>.container>.name::before {
+    content: " ";
 }
 
 lipartefact-navbar {

@@ -4,6 +4,51 @@ class LipartefactItem extends HTMLElement {
     }
 
     connectedCallback() {
+        const element = this.getElement();
+        this.innerHTML = "";
+        this.appendChild(element);
+    }
+
+    getElement() {
+        let element = document.createElement("div");
+        element.appendChild(this.getElementIcon(this.id));
+        element.appendChild(this.getElementTooltip());
+        element.classList.add("container");
+        return element;
+    }
+
+    getElementIcon(itemID) {
+        let element = document.createElement("img");
+        element.classList.add("icon");
+        element.classList.add("item");
+        element.setAttribute("alt", "");
+        element.setAttribute("src", `img/item/${itemID}.png`);
+        return element;
+    }
+
+    getElementTooltip() {
+        const attributes = this.getAttributeNames();
+        const children = this.children;
+        let child;
+        let element = document.createElement("lipartefact-item-tooltip");
+        for (var i = 0; i < attributes.length; i++) {
+            element.setAttribute(attributes[i], this.getAttribute(attributes[i]));
+        }
+        for (var i = 0; i < children.length; i++) {
+            child = children[i].cloneNode(false);
+            child.textContent = children[i].textContent;
+            element.appendChild(child);
+        }
+        return element;
+    }
+}
+
+class LipartefactItemTooltip extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
         const children = this.children;
         let properties = {
             itemAttributes: [],
@@ -39,15 +84,20 @@ class LipartefactItem extends HTMLElement {
             }
         }
         const element = this.getElement(properties);
+        const obtentionList = this.getObtentionList(properties);
         this.innerHTML = "";
         this.appendChild(element);
+        if (obtentionList) {
+            this.appendChild(obtentionList);
+        }
     }
 
     getElement(properties) {
         let element = document.createElement("div");
-        let isCrafted = false
         let previousAttributeSlot = ""
-        element.appendChild(this.getElementIcon(this.id));
+        if (this.getShouldDisplayIcon()) {
+            element.appendChild(this.getElementIcon(this.id));
+        }
         element.appendChild(this.getElementName(properties.itemName));
         element.appendChild(document.createElement("br"));
         for (const item of properties.itemOthers) {
@@ -90,15 +140,6 @@ class LipartefactItem extends HTMLElement {
                 previousAttributeSlot = ""
             }
             element.appendChild(this.getElementAttribute(item));
-        }
-        if (properties.itemObtentions.length > 0) {
-            element.appendChild(document.createElement("br"));
-            element.appendChild(document.createElement("br"));
-            element.appendChild(this.getElementObtentionText());
-            element.appendChild(document.createElement("br"));
-            for (const item of properties.itemObtentions) {
-                element.appendChild(this.getElementObtention(item));
-            }
         }
         element.classList.add("container");
         return element;
@@ -216,7 +257,7 @@ class LipartefactItem extends HTMLElement {
         element.textContent = "Smithing Template"
         return element;
     }
-    
+
     getElementSmithingTemplateAppliesTo() {
         let element = document.createElement("a");
         element.style.color = "var(--clr-other)";
@@ -249,9 +290,29 @@ class LipartefactItem extends HTMLElement {
         return this.hasAttribute("crafted") && (this.getAttribute("crafted") === "true");
     }
 
+    getObtentionList(properties) {
+        if (properties.itemObtentions.length < 1) {
+            return null;
+        }
+        let element = document.createElement("div");
+        element.appendChild(this.getElementObtentionText());
+        element.appendChild(document.createElement("br"));
+        for (const item of properties.itemObtentions) {
+            element.appendChild(this.getElementObtention(item));
+        }
+        element.classList.add("container");
+        element.classList.add("container-obtention-list");
+        return element;
+    }
+
     getRarity() {
         return this.getAttribute("rarity");
+    }
+
+    getShouldDisplayIcon() {
+        return this.hasAttribute("display-icon") && (this.getAttribute("display-icon") === "true");
     }
 }
 
 customElements.define("lipartefact-item", LipartefactItem);
+customElements.define("lipartefact-item-tooltip", LipartefactItemTooltip);

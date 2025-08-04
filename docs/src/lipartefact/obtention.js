@@ -12,7 +12,7 @@ class LipartefactObtention extends HTMLElement {
     getElement() {
         let element = document.createElement("div");
         element.appendChild(this.getElementIcon(this.id));
-        element.appendChild(this.getElementName(this.innerText));
+        element.appendChild(this.getElementName(this.innerHTML));
         element.classList.add("container");
         return element;
     }
@@ -38,10 +38,10 @@ class LipartefactObtention extends HTMLElement {
 
 function replaceObtention(element, data) {
     element.id = data.id;
-    if (element.innerText === "") {
-        element.innerText = data.text;
+    if (element.innerHTML === "") {
+        element.innerHTML = data.text;
     } else {
-        element.innerText = data.text + " - " + element.innerText;
+        element.innerHTML = data.text + " - " + element.innerHTML;
     }
 }
 
