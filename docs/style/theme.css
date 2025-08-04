@@ -28,6 +28,8 @@
     --clr-surface-tonal-a30: #5e615f;
     --clr-surface-tonal-a40: #777978;
     --clr-surface-tonal-a50: #909391;
+    /** Additional information colors */
+    --clr-additional-information-secondary: #555555;
     /** Attribute modifier colors */
     --clr-attribute: #bebebe;
     --clr-attribute-attack: #00be00;
@@ -248,7 +250,7 @@ lipartefact-item-tooltip.centered>.container {
     margin-right: auto;
 }
 
-lipartefact-item-tooltip>.container-obtention-list {
+lipartefact-item-tooltip>.container-additional {
     margin-top: 8px;
 }
 

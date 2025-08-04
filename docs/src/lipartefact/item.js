@@ -83,6 +83,7 @@ class LipartefactItemTooltip extends HTMLElement {
                 properties.itemSmithingTemplate = child;
             }
         }
+        const additionalInformationList = this.getAdditionalInformationList(properties);
         const element = this.getElement(properties);
         const obtentionList = this.getObtentionList(properties);
         this.innerHTML = "";
@@ -90,6 +91,40 @@ class LipartefactItemTooltip extends HTMLElement {
         if (obtentionList) {
             this.appendChild(obtentionList);
         }
+        if (additionalInformationList) {
+            this.appendChild(additionalInformationList);
+        }
+    }
+
+    getAdditionalInformationList(properties) {
+        let element = document.createElement("div");
+        let isValid = false;
+        if (this.getIsDyeable()) {
+            let line = document.createElement("a");
+            if (isValid) {
+                element.appendChild(document.createElement("br"));
+            } else {
+                isValid = true;
+            }
+            line.innerText = "Can be dyed";
+            element.appendChild(line);
+        }
+        if (this.getHasVariants()) {
+            let line = document.createElement("a");
+            if (isValid) {
+                element.appendChild(document.createElement("br"));
+            } else {
+                isValid = true;
+            }
+            line.innerText = "Has variants";
+            element.appendChild(line);
+        }
+        if (!isValid) {
+            return null;
+        }
+        element.classList.add("container");
+        element.classList.add("container-additional");
+        return element;
     }
 
     getElement(properties) {
@@ -286,8 +321,16 @@ class LipartefactItemTooltip extends HTMLElement {
         return element;
     }
 
+    getHasVariants() {
+        return this.hasAttribute("variants") && (this.getAttribute("variants") > 1);
+    }
+
     getIsCrafted() {
         return this.hasAttribute("crafted") && (this.getAttribute("crafted") === "true");
+    }
+
+    getIsDyeable() {
+        return this.hasAttribute("dyeable") && (this.getAttribute("dyeable") === "true");
     }
 
     getObtentionList(properties) {
@@ -301,6 +344,7 @@ class LipartefactItemTooltip extends HTMLElement {
             element.appendChild(this.getElementObtention(item));
         }
         element.classList.add("container");
+        element.classList.add("container-additional");
         element.classList.add("container-obtention-list");
         return element;
     }
