@@ -1,6 +1,7 @@
-### Adding 8 new artefacts:
+### Adding 9 new artefacts:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/crab_charm.png" width="16"/> Charm of the Crab
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/enchanted_book_illager_bane.png" width="16"/> Enchanted Book - Illager's Bane
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/goat_helmet.png" width="16"/> Horned Helmet
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/great_hunger_helmet.png" width="16"/> Great Hunger Jaw
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/mummy_leggings.png" width="16"/> Mummy Bandages

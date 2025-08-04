@@ -534,6 +534,13 @@
             {
                 "entries": [
                     {
+                        "value": "lipartefacts:items/enchanted_book_illager_bane"
+                    }
+                ]
+            },
+            {
+                "entries": [
+                    {
                         "value": "lipartefacts:items/ravager_charm"
                     }
                 ]

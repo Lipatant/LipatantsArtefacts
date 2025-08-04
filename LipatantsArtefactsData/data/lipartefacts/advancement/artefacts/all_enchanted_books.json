@@ -25,6 +25,18 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "enchanted_book_illager_bane": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_illager_bane"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "enchanted_book_imperilment": {
             "conditions": {
                 "items": [
@@ -71,6 +83,9 @@
         ],
         [
             "enchanted_book_fracture"
+        ],
+        [
+            "enchanted_book_illager_bane"
         ],
         [
             "enchanted_book_imperilment"
