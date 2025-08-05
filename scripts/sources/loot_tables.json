@@ -204,10 +204,6 @@
                     {
                         "value": "lipartefacts:items/incognito_helmet",
                         "weight": 1
-                    },
-                    {
-                        "value": "lipartefacts:items/paper_plane",
-                        "weight": 1
                     }
                 ]
             }
@@ -440,22 +436,6 @@
                     },
                     {
                         "value": "lipartefacts:items/repair_crystal",
-                        "weight": 1
-                    }
-                ]
-            }
-        ]
-    },
-    "chests/village/village_cartographer": {
-        "added_pools": [
-            {
-                "entries": [
-                    {
-                        "type": "minecraft:empty",
-                        "weight": 1
-                    },
-                    {
-                        "value": "lipartefacts:items/paper_plane",
                         "weight": 1
                     }
                 ]

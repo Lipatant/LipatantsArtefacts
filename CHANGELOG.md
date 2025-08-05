@@ -33,6 +33,10 @@
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_chestplate.png" width="16"/> Warden Armor: Changing its durability to match the Netherite Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_chestplate.png" width="16"/> Warden Armor: Removing it from chests and making it accessible through upgrading instead.
 
+### Removing 1 artefact:
+
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/paper_plane.png" width="16"/> Paper Plane
+
 ### Other changes:
 
 - Increasing the duration of all jukebox songs by 1.0 second.

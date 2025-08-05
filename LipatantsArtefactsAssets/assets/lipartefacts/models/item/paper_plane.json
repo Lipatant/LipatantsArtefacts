@@ -1,6 +1,0 @@
-{
-    "parent": "lipartefacts:item/charm",
-    "textures": {
-        "layer0": "lipartefacts:item/paper_plane"
-    }
-}
