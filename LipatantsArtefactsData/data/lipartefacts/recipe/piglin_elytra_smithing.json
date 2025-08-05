@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "minecraft:gold_ingot",
+    "base": "minecraft:elytra",
+    "result": {
+        "id": "minecraft:elytra",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:attack_damage",
+                    "id": "minecraft:armor.chestplate",
+                    "amount": 0.1,
+                    "operation": "add_multiplied_base",
+                    "slot": "chest"
+                }
+            ],
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:piglin_elytra",
+                "equip_sound": "minecraft:item.armor.equip_elytra",
+                "slot": "chest"
+            },
+            "minecraft:item_model": "lipartefacts:piglin_elytra",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.piglin_elytra"
+            },
+            "minecraft:lore": [
+                {
+                    "color": "dark_purple",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.epic.desc"
+                }
+            ],
+            "minecraft:max_damage": 496,
+            "minecraft:rarity": "epic"
+        }
+    },
+    "template": "minecraft:command_block"
+}

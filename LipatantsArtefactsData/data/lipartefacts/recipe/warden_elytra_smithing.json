@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "minecraft:echo_shard",
+    "base": "minecraft:elytra",
+    "result": {
+        "id": "minecraft:elytra",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:max_health",
+                    "id": "minecraft:armor.chestplate",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "chest"
+                }
+            ],
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:warden_elytra",
+                "equip_sound": "minecraft:item.armor.equip_elytra",
+                "slot": "chest"
+            },
+            "minecraft:item_model": "lipartefacts:warden_elytra",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.warden_elytra"
+            },
+            "minecraft:lore": [
+                {
+                    "color": "dark_purple",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.epic.desc"
+                }
+            ],
+            "minecraft:max_damage": 496,
+            "minecraft:rarity": "epic"
+        }
+    },
+    "template": "minecraft:repeating_command_block"
+}

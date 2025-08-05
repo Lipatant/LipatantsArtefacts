@@ -1,0 +1,48 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:elytra",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:max_health",
+                                    "id": "minecraft:armor.chestplate",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                }
+                            ],
+                            "replace": false
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "asset_id": "lipartefacts:warden_elytra",
+                                    "equip_sound": "minecraft:item.armor.equip_elytra",
+                                    "slot": "chest"
+                                },
+                                "minecraft:item_model": "lipartefacts:warden_elytra",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.warden_elytra"
+                                },
+                                "minecraft:max_damage": 496
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/epic"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "minecraft:leather",
+    "base": "minecraft:elytra",
+    "result": {
+        "id": "minecraft:elytra",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:knockback_resistance",
+                    "id": "minecraft:armor.chestplate",
+                    "amount": 0.2,
+                    "operation": "add_value",
+                    "slot": "chest"
+                }
+            ],
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:sniffer_elytra",
+                "equip_sound": "minecraft:item.armor.equip_elytra",
+                "slot": "chest"
+            },
+            "minecraft:item_model": "lipartefacts:sniffer_elytra",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.sniffer_elytra"
+            },
+            "minecraft:lore": [
+                {
+                    "color": "dark_purple",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.epic.desc"
+                }
+            ],
+            "minecraft:max_damage": 496,
+            "minecraft:rarity": "epic"
+        }
+    },
+    "template": "minecraft:chain_command_block"
+}

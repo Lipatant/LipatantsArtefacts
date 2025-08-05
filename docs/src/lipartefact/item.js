@@ -207,7 +207,7 @@ class LipartefactItemTooltip extends HTMLElement {
     getElementAttributeSlot(slot) {
         let element = document.createElement("a");
         const slotDictionary = {
-            "chest": "When on Body:",
+            "chest": "When on Chest:",
             "feet": "When on Feet:",
             "head": "When on Head:",
             "legs": "When on Legs:",
