@@ -35,8 +35,7 @@ class LipartefactItem extends HTMLElement {
             element.setAttribute(attributes[i], this.getAttribute(attributes[i]));
         }
         for (var i = 0; i < children.length; i++) {
-            child = children[i].cloneNode(false);
-            child.textContent = children[i].textContent;
+            child = children[i].cloneNode(true);
             element.appendChild(child);
         }
         return element;
@@ -90,6 +89,12 @@ class LipartefactItemTooltip extends HTMLElement {
         this.appendChild(element);
         if (obtentionList) {
             this.appendChild(obtentionList);
+        }
+        for (const item of properties.itemEnchantments) {
+            const enchantmentDescription = this.getEnchantmentDescription(item);
+            if (enchantmentDescription) {
+                this.appendChild(enchantmentDescription);
+            }
         }
         if (additionalInformationList) {
             this.appendChild(additionalInformationList);
@@ -220,9 +225,19 @@ class LipartefactItemTooltip extends HTMLElement {
     }
 
     getElementEnchantment(item) {
+        const children = item.children;
+        let child;
+        let textContent = item.textContent;
         let element = document.createElement("a");
+        for (var i = 0; i < children.length; i++) {
+            child = children[i];
+            if (child.tagName === "A") {
+                textContent = child.textContent;
+                break;
+            }
+        }
         element.style.color = item.hasAttribute("rarity") ? `var(--clr-enchantment-${item.getAttribute("rarity")})` : "var(--clr-enchantment)";
-        element.textContent = item.textContent;
+        element.textContent = textContent;
         return element;
     }
 
@@ -318,6 +333,53 @@ class LipartefactItemTooltip extends HTMLElement {
         let element = document.createElement("a");
         element.style.color = "var(--clr-other-blue)";
         element.innerHTML = "&nbsp;" + (smithingTemplate.hasAttribute("ingredients") ? smithingTemplate.getAttribute("ingredients") : "???");
+        return element;
+    }
+
+    getEnchantmentDescription(item) {
+        const children = item.children;
+        let element = document.createElement("div");
+        let elementLine;
+        let child;
+        let isValid = false;
+        for (var i = 0; i < children.length; i++) {
+            child = children[i];
+            if (child.tagName === "P") {
+                isValid = true;
+                break;
+            }
+        }
+        if (!isValid) {
+            return null;
+        }
+        for (var i = 0; i < children.length; i++) {
+            child = children[i];
+            switch (child.tagName) {
+                case "A":
+                    elementLine = document.createElement("a");
+                    elementLine.style.color = item.hasAttribute("rarity") ? `var(--clr-enchantment-${item.getAttribute("rarity")})` : "var(--clr-enchantment)";
+                    break;
+                case "P":
+                    elementLine = document.createElement("a");
+                    if (child.classList.contains("additional")) {
+                        elementLine.style.color = "var(--clr-enchantment-additional)";
+                    } else {
+                        elementLine.style.color = item.hasAttribute("rarity") ? `var(--clr-enchantment-${item.getAttribute("rarity")}-secondary)` : "var(--clr-enchantment-common-secondary)";
+                    }
+                    break;
+                default:
+                    elementLine = null;
+            }
+            if (!elementLine) {
+                continue;
+            }
+            elementLine.innerHTML = child.innerHTML;
+            element.appendChild(elementLine);
+            element.appendChild(document.createElement("br"));
+        }
+        element.classList.add("container");
+        element.classList.add("container-additional");
+        element.classList.add("container-enchantment");
         return element;
     }
 

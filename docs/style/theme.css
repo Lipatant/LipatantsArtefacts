@@ -49,13 +49,21 @@
     --clr-effect: #3f3ffe;
     /** Enchantment colors **/
     --clr-enchantment: #bebebe;
+    --clr-enchantment-additional: #555555;
     --clr-enchantment-common: #bebebe;
+    --clr-enchantment-common-secondary: #555555;
     --clr-enchantment-crafted: #bebebe;
+    --clr-enchantment-crafted-secondary: #555555;
     --clr-enchantment-curse: #fe3f3f;
+    --clr-enchantment-curse-secondary: #aa0000;
     --clr-enchantment-epic: #fe3ffe;
+    --clr-enchantment-epic-secondary: #be00be;
     --clr-enchantment-rare: #3ffefe;
+    --clr-enchantment-rare-secondary: #00bebe;
     --clr-enchantment-special: #3f3ffe;
+    --clr-enchantment-special-secondary: #0000aa;
     --clr-enchantment-uncommon: #fefe3f;
+    --clr-enchantment-uncommon-secondary: #aaaa00;
     /** Rarity colors **/
     --clr-rarity-crafted: #ffffff;
     --clr-rarity-crafted-secondary: #bebebe;
