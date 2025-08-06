@@ -204,6 +204,10 @@
                     {
                         "value": "lipartefacts:items/incognito_helmet",
                         "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/ravager_charm",
+                        "weight": 1
                     }
                 ]
             }

@@ -235,6 +235,11 @@
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/incognito_helmet",
                     "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/ravager_charm",
+                    "weight": 1
                 }
             ],
             "rolls": 1.0

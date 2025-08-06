@@ -20,9 +20,10 @@
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_upgrade_smithing_template.png" width="16"/> Master Blacksmith
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/crab_charm.png" width="16"/> Off to the Rave Party
 
-### Changing 18 artefacts:
+### Changing 19 artefacts:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/cat_helmet.png" width="16"/> Cat Ears: Changing its looting type in Village Tanneries to an added pool.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/ravager_charm.png" width="16"/> Charm of the Ravager: Added to Pillager Outposts.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/origin_crystal.png" width="16"/> Crystal of Origin: Changing its item id.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_chestplate.png" width="16"/> Piglin Armor: Changing its durability to match the Netherite Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_chestplate.png" width="16"/> Piglin Armor: Removing it from chests and making it accessible through upgrading instead.
