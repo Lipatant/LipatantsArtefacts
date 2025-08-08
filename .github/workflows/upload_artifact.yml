@@ -8,7 +8,7 @@ on:
 
 env:
   MODRITH_ID: "IPuPRhFd"
-  MINECRAFT_VERSION: "1.21.7"
+  MINECRAFT_VERSION: ">=1.21.7 <=1.21.8"
   PACK_NAME: "Lipatant's Artefacts"
   PACK_VERSION: "1.5.0"
 
@@ -42,7 +42,7 @@ jobs:
             ./LipatantsArtefactsData.zip
 
           game-versions: |
-            [${{ env.MINECRAFT_VERSION }}]
+            ${{ env.MINECRAFT_VERSION }}
 
           github-tag: "release-${{ env.PACK_VERSION }}"
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -67,7 +67,7 @@ jobs:
             ./LipatantsArtefactsAssets.zip
 
           game-versions: |
-            [${{ env.MINECRAFT_VERSION }}]
+            ${{ env.MINECRAFT_VERSION }}
 
           github-tag: "release-${{ env.PACK_VERSION }}"
           github-token: ${{ secrets.GITHUB_TOKEN }}
