@@ -1,5 +1,5 @@
 {
-    "parent": "lipartefacts:artefacts/root",
+    "parent": "lipartefacts:artefacts/complete_fishing",
     "criteria": {
         "fisherman_armor": {
             "conditions": {

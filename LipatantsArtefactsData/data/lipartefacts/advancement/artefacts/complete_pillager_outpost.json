@@ -1,24 +1,24 @@
 {
     "parent": "lipartefacts:artefacts/root",
     "criteria": {
-        "origin_crystal": {
+        "incognito_helmet": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:origin_crystal"
+                            "minecraft:item_model": "lipartefacts:incognito_helmet"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "repair_crystal": {
+        "ravager_charm": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:repair_crystal"
+                            "minecraft:item_model": "lipartefacts:ravager_charm"
                         }
                     }
                 ]
@@ -28,25 +28,33 @@
     },
     "display": {
         "description": {
-            "translate": "advancements.lipartefacts.artefacts.all_crystals.description"
+            "translate": "advancements.lipartefacts.artefacts.complete_pillager_outpost.description"
         },
         "frame": "task",
         "icon": {
             "components": {
-                "minecraft:item_model": "lipartefacts:repair_crystal"
+                "minecraft:charged_projectiles": [
+                    {
+                        "components": {
+                            "minecraft:intangible_projectile": {}
+                        },
+                        "count": 1,
+                        "id": "minecraft:arrow"
+                    }
+                ]
             },
-            "id": "minecraft:guster_banner_pattern"
+            "id": "minecraft:crossbow"
         },
         "title": {
-            "translate": "advancements.lipartefacts.artefacts.all_crystals.title"
+            "translate": "advancements.lipartefacts.artefacts.complete_pillager_outpost.title"
         }
     },
     "requirements": [
         [
-            "origin_crystal"
+            "incognito_helmet"
         ],
         [
-            "repair_crystal"
+            "ravager_charm"
         ]
     ]
 }

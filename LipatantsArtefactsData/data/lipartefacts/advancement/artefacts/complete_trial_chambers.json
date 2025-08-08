@@ -1,0 +1,139 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "battle_shield": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:battle_shield"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "bogged_chestplate": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:bogged_chestplate"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "drilling_pickaxe": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:drilling_pickaxe"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "enchanted_book_vampirism": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_vampirism"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "great_hunger_helmet": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:great_hunger_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "little_boots": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:little_boots"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "little_leggings": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:little_leggings"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "stray_chestplate": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:stray_chestplate"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_trial_chambers.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:trial_key"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_trial_chambers.title"
+        }
+    },
+    "requirements": [
+        [
+            "battle_shield"
+        ],
+        [
+            "bogged_chestplate"
+        ],
+        [
+            "drilling_pickaxe"
+        ],
+        [
+            "enchanted_book_vampirism"
+        ],
+        [
+            "great_hunger_helmet"
+        ],
+        [
+            "little_boots"
+        ],
+        [
+            "little_leggings"
+        ],
+        [
+            "stray_chestplate"
+        ]
+    ]
+}

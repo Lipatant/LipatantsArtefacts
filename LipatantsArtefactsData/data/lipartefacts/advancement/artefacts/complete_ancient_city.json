@@ -1,0 +1,49 @@
+{
+    "parent": "lipartefacts:artefacts/complete_abandoned_mineshaft",
+    "criteria": {
+        "origin_crystal": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:origin_crystal"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "warden_upgrade_smithing_template": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:warden_upgrade_smithing_template"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_ancient_city.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:echo_shard"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_ancient_city.title"
+        }
+    },
+    "requirements": [
+        [
+            "origin_crystal"
+        ],
+        [
+            "warden_upgrade_smithing_template"
+        ]
+    ]
+}

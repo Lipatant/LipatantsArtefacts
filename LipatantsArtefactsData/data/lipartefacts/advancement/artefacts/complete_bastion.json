@@ -1,0 +1,94 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "battle_shield": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:battle_shield"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "enchanted_book_fracture": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_fracture"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "enchanted_book_imperilment": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_imperilment"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "netherite_battle_shield": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:netherite_battle_shield"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "piglin_upgrade_smithing_template": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:piglin_upgrade_smithing_template"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_bastion.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:golden_axe"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_bastion.title"
+        }
+    },
+    "requirements": [
+        [
+            "battle_shield"
+        ],
+        [
+            "enchanted_book_fracture"
+        ],
+        [
+            "enchanted_book_imperilment"
+        ],
+        [
+            "netherite_battle_shield"
+        ],
+        [
+            "piglin_upgrade_smithing_template"
+        ]
+    ]
+}

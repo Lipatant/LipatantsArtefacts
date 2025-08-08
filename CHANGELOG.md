@@ -14,11 +14,24 @@
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_elytra.png" width="16"/> Warden Elytra
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_upgrade_smithing_template.png" width="16"/> Warden Upgrade
 
-### Adding 3 advancements:
+### Adding 16 advancements:
 
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/crossbow_arrow.png" width="16"/> Bad, Bad, Really, Really Bad
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/trial_key.png" width="16"/> Challenger
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/cod.png" width="16"/> Charm-Baiting
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/shulker_shell.png" width="16"/> Does It Even Matter?
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/golden_apple.png" width="16"/> Dungeon Master
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/rabbit_foot.png" width="16"/> Feline Delegation
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/goat_helmet.png" width="16"/> Greatest of All Tanks
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_upgrade_smithing_template.png" width="16"/> Master Blacksmith
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/golden_axe.png" width="16"/> In the Hall of the Montain Pig
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/jungle_sapling.png" width="16"/> King of the Jungle
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/iron_axe.png" width="16"/> Loot the House
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/ender_eye.png" width="16"/> Looting Before the End
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/chest_minecart.png" width="16"/> Lost Miner
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/crab_charm.png" width="16"/> Off to the Rave Party
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/trident.png" width="16"/> Scuba Looting
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/brush.png" width="16"/> The Gravel I'm Buried In
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/echo_shard.png" width="16"/> The Silence of the Limbs
 
 ### Changing 19 artefacts:
 
@@ -37,6 +50,12 @@
 ### Removing 1 artefact:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/paper_plane.png" width="16"/> Paper Plane
+
+### Removing 3 advancements:
+
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/music_disc_space_caster.png" width="16"/> Disc Jocket
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/enchanted_book_imperilment.png" width="16"/> I'm Gonna Do A Book
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/repair_crystal.png" width="16"/> Mineralogy
 
 ### Other changes:
 

@@ -1,0 +1,49 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "origin_crystal": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:origin_crystal"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "repair_crystal": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:repair_crystal"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_stronghold.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:ender_eye"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_stronghold.title"
+        }
+    },
+    "requirements": [
+        [
+            "origin_crystal"
+        ],
+        [
+            "repair_crystal"
+        ]
+    ]
+}

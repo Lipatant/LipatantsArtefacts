@@ -1,0 +1,139 @@
+{
+    "parent": "lipartefacts:artefacts/complete_abandoned_mineshaft",
+    "criteria": {
+        "glowing_flask_1": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:glowing_flask_1"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "glowing_flask_2": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:glowing_flask_2"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_groovotational": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_groovotational"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_mineral_winter": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_mineral_winter"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_moment_of_melting_solitude": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_moment_of_melting_solitude"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_space_caster": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_space_caster"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "regeneration_flask": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:regeneration_flask"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "repair_crystal": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:repair_crystal"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_simple_dungeon.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:golden_apple"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_simple_dungeon.title"
+        }
+    },
+    "requirements": [
+        [
+            "glowing_flask_1"
+        ],
+        [
+            "glowing_flask_2"
+        ],
+        [
+            "music_disc_groovotational"
+        ],
+        [
+            "music_disc_mineral_winter"
+        ],
+        [
+            "music_disc_moment_of_melting_solitude"
+        ],
+        [
+            "music_disc_space_caster"
+        ],
+        [
+            "regeneration_flask"
+        ],
+        [
+            "repair_crystal"
+        ]
+    ]
+}

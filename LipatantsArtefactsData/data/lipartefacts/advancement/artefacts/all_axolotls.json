@@ -1,5 +1,5 @@
 {
-    "parent": "lipartefacts:artefacts/fisherman_armor",
+    "parent": "lipartefacts:artefacts/complete_underwater_ruin",
     "criteria": {
         "blue": {
             "conditions": {

@@ -1,0 +1,139 @@
+{
+    "parent": "lipartefacts:artefacts/complete_pillager_outpost",
+    "criteria": {
+        "enchanted_book_fracture": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_fracture"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "enchanted_book_illager_bane": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_illager_bane"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "enchanted_book_imperilment": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_imperilment"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_groovotational": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_groovotational"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_mineral_winter": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_mineral_winter"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_moment_of_melting_solitude": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_moment_of_melting_solitude"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_space_caster": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_space_caster"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "ravager_charm": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:ravager_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_woodland_mansion.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:iron_axe"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_woodland_mansion.title"
+        }
+    },
+    "requirements": [
+        [
+            "enchanted_book_fracture"
+        ],
+        [
+            "enchanted_book_illager_bane"
+        ],
+        [
+            "enchanted_book_imperilment"
+        ],
+        [
+            "music_disc_groovotational"
+        ],
+        [
+            "music_disc_mineral_winter"
+        ],
+        [
+            "music_disc_moment_of_melting_solitude"
+        ],
+        [
+            "music_disc_space_caster"
+        ],
+        [
+            "ravager_charm"
+        ]
+    ]
+}

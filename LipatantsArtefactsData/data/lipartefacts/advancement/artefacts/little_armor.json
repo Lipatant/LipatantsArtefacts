@@ -1,5 +1,5 @@
 {
-    "parent": "lipartefacts:artefacts/root",
+    "parent": "lipartefacts:artefacts/complete_trial_chambers",
     "criteria": {
         "little_armor": {
             "conditions": {

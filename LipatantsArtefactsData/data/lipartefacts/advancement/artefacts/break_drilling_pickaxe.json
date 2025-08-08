@@ -1,5 +1,5 @@
 {
-    "parent": "lipartefacts:artefacts/little_armor",
+    "parent": "lipartefacts:artefacts/complete_trial_chambers",
     "criteria": {
         "break_drilling_pickaxe": {
             "trigger": "minecraft:item_durability_changed",

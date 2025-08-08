@@ -1,5 +1,5 @@
 {
-    "parent": "lipartefacts:artefacts/root",
+    "parent": "lipartefacts:artefacts/complete_pillager_outpost",
     "criteria": {
         "paper_bag_alex": {
             "conditions": {

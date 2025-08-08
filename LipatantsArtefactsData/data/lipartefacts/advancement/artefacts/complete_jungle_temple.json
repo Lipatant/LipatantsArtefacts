@@ -1,0 +1,94 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "bogged_chestplate": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:bogged_chestplate"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_groovotational": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_groovotational"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_mineral_winter": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_mineral_winter"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_moment_of_melting_solitude": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_moment_of_melting_solitude"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_space_caster": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_space_caster"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_jungle_temple.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:jungle_sapling"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_jungle_temple.title"
+        }
+    },
+    "requirements": [
+        [
+            "bogged_chestplate"
+        ],
+        [
+            "music_disc_groovotational"
+        ],
+        [
+            "music_disc_mineral_winter"
+        ],
+        [
+            "music_disc_moment_of_melting_solitude"
+        ],
+        [
+            "music_disc_space_caster"
+        ]
+    ]
+}

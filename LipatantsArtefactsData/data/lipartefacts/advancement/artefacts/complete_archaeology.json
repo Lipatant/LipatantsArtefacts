@@ -1,0 +1,64 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "great_hunger_helmet": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:great_hunger_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "mummy_leggings": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:mummy_leggings"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "sniffer_upgrade_smithing_template": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:sniffer_upgrade_smithing_template"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_archaeology.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:brush"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_archaeology.title"
+        }
+    },
+    "requirements": [
+        [
+            "great_hunger_helmet"
+        ],
+        [
+            "mummy_leggings"
+        ],
+        [
+            "sniffer_upgrade_smithing_template"
+        ]
+    ]
+}

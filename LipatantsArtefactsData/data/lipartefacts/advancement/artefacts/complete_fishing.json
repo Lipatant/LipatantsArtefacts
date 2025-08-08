@@ -1,48 +1,60 @@
 {
     "parent": "lipartefacts:artefacts/root",
     "criteria": {
-        "music_disc_groovotational": {
+        "bogged_chestplate": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:music_disc_groovotational"
+                            "minecraft:item_model": "lipartefacts:bogged_chestplate"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "music_disc_mineral_winter": {
+        "cat_helmet": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:music_disc_mineral_winter"
+                            "minecraft:item_model": "lipartefacts:cat_helmet"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "music_disc_moment_of_melting_solitude": {
+        "fisherman_chestplate": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:music_disc_moment_of_melting_solitude"
+                            "minecraft:item_model": "lipartefacts:fisherman_chestplate"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "music_disc_space_caster": {
+        "fisherman_helmet": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:music_disc_space_caster"
+                            "minecraft:item_model": "lipartefacts:fisherman_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "stray_chestplate": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:stray_chestplate"
                         }
                     }
                 ]
@@ -52,31 +64,31 @@
     },
     "display": {
         "description": {
-            "translate": "advancements.lipartefacts.artefacts.all_music_discs.description"
+            "translate": "advancements.lipartefacts.artefacts.complete_fishing.description"
         },
         "frame": "task",
         "icon": {
-            "components": {
-                "minecraft:item_model": "lipartefacts:music_disc_groovotational"
-            },
-            "id": "minecraft:music_disc_otherside"
+            "id": "minecraft:cod"
         },
         "title": {
-            "translate": "advancements.lipartefacts.artefacts.all_music_discs.title"
+            "translate": "advancements.lipartefacts.artefacts.complete_fishing.title"
         }
     },
     "requirements": [
         [
-            "music_disc_groovotational"
+            "bogged_chestplate"
         ],
         [
-            "music_disc_mineral_winter"
+            "cat_helmet"
         ],
         [
-            "music_disc_moment_of_melting_solitude"
+            "fisherman_chestplate"
         ],
         [
-            "music_disc_space_caster"
+            "fisherman_helmet"
+        ],
+        [
+            "stray_chestplate"
         ]
     ]
 }

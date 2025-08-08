@@ -1,60 +1,72 @@
 {
     "parent": "lipartefacts:artefacts/root",
     "criteria": {
-        "enchanted_book_call_to_chaos": {
+        "drilling_pickaxe": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:enchanted_book_call_to_chaos"
+                            "minecraft:item_model": "lipartefacts:drilling_pickaxe"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "enchanted_book_fracture": {
+        "glowing_flask_1": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:enchanted_book_fracture"
+                            "minecraft:item_model": "lipartefacts:glowing_flask_1"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "enchanted_book_illager_bane": {
+        "great_hunger_helmet": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:enchanted_book_illager_bane"
+                            "minecraft:item_model": "lipartefacts:great_hunger_helmet"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "enchanted_book_imperilment": {
+        "incognito_helmet": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:enchanted_book_imperilment"
+                            "minecraft:item_model": "lipartefacts:incognito_helmet"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "enchanted_book_vampirism": {
+        "regeneration_flask": {
             "conditions": {
                 "items": [
                     {
                         "components": {
-                            "minecraft:item_model": "lipartefacts:enchanted_book_vampirism"
+                            "minecraft:item_model": "lipartefacts:regeneration_flask"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "repair_crystal": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:repair_crystal"
                         }
                     }
                 ]
@@ -64,34 +76,34 @@
     },
     "display": {
         "description": {
-            "translate": "advancements.lipartefacts.artefacts.all_enchanted_books.description"
+            "translate": "advancements.lipartefacts.artefacts.complete_abandoned_mineshaft.description"
         },
         "frame": "task",
         "icon": {
-            "components": {
-                "minecraft:item_model": "lipartefacts:enchanted_book_imperilment"
-            },
-            "id": "minecraft:enchanted_book"
+            "id": "minecraft:chest_minecart"
         },
         "title": {
-            "translate": "advancements.lipartefacts.artefacts.all_enchanted_books.title"
+            "translate": "advancements.lipartefacts.artefacts.complete_abandoned_mineshaft.title"
         }
     },
     "requirements": [
         [
-            "enchanted_book_call_to_chaos"
+            "drilling_pickaxe"
         ],
         [
-            "enchanted_book_fracture"
+            "glowing_flask_1"
         ],
         [
-            "enchanted_book_illager_bane"
+            "great_hunger_helmet"
         ],
         [
-            "enchanted_book_imperilment"
+            "incognito_helmet"
         ],
         [
-            "enchanted_book_vampirism"
+            "regeneration_flask"
+        ],
+        [
+            "repair_crystal"
         ]
     ]
 }

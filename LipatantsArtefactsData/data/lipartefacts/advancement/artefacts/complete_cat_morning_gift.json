@@ -1,0 +1,49 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "cat_helmet": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:cat_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "chicken_charm": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:chicken_charm"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_cat_morning_gift.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:rabbit_foot"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_cat_morning_gift.title"
+        }
+    },
+    "requirements": [
+        [
+            "cat_helmet"
+        ],
+        [
+            "chicken_charm"
+        ]
+    ]
+}

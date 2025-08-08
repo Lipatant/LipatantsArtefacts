@@ -1,5 +1,5 @@
 {
-    "parent": "lipartefacts:artefacts/all_upgrade_smithing_templates",
+    "parent": "lipartefacts:artefacts/complete_archaeology",
     "criteria": {
         "sniffer_armor": {
             "conditions": {
