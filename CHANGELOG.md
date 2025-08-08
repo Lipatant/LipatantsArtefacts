@@ -61,4 +61,5 @@
 
 - Changing the spelling of 'artefact' to 'artéfact' in Français (France).
 - Increasing the duration of all jukebox songs by 1.0 second.
+- Reworking the Item List section of the wiki.
 - Upgrading the pack to Minecraft 1.21.7.
