@@ -13,6 +13,18 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "iron_golem_chestplate": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:iron_golem_chestplate"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "ravager_charm": {
             "conditions": {
                 "items": [
@@ -52,6 +64,9 @@
     "requirements": [
         [
             "incognito_helmet"
+        ],
+        [
+            "iron_golem_chestplate"
         ],
         [
             "ravager_charm"

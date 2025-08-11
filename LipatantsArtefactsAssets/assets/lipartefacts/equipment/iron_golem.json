@@ -1,0 +1,9 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "lipartefacts:iron_golem"
+            }
+        ]
+    }
+}

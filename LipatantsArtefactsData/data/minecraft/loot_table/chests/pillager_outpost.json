@@ -238,6 +238,11 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/iron_golem_chestplate",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/ravager_charm",
                     "weight": 1
                 }

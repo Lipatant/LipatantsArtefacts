@@ -1,0 +1,69 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:armor",
+                                    "id": "minecraft:armor.chestplate",
+                                    "amount": 8,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "minecraft:armor_toughness",
+                                    "id": "minecraft:armor.chestplate",
+                                    "amount": 2.0,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "minecraft:max_health",
+                                    "id": "minecraft:armor.chestplate",
+                                    "amount": 6.0,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "attribute": "minecraft:scale",
+                                    "id": "minecraft:armor.chestplate",
+                                    "amount": 0.3,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "chest"
+                                }
+                            ],
+                            "replace": false
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "chest",
+                                    "equip_sound": "minecraft:item.armor.equip_iron",
+                                    "asset_id": "lipartefacts:iron_golem"
+                                },
+                                "minecraft:max_damage": 592,
+                                "minecraft:item_model": "lipartefacts:iron_golem_chestplate",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.iron_golem_chestplate"
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/rare"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
