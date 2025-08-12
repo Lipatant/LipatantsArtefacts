@@ -1,0 +1,37 @@
+{
+    "anvil_cost": 4,
+    "description": {
+        "translate": "enchantment.lipartefacts.cooling",
+        "color": "blue"
+    },
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:change_item_damage",
+                    "amount": -1
+                },
+                "requirements": {
+                    "condition": "minecraft:time_check",
+                    "period": 5,
+                    "value": 0
+                }
+            }
+        ]
+    },
+    "exclusive_set": "#lipartefacts:exclusive_set/durability",
+    "max_cost": {
+        "base": 60,
+        "per_level_above_first": 20
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 10,
+        "per_level_above_first": 20
+    },
+    "slots": [
+        "any"
+    ],
+    "supported_items": "#minecraft:enchantable/mining",
+    "weight": 2
+}

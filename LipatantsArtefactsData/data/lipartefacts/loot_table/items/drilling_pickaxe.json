@@ -8,10 +8,6 @@
                     "name": "minecraft:golden_pickaxe",
                     "functions": [
                         {
-                            "function": "minecraft:reference",
-                            "name": "lipartefacts:set_rarity/rare"
-                        },
-                        {
                             "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
@@ -32,8 +28,19 @@
                                 "minecraft:item_name": {
                                     "italic": false,
                                     "translate": "item.lipartefacts.drilling_pickaxe"
-                                }
+                                },
+                                "minecraft:max_damage": 131
                             }
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "lipartefacts:cooling": 1
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/rare"
                         }
                     ]
                 }
