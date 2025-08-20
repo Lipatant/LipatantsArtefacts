@@ -21,6 +21,9 @@
                     "slot": "chest"
                 }
             ],
+            "minecraft:damage_resistant": {
+                "types": "#minecraft:is_fire"
+            },
             "minecraft:equippable": {
                 "asset_id": "lipartefacts:netherite_elytra",
                 "equip_sound": "minecraft:item.armor.equip_elytra",

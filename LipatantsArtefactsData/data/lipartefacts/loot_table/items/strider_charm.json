@@ -9,6 +9,10 @@
                     "functions": [
                         {
                             "function": "minecraft:reference",
+                            "name": "lipartefacts:fire_resistant"
+                        },
+                        {
+                            "function": "minecraft:reference",
                             "name": "lipartefacts:set_rarity/uncommon"
                         },
                         {
@@ -27,9 +31,6 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:damage_resistant": {
-                                    "types": "#minecraft:is_fire"
-                                },
                                 "minecraft:equippable": {
                                     "slot": "offhand",
                                     "damage_on_hurt": false

@@ -9,6 +9,10 @@
                     "functions": [
                         {
                             "function": "minecraft:reference",
+                            "name": "lipartefacts:fire_resistant"
+                        },
+                        {
+                            "function": "minecraft:reference",
                             "name": "lipartefacts:set_rarity/epic"
                         },
                         {
@@ -36,9 +40,6 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:base_color": "black",
-                                "minecraft:damage_resistant": {
-                                    "types": "#minecraft:is_fire"
-                                },
                                 "minecraft:item_model": "lipartefacts:netherite_battle_shield",
                                 "minecraft:item_name": {
                                     "italic": false,

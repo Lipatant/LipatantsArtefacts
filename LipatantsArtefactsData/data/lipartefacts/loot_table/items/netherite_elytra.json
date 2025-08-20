@@ -45,6 +45,10 @@
                         },
                         {
                             "function": "minecraft:reference",
+                            "name": "lipartefacts:fire_resistant"
+                        },
+                        {
+                            "function": "minecraft:reference",
                             "name": "lipartefacts:set_rarity/epic"
                         }
                     ]
