@@ -17,15 +17,8 @@
                                 {
                                     "attribute": "minecraft:scale",
                                     "id": "lipartefacts:offhand.scale",
-                                    "amount": -0.5,
-                                    "operation": "add_multiplied_total",
-                                    "slot": "offhand"
-                                },
-                                {
-                                    "attribute": "minecraft:armor_toughness",
-                                    "id": "lipartefacts:offhand.armor_toughness",
-                                    "amount": -1.0,
-                                    "operation": "add_multiplied_total",
+                                    "amount": -0.2,
+                                    "operation": "add_multiplied_base",
                                     "slot": "offhand"
                                 }
                             ],
