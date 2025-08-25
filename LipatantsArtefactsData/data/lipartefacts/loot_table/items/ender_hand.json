@@ -17,7 +17,7 @@
                                 {
                                     "attribute": "minecraft:attack_knockback",
                                     "id": "lipartefacts:mainhand.attack_knockback",
-                                    "amount": 5,
+                                    "amount": 3,
                                     "operation": "add_value",
                                     "slot": "mainhand"
                                 }
