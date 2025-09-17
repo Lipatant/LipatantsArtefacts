@@ -1,0 +1,19 @@
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:rarity": "@1"
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            {
+                "color": "@2",
+                "italic": false,
+                "translate": "item.lipartefacts.generic.@1.desc"
+            }
+        ],
+        "mode": "append"
+    }
+]
