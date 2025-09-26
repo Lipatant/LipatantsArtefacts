@@ -1,6 +1,5 @@
 from item import COMPONENT_RARITY
 from item import FUNCTION, FUNCTION_SET_COMPONENTS, FUNCTION_SET_LORE
-from item import Item
 from item_modifier_base import ItemModifierBase
 
 def generate_data() -> dict:
