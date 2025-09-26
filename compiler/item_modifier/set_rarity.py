@@ -2,15 +2,7 @@ from item import COMPONENT_RARITY
 from item import FUNCTION, FUNCTION_SET_COMPONENTS, FUNCTION_SET_LORE
 from item_modifier_base import ItemModifierBase
 
-def generate_data() -> dict:
-    return {
-        "common": "gray",
-        "epic": "dark_purple",
-        "rare": "dark_aqua",
-        "uncommon": "#aaaa00",
-    }
-
-class ItemModifierRarity(ItemModifierBase):
+class ItemModifierSetRarity(ItemModifierBase):
 
     rarity = None
     secondary_color = None

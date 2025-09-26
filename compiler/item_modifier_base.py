@@ -1,5 +1,4 @@
 import json
-from item import Item
 from save_manager import save_item_modifier
 
 class ItemModifierBase:
@@ -8,9 +7,6 @@ class ItemModifierBase:
 
     def __init__(self, identifier):
         self.identifier = identifier
-
-    def apply(self, item: Item) -> None:
-        pass
 
     def get_file_path(self) -> str:
         return self.get_file_path_str() % self.identifier
@@ -29,3 +25,15 @@ class ItemModifierBase:
 
     def to_str(self) -> str:
         return json.dumps(self.to_data(), indent=4)
+
+class ItemModifierList(dict[str, ItemModifierBase]):
+
+    def append(self, item_modifier: ItemModifierBase) -> None:
+        path = item_modifier.get_path()
+        if path in self:
+            raise Exception("Item modifier '%s' has already been defined")
+        self[path] = item_modifier
+
+    def save(self) -> None:
+        for item_modifier in self.values():
+            item_modifier.save()

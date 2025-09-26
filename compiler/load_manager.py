@@ -1,8 +1,10 @@
-TEMPLATES_PATH = "./templates/"
+import json
+import os
 
-TEMPLATES_ITEM_MODIFIER_PATH = TEMPLATES_PATH + "item_modifier/"
+SOURCES_PATH = "../src/"
+SOURCES_RARITY_PATH = SOURCES_PATH + "rarity/"
 
-# Attemps to reads a `file_path` file.
+# Attemps to read a `file_path` file.
 def load(file_path: str) -> str:
     print("Loading file from %s." % file_path)
     item_file = open(file_path, "r")
@@ -10,6 +12,17 @@ def load(file_path: str) -> str:
     item_file.close()
     return content
 
-# Attemps to reads a `TEMPLATES_ITEM_MODIFIER_PATH + file_path` file.
-def load_template_item_modifier(file_path: str) -> str:
-    return load(TEMPLATES_ITEM_MODIFIER_PATH + file_path)
+# Attemps to read all files in the `file_path` directory.
+def load_all(file_path: str, as_json: bool = True) -> dict:
+    content_dict = {}
+    files = os.listdir(file_path)
+    for file in files:
+        if as_json:
+            content_dict[file] = json.loads(load(file_path + file))
+        else:
+            content_dict[file] = load(file_path + file)
+    return content_dict
+
+# Attemps to read all files in the `SOURCES_RARITY_PATH` directory.
+def load_all_rarities() -> dict:
+    return load_all(SOURCES_RARITY_PATH)

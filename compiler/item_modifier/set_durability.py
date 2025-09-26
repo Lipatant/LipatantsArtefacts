@@ -48,7 +48,7 @@ def generate_data() -> dict:
             output[tier][item] = data[tier][item]
     return output
 
-class ItemModifierDurability(ItemModifierBase):
+class ItemModifierSetDurability(ItemModifierBase):
 
     max_damage = 1
 
