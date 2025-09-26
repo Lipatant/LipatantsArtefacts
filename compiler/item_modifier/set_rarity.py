@@ -12,8 +12,8 @@ class ItemModifierSetRarity(ItemModifierBase):
         self.rarity = rarity
         self.secondary_color = secondary_color
 
-    def get_file_path_str(self) -> str:
-        return "set_rarity/%s.json"
+    def get_path_str(self) -> str:
+        return "set_rarity/%s"
 
     def to_data(self) -> dict | list:
         data_components = {

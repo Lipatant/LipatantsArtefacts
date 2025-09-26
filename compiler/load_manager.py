@@ -2,6 +2,8 @@ import json
 import os
 
 SOURCES_PATH = "../src/"
+SOURCES_ITEM_PATH = SOURCES_PATH + "item/"
+SOURCES_ITEM_TEMPLATE_PATH = SOURCES_PATH + "item_template/"
 SOURCES_RARITY_PATH = SOURCES_PATH + "rarity/"
 
 # Attemps to read a `file_path` file.
@@ -22,6 +24,14 @@ def load_all(file_path: str, as_json: bool = True) -> dict:
         else:
             content_dict[file] = load(file_path + file)
     return content_dict
+
+# Attemps to read all files in the `SOURCES_ITEM_PATH` directory.
+def load_all_items() -> dict:
+    return load_all(SOURCES_ITEM_PATH)
+
+# Attemps to read all files in the `SOURCES_ITEM_TEMPLATE_PATH` directory.
+def load_all_item_templates() -> dict:
+    return load_all(SOURCES_ITEM_TEMPLATE_PATH)
 
 # Attemps to read all files in the `SOURCES_RARITY_PATH` directory.
 def load_all_rarities() -> dict:

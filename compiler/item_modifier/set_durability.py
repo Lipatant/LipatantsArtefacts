@@ -56,8 +56,8 @@ class ItemModifierSetDurability(ItemModifierBase):
         super().__init__(identifier)
         self.max_damage = max_damage
 
-    def get_file_path_str(self) -> str:
-        return "set_durability/%s.json"
+    def get_path_str(self) -> str:
+        return "set_durability/%s"
 
     def to_data(self) -> dict | list:
         return {

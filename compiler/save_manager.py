@@ -5,6 +5,7 @@ DATAPACK_LIPARTEFACTS_PATH = DATAPACK_PATH + "data/lipartefacts/"
 DATAPACK_MINECRAFT_PATH = DATAPACK_PATH + "data/minecraft/"
 
 DATAPACK_ITEM_MODIFIER_PATH = DATAPACK_LIPARTEFACTS_PATH + "item_modifier/"
+DATAPACK_LOOT_TABLE_PATH = DATAPACK_LIPARTEFACTS_PATH + "loot_table/"
 
 # Attemps to save a file in `file_path`.
 def save(file_path: str, content: str) -> bool:
@@ -18,3 +19,7 @@ def save(file_path: str, content: str) -> bool:
 # Attemps to save a file in `DATAPACK_ITEM_MODIFIER_PATH + file_path`.
 def save_item_modifier(file_path: str, content: str) -> bool:
     return save(DATAPACK_ITEM_MODIFIER_PATH + file_path, content)
+
+# Attemps to save a file in `DATAPACK_LOOT_TABLE_PATH + file_path`.
+def save_loot_table(file_path: str, content: str) -> bool:
+    return save(DATAPACK_LOOT_TABLE_PATH + file_path, content)

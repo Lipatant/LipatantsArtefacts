@@ -1,0 +1,11 @@
+{
+    "components": {
+        "minecraft:equippable": {
+            "damage_on_hurt": false,
+            "slot": "offhand"
+        },
+        "minecraft:max_stack_size": 1
+    },
+    "id": "charm",
+    "inherits": "minecraft:echo_shard"
+}

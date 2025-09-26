@@ -1,10 +1,17 @@
 import item_modifier.set_durability
 import load_manager
+from item import Item, ItemList
 from item_modifier.set_durability import ItemModifierSetDurability
 from item_modifier.set_rarity import ItemModifierSetRarity
 from item_modifier_base import ItemModifierList
 
+item_list = ItemList()
 item_modifier_list = ItemModifierList()
+item_template_list = ItemList()
+
+def initialize() -> None:
+    initialize_item_modifiers()
+    initialize_items()
 
 def initialize_item_modifiers_set_durability() -> None:
     global item_modifier_list
@@ -35,11 +42,33 @@ def initialize_item_modifiers() -> None:
     initialize_item_modifiers_set_durability()
     initialize_item_modifiers_set_rarity()
 
-def initialize() -> None:
-    initialize_item_modifiers()
+def initialize_items() -> None:
+    global item_list, item_template_list
+    initialize_items_templates()
+    for data in load_manager.load_all_items().values():
+        if not data:
+            continue
+        inherits: str = data["inherits"] if ("inherits" in data) else ""
+        if inherits and not (inherits.startswith("minecraft:")):
+            inherits = "lipartefacts:items/" + inherits
+            if inherits not in item_template_list:
+                raise Exception("Item template `%s` hasn't been defined" % inherits)
+            item_template = item_template_list[inherits]
+            item: Item = item_template.duplicate().load(data)
+            item.inherits = item_template.inherits
+            item_list.append(item)
+        else:
+            item_list.append(Item(data))
+
+def initialize_items_templates() -> None:
+    global item_template_list
+    for data in load_manager.load_all_item_templates().values():
+        item_template_list.append(Item(data))
+        print(item_template_list.keys())
 
 def save() -> None:
-    global item_modifier_list
+    global item_list, item_modifier_list
+    item_list.save()
     item_modifier_list.save()
 
 initialize()
