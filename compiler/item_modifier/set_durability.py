@@ -1,3 +1,8 @@
+from item import COMPONENT_MAX_DAMAGE
+from item import FUNCTION, FUNCTION_SET_COMPONENTS
+from item import Item
+from item_modifier_base import ItemModifierBase
+
 def generate_data() -> dict:
     data = {
         "chainmail": {
@@ -43,3 +48,22 @@ def generate_data() -> dict:
                 continue
             output[tier][item] = data[tier][item]
     return output
+
+class ItemModifierDurability(ItemModifierBase):
+
+    max_damage = 1
+
+    def __init__(self, identifier: str, max_damage: int):
+        super().__init__(identifier)
+        self.max_damage = max_damage
+
+    def get_file_path_str(self) -> str:
+        return "set_durability/%s.json"
+
+    def to_data(self) -> dict | list:
+        return {
+                FUNCTION: FUNCTION_SET_COMPONENTS,
+                "components": {
+                    COMPONENT_MAX_DAMAGE: self.max_damage,
+                },
+            }
