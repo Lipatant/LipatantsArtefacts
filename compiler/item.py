@@ -19,6 +19,7 @@ class Item:
 class Item:
 
     attributes: list[dict] = []
+    attributes_keep: bool = False
     components: dict = {}
     identifier: str = ""
     inherits: str = "minecraft:stone"
@@ -31,6 +32,7 @@ class Item:
     def duplicate(self) -> Item:
         item = Item()
         item.attributes = self.attributes.copy()
+        item.attributes_keep = self.attributes_keep
         item.components = self.components.copy()
         item.identifier = self.identifier
         item.inherits = self.inherits
@@ -51,6 +53,8 @@ class Item:
         if "attributes" in data:
             for attribute in data["attributes"]:
                 self.attributes.append(attribute)
+        if "attributes_keep" in data:
+            self.attributes_keep = data["attributes_keep"]
         if "components" in data:
             for key, value in data["components"].items():
                 self.components[key] = value
@@ -101,7 +105,7 @@ class Item:
                 {
                     FUNCTION: FUNCTION_SET_ATTRIBUTES,
                     "modifiers": self.attributes,
-                    "replace": True,
+                    "replace": not self.attributes_keep,
                 }
             )
         for item_modifier in self.item_modifiers:
