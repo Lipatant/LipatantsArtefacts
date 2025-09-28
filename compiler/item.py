@@ -148,7 +148,7 @@ class Item:
         for variant in self.variants:
             entry = {
                 "type": "minecraft:loot_table",
-                "value": self.get_path("_base")
+                "value": self.get_path("_base"),
             }
             if variant:
                 entry["functions"] = [
@@ -160,7 +160,7 @@ class Item:
                                     variant
                                 ]
                             }
-                        }
+                        },
                     }
                 ]
             entries.append(entry)
