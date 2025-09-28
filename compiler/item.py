@@ -140,7 +140,7 @@ class Item:
                             {
                                 "color": "blue",
                                 "italic": False,
-                                "text": "potion.potency.%s" % amplifier,
+                                "translate": "potion.potency.%s" % amplifier,
                             }
                         )
                     lore_line.append(
