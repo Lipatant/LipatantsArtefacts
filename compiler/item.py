@@ -1,6 +1,8 @@
 import json
+from math import floor
 from save_manager import save_loot_table
 
+COMPONENT_CONSUMABLE = "minecraft:consumable"
 COMPONENT_CUSTOM_MODEL_DATA = "minecraft:custom_model_data"
 COMPONENT_ITEM_MODEL = "minecraft:item_model"
 COMPONENT_ITEM_NAME = "minecraft:item_name"
@@ -26,6 +28,7 @@ class Item:
     identifier: str = ""
     inherits: str = "minecraft:stone"
     item_modifiers: list[str] = []
+    on_consume_effects: list[dict] = []
     variants: list[str] = []
 
     def __init__(self, data: dict = {}):
@@ -40,6 +43,7 @@ class Item:
         item.identifier = self.identifier
         item.inherits = self.inherits
         item.item_modifiers = self.item_modifiers.copy()
+        item.on_consume_effects = self.on_consume_effects.copy()
         item.variants = self.variants.copy()
         return item
 
@@ -71,6 +75,9 @@ class Item:
         if "item_modifiers" in data:
             for item_modifier in data["item_modifiers"]:
                 self.item_modifiers.append(item_modifier)
+        if "on_consume_effects" in data:
+            for effect in data["on_consume_effects"]:
+                self.on_consume_effects.append(effect)
         if "variants" in data:
             for variant in data["variants"]:
                 self.variants.append(variant)
@@ -98,8 +105,59 @@ class Item:
                 "translate": "item.lipartefacts." + self.identifier,
             },
         }
+        lore = []
         for component, value in self.components.items():
             components[component] = value
+        if self.on_consume_effects:
+            if COMPONENT_CONSUMABLE in components:
+                if "on_consume_effects" not in components[COMPONENT_CONSUMABLE]:
+                    components[COMPONENT_CONSUMABLE]["on_consume_effects"] = [
+                        {
+                            "effects": [],
+                            "type": "apply_effects",
+                        }
+                    ]
+                for effect in self.on_consume_effects:
+                    components[COMPONENT_CONSUMABLE]["on_consume_effects"][-1]["effects"].append(effect)
+                    amplifier = int(effect["amplifier"])
+                    duration = int(effect["duration"]) / 20
+                    lore_line = [
+                        {
+                            "color": "blue",
+                            "italic": False,
+                            "translate": "effect.%s" % effect["id"].replace(":", ".")
+                        },
+                    ]
+                    if amplifier > 0:
+                        lore_line.append(
+                            {
+                                "color": "blue",
+                                "italic": False,
+                                "text": " ",
+                            }
+                        )
+                        lore_line.append(
+                            {
+                                "color": "blue",
+                                "italic": False,
+                                "text": "potion.potency.%s" % amplifier,
+                            }
+                        )
+                    lore_line.append(
+                        {
+                            "color": "blue",
+                            "italic": False,
+                            "text": " (%s%s:%s%s)" % (
+                                floor(duration / 60 / 10),
+                                floor(duration / 60 % 10),
+                                floor(duration % 60 / 10),
+                                floor(duration % 60 % 10),
+                            )
+                        }
+                    )
+                    lore.append(lore_line)
+            else:
+                raise Exception("'on_consume_effects' requires the {COMPONENT_CONSUMABLE} component")
         functions = [
             {
                 "components": components,
@@ -119,6 +177,14 @@ class Item:
                 {
                     "enchantments": self.enchantments,
                     FUNCTION: FUNCTION_SET_ENCHANTMENTS,
+                }
+            )
+        if lore:
+            functions.append(
+                {
+                    FUNCTION: FUNCTION_SET_LORE,
+                    "lore": lore,
+                    "mode": "insert",
                 }
             )
         for item_modifier in self.item_modifiers:

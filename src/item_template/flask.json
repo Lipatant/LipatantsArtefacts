@@ -1,0 +1,17 @@
+{
+    "components": {
+        "minecraft:consumable": {
+            "animation": "drink",
+            "sound": "minecraft:entity.generic.drink",
+            "has_consume_particles": false
+        },
+        "minecraft:food": {
+            "can_always_eat": true,
+            "nutrition": 0,
+            "saturation": 0
+        },
+        "minecraft:max_stack_size": 1
+    },
+    "id": "flask",
+    "inherits": "minecraft:bread"
+}
