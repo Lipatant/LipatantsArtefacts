@@ -11,6 +11,7 @@ FUNCTION = "function"
 FUNCTION_REFERENCE = "minecraft:reference"
 FUNCTION_SET_ATTRIBUTES = "minecraft:set_attributes"
 FUNCTION_SET_COMPONENTS = "minecraft:set_components"
+FUNCTION_SET_ENCHANTMENTS = "minecraft:set_enchantments"
 FUNCTION_SET_LORE = "minecraft:set_lore"
 
 class Item:
@@ -21,6 +22,7 @@ class Item:
     attributes: list[dict] = []
     attributes_keep: bool = False
     components: dict = {}
+    enchantments: dict = {}
     identifier: str = ""
     inherits: str = "minecraft:stone"
     item_modifiers: list[str] = []
@@ -34,6 +36,7 @@ class Item:
         item.attributes = self.attributes.copy()
         item.attributes_keep = self.attributes_keep
         item.components = self.components.copy()
+        item.enchantments = self.enchantments.copy()
         item.identifier = self.identifier
         item.inherits = self.inherits
         item.item_modifiers = self.item_modifiers.copy()
@@ -58,6 +61,9 @@ class Item:
         if "components" in data:
             for key, value in data["components"].items():
                 self.components[key] = value
+        if "enchantments" in data:
+            for enchantment in data["enchantments"]:
+                self.enchantments.append(enchantment)
         if "id" in data:
             self.identifier = data["id"]
         if "inherits" in data:
@@ -106,6 +112,13 @@ class Item:
                     FUNCTION: FUNCTION_SET_ATTRIBUTES,
                     "modifiers": self.attributes,
                     "replace": not self.attributes_keep,
+                }
+            )
+        if self.enchantments:
+            functions.append(
+                {
+                    "enchantments": self.enchantments,
+                    FUNCTION: FUNCTION_SET_ENCHANTMENTS,
                 }
             )
         for item_modifier in self.item_modifiers:
