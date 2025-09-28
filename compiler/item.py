@@ -62,8 +62,8 @@ class Item:
             for key, value in data["components"].items():
                 self.components[key] = value
         if "enchantments" in data:
-            for enchantment in data["enchantments"]:
-                self.enchantments.append(enchantment)
+            for key, value in data["enchantments"].items():
+                self.enchantments[key] = value
         if "id" in data:
             self.identifier = data["id"]
         if "inherits" in data:
