@@ -10,12 +10,15 @@ def generate_data() -> dict:
         "diamond": {
             "base": 33,
             "elytra": 432,
+            "tool": 1561
         },
         "golden": {
             "base": 7,
+            "tool": 32
         },
         "iron": {
             "base": 15,
+            "tool": 250
         },
         "leather": {
             "base": 5,
@@ -23,9 +26,16 @@ def generate_data() -> dict:
         "netherite": {
             "base": 37,
             "elytra": 496,
+            "tool": 2031
+        },
+        "stone": {
+            "tool": 131
         },
         "turtle": {
             "base": 25,
+        },
+        "wooden": {
+            "tool": 59
         },
     }
     data_generated_multiplicative = {
