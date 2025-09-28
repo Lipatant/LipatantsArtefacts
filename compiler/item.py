@@ -35,6 +35,7 @@ class Item:
         item.identifier = self.identifier
         item.inherits = self.inherits
         item.item_modifiers = self.item_modifiers.copy()
+        item.variants = self.variants.copy()
         return item
 
     def get_file_path(self, suffix: str = "") -> str:
