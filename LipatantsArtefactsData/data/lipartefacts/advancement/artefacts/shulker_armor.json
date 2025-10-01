@@ -1,0 +1,37 @@
+{
+    "parent": "lipartefacts:artefacts/complete_stronghold",
+    "criteria": {
+        "shulker_armor": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:shulker_helmet"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.shulker_armor.description"
+        },
+        "frame": "task",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:shulker_helmet"
+            },
+            "id": "minecraft:leather_helmet"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.shulker_armor.title"
+        }
+    },
+    "requirements": [
+        [
+            "shulker_armor"
+        ]
+    ]
+}

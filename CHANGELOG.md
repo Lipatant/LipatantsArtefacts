@@ -1,3 +1,11 @@
+### Adding 1 new artefact:
+
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/shulker_helmet.png" width="16"/> Shulker Shell Helmet
+
+### Adding 1 advancement:
+
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/shulker_helmet.png" width="16"/> Shulker Head
+
 ### Changing 3 artefacts:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/ender_hand.png" width="16"/> Ender Hand: Decreasing its attack knockback.
