@@ -6,9 +6,12 @@
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/shulker_helmet.png" width="16"/> Shulker Head
 
-### Changing 3 artefacts:
+### Changing 6 artefacts:
 
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/cat_helmet.png" width="16"/> Cat Ears: Changing its rarity from Uncommon to Common.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/ender_hand.png" width="16"/> Ender Hand: Decreasing its attack knockback.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/fisherman_helmet.png" width="16"/> Fisherman's Bucket Hat: Changing its rarity from Uncommon to Common.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/fisherman_chestplate.png" width="16"/> Fishing Jacket: Changing its rarity from Uncommon to Common.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/stray_chestplate.png" width="16"/> Snow Camouflage Tunic: Making it damaged and enchanted when obtained through fishing.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/bogged_chestplate.png" width="16"/> Swamp Camouflage Tunic: Making it damaged and enchanted when obtained through fishing.
 
