@@ -15,6 +15,12 @@
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/stray_chestplate.png" width="16"/> Snow Camouflage Tunic: Making it damaged and enchanted when obtained through fishing.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/bogged_chestplate.png" width="16"/> Swamp Camouflage Tunic: Making it damaged and enchanted when obtained through fishing.
 
+### Removing 3 artefacts:
+
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/artillery_firework_rocket_3.png" width="16"/> Long-Range Artillery Rocket
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/artillery_firework_rocket_2.png" width="16"/> Medium-Range Artillery Rocket
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/artillery_firework_rocket_1.png" width="16"/> Short-Range Artillery Rocket
+
 ### Other changes:
 
 - Upgrading the pack to Minecraft 1.21.9.

@@ -284,19 +284,6 @@
             }
         ]
     },
-    "chests/trial_chambers/reward_common": {
-        "added_entries": [
-            {
-                "value": "lipartefacts:items/artillery_firework_rocket_1"
-            },
-            {
-                "value": "lipartefacts:items/artillery_firework_rocket_2"
-            },
-            {
-                "value": "lipartefacts:items/artillery_firework_rocket_3"
-            }
-        ]
-    },
     "chests/trial_chambers/reward_ominous_rare": {
         "added_entries": [
             {
