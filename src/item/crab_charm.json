@@ -1,0 +1,23 @@
+{
+    "attributes": [
+        {
+            "amount": 1.0,
+            "attribute": "minecraft:block_interaction_range",
+            "id": "lipartefacts:offhand.block_interaction_range",
+            "operation": "add_value",
+            "slot": "offhand"
+        }
+    ],
+    "id": "crab_charm",
+    "inherits": "charm",
+    "item_modifiers": [
+        "lipartefacts:set_rarity/uncommon"
+    ],
+    "variants": [
+        "clay",
+        "dirt",
+        "gravel",
+        "sand",
+        "spruce_planks"
+    ]
+}

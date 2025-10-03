@@ -1,0 +1,14 @@
+{
+    "id": "regeneration_flask",
+    "inherits": "flask",
+    "item_modifiers": [
+        "lipartefacts:set_rarity/common"
+    ],
+    "on_consume_effects": [
+        {
+            "amplifier": 1,
+            "duration": 200,
+            "id": "minecraft:regeneration"
+        }
+    ]
+}

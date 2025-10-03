@@ -1,0 +1,23 @@
+{
+    "attributes": [
+        {
+            "amount": 4.0,
+            "attribute": "minecraft:max_health",
+            "id": "lipartefacts:offhand.max_health",
+            "operation": "add_value",
+            "slot": "offhand"
+        }
+    ],
+    "id": "axolotl_charm",
+    "inherits": "charm",
+    "item_modifiers": [
+        "lipartefacts:set_rarity/uncommon"
+    ],
+    "variants": [
+        "blue",
+        "cyan",
+        "gold",
+        "lucy",
+        "wild"
+    ]
+}

@@ -1,89 +1,89 @@
 {
     "pools": [
         {
-            "rolls": 1.0,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/crab_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "clay"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/crab_charm_base"
                 },
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/crab_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "dirt"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/crab_charm_base"
                 },
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/crab_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "gravel"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/crab_charm_base"
                 },
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/crab_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "sand"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/crab_charm_base"
                 },
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/crab_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "spruce_planks"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/crab_charm_base"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }

@@ -1,0 +1,17 @@
+{
+    "attributes": [
+        {
+            "amount": -1.0,
+            "attribute": "minecraft:burning_time",
+            "id": "lipartefacts:offhand.burning_time",
+            "operation": "add_multiplied_total",
+            "slot": "offhand"
+        }
+    ],
+    "id": "strider_charm",
+    "inherits": "charm",
+    "item_modifiers": [
+        "lipartefacts:fire_resistant",
+        "lipartefacts:set_rarity/uncommon"
+    ]
+}

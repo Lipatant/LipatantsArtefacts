@@ -1,0 +1,14 @@
+{
+    "id": "glowing_flask_1",
+    "inherits": "flask",
+    "item_modifiers": [
+        "lipartefacts:set_rarity/common"
+    ],
+    "on_consume_effects": [
+        {
+            "amplifier": 0,
+            "duration": 200,
+            "id": "minecraft:glowing"
+        }
+    ]
+}

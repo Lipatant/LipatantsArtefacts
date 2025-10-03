@@ -1,89 +1,89 @@
 {
     "pools": [
         {
-            "rolls": 1.0,
             "entries": [
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/axolotl_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "blue"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base"
                 },
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/axolotl_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "cyan"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base"
                 },
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/axolotl_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "gold"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base"
                 },
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/axolotl_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "lucy"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base"
                 },
                 {
-                    "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/axolotl_charm_base",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:custom_model_data": {
                                     "strings": [
                                         "wild"
                                     ]
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         }
-                    ]
+                    ],
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/axolotl_charm_base"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }
