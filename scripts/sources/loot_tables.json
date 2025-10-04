@@ -365,22 +365,6 @@
             }
         ]
     },
-    "chests/trial_chambers/supply": {
-        "added_entries": [
-            {
-                "value": "lipartefacts:items/artillery_firework_rocket_1",
-                "weight": 1
-            },
-            {
-                "value": "lipartefacts:items/artillery_firework_rocket_2",
-                "weight": 1
-            },
-            {
-                "value": "lipartefacts:items/artillery_firework_rocket_3",
-                "weight": 1
-            }
-        ]
-    },
     "chests/underwater_ruin_big": {
         "added_pools": [
             {
