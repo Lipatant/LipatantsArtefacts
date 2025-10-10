@@ -26,5 +26,12 @@
                 "name": "lipartefacts:records/space_caster"
             }
         ]
+    },
+    "music_disc.tokyos_going_down": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/tokyos_going_down"
+            }
+        ]
     }
 }

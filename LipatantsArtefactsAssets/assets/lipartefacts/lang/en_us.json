@@ -103,6 +103,8 @@
     "item.lipartefacts.music_disc_moment_of_melting_solitude.desc": "Lipatant - Moment Of Melting Solitude",
     "item.lipartefacts.music_disc_space_caster": "Music Disc",
     "item.lipartefacts.music_disc_space_caster.desc": "Lipatant - Space Caster",
+    "item.lipartefacts.music_disc_tokyos_going_down": "Music Disc",
+    "item.lipartefacts.music_disc_tokyos_going_down.desc": "Lipatant - Tokyo's Going Down",
     "item.lipartefacts.netherite_battle_shield": "Netherite Battle Shield",
     "item.lipartefacts.netherite_elytra": "Netherite Elytra",
     "item.lipartefacts.origin_crystal": "Crystal of Origin",
@@ -139,5 +141,6 @@
     "jukebox_song.lipartefacts.groovotational.desc": "Lipatant - Groovotational",
     "jukebox_song.lipartefacts.mineral_winter.desc": "Lipatant - Mineral Winter",
     "jukebox_song.lipartefacts.moment_of_melting_solitude.desc": "Lipatant - Moment Of Melting Solitude",
-    "jukebox_song.lipartefacts.space_caster.desc": "Lipatant - Space Caster"
+    "jukebox_song.lipartefacts.space_caster.desc": "Lipatant - Space Caster",
+    "jukebox_song.lipartefacts.tokyos_going_down.desc": "Lipatant - Tokyo's Going Down"
 }

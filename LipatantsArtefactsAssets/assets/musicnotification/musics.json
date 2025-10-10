@@ -22,5 +22,11 @@
         "author": "Lipatant",
         "cover": "space_caster",
         "title": "Space Caster"
+    },
+    "lipartefacts:music_disc.tokyos_going_down": {
+        "album": "",
+        "author": "Lipatant",
+        "cover": "tokyos_going_down",
+        "title": "Tokyo's Going Down"
     }
 }

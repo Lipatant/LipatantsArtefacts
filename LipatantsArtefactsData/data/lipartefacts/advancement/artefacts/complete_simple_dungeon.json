@@ -73,6 +73,18 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "music_disc_tokyos_going_down": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_tokyos_going_down"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "regeneration_flask": {
             "conditions": {
                 "items": [
@@ -128,6 +140,9 @@
         ],
         [
             "music_disc_space_caster"
+        ],
+        [
+            "music_disc_tokyos_going_down"
         ],
         [
             "regeneration_flask"
