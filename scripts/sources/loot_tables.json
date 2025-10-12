@@ -295,6 +295,14 @@
                     {
                         "value": "lipartefacts:items/enchanted_book_double_shot",
                         "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/enchanted_book_fracture",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/enchanted_book_imperilment",
+                        "weight": 1
                     }
                 ]
             }
@@ -381,7 +389,11 @@
             },
             {
                 "value": "lipartefacts:items/enchanted_book_double_shot",
-                "weight": 2
+                "weight": 1
+            },
+            {
+                "value": "lipartefacts:items/enchanted_book_fracture",
+                "weight": 1
             }
         ]
     },

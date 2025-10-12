@@ -8,9 +8,11 @@
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/shulker_helmet.png" width="16"/> Shulker Head
 
-### Changing 6 artefacts:
+### Changing 8 artefacts:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/cat_helmet.png" width="16"/> Cat Ears: Changing its rarity from Uncommon to Common.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/enchanted_book_fracture.png" width="16"/> Enchanted Book - Fracture: Added to Strongholds and Trail Chambers.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/enchanted_book_imperilment.png" width="16"/> Enchanted Book - Imperilment: Added to Strongholds.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/ender_hand.png" width="16"/> Ender Hand: Decreasing its attack knockback.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/fisherman_helmet.png" width="16"/> Fisherman's Bucket Hat: Changing its rarity from Uncommon to Common.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/fisherman_chestplate.png" width="16"/> Fishing Jacket: Changing its rarity from Uncommon to Common.

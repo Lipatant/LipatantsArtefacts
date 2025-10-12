@@ -13,6 +13,30 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "enchanted_book_fracture": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_fracture"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "enchanted_book_imperilment": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_imperilment"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "origin_crystal": {
             "conditions": {
                 "items": [
@@ -53,6 +77,12 @@
     "requirements": [
         [
             "enchanted_book_double_shot"
+        ],
+        [
+            "enchanted_book_fracture"
+        ],
+        [
+            "enchanted_book_imperilment"
         ],
         [
             "origin_crystal"

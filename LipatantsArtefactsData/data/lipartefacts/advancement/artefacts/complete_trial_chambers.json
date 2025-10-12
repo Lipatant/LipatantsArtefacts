@@ -49,6 +49,18 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "enchanted_book_fracture": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_fracture"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "enchanted_book_vampirism": {
             "conditions": {
                 "items": [
@@ -134,6 +146,9 @@
         ],
         [
             "enchanted_book_double_shot"
+        ],
+        [
+            "enchanted_book_fracture"
         ],
         [
             "enchanted_book_vampirism"
