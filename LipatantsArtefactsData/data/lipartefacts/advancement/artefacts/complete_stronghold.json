@@ -1,6 +1,18 @@
 {
     "parent": "lipartefacts:artefacts/root",
     "criteria": {
+        "enchanted_book_double_shot": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_double_shot"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "origin_crystal": {
             "conditions": {
                 "items": [
@@ -39,6 +51,9 @@
         }
     },
     "requirements": [
+        [
+            "enchanted_book_double_shot"
+        ],
         [
             "origin_crystal"
         ],

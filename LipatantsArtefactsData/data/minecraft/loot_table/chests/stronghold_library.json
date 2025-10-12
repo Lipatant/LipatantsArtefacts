@@ -88,6 +88,17 @@
                 }
             ],
             "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/enchanted_book_double_shot",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1.0
         }
     ],
     "random_sequence": "minecraft:chests/stronghold_library"

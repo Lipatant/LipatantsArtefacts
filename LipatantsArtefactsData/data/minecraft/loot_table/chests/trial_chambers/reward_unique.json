@@ -32,6 +32,11 @@
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/drilling_pickaxe",
                     "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/enchanted_book_double_shot",
+                    "weight": 2
                 }
             ],
             "rolls": 1.0

@@ -188,9 +188,17 @@
                     {
                         "value": "lipartefacts:music_disc_uncommon",
                         "weight": 1
-                    },
+                    }
+                ]
+            },
+            {
+                "entries": [
                     {
                         "value": "lipartefacts:items/bogged_chestplate",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/enchanted_book_double_shot",
                         "weight": 1
                     }
                 ]
@@ -281,6 +289,14 @@
                         "weight": 1
                     }
                 ]
+            },
+            {
+                "entries": [
+                    {
+                        "value": "lipartefacts:items/enchanted_book_double_shot",
+                        "weight": 1
+                    }
+                ]
             }
         ]
     },
@@ -361,6 +377,10 @@
         "added_entries": [
             {
                 "value": "lipartefacts:items/drilling_pickaxe",
+                "weight": 2
+            },
+            {
+                "value": "lipartefacts:items/enchanted_book_double_shot",
                 "weight": 2
             }
         ]

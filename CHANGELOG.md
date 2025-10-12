@@ -1,5 +1,6 @@
-### Adding 2 new artefacts:
+### Adding 3 new artefacts:
 
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/enchanted_book_double_shot.png" width="16"/> Enchanted Book - Double Shot
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/music_disc_tokyos_going_down.png" width="16"/> Music Disc - Tokyo's Going Down
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/shulker_helmet.png" width="16"/> Shulker Shell Helmet
 
