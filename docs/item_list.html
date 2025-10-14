@@ -27,6 +27,32 @@
             <button class="filter rarity epic" onclick="filterItemContainerByRarity('epic')">Epic</button>
         </div><br />
         <a class="filter-list-title">
+            Filter by type:
+        </a><br /><br />
+        <div class="filter-list">
+            <button class="filter" onclick="filterItemContainerReset()">Reset</button>
+            <button class="filter type" onclick="filterItemContainerByType(['_boots', '_chestplate', '_elytra', '_helmet', '_leggings'])">
+                <img alt class="icon item" src="img/types/armor_piece.png">
+                Armor Pieces
+            </button>
+            <button class="filter type" onclick="filterItemContainerByType('_charm')">
+                <img alt class="icon item" src="img/types/charm.png">
+                Charms
+            </button>
+            <button class="filter type" onclick="filterItemContainerByType('enchanted_book_')">
+                <img alt class="icon item" src="img/types/enchanted_book.png">
+                Enchanted Books
+            </button>
+            <button class="filter type" onclick="filterItemContainerByType('music_disc_')">
+                <img alt class="icon item" src="img/types/music_disc.png">
+                Music Discs
+            </button>
+            <button class="filter type" onclick="filterItemContainerByType('_smithing_template')">
+                <img alt class="icon item" src="img/types/smithing_template.png">
+                Smithing Templates
+            </button>
+        </div><br />
+        <a class="filter-list-title">
             Filter by obtention:
         </a><br /><br />
         <div class="filter-list">
