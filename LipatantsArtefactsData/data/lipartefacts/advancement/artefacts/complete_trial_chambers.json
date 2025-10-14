@@ -85,30 +85,6 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
-        "little_boots": {
-            "conditions": {
-                "items": [
-                    {
-                        "components": {
-                            "minecraft:item_model": "lipartefacts:little_boots"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:inventory_changed"
-        },
-        "little_leggings": {
-            "conditions": {
-                "items": [
-                    {
-                        "components": {
-                            "minecraft:item_model": "lipartefacts:little_leggings"
-                        }
-                    }
-                ]
-            },
-            "trigger": "minecraft:inventory_changed"
-        },
         "stray_chestplate": {
             "conditions": {
                 "items": [
@@ -155,12 +131,6 @@
         ],
         [
             "great_hunger_helmet"
-        ],
-        [
-            "little_boots"
-        ],
-        [
-            "little_leggings"
         ],
         [
             "stray_chestplate"

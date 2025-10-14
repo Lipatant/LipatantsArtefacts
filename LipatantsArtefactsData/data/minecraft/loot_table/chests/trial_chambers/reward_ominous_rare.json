@@ -139,38 +139,6 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": {
-                                "type": "minecraft:uniform",
-                                "max": 10.0,
-                                "min": 20.0
-                            },
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/little_boots",
-                    "weight": 2
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": {
-                                "type": "minecraft:uniform",
-                                "max": 10.0,
-                                "min": 20.0
-                            },
-                            "options": "#minecraft:on_random_loot"
-                        }
-                    ],
-                    "value": "lipartefacts:items/little_leggings",
-                    "weight": 2
-                },
-                {
-                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/enchanted_book_vampirism",
                     "weight": 1
                 }

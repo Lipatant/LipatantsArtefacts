@@ -26,11 +26,19 @@
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/stray_chestplate.png" width="16"/> Snow Camouflage Tunic: Making it damaged and enchanted when obtained through fishing.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/bogged_chestplate.png" width="16"/> Swamp Camouflage Tunic: Making it damaged and enchanted when obtained through fishing.
 
-### Removing 3 artefacts:
+### Removing 5 artefacts:
 
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/little_boots.png" width="16"/> Little Feet<b>*</b>
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/little_leggings.png" width="16"/> Little Legs<b>*</b>
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/artillery_firework_rocket_3.png" width="16"/> Long-Range Artillery Rocket
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/artillery_firework_rocket_2.png" width="16"/> Medium-Range Artillery Rocket
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/artillery_firework_rocket_1.png" width="16"/> Short-Range Artillery Rocket
+
+<b>*</b>Although these artefacts are no longer obtainable, their data is still present in the data pack and resource pack.
+
+### Removing 1 advancement:
+
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/little_boots.png" width="16"/> Smol
 
 ### Other changes:
 
