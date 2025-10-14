@@ -1,11 +1,18 @@
-### Adding 3 new artefacts:
+### Adding 9 new artefacts:
 
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_boots.png" width="16"/> Copper Golem Boots
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_chestplate.png" width="16"/> Copper Golem Chestplate
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_elytra.png" width="16"/> Copper Golem Elytra
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_helmet.png" width="16"/> Copper Golem Helmet
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_leggings.png" width="16"/> Copper Golem Leggings
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_upgrade_smithing_template.png" width="16"/> Copper Golem Upgrade
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/enchanted_book_double_shot.png" width="16"/> Enchanted Book - Double Shot
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/music_disc_tokyos_going_down.png" width="16"/> Music Disc - Tokyo's Going Down
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/shulker_helmet.png" width="16"/> Shulker Shell Helmet
 
-### Adding 1 advancement:
+### Adding 2 advancements:
 
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_chestplate.png" width="16"/> Copp' with the Pain
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/shulker_helmet.png" width="16"/> Shulker Head
 
 ### Changing 8 artefacts:

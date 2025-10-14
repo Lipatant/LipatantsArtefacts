@@ -118,6 +118,11 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/copper_golem_upgrade_smithing_template",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "functions": [
                         {
                             "function": "minecraft:enchant_with_levels",

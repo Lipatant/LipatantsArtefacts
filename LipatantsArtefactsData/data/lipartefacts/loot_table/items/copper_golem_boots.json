@@ -1,0 +1,62 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:armor",
+                                    "id": "minecraft:armor.boots",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "feet"
+                                },
+                                {
+                                    "attribute": "minecraft:armor_toughness",
+                                    "id": "minecraft:armor.boots",
+                                    "amount": 2,
+                                    "operation": "add_value",
+                                    "slot": "feet"
+                                },
+                                {
+                                    "attribute": "minecraft:scale",
+                                    "id": "minecraft:armor.boots",
+                                    "amount": -0.05,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "feet"
+                                }
+                            ],
+                            "replace": true
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:equippable": {
+                                    "slot": "feet",
+                                    "equip_sound": "minecraft:item.armor.equip_copper",
+                                    "asset_id": "lipartefacts:copper_golem"
+                                },
+                                "minecraft:max_damage": 481,
+                                "minecraft:item_model": "lipartefacts:copper_golem_boots",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.copper_golem_boots"
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/rare"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

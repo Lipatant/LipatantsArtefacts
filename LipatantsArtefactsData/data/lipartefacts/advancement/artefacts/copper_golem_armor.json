@@ -1,0 +1,55 @@
+{
+    "parent": "lipartefacts:artefacts/complete_trial_chambers",
+    "criteria": {
+        "copper_golem_armor": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:copper_golem_boots"
+                        }
+                    },
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:copper_golem_chestplate"
+                        }
+                    },
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:copper_golem_helmet"
+                        }
+                    },
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:copper_golem_leggings"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.copper_golem_armor.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "components": {
+                "minecraft:item_model": "lipartefacts:copper_golem_chestplate"
+            },
+            "id": "minecraft:chainmail_chestplate"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.copper_golem_armor.title"
+        }
+    },
+    "requirements": [
+        [
+            "copper_golem_armor"
+        ]
+    ],
+    "rewards": {
+        "experience": 100
+    }
+}

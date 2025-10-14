@@ -311,6 +311,10 @@
     "chests/trial_chambers/reward_ominous_rare": {
         "added_entries": [
             {
+                "value": "lipartefacts:items/copper_golem_upgrade_smithing_template",
+                "weight": 4
+            },
+            {
                 "functions": [
                     {
                         "function": "minecraft:enchant_with_levels",
