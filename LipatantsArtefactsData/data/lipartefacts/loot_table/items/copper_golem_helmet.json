@@ -39,8 +39,7 @@
                             "components": {
                                 "minecraft:equippable": {
                                     "slot": "head",
-                                    "equip_sound": "minecraft:item.armor.equip_copper",
-                                    "asset_id": "lipartefacts:copper_golem"
+                                    "equip_sound": "minecraft:item.armor.equip_copper"
                                 },
                                 "minecraft:max_damage": 407,
                                 "minecraft:item_model": "lipartefacts:copper_golem_helmet",
