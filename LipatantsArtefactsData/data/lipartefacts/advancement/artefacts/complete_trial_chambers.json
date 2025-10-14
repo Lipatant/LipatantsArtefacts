@@ -25,6 +25,18 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "copper_golem_upgrade_smithing_template": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:copper_golem_upgrade_smithing_template"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "drilling_pickaxe": {
             "conditions": {
                 "items": [
@@ -116,6 +128,9 @@
         ],
         [
             "bogged_chestplate"
+        ],
+        [
+            "copper_golem_upgrade_smithing_template"
         ],
         [
             "drilling_pickaxe"
