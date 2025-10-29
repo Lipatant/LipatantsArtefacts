@@ -1,0 +1,64 @@
+{
+    "armor_stats": {
+        "armor": "diamond",
+        "armor_toughness": "diamond",
+        "durability": "netherite",
+        "enchantable": "netherite"
+    },
+    "data": {
+        "attributes": [
+            {
+                "amount": 0.2,
+                "attribute": "minecraft:knockback_resistance",
+                "operation": "add_value"
+            }
+        ],
+        "components": {
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:sniffer",
+                "equip_sound": "minecraft:item.armor.equip_leather"
+            }
+        },
+        "item_modifiers": [
+            "lipartefacts:set_rarity/rare"
+        ]
+    },
+    "id": "sniffer",
+    "items": {
+        "boots": {
+            "components": {
+                "minecraft:equippable": {
+                    "asset_id": "lipartefacts:sniffer",
+                    "equip_sound": "minecraft:item.armor.equip_iron"
+                }
+            },
+            "inherits": "minecraft:chainmail_boots",
+            "slot": "feet"
+        },
+        "chestplate": {
+            "inherits": "minecraft:chainmail_chestplate",
+            "slot": "chest"
+        },
+        "elytra": {
+            "components": {
+                "minecraft:equippable": {
+                    "asset_id": "lipartefacts:sniffer_elytra",
+                    "equip_sound": "minecraft:item.armor.equip_elytra"
+                }
+            },
+            "inherits": "minecraft:elytra",
+            "item_modifiers": [
+                "lipartefacts:set_rarity/epic"
+            ],
+            "slot": "chest"
+        },
+        "helmet": {
+            "inherits": "minecraft:leather_helmet",
+            "slot": "head"
+        },
+        "leggings": {
+            "inherits": "minecraft:leather_leggings",
+            "slot": "legs"
+        }
+    }
+}

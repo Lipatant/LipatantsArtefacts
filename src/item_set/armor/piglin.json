@@ -1,0 +1,63 @@
+{
+    "armor_stats": {
+        "armor": "diamond",
+        "durability": "netherite",
+        "enchantable": "netherite"
+    },
+    "data": {
+        "attributes": [
+            {
+                "amount": 0.1,
+                "attribute": "minecraft:attack_damage",
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "components": {
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:piglin",
+                "equip_sound": "minecraft:item.armor.equip_gold"
+            }
+        },
+        "item_modifiers": [
+            "lipartefacts:set_rarity/rare"
+        ]
+    },
+    "id": "piglin",
+    "items": {
+        "boots": {
+            "inherits": "minecraft:golden_boots",
+            "slot": "feet"
+        },
+        "chestplate": {
+            "inherits": "minecraft:golden_chestplate",
+            "slot": "chest"
+        },
+        "elytra": {
+            "components": {
+                "minecraft:equippable": {
+                    "asset_id": "lipartefacts:piglin_elytra",
+                    "equip_sound": "minecraft:item.armor.equip_elytra"
+                }
+            },
+            "inherits": "minecraft:elytra",
+            "item_modifiers": [
+                "lipartefacts:set_rarity/epic"
+            ],
+            "slot": "chest"
+        },
+        "helmet": {
+            "inherits": "minecraft:golden_helmet",
+            "slot": "head"
+        },
+        "leggings": {
+            "components": {
+                "minecraft:equippable": {
+                    "asset_id": "lipartefacts:sniffer",
+                    "equip_sound": "minecraft:item.armor.equip_leather"
+                }
+            },
+            "inherits": "minecraft:golden_leggings",
+            "slot": "legs"
+        }
+    }
+}

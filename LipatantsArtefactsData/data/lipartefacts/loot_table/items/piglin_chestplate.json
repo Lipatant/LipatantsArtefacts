@@ -1,26 +1,38 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:golden_chestplate",
                     "functions": [
+                        {
+                            "components": {
+                                "minecraft:equippable": {
+                                    "asset_id": "lipartefacts:piglin",
+                                    "equip_sound": "minecraft:item.armor.equip_gold",
+                                    "slot": "chest"
+                                },
+                                "minecraft:item_model": "lipartefacts:piglin_chestplate",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.piglin_chestplate"
+                                }
+                            },
+                            "function": "minecraft:set_components"
+                        },
                         {
                             "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
+                                    "amount": 8,
                                     "attribute": "minecraft:armor",
                                     "id": "minecraft:armor.chestplate",
-                                    "amount": 8,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
                                 {
+                                    "amount": 0.1,
                                     "attribute": "minecraft:attack_damage",
                                     "id": "minecraft:armor.chestplate",
-                                    "amount": 0.1,
                                     "operation": "add_multiplied_base",
                                     "slot": "chest"
                                 }
@@ -28,28 +40,23 @@
                             "replace": true
                         },
                         {
-                            "function": "minecraft:set_components",
-                            "components": {
-                                "minecraft:equippable": {
-                                    "slot": "chest",
-                                    "equip_sound": "minecraft:item.armor.equip_leather",
-                                    "asset_id": "lipartefacts:piglin"
-                                },
-                                "minecraft:max_damage": 592,
-                                "minecraft:item_model": "lipartefacts:piglin_chestplate",
-                                "minecraft:item_name": {
-                                    "italic": false,
-                                    "translate": "item.lipartefacts.piglin_chestplate"
-                                }
-                            }
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_durability/netherite/chestplate"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_enchantable/netherite_armor"
                         },
                         {
                             "function": "minecraft:reference",
                             "name": "lipartefacts:set_rarity/rare"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:golden_chestplate",
+                    "type": "minecraft:item"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }

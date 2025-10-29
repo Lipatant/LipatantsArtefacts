@@ -1,33 +1,45 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:chainmail_helmet",
                     "functions": [
+                        {
+                            "components": {
+                                "minecraft:equippable": {
+                                    "asset_id": "lipartefacts:copper_golem",
+                                    "equip_sound": "minecraft:item.armor.equip_copper",
+                                    "slot": "head"
+                                },
+                                "minecraft:item_model": "lipartefacts:copper_golem_helmet",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.copper_golem_helmet"
+                                }
+                            },
+                            "function": "minecraft:set_components"
+                        },
                         {
                             "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "minecraft:armor",
-                                    "id": "minecraft:armor.helmet",
                                     "amount": 3,
+                                    "attribute": "minecraft:armor",
+                                    "id": "minecraft:armor.helmets",
                                     "operation": "add_value",
                                     "slot": "head"
                                 },
                                 {
-                                    "attribute": "minecraft:armor_toughness",
-                                    "id": "minecraft:armor.helmet",
                                     "amount": 2,
+                                    "attribute": "minecraft:armor_toughness",
+                                    "id": "minecraft:armor.helmets",
                                     "operation": "add_value",
                                     "slot": "head"
                                 },
                                 {
-                                    "attribute": "minecraft:scale",
-                                    "id": "minecraft:armor.helmet",
                                     "amount": -0.05,
+                                    "attribute": "minecraft:scale",
+                                    "id": "minecraft:armor.helmets",
                                     "operation": "add_multiplied_base",
                                     "slot": "head"
                                 }
@@ -35,27 +47,23 @@
                             "replace": true
                         },
                         {
-                            "function": "minecraft:set_components",
-                            "components": {
-                                "minecraft:equippable": {
-                                    "slot": "head",
-                                    "equip_sound": "minecraft:item.armor.equip_copper"
-                                },
-                                "minecraft:max_damage": 407,
-                                "minecraft:item_model": "lipartefacts:copper_golem_helmet",
-                                "minecraft:item_name": {
-                                    "italic": false,
-                                    "translate": "item.lipartefacts.copper_golem_helmet"
-                                }
-                            }
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_durability/netherite/helmet"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_enchantable/netherite_armor"
                         },
                         {
                             "function": "minecraft:reference",
                             "name": "lipartefacts:set_rarity/rare"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:chainmail_helmet",
+                    "type": "minecraft:item"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }

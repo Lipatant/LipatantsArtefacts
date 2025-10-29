@@ -1,27 +1,10 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:elytra",
                     "functions": [
                         {
-                            "function": "minecraft:set_attributes",
-                            "modifiers": [
-                                {
-                                    "attribute": "minecraft:attack_damage",
-                                    "id": "minecraft:armor.chestplate",
-                                    "amount": 0.1,
-                                    "operation": "add_multiplied_base",
-                                    "slot": "chest"
-                                }
-                            ],
-                            "replace": false
-                        },
-                        {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:equippable": {
                                     "asset_id": "lipartefacts:piglin_elytra",
@@ -32,17 +15,37 @@
                                 "minecraft:item_name": {
                                     "italic": false,
                                     "translate": "item.lipartefacts.piglin_elytra"
-                                },
-                                "minecraft:max_damage": 496
-                            }
+                                }
+                            },
+                            "function": "minecraft:set_components"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "amount": 0.1,
+                                    "attribute": "minecraft:attack_damage",
+                                    "id": "minecraft:armor.chestplate",
+                                    "operation": "add_multiplied_base",
+                                    "slot": "chest"
+                                }
+                            ],
+                            "replace": true
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_durability/netherite/elytra"
                         },
                         {
                             "function": "minecraft:reference",
                             "name": "lipartefacts:set_rarity/epic"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:elytra",
+                    "type": "minecraft:item"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }

@@ -5,6 +5,7 @@ from save_manager import save_loot_table
 
 COMPONENT_CONSUMABLE = "minecraft:consumable"
 COMPONENT_CUSTOM_MODEL_DATA = "minecraft:custom_model_data"
+COMPONENT_ENCHANTABLE = "minecraft:enchantable"
 COMPONENT_ITEM_MODEL = "minecraft:item_model"
 COMPONENT_ITEM_NAME = "minecraft:item_name"
 COMPONENT_LORE = "minecraft:lore"
@@ -112,6 +113,8 @@ class Item:
         lore = []
         for component, value in self.components.items():
             components[component] = value
+            if (component == "minecraft:equippable") and ("slot" not in components[component]):
+                components[component]["slot"] = self.slot
         if self.on_consume_effects:
             if COMPONENT_CONSUMABLE in components:
                 if "on_consume_effects" not in components[COMPONENT_CONSUMABLE]:
@@ -170,11 +173,21 @@ class Item:
         ]
         if self.attributes:
             attributes: list[dict] = copy.deepcopy(self.attributes)
+            attributes_slot_armor: dict[str, str] = {
+                "chest": "minecraft:armor.chestplate",
+                "feet": "minecraft:armor.boots",
+                "legs": "minecraft:armor.leggings",
+                "head": "minecraft:armor.helmets",
+            }
             for i in range(len(attributes)):
                 if "slot" not in attributes[i]:
                     attributes[i]["slot"] = self.slot
                 if "id" not in attributes[i]:
-                    attributes[i]["id"] = "minecraft:" + attributes[i]["slot"] + "." + attributes[i]["attribute"][len("minecraft:"):]
+                    if (self.slot in attributes_slot_armor.keys()) and (attributes[i]["slot"] in attributes_slot_armor.keys()):
+                        attributes[i]["id"] = attributes_slot_armor[attributes[i]["slot"]]
+                    else:
+                        attributes[i]["id"] = "minecraft:" + attributes[i]["slot"] + "." + attributes[i]["attribute"][len("minecraft:"):]
+            attributes.sort(key=lambda e: e.get("attribute", ""))
             functions.append(
                 {
                     FUNCTION: FUNCTION_SET_ATTRIBUTES,
@@ -197,7 +210,9 @@ class Item:
                     "mode": "insert",
                 }
             )
-        for item_modifier in self.item_modifiers:
+        item_modifiers = self.item_modifiers.copy()
+        item_modifiers.sort()
+        for item_modifier in item_modifiers:
             functions.append(
                 {
                     FUNCTION: FUNCTION_REFERENCE,
@@ -262,7 +277,7 @@ class ItemList(dict[str, Item]):
             raise Exception("Trying to append a null object to an ItemList")
         path = item.get_path()
         if path in self:
-            raise Exception("Item '%s' has already been defined")
+            raise Exception("Item '%s' has already been defined" % path)
         self[path] = item
         return path
 

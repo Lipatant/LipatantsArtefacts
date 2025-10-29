@@ -3,6 +3,7 @@ import os
 
 SOURCES_PATH = "../src/"
 SOURCES_ITEM_PATH = SOURCES_PATH + "item/"
+SOURCES_ITEM_SET_PATH = SOURCES_PATH + "item_set/"
 SOURCES_ITEM_TEMPLATE_PATH = SOURCES_PATH + "item_template/"
 SOURCES_RARITY_PATH = SOURCES_PATH + "rarity/"
 
@@ -28,6 +29,12 @@ def load_all(file_path: str, as_json: bool = True) -> dict:
 # Attemps to read all files in the `SOURCES_ITEM_PATH` directory.
 def load_all_items() -> dict:
     return load_all(SOURCES_ITEM_PATH)
+
+# Attemps to read all files in the `SOURCES_ITEM_SET_PATH` directory.
+def load_all_item_sets() -> dict:
+    return {
+        "armor": load_all(SOURCES_ITEM_SET_PATH + "armor/"),
+    }
 
 # Attemps to read all files in the `SOURCES_ITEM_TEMPLATE_PATH` directory.
 def load_all_item_templates() -> dict:
