@@ -1,3 +1,5 @@
+import os
+
 ASSETSPACK_PATH = "../LipatantsArtefactsAssets/"
 DATAPACK_PATH = "../LipatantsArtefactsData/"
 
@@ -11,6 +13,7 @@ DATAPACK_LOOT_TABLE_PATH = DATAPACK_LIPARTEFACTS_PATH + "loot_table/"
 def save(file_path: str, content: str) -> bool:
     global _file_count
     print("Saving file at %s." % file_path)
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
     item_file = open(file_path, "w")
     item_file.write(content)
     item_file.close()
