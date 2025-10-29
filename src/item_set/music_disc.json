@@ -1,0 +1,36 @@
+{
+    "data": {
+        "inherits": "minecraft:music_disc_13",
+        "item_modifiers": [
+            "lipartefacts:set_rarity/uncommon"
+        ]
+    },
+    "id": "music_disc",
+    "items": {
+        "groovotational": {
+            "components": {
+                "minecraft:jukebox_playable": "lipartefacts:groovotational"
+            }
+        },
+        "mineral_winter": {
+            "components": {
+                "minecraft:jukebox_playable": "lipartefacts:mineral_winter"
+            }
+        },
+        "moment_of_melting_solitude": {
+            "components": {
+                "minecraft:jukebox_playable": "lipartefacts:moment_of_melting_solitude"
+            }
+        },
+        "space_caster": {
+            "components": {
+                "minecraft:jukebox_playable": "lipartefacts:space_caster"
+            }
+        },
+        "tokyos_going_down": {
+            "components": {
+                "minecraft:jukebox_playable": "lipartefacts:tokyos_going_down"
+            }
+        }
+    }
+}

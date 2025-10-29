@@ -1,14 +1,10 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:music_disc_otherside",
                     "functions": [
                         {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:music_disc_tokyos_going_down",
                                 "minecraft:item_name": {
@@ -16,15 +12,19 @@
                                     "translate": "item.lipartefacts.music_disc_tokyos_going_down"
                                 },
                                 "minecraft:jukebox_playable": "lipartefacts:tokyos_going_down"
-                            }
+                            },
+                            "function": "minecraft:set_components"
                         },
                         {
                             "function": "minecraft:reference",
                             "name": "lipartefacts:set_rarity/uncommon"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:music_disc_13",
+                    "type": "minecraft:item"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }

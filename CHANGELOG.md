@@ -1,6 +1,8 @@
-### Changing 16 artefacts:
+### Changing 21 artefacts:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_chestplate.png" width="16"/> Copper Golem Armor: Increasing its enchantability to match the Netherite Armor.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/music_disc_mineral_winter.png" width="16"/> Music Discs: Changing their ids.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/music_disc_mineral_winter.png" width="16"/> Music Discs: Changing their redstone output, now ranging from 1 to 5.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_chestplate.png" width="16"/> Piglin Armor: Decreasing its enchantability to match the Netherite Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/piglin_leggings.png" width="16"/> Piglin Leggings: Making it count as gold for Piglins to match the rest of the armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_chestplate.png" width="16"/> Sniffer Armor: Increasing its enchantability to match the Netherite Armor.
