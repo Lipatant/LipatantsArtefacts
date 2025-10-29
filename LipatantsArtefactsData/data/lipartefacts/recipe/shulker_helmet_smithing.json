@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:diamond_helmet",
+    "result": {
+        "id": "minecraft:leather_helmet",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "id": "minecraft:armor.helmet",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "type": "minecraft:armor"
+                },
+                {
+                    "id": "minecraft:armor.helmet",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "type": "minecraft:armor_toughness"
+                },
+                {
+                    "id": "minecraft:armor.helmet",
+                    "amount": 0.1,
+                    "operation": "add_value",
+                    "slot": "head",
+                    "type": "minecraft:knockback_resistance"
+                }
+            ],
+            "minecraft:equippable": {
+                "slot": "head",
+                "equip_sound": "minecraft:item.armor.equip_generic",
+                "asset_id": "lipartefacts:shulker"
+            },
+            "minecraft:lore": [
+                {
+                    "color": "#aaaa00",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.crafted.desc"
+                }
+            ],
+            "minecraft:max_damage": 363,
+            "minecraft:item_model": "lipartefacts:shulker_helmet",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.shulker_helmet"
+            },
+            "minecraft:rarity": "uncommon"
+        }
+    },
+    "template": "minecraft:shulker_shell"
+}

@@ -27,6 +27,32 @@
             <button class="filter rarity epic" onclick="filterItemContainerByRarity('epic')">Epic</button>
         </div><br />
         <a class="filter-list-title">
+            Filter by type:
+        </a><br /><br />
+        <div class="filter-list">
+            <button class="filter" onclick="filterItemContainerReset()">Reset</button>
+            <button class="filter type" onclick="filterItemContainerByType(['_boots', '_chestplate', '_elytra', '_helmet', '_leggings'])">
+                <img alt class="icon item" src="img/types/armor_piece.png">
+                Armor Pieces
+            </button>
+            <button class="filter type" onclick="filterItemContainerByType('_charm')">
+                <img alt class="icon item" src="img/types/charm.png">
+                Charms
+            </button>
+            <button class="filter type" onclick="filterItemContainerByType('enchanted_book_')">
+                <img alt class="icon item" src="img/types/enchanted_book.png">
+                Enchanted Books
+            </button>
+            <button class="filter type" onclick="filterItemContainerByType('music_disc_')">
+                <img alt class="icon item" src="img/types/music_disc.png">
+                Music Discs
+            </button>
+            <button class="filter type" onclick="filterItemContainerByType('_smithing_template')">
+                <img alt class="icon item" src="img/types/smithing_template.png">
+                Smithing Templates
+            </button>
+        </div><br />
+        <a class="filter-list-title">
             Filter by obtention:
         </a><br /><br />
         <div class="filter-list">
@@ -106,6 +132,26 @@
                 <a class="effect positive">Water Breathing (00:02)</a>
                 <lipartefact-obtention class="crafting"></lipartefact-obtention>
             </lipartefact-item>
+            <lipartefact-item dyeable="true" id="cat_helmet" rarity="common">
+                <a class="name">Cat Ears</a>
+                <a class="attribute positive" slot="head">+1 Armor</a>
+                <a class="attribute positive" slot="head">+1 Safe Fall Distance</a>
+                <lipartefact-obtention class="cat_morning_gift"></lipartefact-obtention>
+                <lipartefact-obtention class="fishing">Treasure</lipartefact-obtention>
+                <lipartefact-obtention class="villages">Tannery</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item dyeable="true" id="fisherman_helmet" rarity="common">
+                <a class="name">Fisherman's Bucket Hat</a>
+                <a class="attribute positive" slot="head">+1 Armor</a>
+                <a class="attribute positive" slot="head">+1 Luck</a>
+                <lipartefact-obtention class="fishing">Treasure</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item dyeable="true" id="fisherman_chestplate" rarity="common">
+                <a class="name">Fishing Jacket</a>
+                <a class="attribute positive" slot="head">+3 Armor</a>
+                <a class="attribute positive" slot="head">+1 Luck</a>
+                <lipartefact-obtention class="fishing">Treasure</lipartefact-obtention>
+            </lipartefact-item>
             <lipartefact-item crafted="true "id="glowing_flask_1" rarity="common">
                 <a class="name">Flask of Glowing</a>
                 <a class="effect positive">Glowing (00:10)</a>
@@ -120,33 +166,9 @@
                 <lipartefact-obtention class="crafting"></lipartefact-obtention>
                 <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
             </lipartefact-item>
-            <lipartefact-item id="artillery_firework_rocket_3" rarity="common">
-                <a class="name">Long-Range Artillery Firework Rocket</a>
-                <a class="other">Flight Duration: 3</a>
-                <a class="other">5 x Burst</a>
-                <a class="other">&nbsp;&nbsp;Gray</a>
-                <lipartefact-obtention class="trial_chambers">Supply</lipartefact-obtention>
-                <lipartefact-obtention class="trial_chambers">Vault - Common Reward</lipartefact-obtention>
-            </lipartefact-item>
-            <lipartefact-item id="artillery_firework_rocket_2" rarity="common">
-                <a class="name">Medium-Range Artillery Firework Rocket</a>
-                <a class="other">Flight Duration: 2</a>
-                <a class="other">6 x Burst</a>
-                <a class="other">&nbsp;&nbsp;Gray</a>
-                <lipartefact-obtention class="trial_chambers">Supply</lipartefact-obtention>
-                <lipartefact-obtention class="trial_chambers">Vault - Common Reward</lipartefact-obtention>
-            </lipartefact-item>
             <lipartefact-item crafted="true" id="milk_chocolate_bar" rarity="common">
                 <a class="name">Milk Chocolate Bar</a>
                 <lipartefact-obtention class="crafting"></lipartefact-obtention>
-            </lipartefact-item>
-            <lipartefact-item id="artillery_firework_rocket_1" rarity="common">
-                <a class="name">Short-Range Artillery Firework Rocket</a>
-                <a class="other">Flight Duration: 1</a>
-                <a class="other">7 x Burst</a>
-                <a class="other">&nbsp;&nbsp;Gray</a>
-                <lipartefact-obtention class="trial_chambers">Supply</lipartefact-obtention>
-                <lipartefact-obtention class="trial_chambers">Vault - Common Reward</lipartefact-obtention>
             </lipartefact-item>
             <lipartefact-item crafted="true" id="glowing_flask_2" rarity="common">
                 <a class="name">Strong Flask of Glowing</a>
@@ -161,14 +183,6 @@
                 <a class="attribute attack" slot="mainhand">0.9 Attack Speed</a>
                 <lipartefact-obtention class="bastions">Hoglin Stables</lipartefact-obtention>
                 <lipartefact-obtention class="trial_chambers">Vault - Rare Reward</lipartefact-obtention>
-            </lipartefact-item>
-            <lipartefact-item dyeable="true" id="cat_helmet" rarity="uncommon">
-                <a class="name">Cat Ears</a>
-                <a class="attribute positive" slot="head">+1 Armor</a>
-                <a class="attribute positive" slot="head">+1 Safe Fall Distance</a>
-                <lipartefact-obtention class="cat_morning_gift"></lipartefact-obtention>
-                <lipartefact-obtention class="fishing">Treasure</lipartefact-obtention>
-                <lipartefact-obtention class="villages">Tannery</lipartefact-obtention>
             </lipartefact-item>
             <lipartefact-item id="axolotl_charm" rarity="uncommon" variants="5">
                 <a class="name">Charm of the Axolotl</a>
@@ -206,19 +220,8 @@
                     <p class="additional">Mutually exclusive with Blast Protection, Fire Protection, Projectile Protection and Protection.</p>
                 </div>
                 <lipartefact-obtention class="bastions">Treasure</lipartefact-obtention>
+                <lipartefact-obtention class="strongholds">Library</lipartefact-obtention>
                 <lipartefact-obtention class="woodland_mansions"></lipartefact-obtention>
-            </lipartefact-item>
-            <lipartefact-item dyeable="true" id="fisherman_helmet" rarity="uncommon">
-                <a class="name">Fisherman's Bucket Hat</a>
-                <a class="attribute positive" slot="head">+1 Armor</a>
-                <a class="attribute positive" slot="head">+1 Luck</a>
-                <lipartefact-obtention class="fishing">Treasure</lipartefact-obtention>
-            </lipartefact-item>
-            <lipartefact-item dyeable="true" id="fisherman_chestplate" rarity="uncommon">
-                <a class="name">Fishing Jacket</a>
-                <a class="attribute positive" slot="head">+3 Armor</a>
-                <a class="attribute positive" slot="head">+1 Luck</a>
-                <lipartefact-obtention class="fishing">Treasure</lipartefact-obtention>
             </lipartefact-item>
             <lipartefact-item id="great_hunger_helmet" rarity="uncommon">
                 <a class="name">Great Hunger Jaw</a>
@@ -276,12 +279,26 @@
                 <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
                 <lipartefact-obtention class="woodland_mansions"></lipartefact-obtention>
             </lipartefact-item>
+            <lipartefact-item id="music_disc_tokyos_going_down" rarity="uncommon">
+                <a class="name">Music Disc</a>
+                <a class="other">Lipatant - Tokyo's Going Down</a>
+                <lipartefact-obtention class="jungle_temples"></lipartefact-obtention>
+                <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
+                <lipartefact-obtention class="woodland_mansions"></lipartefact-obtention>
+            </lipartefact-item>
             <lipartefact-item id="repair_crystal" rarity="uncommon">
                 <a class="name">Repair Crystal</a>
                 <lipartefact-obtention class="abandoned_mineshafts"></lipartefact-obtention>
                 <lipartefact-obtention class="monster_rooms"></lipartefact-obtention>
                 <lipartefact-obtention class="strongholds">Library</lipartefact-obtention>
                 <lipartefact-obtention class="villages">Armorer, Toolsmith and Weaponsmith</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item crafted="true" dyeable="true" id="shulker_helmet" rarity="uncommon">
+                <a class="name">Shulker Shell Helmet</a>
+                <a class="attribute positive" slot="head">+3 Armor</a>
+                <a class="attribute positive" slot="head">+2 Armor Toughness</a>
+                <a class="attribute positive" slot="head">+1 Knockback Resistance</a>
+                <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
             </lipartefact-item>
             <lipartefact-item id="stray_chestplate" rarity="uncommon">
                 <a class="name">Snow Camouflage Tunic</a>
@@ -321,6 +338,39 @@
                 <lipartefact-obtention class="pillager_outposts"></lipartefact-obtention>
                 <lipartefact-obtention class="woodland_mansions"></lipartefact-obtention>
             </lipartefact-item>
+            <lipartefact-item id="copper_golem_boots" rarity="rare">
+                <a class="name">Copper Golem Boots</a>
+                <a class="attribute positive" slot="feet">+3 Armor</a>
+                <a class="attribute positive" slot="feet">+2 Armor Toughness</a>
+                <a class="attribute" slot="feet">-5% Scale</a>
+                <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item id="copper_golem_chestplate" rarity="rare">
+                <a class="name">Copper Golem Chestplate</a>
+                <a class="attribute positive" slot="chest">+8 Armor</a>
+                <a class="attribute positive" slot="chest">+2 Armor Toughness</a>
+                <a class="attribute" slot="chest">-5% Scale</a>
+                <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item id="copper_golem_helmet" rarity="rare">
+                <a class="name">Copper Golem Helmet</a>
+                <a class="attribute positive" slot="head">+3 Armor</a>
+                <a class="attribute positive" slot="head">+2 Armor Toughness</a>
+                <a class="attribute" slot="head">-5% Scale</a>
+                <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item id="copper_golem_leggings" rarity="rare">
+                <a class="name">Copper Golem Leggings</a>
+                <a class="attribute positive" slot="legs">+6 Armor</a>
+                <a class="attribute positive" slot="legs">+2 Armor Toughness</a>
+                <a class="attribute" slot="legs">-5% Scale</a>
+                <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item id="copper_golem_upgrade_smithing_template" rarity="rare">
+                <a class="name">Copper Golem Upgrade</a>
+                <a class="smithing_template" applies_to="Diamond Equipment" ingredients="Copper Ingot"></a>
+                <lipartefact-obtention class="trial_chambers_ominous_vault">Rare Reward</lipartefact-obtention>
+            </lipartefact-item>
             <lipartefact-item id="drilling_pickaxe" rarity="rare">
                 <a class="name">Drilling Pickaxe</a>
                 <div class="enchantment" rarity="special">
@@ -335,6 +385,16 @@
                 <lipartefact-obtention class="trial_chambers_ominous_vault">Rare Reward</lipartefact-obtention>
                 <lipartefact-obtention class="trial_chambers">Vault - Unique Reward</lipartefact-obtention>
             </lipartefact-item>
+            <lipartefact-item id="enchanted_book_double_shot" rarity="rare">
+                <a class="name">Enchanted Book</a>
+                <div class="enchantment" rarity="rare">
+                    <a>Double Shot</a>
+                    <p>Shoots an additional copy of any arrow fired.</p>
+                </div>
+                <lipartefact-obtention class="jungle_temples"></lipartefact-obtention>
+                <lipartefact-obtention class="strongholds">Library</lipartefact-obtention>
+                <lipartefact-obtention class="trial_chambers">Vault - Unique Reward</lipartefact-obtention>
+            </lipartefact-item>
             <lipartefact-item id="enchanted_book_fracture" rarity="rare">
                 <a class="name">Enchanted Book</a>
                 <div class="enchantment" rarity="rare">
@@ -342,6 +402,8 @@
                     <p>Inflicts the target with Slowness IV.</p>
                 </div>
                 <lipartefact-obtention class="bastions">Treasure</lipartefact-obtention>
+                <lipartefact-obtention class="strongholds">Library</lipartefact-obtention>
+                <lipartefact-obtention class="trial_chambers">Vault - Unique Reward</lipartefact-obtention>
                 <lipartefact-obtention class="woodland_mansions"></lipartefact-obtention>
             </lipartefact-item>
             <lipartefact-item id="iron_golem_chestplate" rarity="rare">
@@ -352,18 +414,6 @@
                 <a class="attribute" slot="chest">+30% Scale</a>
                 <lipartefact-obtention class="pillager_outposts"></lipartefact-obtention>
             </lipartefact-item>
-            <lipartefact-item dyeable="true" id="little_boots" rarity="rare">
-                <a class="name">Little Feet</a>
-                <a class="attribute positive" slot="feet">+1 Armor</a>
-                <a class="attribute" slot="feet">-10% Scale</a>
-                <lipartefact-obtention class="trial_chambers_ominous_vault">Rare Reward</lipartefact-obtention>
-            </lipartefact-item>
-            <lipartefact-item dyeable="true" id="little_leggings" rarity="rare">
-                <a class="name">Little Legs</a>
-                <a class="attribute positive" slot="legs">+2 Armor</a>
-                <a class="attribute" slot="legs">-10% Scale</a>
-                <lipartefact-obtention class="trial_chambers_ominous_vault">Rare Reward</lipartefact-obtention>
-            </lipartefact-item>
             <lipartefact-item id="piglin_boots" rarity="rare">
                 <a class="name">Piglin Boots</a>
                 <a class="attribute positive" slot="feet">+3 Armor</a>
@@ -371,7 +421,7 @@
                 <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
             </lipartefact-item>
             <lipartefact-item id="piglin_chestplate" rarity="rare">
-                <a class="name">Piglin Chestaplte</a>
+                <a class="name">Piglin Chestplate</a>
                 <a class="attribute positive" slot="chest">+8 Armor</a>
                 <a class="attribute positive" slot="chest">+10% Attack Damage</a>
                 <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
@@ -504,6 +554,11 @@
                 <a class="attribute attack" slot="mainhand">13 Attack Damage</a>
                 <a class="attribute attack" slot="mainhand">1 Attack Speed</a>
                 <lipartefact-obtention class="bastions">Treasure</lipartefact-obtention>
+            </lipartefact-item>
+            <lipartefact-item id="copper_golem_elytra" rarity="epic">
+                <a class="name">Copper Golem Elytra</a>
+                <a class="attribute" slot="chest">-5% Scale</a>
+                <lipartefact-obtention class="smithing">Upgrade</lipartefact-obtention>
             </lipartefact-item>
             <lipartefact-item id="netherite_elytra" rarity="epic">
                 <a class="name">Netherite Elytra</a>

@@ -1,0 +1,48 @@
+{
+    "anvil_cost": 4,
+    "description": {
+        "color": "aqua",
+        "translate": "enchantment.lipartefacts.double_shot"
+    },
+    "effects": {
+        "minecraft:projectile_count": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 1.0,
+                        "per_level_above_first": 1.0
+                    }
+                }
+            }
+        ],
+        "minecraft:projectile_spread": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 2.0,
+                        "per_level_above_first": 1.0
+                    }
+                }
+            }
+        ]
+    },
+    "max_cost": {
+        "base": 65,
+        "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 45,
+        "per_level_above_first": 8
+    },
+    "primary_items": "#minecraft:enchantable/bow",
+    "slots": [
+        "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/bow",
+    "weight": 5
+}

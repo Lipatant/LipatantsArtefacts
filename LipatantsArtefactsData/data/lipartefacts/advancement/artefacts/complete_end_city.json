@@ -1,5 +1,5 @@
 {
-    "parent": "lipartefacts:artefacts/complete_stronghold",
+    "parent": "lipartefacts:artefacts/shulker_armor",
     "criteria": {
         "ender_hand": {
             "conditions": {

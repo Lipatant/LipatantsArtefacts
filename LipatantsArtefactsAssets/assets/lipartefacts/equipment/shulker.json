@@ -1,0 +1,15 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "dyeable": {
+                    "color_when_undyed": 9922455
+                },
+                "texture": "lipartefacts:shulker"
+            },
+            {
+                "texture": "lipartefacts:shulker_overlay"
+            }
+        ]
+    }
+}

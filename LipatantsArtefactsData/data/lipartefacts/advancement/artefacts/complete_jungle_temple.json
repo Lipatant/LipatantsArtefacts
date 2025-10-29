@@ -13,6 +13,18 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "enchanted_book_double_shot": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:enchanted_book_double_shot"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "music_disc_groovotational": {
             "conditions": {
                 "items": [
@@ -60,6 +72,18 @@
                 ]
             },
             "trigger": "minecraft:inventory_changed"
+        },
+        "music_disc_tokyos_going_down": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:music_disc_tokyos_going_down"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
         }
     },
     "display": {
@@ -79,6 +103,9 @@
             "bogged_chestplate"
         ],
         [
+            "enchanted_book_double_shot"
+        ],
+        [
             "music_disc_groovotational"
         ],
         [
@@ -89,6 +116,9 @@
         ],
         [
             "music_disc_space_caster"
+        ],
+        [
+            "music_disc_tokyos_going_down"
         ]
     ]
 }

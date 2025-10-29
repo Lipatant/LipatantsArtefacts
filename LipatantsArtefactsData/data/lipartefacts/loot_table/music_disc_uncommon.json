@@ -17,6 +17,10 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/music_disc_space_caster"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/music_disc_tokyos_going_down"
                 }
             ],
             "rolls": 1

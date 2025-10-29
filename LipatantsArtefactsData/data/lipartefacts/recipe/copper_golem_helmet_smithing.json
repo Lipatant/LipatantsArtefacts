@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": "copper_ingot",
+    "base": "minecraft:diamond_helmet",
+    "result": {
+        "id": "minecraft:chainmail_helmet",
+        "components": {
+            "minecraft:attribute_modifiers": [
+                {
+                    "type": "minecraft:armor",
+                    "id": "minecraft:armor.helmet",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head"
+                },
+                {
+                    "type": "minecraft:armor_toughness",
+                    "id": "minecraft:armor.helmet",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "head"
+                },
+                {
+                    "type": "minecraft:scale",
+                    "id": "minecraft:armor.helmet",
+                    "amount": -0.05,
+                    "operation": "add_multiplied_base",
+                    "slot": "head"
+                }
+            ],
+            "minecraft:equippable": {
+                "slot": "head",
+                "equip_sound": "minecraft:item.armor.equip_copper"
+            },
+            "minecraft:item_model": "lipartefacts:copper_golem_helmet",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.copper_golem_helmet"
+            },
+            "minecraft:lore": [
+                {
+                    "color": "dark_aqua",
+                    "italic": false,
+                    "translate": "item.lipartefacts.generic.rare.desc"
+                }
+            ],
+            "minecraft:max_damage": 407,
+            "minecraft:rarity": "rare"
+        }
+    },
+    "template": "minecraft:structure_block"
+}

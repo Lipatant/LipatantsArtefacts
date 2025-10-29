@@ -134,6 +134,10 @@
                 },
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:copper_horse_armor"
+                },
+                {
+                    "type": "minecraft:item",
                     "name": "minecraft:iron_horse_armor"
                 },
                 {
@@ -190,10 +194,21 @@
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:music_disc_uncommon",
                     "weight": 1
-                },
+                }
+            ],
+            "rolls": 1.0
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
                 {
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/bogged_chestplate",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/enchanted_book_double_shot",
                     "weight": 1
                 }
             ],

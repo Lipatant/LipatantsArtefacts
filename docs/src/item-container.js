@@ -43,6 +43,19 @@ function checkForRarity(element, rarity) {
     return false
 }
 
+function checkForType(element, typeList) {
+    if (typeof typeList == 'string') {
+        return (element.hasAttribute("id") && element.getAttribute("id").includes(typeList));
+    }
+    for (const type in typeList) {
+        console.log(typeList[type])
+        if (checkForType(element, typeList[type])) {
+            return true;
+        }
+    }
+    return false;
+}
+
 function filterItemContainerByCrafted(crafted = false) {
     let child;
     const children = itemContainer.children;
@@ -83,6 +96,23 @@ function filterItemContainerByRarity(rarity = "") {
     for (let i = 0; i < children.length; i++) {
         child = children[i];
         if (checkForRarity(child, rarity)) {
+            if (child.classList.contains("hide")) {
+                child.classList.remove("hide");
+            }
+        } else {
+            if (!child.classList.contains("hide")) {
+                child.classList.add("hide");
+            }
+        }
+    }
+}
+
+function filterItemContainerByType(typeList = "") {
+    let child;
+    const children = itemContainer.children;
+    for (let i = 0; i < children.length; i++) {
+        child = children[i];
+        if (checkForType(child, typeList)) {
             if (child.classList.contains("hide")) {
                 child.classList.remove("hide");
             }
