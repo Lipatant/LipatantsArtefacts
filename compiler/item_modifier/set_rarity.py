@@ -4,9 +4,6 @@ from item_modifier_base import ItemModifierBase
 
 class ItemModifierSetRarity(ItemModifierBase):
 
-    rarity = None
-    secondary_color = None
-
     def __init__(self, identifier: str, rarity: str, secondary_color: str):
         super().__init__(identifier)
         self.rarity = rarity

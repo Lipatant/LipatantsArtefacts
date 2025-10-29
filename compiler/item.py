@@ -21,17 +21,16 @@ class Item:
 
 class Item:
 
-    attributes: list[dict] = []
-    attributes_keep: bool = False
-    components: dict = {}
-    enchantments: dict = {}
-    identifier: str = ""
-    inherits: str = "minecraft:stone"
-    item_modifiers: list[str] = []
-    on_consume_effects: list[dict] = []
-    variants: list[str] = []
-
     def __init__(self, data: dict = {}):
+        self.attributes = []
+        self.attributes_keep = False
+        self.components = {}
+        self.enchantments = {}
+        self.identifier = ""
+        self.inherits = "minecraft:stone"
+        self.item_modifiers = []
+        self.on_consume_effects = []
+        self.variants = []
         self.load(data)
 
     def duplicate(self) -> Item:

@@ -38,10 +38,6 @@
                                     ],
                                     "sound": "minecraft:entity.generic.drink"
                                 },
-                                "minecraft:equippable": {
-                                    "damage_on_hurt": false,
-                                    "slot": "offhand"
-                                },
                                 "minecraft:food": {
                                     "can_always_eat": true,
                                     "nutrition": 0,
@@ -55,25 +51,6 @@
                                 "minecraft:max_stack_size": 1
                             },
                             "function": "minecraft:set_components"
-                        },
-                        {
-                            "function": "minecraft:set_attributes",
-                            "modifiers": [
-                                {
-                                    "amount": 30.0,
-                                    "attribute": "minecraft:mining_efficiency",
-                                    "id": "lipartefacts:mainhand.efficiency",
-                                    "operation": "add_value",
-                                    "slot": "mainhand"
-                                }
-                            ],
-                            "replace": true
-                        },
-                        {
-                            "enchantments": {
-                                "lipartefacts:cooling": 1
-                            },
-                            "function": "minecraft:set_enchantments"
                         },
                         {
                             "function": "minecraft:set_lore",
@@ -102,14 +79,6 @@
                                 ]
                             ],
                             "mode": "insert"
-                        },
-                        {
-                            "function": "minecraft:reference",
-                            "name": "lipartefacts:set_durability/stone/tool"
-                        },
-                        {
-                            "function": "minecraft:reference",
-                            "name": "lipartefacts:set_rarity/rare"
                         },
                         {
                             "function": "minecraft:reference",

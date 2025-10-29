@@ -23,10 +23,6 @@
                                     ],
                                     "sound": "minecraft:entity.generic.drink"
                                 },
-                                "minecraft:equippable": {
-                                    "damage_on_hurt": false,
-                                    "slot": "offhand"
-                                },
                                 "minecraft:food": {
                                     "can_always_eat": true,
                                     "nutrition": 0,

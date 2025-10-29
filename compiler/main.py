@@ -64,7 +64,6 @@ def initialize_items_templates() -> None:
     global item_template_list
     for data in load_manager.load_all_item_templates().values():
         item_template_list.append(Item(data))
-        print(item_template_list.keys())
 
 def save() -> None:
     global item_list, item_modifier_list

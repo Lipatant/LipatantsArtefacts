@@ -3,8 +3,6 @@ from save_manager import save_item_modifier
 
 class ItemModifierBase:
 
-    identifier = "component"
-
     def __init__(self, identifier):
         self.identifier = identifier
 

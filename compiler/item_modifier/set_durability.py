@@ -60,8 +60,6 @@ def generate_data() -> dict:
 
 class ItemModifierSetDurability(ItemModifierBase):
 
-    max_damage = 1
-
     def __init__(self, identifier: str, max_damage: int):
         super().__init__(identifier)
         self.max_damage = max_damage

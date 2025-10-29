@@ -6,41 +6,9 @@
                     "functions": [
                         {
                             "components": {
-                                "minecraft:consumable": {
-                                    "animation": "drink",
-                                    "has_consume_particles": false,
-                                    "on_consume_effects": [
-                                        {
-                                            "effects": [
-                                                {
-                                                    "amplifier": 0,
-                                                    "duration": 40,
-                                                    "id": "minecraft:water_breathing"
-                                                },
-                                                {
-                                                    "amplifier": 0,
-                                                    "duration": 200,
-                                                    "id": "minecraft:glowing"
-                                                },
-                                                {
-                                                    "amplifier": 0,
-                                                    "duration": 1200,
-                                                    "id": "minecraft:glowing"
-                                                }
-                                            ],
-                                            "type": "apply_effects"
-                                        }
-                                    ],
-                                    "sound": "minecraft:entity.generic.drink"
-                                },
                                 "minecraft:equippable": {
                                     "damage_on_hurt": false,
                                     "slot": "offhand"
-                                },
-                                "minecraft:food": {
-                                    "can_always_eat": true,
-                                    "nutrition": 0,
-                                    "saturation": 0
                                 },
                                 "minecraft:item_model": "lipartefacts:ravager_charm",
                                 "minecraft:item_name": {
@@ -55,13 +23,6 @@
                             "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "amount": 30.0,
-                                    "attribute": "minecraft:mining_efficiency",
-                                    "id": "lipartefacts:mainhand.efficiency",
-                                    "operation": "add_value",
-                                    "slot": "mainhand"
-                                },
-                                {
                                     "amount": 1.0,
                                     "attribute": "minecraft:attack_knockback",
                                     "id": "lipartefacts:offhand.attack_knockback",
@@ -70,20 +31,6 @@
                                 }
                             ],
                             "replace": true
-                        },
-                        {
-                            "enchantments": {
-                                "lipartefacts:cooling": 1
-                            },
-                            "function": "minecraft:set_enchantments"
-                        },
-                        {
-                            "function": "minecraft:reference",
-                            "name": "lipartefacts:set_durability/stone/tool"
-                        },
-                        {
-                            "function": "minecraft:reference",
-                            "name": "lipartefacts:set_rarity/rare"
                         },
                         {
                             "function": "minecraft:reference",

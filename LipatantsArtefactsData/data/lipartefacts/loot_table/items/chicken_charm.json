@@ -6,31 +6,9 @@
                     "functions": [
                         {
                             "components": {
-                                "minecraft:consumable": {
-                                    "animation": "drink",
-                                    "has_consume_particles": false,
-                                    "on_consume_effects": [
-                                        {
-                                            "effects": [
-                                                {
-                                                    "amplifier": 0,
-                                                    "duration": 40,
-                                                    "id": "minecraft:water_breathing"
-                                                }
-                                            ],
-                                            "type": "apply_effects"
-                                        }
-                                    ],
-                                    "sound": "minecraft:entity.generic.drink"
-                                },
                                 "minecraft:equippable": {
                                     "damage_on_hurt": false,
                                     "slot": "offhand"
-                                },
-                                "minecraft:food": {
-                                    "can_always_eat": true,
-                                    "nutrition": 0,
-                                    "saturation": 0
                                 },
                                 "minecraft:item_model": "lipartefacts:chicken_charm",
                                 "minecraft:item_name": {
