@@ -20,6 +20,8 @@ def load_all(file_path: str, as_json: bool = True) -> dict:
     content_dict = {}
     files = os.listdir(file_path)
     for file in files:
+        if not os.path.isfile(file_path + file):
+            continue
         if as_json:
             content_dict[file] = json.loads(load(file_path + file))
         else:
