@@ -36,6 +36,7 @@ def load_all_items() -> dict:
 def load_all_item_sets() -> dict:
     return {
         "armor": load_all(SOURCES_ITEM_SET_PATH + "armor/"),
+        "generic": load_all(SOURCES_ITEM_SET_PATH),
     }
 
 # Attemps to read all files in the `SOURCES_ITEM_TEMPLATE_PATH` directory.

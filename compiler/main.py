@@ -5,6 +5,7 @@ from item_modifier.set_durability import ItemModifierSetDurability
 from item_modifier.set_enchantable import ItemModifierSetEnchantable
 from item_modifier.set_rarity import ItemModifierSetRarity
 from item_modifier_base import ItemModifierList
+from item_set.item_set import ItemSet
 from item_set.item_set_armor import ItemSetArmor
 
 item_list = ItemList()
@@ -77,6 +78,8 @@ def initialize_items() -> None:
     item_sets = load_manager.load_all_item_sets()
     for data in item_sets.get("armor", {}).values():
         item_data_list.extend(ItemSetArmor(data).to_item_data_list())
+    for data in item_sets.get("generic", {}).values():
+        item_data_list.extend(ItemSet(data).to_item_data_list())
     item_data_list.extend(load_manager.load_all_items().values())
     for data in item_data_list:
         if not data:
