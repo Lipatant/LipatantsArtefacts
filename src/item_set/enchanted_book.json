@@ -1,0 +1,56 @@
+{
+    "data": {
+        "inherits": "minecraft:enchanted_book"
+    },
+    "id": "enchanted_book",
+    "items": {
+        "double_shot": {
+            "enchantments": {
+                "lipartefacts:double_shot": 1
+            },
+            "item_modifiers": [
+                "lipartefacts:set_rarity/rare"
+            ]
+        },
+        "call_to_chaos": {
+            "enchantments": {
+                "lipartefacts:call_to_chaos": 1
+            },
+            "item_modifiers": [
+                "lipartefacts:set_rarity/epic"
+            ]
+        },
+        "fracture": {
+            "enchantments": {
+                "lipartefacts:fracture": 1
+            },
+            "item_modifiers": [
+                "lipartefacts:set_rarity/rare"
+            ]
+        },
+        "illager_bane": {
+            "enchantments": {
+                "lipartefacts:illager_bane": 1
+            },
+            "item_modifiers": [
+                "lipartefacts:set_rarity/epic"
+            ]
+        },
+        "imperilment": {
+            "enchantments": {
+                "lipartefacts:imperilment": 1
+            },
+            "item_modifiers": [
+                "lipartefacts:set_rarity/uncommon"
+            ]
+        },
+        "vampirism": {
+            "enchantments": {
+                "lipartefacts:vampirism": 1
+            },
+            "item_modifiers": [
+                "lipartefacts:set_rarity/epic"
+            ]
+        }
+    }
+}
