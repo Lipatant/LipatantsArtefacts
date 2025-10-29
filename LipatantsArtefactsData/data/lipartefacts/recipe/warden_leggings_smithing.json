@@ -1,37 +1,38 @@
 {
-    "type": "minecraft:smithing_transform",
     "addition": "minecraft:echo_shard",
     "base": "minecraft:diamond_leggings",
     "result": {
-        "id": "minecraft:chainmail_leggings",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor",
-                    "id": "minecraft:armor.leggings",
                     "amount": 6,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_value",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:armor"
                 },
                 {
-                    "type": "minecraft:armor_toughness",
-                    "id": "minecraft:armor.leggings",
                     "amount": 2,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_value",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:armor_toughness"
                 },
                 {
-                    "type": "minecraft:max_health",
-                    "id": "minecraft:armor.leggings",
                     "amount": 2,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_value",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:max_health"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 15
+            },
             "minecraft:equippable": {
-                "slot": "legs",
-                "equip_sound": "minecraft:item.armor.equip_iron",
-                "asset_id": "lipartefacts:warden"
+                "asset_id": "lipartefacts:warden",
+                "equip_sound": "minecraft:item.armor.equip_generic",
+                "slot": "legs"
             },
             "minecraft:item_model": "lipartefacts:warden_leggings",
             "minecraft:item_name": {
@@ -47,7 +48,9 @@
             ],
             "minecraft:max_damage": 555,
             "minecraft:rarity": "rare"
-        }
+        },
+        "id": "minecraft:chainmail_leggings"
     },
-    "template": "minecraft:repeating_command_block"
+    "template": "minecraft:command_block",
+    "type": "minecraft:smithing_transform"
 }

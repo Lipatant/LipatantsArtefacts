@@ -12,7 +12,7 @@
     "enchantments": {
         "lipartefacts:cooling": 1
     },
-    "id": "drilling_pickaxe",
+    "id": "lipartefacts:drilling_pickaxe",
     "inherits": "minecraft:golden_pickaxe",
     "item_modifiers": [
         "lipartefacts:set_durability/stone/tool",

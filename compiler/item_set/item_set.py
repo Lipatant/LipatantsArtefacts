@@ -1,5 +1,4 @@
 from copy import deepcopy
-from item import Item, ItemList
 
 class ItemSet:
     pass

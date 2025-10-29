@@ -1,37 +1,38 @@
 {
-    "type": "minecraft:smithing_transform",
     "addition": "minecraft:echo_shard",
     "base": "minecraft:diamond_helmet",
     "result": {
-        "id": "minecraft:chainmail_helmet",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor",
-                    "id": "minecraft:armor.helmet",
                     "amount": 3,
+                    "id": "minecraft:armor.helmets",
                     "operation": "add_value",
-                    "slot": "head"
+                    "slot": "head",
+                    "type": "minecraft:armor"
                 },
                 {
-                    "type": "minecraft:armor_toughness",
-                    "id": "minecraft:armor.helmet",
                     "amount": 2,
+                    "id": "minecraft:armor.helmets",
                     "operation": "add_value",
-                    "slot": "head"
+                    "slot": "head",
+                    "type": "minecraft:armor_toughness"
                 },
                 {
-                    "type": "minecraft:max_health",
-                    "id": "minecraft:armor.helmet",
                     "amount": 2,
+                    "id": "minecraft:armor.helmets",
                     "operation": "add_value",
-                    "slot": "head"
+                    "slot": "head",
+                    "type": "minecraft:max_health"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 15
+            },
             "minecraft:equippable": {
-                "slot": "head",
-                "equip_sound": "minecraft:item.armor.equip_iron",
-                "asset_id": "lipartefacts:warden"
+                "asset_id": "lipartefacts:warden",
+                "equip_sound": "minecraft:item.armor.equip_generic",
+                "slot": "head"
             },
             "minecraft:item_model": "lipartefacts:warden_helmet",
             "minecraft:item_name": {
@@ -47,7 +48,9 @@
             ],
             "minecraft:max_damage": 407,
             "minecraft:rarity": "rare"
-        }
+        },
+        "id": "minecraft:chainmail_helmet"
     },
-    "template": "minecraft:repeating_command_block"
+    "template": "minecraft:command_block",
+    "type": "minecraft:smithing_transform"
 }

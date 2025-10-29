@@ -1,6 +1,6 @@
 {
-    "id": "air_bubble",
-    "inherits": "flask",
+    "id": "lipartefacts:air_bubble",
+    "inherits": "lipartefacts:flask",
     "item_modifiers": [
         "lipartefacts:set_rarity/common"
     ],

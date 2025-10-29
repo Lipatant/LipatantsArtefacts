@@ -1,36 +1,37 @@
 {
-    "type": "minecraft:smithing_transform",
-    "addition": "copper_ingot",
+    "addition": "minecraft:copper_ingot",
     "base": "minecraft:diamond_helmet",
     "result": {
-        "id": "minecraft:chainmail_helmet",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor",
-                    "id": "minecraft:armor.helmet",
                     "amount": 3,
+                    "id": "minecraft:armor.helmets",
                     "operation": "add_value",
-                    "slot": "head"
+                    "slot": "head",
+                    "type": "minecraft:armor"
                 },
                 {
-                    "type": "minecraft:armor_toughness",
-                    "id": "minecraft:armor.helmet",
                     "amount": 2,
+                    "id": "minecraft:armor.helmets",
                     "operation": "add_value",
-                    "slot": "head"
+                    "slot": "head",
+                    "type": "minecraft:armor_toughness"
                 },
                 {
-                    "type": "minecraft:scale",
-                    "id": "minecraft:armor.helmet",
                     "amount": -0.05,
+                    "id": "minecraft:armor.helmets",
                     "operation": "add_multiplied_base",
-                    "slot": "head"
+                    "slot": "head",
+                    "type": "minecraft:scale"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 15
+            },
             "minecraft:equippable": {
-                "slot": "head",
-                "equip_sound": "minecraft:item.armor.equip_copper"
+                "equip_sound": "minecraft:item.armor.equip_copper",
+                "slot": "head"
             },
             "minecraft:item_model": "lipartefacts:copper_golem_helmet",
             "minecraft:item_name": {
@@ -46,7 +47,9 @@
             ],
             "minecraft:max_damage": 407,
             "minecraft:rarity": "rare"
-        }
+        },
+        "id": "minecraft:chainmail_helmet"
     },
-    "template": "minecraft:structure_block"
+    "template": "minecraft:structure_block",
+    "type": "minecraft:smithing_transform"
 }

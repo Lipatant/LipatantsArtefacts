@@ -21,9 +21,16 @@
         },
         "item_modifiers": [
             "lipartefacts:set_rarity/rare"
+        ],
+        "recipe_smithing_upgrades": [
+            {
+                "addition": "minecraft:leather",
+                "base_relative": "minecraft:diamond",
+                "template": "lipartefacts:sniffer_upgrade_smithing_template"
+            }
         ]
     },
-    "id": "sniffer",
+    "id": "lipartefacts:sniffer",
     "items": {
         "boots": {
             "components": {

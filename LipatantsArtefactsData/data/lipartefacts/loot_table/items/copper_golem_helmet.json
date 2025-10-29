@@ -7,7 +7,6 @@
                         {
                             "components": {
                                 "minecraft:equippable": {
-                                    "asset_id": "lipartefacts:copper_golem",
                                     "equip_sound": "minecraft:item.armor.equip_copper",
                                     "slot": "head"
                                 },

@@ -1,37 +1,38 @@
 {
-    "type": "minecraft:smithing_transform",
     "addition": "minecraft:echo_shard",
     "base": "minecraft:diamond_boots",
     "result": {
-        "id": "minecraft:chainmail_boots",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor",
-                    "id": "minecraft:armor.boots",
                     "amount": 3,
+                    "id": "minecraft:armor.boots",
                     "operation": "add_value",
-                    "slot": "feet"
+                    "slot": "feet",
+                    "type": "minecraft:armor"
                 },
                 {
-                    "type": "minecraft:armor_toughness",
-                    "id": "minecraft:armor.boots",
                     "amount": 2,
+                    "id": "minecraft:armor.boots",
                     "operation": "add_value",
-                    "slot": "feet"
+                    "slot": "feet",
+                    "type": "minecraft:armor_toughness"
                 },
                 {
-                    "type": "minecraft:max_health",
-                    "id": "minecraft:armor.boots",
                     "amount": 2,
+                    "id": "minecraft:armor.boots",
                     "operation": "add_value",
-                    "slot": "feet"
+                    "slot": "feet",
+                    "type": "minecraft:max_health"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 15
+            },
             "minecraft:equippable": {
-                "slot": "feet",
-                "equip_sound": "minecraft:item.armor.equip_iron",
-                "asset_id": "lipartefacts:warden"
+                "asset_id": "lipartefacts:warden",
+                "equip_sound": "minecraft:item.armor.equip_generic",
+                "slot": "feet"
             },
             "minecraft:item_model": "lipartefacts:warden_boots",
             "minecraft:item_name": {
@@ -47,7 +48,9 @@
             ],
             "minecraft:max_damage": 481,
             "minecraft:rarity": "rare"
-        }
+        },
+        "id": "minecraft:chainmail_boots"
     },
-    "template": "minecraft:repeating_command_block"
+    "template": "minecraft:command_block",
+    "type": "minecraft:smithing_transform"
 }

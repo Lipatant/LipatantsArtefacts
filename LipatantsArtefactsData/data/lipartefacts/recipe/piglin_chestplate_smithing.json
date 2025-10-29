@@ -1,30 +1,31 @@
 {
-    "type": "minecraft:smithing_transform",
     "addition": "minecraft:gold_ingot",
     "base": "minecraft:diamond_chestplate",
     "result": {
-        "id": "minecraft:golden_chestplate",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor",
-                    "id": "minecraft:armor.chestplate",
                     "amount": 8,
+                    "id": "minecraft:armor.chestplate",
                     "operation": "add_value",
-                    "slot": "chest"
+                    "slot": "chest",
+                    "type": "minecraft:armor"
                 },
                 {
-                    "type": "minecraft:attack_damage",
-                    "id": "minecraft:armor.chestplate",
                     "amount": 0.1,
+                    "id": "minecraft:armor.chestplate",
                     "operation": "add_multiplied_base",
-                    "slot": "chest"
+                    "slot": "chest",
+                    "type": "minecraft:attack_damage"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 15
+            },
             "minecraft:equippable": {
-                "slot": "chest",
-                "equip_sound": "minecraft:item.armor.equip_leather",
-                "asset_id": "lipartefacts:piglin"
+                "asset_id": "lipartefacts:piglin",
+                "equip_sound": "minecraft:item.armor.equip_gold",
+                "slot": "chest"
             },
             "minecraft:item_model": "lipartefacts:piglin_chestplate",
             "minecraft:item_name": {
@@ -40,7 +41,9 @@
             ],
             "minecraft:max_damage": 592,
             "minecraft:rarity": "rare"
-        }
+        },
+        "id": "minecraft:golden_chestplate"
     },
-    "template": "minecraft:command_block"
+    "template": "minecraft:chain_command_block",
+    "type": "minecraft:smithing_transform"
 }

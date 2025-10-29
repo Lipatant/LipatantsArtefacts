@@ -1,6 +1,6 @@
-from item import COMPONENT_MAX_DAMAGE
-from item import FUNCTION, FUNCTION_SET_COMPONENTS
-from item_modifier_base import ItemModifierBase
+from item.item import COMPONENT_MAX_DAMAGE
+from item.item import FUNCTION, FUNCTION_SET_COMPONENTS
+from item_modifier.item_modifier import ItemModifier
 
 def generate_data() -> dict:
     data = {
@@ -58,7 +58,7 @@ def generate_data() -> dict:
             output[tier][item] = data[tier][item]
     return output
 
-class ItemModifierSetDurability(ItemModifierBase):
+class ItemModifierSetDurability(ItemModifier):
 
     def __init__(self, identifier: str, max_damage: int):
         super().__init__(identifier)
@@ -66,6 +66,11 @@ class ItemModifierSetDurability(ItemModifierBase):
 
     def get_path_str(self) -> str:
         return "set_durability/%s"
+
+    def modify_item_data(self, data: dict) -> None:
+        if "components" not in data:
+            data["components"] = {}
+        data["components"][COMPONENT_MAX_DAMAGE] = self.max_damage
 
     def to_data(self) -> dict | list:
         return {

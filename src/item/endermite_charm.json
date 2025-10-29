@@ -6,8 +6,8 @@
             "operation": "add_multiplied_base"
         }
     ],
-    "id": "endermite_charm",
-    "inherits": "charm",
+    "id": "lipartefacts:endermite_charm",
+    "inherits": "lipartefacts:charm",
     "item_modifiers": [
         "lipartefacts:set_rarity/epic"
     ]

@@ -5,7 +5,7 @@
             "lipartefacts:set_rarity/uncommon"
         ]
     },
-    "id": "music_disc",
+    "id": "lipartefacts:music_disc",
     "items": {
         "groovotational": {
             "components": {

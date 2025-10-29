@@ -1,17 +1,15 @@
 {
-    "type": "minecraft:smithing_transform",
     "addition": "minecraft:copper_ingot",
     "base": "minecraft:elytra",
     "result": {
-        "id": "minecraft:elytra",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:scale",
-                    "id": "minecraft:armor.chestplate",
                     "amount": -0.05,
+                    "id": "minecraft:armor.chestplate",
                     "operation": "add_multiplied_base",
-                    "slot": "chest"
+                    "slot": "chest",
+                    "type": "minecraft:scale"
                 }
             ],
             "minecraft:equippable": {
@@ -33,7 +31,9 @@
             ],
             "minecraft:max_damage": 496,
             "minecraft:rarity": "epic"
-        }
+        },
+        "id": "minecraft:elytra"
     },
-    "template": "minecraft:structure_block"
+    "template": "minecraft:structure_block",
+    "type": "minecraft:smithing_transform"
 }

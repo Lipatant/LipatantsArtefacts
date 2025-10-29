@@ -20,9 +20,16 @@
         },
         "item_modifiers": [
             "lipartefacts:set_rarity/rare"
+        ],
+        "recipe_smithing_upgrades": [
+            {
+                "addition": "minecraft:gold_ingot",
+                "base_relative": "minecraft:diamond",
+                "template": "lipartefacts:piglin_upgrade_smithing_template"
+            }
         ]
     },
-    "id": "piglin",
+    "id": "lipartefacts:piglin",
     "items": {
         "boots": {
             "inherits": "minecraft:golden_boots",

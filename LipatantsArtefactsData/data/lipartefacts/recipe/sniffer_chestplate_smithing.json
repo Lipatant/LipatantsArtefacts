@@ -1,37 +1,38 @@
 {
-    "type": "minecraft:smithing_transform",
-    "addition": "leather",
+    "addition": "minecraft:leather",
     "base": "minecraft:diamond_chestplate",
     "result": {
-        "id": "minecraft:chainmail_chestplate",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor",
-                    "id": "minecraft:armor.chestplate",
                     "amount": 8,
+                    "id": "minecraft:armor.chestplate",
                     "operation": "add_value",
-                    "slot": "chest"
+                    "slot": "chest",
+                    "type": "minecraft:armor"
                 },
                 {
-                    "type": "minecraft:armor_toughness",
-                    "id": "minecraft:armor.chestplate",
                     "amount": 2,
+                    "id": "minecraft:armor.chestplate",
                     "operation": "add_value",
-                    "slot": "chest"
+                    "slot": "chest",
+                    "type": "minecraft:armor_toughness"
                 },
                 {
-                    "type": "minecraft:knockback_resistance",
-                    "id": "minecraft:armor.chestplate",
                     "amount": 0.2,
+                    "id": "minecraft:armor.chestplate",
                     "operation": "add_value",
-                    "slot": "chest"
+                    "slot": "chest",
+                    "type": "minecraft:knockback_resistance"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 15
+            },
             "minecraft:equippable": {
-                "slot": "chest",
-                "equip_sound": "minecraft:block.cherry_leaves.place",
-                "asset_id": "lipartefacts:sniffer"
+                "asset_id": "lipartefacts:sniffer",
+                "equip_sound": "minecraft:item.armor.equip_leather",
+                "slot": "chest"
             },
             "minecraft:item_model": "lipartefacts:sniffer_chestplate",
             "minecraft:item_name": {
@@ -47,7 +48,9 @@
             ],
             "minecraft:max_damage": 592,
             "minecraft:rarity": "rare"
-        }
+        },
+        "id": "minecraft:chainmail_chestplate"
     },
-    "template": "minecraft:chain_command_block"
+    "template": "minecraft:repeating_command_block",
+    "type": "minecraft:smithing_transform"
 }

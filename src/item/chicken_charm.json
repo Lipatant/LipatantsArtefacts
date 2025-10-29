@@ -6,8 +6,8 @@
             "operation": "add_value"
         }
     ],
-    "id": "chicken_charm",
-    "inherits": "charm",
+    "id": "lipartefacts:chicken_charm",
+    "inherits": "lipartefacts:charm",
     "item_modifiers": [
         "lipartefacts:set_rarity/uncommon"
     ]

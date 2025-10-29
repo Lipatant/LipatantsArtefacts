@@ -6,8 +6,8 @@
             "operation": "add_multiplied_total"
         }
     ],
-    "id": "strider_charm",
-    "inherits": "charm",
+    "id": "lipartefacts:strider_charm",
+    "inherits": "lipartefacts:charm",
     "item_modifiers": [
         "lipartefacts:fire_resistant",
         "lipartefacts:set_rarity/uncommon"

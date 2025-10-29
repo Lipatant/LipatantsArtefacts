@@ -1,6 +1,6 @@
 {
-    "id": "glowing_flask_2",
-    "inherits": "flask",
+    "id": "lipartefacts:glowing_flask_2",
+    "inherits": "lipartefacts:flask",
     "item_modifiers": [
         "lipartefacts:set_rarity/common"
     ],

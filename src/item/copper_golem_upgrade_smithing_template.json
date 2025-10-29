@@ -1,0 +1,49 @@
+{
+    "components": {
+        "minecraft:lore": [
+            {
+                "color": "gray",
+                "italic": false,
+                "translate": "item.minecraft.smithing_template"
+            },
+            {
+                "text": ""
+            },
+            {
+                "color": "gray",
+                "italic": false,
+                "translate": "item.minecraft.smithing_template.applies_to"
+            },
+            [
+                {
+                    "text": " "
+                },
+                {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "item.lipartefacts.smithing_template.copper_golem_upgrade.applies_to"
+                }
+            ],
+            {
+                "color": "gray",
+                "italic": false,
+                "translate": "item.minecraft.smithing_template.ingredients"
+            },
+            [
+                {
+                    "text": " "
+                },
+                {
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "item.lipartefacts.smithing_template.copper_golem_upgrade.ingredients"
+                }
+            ]
+        ]
+    },
+    "id": "lipartefacts:copper_golem_upgrade_smithing_template",
+    "inherits": "minecraft:structure_block",
+    "item_modifiers": [
+        "lipartefacts:set_rarity/rare"
+    ]
+}

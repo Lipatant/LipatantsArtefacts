@@ -21,9 +21,16 @@
         },
         "item_modifiers": [
             "lipartefacts:set_rarity/rare"
+        ],
+        "recipe_smithing_upgrades": [
+            {
+                "addition": "minecraft:copper_ingot",
+                "base_relative": "minecraft:diamond",
+                "template": "lipartefacts:copper_golem_upgrade_smithing_template"
+            }
         ]
     },
-    "id": "copper_golem",
+    "id": "lipartefacts:copper_golem",
     "items": {
         "boots": {
             "inherits": "minecraft:chainmail_boots",
@@ -47,6 +54,11 @@
             "slot": "chest"
         },
         "helmet": {
+            "components": {
+                "minecraft:equippable": {
+                    "equip_sound": "minecraft:item.armor.equip_copper"
+                }
+            },
             "inherits": "minecraft:chainmail_helmet",
             "slot": "head"
         },

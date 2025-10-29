@@ -2,7 +2,7 @@
     "data": {
         "inherits": "minecraft:enchanted_book"
     },
-    "id": "enchanted_book",
+    "id": "lipartefacts:enchanted_book",
     "items": {
         "double_shot": {
             "enchantments": {

@@ -1,37 +1,38 @@
 {
-    "type": "minecraft:smithing_transform",
-    "addition": "leather",
+    "addition": "minecraft:leather",
     "base": "minecraft:diamond_leggings",
     "result": {
-        "id": "minecraft:leather_leggings",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor",
-                    "id": "minecraft:armor.leggings",
                     "amount": 6,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_value",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:armor"
                 },
                 {
-                    "type": "minecraft:armor_toughness",
-                    "id": "minecraft:armor.leggings",
                     "amount": 2,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_value",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:armor_toughness"
                 },
                 {
-                    "type": "minecraft:knockback_resistance",
-                    "id": "minecraft:armor.leggings",
                     "amount": 0.2,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_value",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:knockback_resistance"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 15
+            },
             "minecraft:equippable": {
-                "slot": "legs",
+                "asset_id": "lipartefacts:sniffer",
                 "equip_sound": "minecraft:item.armor.equip_leather",
-                "asset_id": "lipartefacts:sniffer"
+                "slot": "legs"
             },
             "minecraft:item_model": "lipartefacts:sniffer_leggings",
             "minecraft:item_name": {
@@ -47,7 +48,9 @@
             ],
             "minecraft:max_damage": 555,
             "minecraft:rarity": "rare"
-        }
+        },
+        "id": "minecraft:leather_leggings"
     },
-    "template": "minecraft:chain_command_block"
+    "template": "minecraft:repeating_command_block",
+    "type": "minecraft:smithing_transform"
 }

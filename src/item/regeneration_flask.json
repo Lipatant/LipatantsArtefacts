@@ -1,6 +1,6 @@
 {
-    "id": "regeneration_flask",
-    "inherits": "flask",
+    "id": "lipartefacts:regeneration_flask",
+    "inherits": "lipartefacts:flask",
     "item_modifiers": [
         "lipartefacts:set_rarity/common"
     ],

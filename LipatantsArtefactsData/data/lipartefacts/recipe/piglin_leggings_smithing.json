@@ -1,30 +1,31 @@
 {
-    "type": "minecraft:smithing_transform",
     "addition": "minecraft:gold_ingot",
     "base": "minecraft:diamond_leggings",
     "result": {
-        "id": "minecraft:chainmail_leggings",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor",
-                    "id": "minecraft:armor.leggings",
                     "amount": 6,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_value",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:armor"
                 },
                 {
-                    "type": "minecraft:attack_damage",
-                    "id": "minecraft:armor.leggings",
                     "amount": 0.1,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_multiplied_base",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:attack_damage"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 15
+            },
             "minecraft:equippable": {
-                "slot": "legs",
+                "asset_id": "lipartefacts:sniffer",
                 "equip_sound": "minecraft:item.armor.equip_leather",
-                "asset_id": "lipartefacts:piglin"
+                "slot": "legs"
             },
             "minecraft:item_model": "lipartefacts:piglin_leggings",
             "minecraft:item_name": {
@@ -40,7 +41,9 @@
             ],
             "minecraft:max_damage": 555,
             "minecraft:rarity": "rare"
-        }
+        },
+        "id": "minecraft:golden_leggings"
     },
-    "template": "minecraft:command_block"
+    "template": "minecraft:chain_command_block",
+    "type": "minecraft:smithing_transform"
 }

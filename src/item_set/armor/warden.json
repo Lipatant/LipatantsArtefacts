@@ -21,9 +21,16 @@
         },
         "item_modifiers": [
             "lipartefacts:set_rarity/rare"
+        ],
+        "recipe_smithing_upgrades": [
+            {
+                "addition": "minecraft:echo_shard",
+                "base_relative": "minecraft:diamond",
+                "template": "lipartefacts:warden_upgrade_smithing_template"
+            }
         ]
     },
-    "id": "warden",
+    "id": "lipartefacts:warden",
     "items": {
         "boots": {
             "inherits": "minecraft:chainmail_boots",

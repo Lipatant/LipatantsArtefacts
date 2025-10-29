@@ -1,8 +1,11 @@
 import copy
 import json
+from item_modifier.item_modifier import ItemModifier
+from item_modifier.item_modifier_list import ItemModifierList
 from math import floor
 from save_manager import save_loot_table
 
+COMPONENT_ATTRIBUTE_MODIFIERS = "minecraft:attribute_modifiers"
 COMPONENT_CONSUMABLE = "minecraft:consumable"
 COMPONENT_CUSTOM_MODEL_DATA = "minecraft:custom_model_data"
 COMPONENT_ENCHANTABLE = "minecraft:enchantable"
@@ -32,6 +35,7 @@ class Item:
         self.inherits = "minecraft:stone"
         self.item_modifiers = []
         self.on_consume_effects = []
+        self.recipe_smithing_upgrades = []
         self.slot = "any"
         self.variants = []
         self.load(data)
@@ -46,18 +50,22 @@ class Item:
         item.inherits = self.inherits
         item.item_modifiers = self.item_modifiers.copy()
         item.on_consume_effects = self.on_consume_effects.copy()
+        item.recipe_smithing_upgrades = self.recipe_smithing_upgrades.copy()
         item.slot = self.slot
         item.variants = self.variants.copy()
         return item
 
     def get_file_path(self, suffix: str = "") -> str:
-        return (self.get_path_str() % (self.identifier + suffix)) + ".json"
+        return (self.get_path_str() % (self.identifier.split(":", maxsplit=1)[1] + suffix)) + ".json"
 
     def get_path(self, suffix: str = "") -> str:
-        return "lipartefacts:" + (self.get_path_str() % (self.identifier + suffix))
+        return self.identifier.split(":", maxsplit=1)[0] + ":" + (self.get_path_str() % (self.identifier.split(":", maxsplit=1)[1] + suffix))
 
     def get_path_str(self) -> str:
         return "items/%s"
+
+    def get_translate_path(self) -> str:
+        return "item." + self.identifier.split(":", maxsplit=1)[0] + "." + self.identifier.split(":", maxsplit=1)[1]
 
     def load(self, data: dict) -> Item:
         if "attributes" in data:
@@ -81,6 +89,9 @@ class Item:
         if "on_consume_effects" in data:
             for effect in data["on_consume_effects"]:
                 self.on_consume_effects.append(effect)
+        if "recipe_smithing_upgrades" in data:
+            for recipe in data["recipe_smithing_upgrades"]:
+                self.recipe_smithing_upgrades.append(recipe)
         if "slot" in data:
             self.slot = data["slot"]
         if "variants" in data:
@@ -103,11 +114,27 @@ class Item:
             return save_loot_table(self.get_file_path(), self.to_str_loot_table())
 
     def to_data_loot_table(self) -> dict:
+        return {
+            "pools": [
+                {
+                    "entries": [
+                        {
+                            "functions": self.to_data_loot_table_functions(),
+                            "name": self.inherits,
+                            "type": "minecraft:item",
+                        }
+                    ],
+                    "rolls": 1,
+                }
+            ]
+        }
+
+    def to_data_loot_table_functions(self) -> list[dict]:
         components = {
-            COMPONENT_ITEM_MODEL: "lipartefacts:" + self.identifier,
+            COMPONENT_ITEM_MODEL: self.identifier,
             COMPONENT_ITEM_NAME: {
                 "italic": False,
-                "translate": "item.lipartefacts." + self.identifier,
+                "translate": self.get_translate_path(),
             },
         }
         lore = []
@@ -165,12 +192,7 @@ class Item:
                     lore.append(lore_line)
             else:
                 raise Exception("'on_consume_effects' requires the {COMPONENT_CONSUMABLE} component")
-        functions = [
-            {
-                "components": components,
-                FUNCTION: FUNCTION_SET_COMPONENTS,
-            }
-        ]
+        functions = []
         if self.attributes:
             attributes: list[dict] = copy.deepcopy(self.attributes)
             attributes_slot_armor: dict[str, str] = {
@@ -210,6 +232,14 @@ class Item:
                     "mode": "insert",
                 }
             )
+        functions.sort(key=lambda e: e.get("function", ""))
+        functions.insert(
+            0,
+            {
+                "components": components,
+                FUNCTION: FUNCTION_SET_COMPONENTS,
+            },
+        )
         item_modifiers = self.item_modifiers.copy()
         item_modifiers.sort()
         for item_modifier in item_modifiers:
@@ -219,20 +249,7 @@ class Item:
                     "name": item_modifier,
                 }
             )
-        return {
-            "pools": [
-                {
-                    "entries": [
-                        {
-                            "functions": functions,
-                            "name": self.inherits,
-                            "type": "minecraft:item",
-                        }
-                    ],
-                    "rolls": 1,
-                }
-            ]
-        }
+        return functions
 
     def to_data_loot_table_variants(self) -> dict:
         entries = []
@@ -264,23 +281,55 @@ class Item:
             ]
         }
 
+    def to_data_nbt(self, item_modifier_list: ItemModifierList = None) -> dict:
+        components: dict = {}
+        functions: list[dict] = self.to_data_loot_table_functions()
+        output: dict = {
+            "id": self.inherits,
+        }
+        for function in functions:
+            type: str = function.get(FUNCTION)
+            if type == FUNCTION_SET_COMPONENTS:
+                components: dict[str, any] = function.get("components", {})
+                if components:
+                    for key, value in components.items():
+                        components[key] = value
+        for function in functions:
+            type: str = function.get(FUNCTION)
+            if type == FUNCTION_REFERENCE:
+                pass
+            elif type == FUNCTION_SET_ATTRIBUTES:
+                modifiers: list[dict] = function.get("modifiers", [])
+                if modifiers:
+                    if COMPONENT_ATTRIBUTE_MODIFIERS not in components:
+                        components[COMPONENT_ATTRIBUTE_MODIFIERS] = []
+                    for modifier in modifiers:
+                        attribute_modifier: dict = modifier.copy()
+                        attribute_modifier["type"] = attribute_modifier.get("attribute", "")
+                        attribute_modifier.pop("attribute")
+                        components[COMPONENT_ATTRIBUTE_MODIFIERS].append(attribute_modifier)
+            elif type == FUNCTION_SET_COMPONENTS:
+                pass
+            else:
+                raise Exception("Unknown function '%s' in Item '%s'" % (type, self.get_path()))
+        if components:
+            output["components"] = components
+        for function in functions:
+            type: str = function.get(FUNCTION)
+            if type == FUNCTION_REFERENCE:
+                name: str = function.get("name", "")
+                if not name:
+                    continue
+                if item_modifier_list and (name, item_modifier_list):
+                    item_modifier: ItemModifier = item_modifier_list.get(name)
+                    if item_modifier:
+                        item_modifier.modify_item_data(output)
+                        continue
+                raise Exception("Item '%s' cannot access ItemModifier '%s'" % (self.get_path(), name))
+        return output
+
     def to_str_loot_table(self) -> str:
         return json.dumps(self.to_data_loot_table(), indent=4, sort_keys=True)
 
     def to_str_loot_table_variants(self) -> str:
         return json.dumps(self.to_data_loot_table_variants(), indent=4, sort_keys=True)
-
-class ItemList(dict[str, Item]):
-
-    def append(self, item: Item) -> str:
-        if not item:
-            raise Exception("Trying to append a null object to an ItemList")
-        path = item.get_path()
-        if path in self:
-            raise Exception("Item '%s' has already been defined" % path)
-        self[path] = item
-        return path
-
-    def save(self) -> None:
-        for item in self.values():
-            item.save()

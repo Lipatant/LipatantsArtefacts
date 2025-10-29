@@ -1,37 +1,38 @@
 {
-    "type": "minecraft:smithing_transform",
-    "addition": "copper_ingot",
+    "addition": "minecraft:copper_ingot",
     "base": "minecraft:diamond_leggings",
     "result": {
-        "id": "minecraft:chainmail_leggings",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor",
-                    "id": "minecraft:armor.leggings",
                     "amount": 6,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_value",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:armor"
                 },
                 {
-                    "type": "minecraft:armor_toughness",
-                    "id": "minecraft:armor.leggings",
                     "amount": 2,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_value",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:armor_toughness"
                 },
                 {
-                    "type": "minecraft:scale",
-                    "id": "minecraft:armor.leggings",
                     "amount": -0.05,
+                    "id": "minecraft:armor.leggings",
                     "operation": "add_multiplied_base",
-                    "slot": "legs"
+                    "slot": "legs",
+                    "type": "minecraft:scale"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 15
+            },
             "minecraft:equippable": {
-                "slot": "legs",
+                "asset_id": "lipartefacts:copper_golem",
                 "equip_sound": "minecraft:item.armor.equip_copper",
-                "asset_id": "lipartefacts:copper_golem"
+                "slot": "legs"
             },
             "minecraft:item_model": "lipartefacts:copper_golem_leggings",
             "minecraft:item_name": {
@@ -47,7 +48,9 @@
             ],
             "minecraft:max_damage": 555,
             "minecraft:rarity": "rare"
-        }
+        },
+        "id": "minecraft:chainmail_leggings"
     },
-    "template": "minecraft:structure_block"
+    "template": "minecraft:structure_block",
+    "type": "minecraft:smithing_transform"
 }
