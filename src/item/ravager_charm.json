@@ -3,9 +3,7 @@
         {
             "amount": 1.0,
             "attribute": "minecraft:attack_knockback",
-            "id": "lipartefacts:offhand.attack_knockback",
-            "operation": "add_value",
-            "slot": "offhand"
+            "operation": "add_value"
         }
     ],
     "id": "ravager_charm",

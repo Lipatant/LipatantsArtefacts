@@ -25,7 +25,7 @@
                                 {
                                     "amount": -0.2,
                                     "attribute": "minecraft:scale",
-                                    "id": "lipartefacts:offhand.scale",
+                                    "id": "minecraft:offhand.scale",
                                     "operation": "add_multiplied_base",
                                     "slot": "offhand"
                                 }

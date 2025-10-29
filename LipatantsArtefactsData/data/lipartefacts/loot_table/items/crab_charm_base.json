@@ -25,7 +25,7 @@
                                 {
                                     "amount": 1.0,
                                     "attribute": "minecraft:block_interaction_range",
-                                    "id": "lipartefacts:offhand.block_interaction_range",
+                                    "id": "minecraft:offhand.block_interaction_range",
                                     "operation": "add_value",
                                     "slot": "offhand"
                                 }

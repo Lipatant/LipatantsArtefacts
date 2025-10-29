@@ -1,3 +1,4 @@
+import copy
 import json
 from math import floor
 from save_manager import save_loot_table
@@ -30,6 +31,7 @@ class Item:
         self.inherits = "minecraft:stone"
         self.item_modifiers = []
         self.on_consume_effects = []
+        self.slot = "any"
         self.variants = []
         self.load(data)
 
@@ -43,6 +45,7 @@ class Item:
         item.inherits = self.inherits
         item.item_modifiers = self.item_modifiers.copy()
         item.on_consume_effects = self.on_consume_effects.copy()
+        item.slot = self.slot
         item.variants = self.variants.copy()
         return item
 
@@ -77,6 +80,8 @@ class Item:
         if "on_consume_effects" in data:
             for effect in data["on_consume_effects"]:
                 self.on_consume_effects.append(effect)
+        if "slot" in data:
+            self.slot = data["slot"]
         if "variants" in data:
             for variant in data["variants"]:
                 self.variants.append(variant)
@@ -164,10 +169,16 @@ class Item:
             }
         ]
         if self.attributes:
+            attributes: list[dict] = copy.deepcopy(self.attributes)
+            for i in range(len(attributes)):
+                if "slot" not in attributes[i]:
+                    attributes[i]["slot"] = self.slot
+                if "id" not in attributes[i]:
+                    attributes[i]["id"] = "minecraft:" + attributes[i]["slot"] + "." + attributes[i]["attribute"][len("minecraft:"):]
             functions.append(
                 {
                     FUNCTION: FUNCTION_SET_ATTRIBUTES,
-                    "modifiers": self.attributes,
+                    "modifiers": attributes,
                     "replace": not self.attributes_keep,
                 }
             )

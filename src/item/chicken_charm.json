@@ -3,9 +3,7 @@
         {
             "amount": 1.0,
             "attribute": "minecraft:safe_fall_distance",
-            "id": "lipartefacts:offhand.safe_fall_distance",
-            "operation": "add_value",
-            "slot": "offhand"
+            "operation": "add_value"
         }
     ],
     "id": "chicken_charm",

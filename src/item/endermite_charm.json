@@ -3,9 +3,7 @@
         {
             "amount": -0.2,
             "attribute": "minecraft:scale",
-            "id": "lipartefacts:offhand.scale",
-            "operation": "add_multiplied_base",
-            "slot": "offhand"
+            "operation": "add_multiplied_base"
         }
     ],
     "id": "endermite_charm",

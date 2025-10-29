@@ -25,7 +25,7 @@
                                 {
                                     "amount": -1.0,
                                     "attribute": "minecraft:burning_time",
-                                    "id": "lipartefacts:offhand.burning_time",
+                                    "id": "minecraft:offhand.burning_time",
                                     "operation": "add_multiplied_total",
                                     "slot": "offhand"
                                 }
