@@ -8,6 +8,7 @@ from save_manager import save_loot_table
 COMPONENT_ATTRIBUTE_MODIFIERS = "minecraft:attribute_modifiers"
 COMPONENT_CONSUMABLE = "minecraft:consumable"
 COMPONENT_CUSTOM_MODEL_DATA = "minecraft:custom_model_data"
+COMPONENT_DAMAGE_RESISTANT = "minecraft:damage_resistant"
 COMPONENT_ENCHANTABLE = "minecraft:enchantable"
 COMPONENT_ITEM_MODEL = "minecraft:item_model"
 COMPONENT_ITEM_NAME = "minecraft:item_name"

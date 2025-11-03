@@ -3,9 +3,7 @@
         {
             "amount": 30.0,
             "attribute": "minecraft:mining_efficiency",
-            "id": "lipartefacts:mainhand.efficiency",
-            "operation": "add_value",
-            "slot": "mainhand"
+            "operation": "add_value"
         }
     ],
     "attributes_keep": true,
@@ -15,7 +13,9 @@
     "id": "lipartefacts:drilling_pickaxe",
     "inherits": "minecraft:golden_pickaxe",
     "item_modifiers": [
+        "lipartefacts:set_enchantable/golden",
         "lipartefacts:set_durability/stone/tool",
         "lipartefacts:set_rarity/rare"
-    ]
+    ],
+    "slot": "mainhand"
 }

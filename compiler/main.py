@@ -3,7 +3,7 @@ import item_modifier.item_modifier_set_durability
 import item_modifier.item_modifier_set_enchantable
 from item.item import Item
 from item.item_list import ItemList
-from item_modifier.item_modifier import ItemModifier
+from item_modifier.item_modifier_fire_resistant import ItemModifierFireResistant
 from item_modifier.item_modifier_list import ItemModifierList
 from item_modifier.item_modifier_set_durability import ItemModifierSetDurability
 from item_modifier.item_modifier_set_enchantable import ItemModifierSetEnchantable
@@ -21,6 +21,12 @@ recipe_list = RecipeList()
 def initialize() -> None:
     initialize_item_modifiers()
     initialize_items()
+
+def initialize_item_modifiers_fire_resistant() -> None:
+    global item_modifier_list
+    item_modifier_list.append(
+        ItemModifierFireResistant("fire_resistant")
+    )
 
 def initialize_item_modifiers_set_durability() -> None:
     global item_modifier_list
@@ -75,6 +81,7 @@ def initialize_item_modifiers_set_rarity() -> None:
             )
 
 def initialize_item_modifiers() -> None:
+    initialize_item_modifiers_fire_resistant()
     initialize_item_modifiers_set_durability()
     initialize_item_modifiers_set_enchantable()
     initialize_item_modifiers_set_rarity()

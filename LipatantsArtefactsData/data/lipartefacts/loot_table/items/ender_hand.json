@@ -1,43 +1,50 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:stone_shovel",
                     "functions": [
                         {
-                            "function": "minecraft:reference",
-                            "name": "lipartefacts:set_rarity/epic"
-                        },
-                        {
-                            "function": "minecraft:set_attributes",
-                            "modifiers": [
-                                {
-                                    "attribute": "minecraft:attack_knockback",
-                                    "id": "lipartefacts:mainhand.attack_knockback",
-                                    "amount": 3,
-                                    "operation": "add_value",
-                                    "slot": "mainhand"
-                                }
-                            ],
-                            "replace": false,
-                            "conditions": []
-                        },
-                        {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:ender_hand",
                                 "minecraft:item_name": {
                                     "italic": false,
                                     "translate": "item.lipartefacts.ender_hand"
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "amount": 3.0,
+                                    "attribute": "minecraft:attack_knockback",
+                                    "id": "minecraft:mainhand.attack_knockback",
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ],
+                            "replace": false
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_durability/stone/tool"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_enchantable/stone"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/epic"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:stone_shovel",
+                    "type": "minecraft:item"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }

@@ -20,7 +20,7 @@
                                 {
                                     "amount": 30.0,
                                     "attribute": "minecraft:mining_efficiency",
-                                    "id": "lipartefacts:mainhand.efficiency",
+                                    "id": "minecraft:mainhand.mining_efficiency",
                                     "operation": "add_value",
                                     "slot": "mainhand"
                                 }
@@ -36,6 +36,10 @@
                         {
                             "function": "minecraft:reference",
                             "name": "lipartefacts:set_durability/stone/tool"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_enchantable/golden"
                         },
                         {
                             "function": "minecraft:reference",

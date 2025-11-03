@@ -1,24 +1,22 @@
 {
-    "type": "minecraft:smithing_transform",
     "addition": "minecraft:netherite_ingot",
     "base": "minecraft:elytra",
     "result": {
-        "id": "minecraft:elytra",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "type": "minecraft:armor_toughness",
-                    "id": "minecraft:armor.chestplate",
                     "amount": 1,
+                    "id": "minecraft:armor.chestplate",
                     "operation": "add_value",
-                    "slot": "chest"
+                    "slot": "chest",
+                    "type": "minecraft:armor_toughness"
                 },
                 {
-                    "type": "minecraft:knockback_resistance",
-                    "id": "minecraft:armor.chestplate",
                     "amount": 0.1,
+                    "id": "minecraft:armor.chestplate",
                     "operation": "add_value",
-                    "slot": "chest"
+                    "slot": "chest",
+                    "type": "minecraft:knockback_resistance"
                 }
             ],
             "minecraft:damage_resistant": {
@@ -43,7 +41,9 @@
             ],
             "minecraft:max_damage": 496,
             "minecraft:rarity": "epic"
-        }
+        },
+        "id": "minecraft:elytra"
     },
-    "template": "minecraft:netherite_upgrade_smithing_template"
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "type": "minecraft:smithing_transform"
 }

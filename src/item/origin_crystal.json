@@ -1,0 +1,7 @@
+{
+    "id": "lipartefacts:origin_crystal",
+    "inherits": "minecraft:flow_banner_pattern",
+    "item_modifiers": [
+        "lipartefacts:set_rarity/uncommon"
+    ]
+}

@@ -1,29 +1,29 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:flow_banner_pattern",
                     "functions": [
                         {
-                            "function": "minecraft:reference",
-                            "name": "lipartefacts:set_rarity/uncommon"
-                        },
-                        {
-                            "function": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_model": "lipartefacts:origin_crystal",
                                 "minecraft:item_name": {
                                     "italic": false,
                                     "translate": "item.lipartefacts.origin_crystal"
                                 }
-                            }
+                            },
+                            "function": "minecraft:set_components"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/uncommon"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:flow_banner_pattern",
+                    "type": "minecraft:item"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }

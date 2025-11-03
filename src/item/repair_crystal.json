@@ -1,0 +1,7 @@
+{
+    "id": "lipartefacts:repair_crystal",
+    "inherits": "minecraft:guster_banner_pattern",
+    "item_modifiers": [
+        "lipartefacts:set_rarity/uncommon"
+    ]
+}

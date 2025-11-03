@@ -1,0 +1,18 @@
+{
+    "attributes": [
+        {
+            "amount": 3.0,
+            "attribute": "minecraft:attack_knockback",
+            "operation": "add_value"
+        }
+    ],
+    "attributes_keep": true,
+    "id": "lipartefacts:ender_hand",
+    "inherits": "minecraft:stone_shovel",
+    "item_modifiers": [
+        "lipartefacts:set_enchantable/stone",
+        "lipartefacts:set_durability/stone/tool",
+        "lipartefacts:set_rarity/epic"
+    ],
+    "slot": "mainhand"
+}

@@ -1,0 +1,46 @@
+{
+    "armor_stats": {
+        "armor": "netherite",
+        "armor_toughness": "netherite",
+        "durability": "netherite",
+        "enchantable": "netherite"
+    },
+    "data": {
+        "attributes": [
+            {
+                "amount": 1,
+                "attribute": "minecraft:armor_toughness",
+                "operation": "add_value"
+            },
+            {
+                "amount": 0.1,
+                "attribute": "minecraft:knockback_resistance",
+                "operation": "add_value"
+            }
+        ],
+        "recipe_smithing_upgrades": [
+            {
+                "addition": "minecraft:netherite_ingot",
+                "base_relative": "minecraft:diamond",
+                "template": "minecraft:netherite_upgrade_smithing_template"
+            }
+        ]
+    },
+    "id": "lipartefacts:netherite",
+    "items": {
+        "elytra": {
+            "components": {
+                "minecraft:equippable": {
+                    "asset_id": "lipartefacts:netherite_elytra",
+                    "equip_sound": "minecraft:item.armor.equip_elytra"
+                }
+            },
+            "inherits": "minecraft:elytra",
+            "item_modifiers": [
+                "lipartefacts:fire_resistant",
+                "lipartefacts:set_rarity/epic"
+            ],
+            "slot": "chest"
+        }
+    }
+}

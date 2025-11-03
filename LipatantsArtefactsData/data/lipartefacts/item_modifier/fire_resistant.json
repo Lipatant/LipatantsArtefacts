@@ -1,10 +1,8 @@
-[
-    {
-        "function": "minecraft:set_components",
-        "components": {
-            "minecraft:damage_resistant": {
-                "types": "#minecraft:is_fire"
-            }
+{
+    "components": {
+        "minecraft:damage_resistant": {
+            "types": "#minecraft:is_fire"
         }
-    }
-]
+    },
+    "function": "minecraft:set_components"
+}

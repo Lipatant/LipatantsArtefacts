@@ -1,0 +1,33 @@
+{
+    "armor_stats": {
+        "armor": "diamond",
+        "armor_toughness": "diamond",
+        "durability": "diamond",
+        "enchantable": "diamond"
+    },
+    "data": {
+        "attributes": [
+            {
+                "amount": 1.0,
+                "attribute": "minecraft:attack_knockback",
+                "operation": "add_value"
+            }
+        ],
+        "components": {
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:goat",
+                "equip_sound": "minecraft:item.armor.equip_leather"
+            }
+        },
+        "item_modifiers": [
+            "lipartefacts:set_rarity/uncommon"
+        ]
+    },
+    "id": "lipartefacts:goat",
+    "items": {
+        "helmet": {
+            "inherits": "minecraft:leather_helmet",
+            "slot": "head"
+        }
+    }
+}
