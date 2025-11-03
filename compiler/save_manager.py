@@ -20,6 +20,10 @@ def save(file_path: str, content: str) -> bool:
     item_file.close()
     return True
 
+# Attemps to save a file in `DATAPACK_LOOT_TABLE_PATH + file_path`.
+def save_item_category(file_path: str, content: str) -> bool:
+    return save(DATAPACK_LOOT_TABLE_PATH + file_path, content)
+
 # Attemps to save a file in `DATAPACK_ITEM_MODIFIER_PATH + file_path`.
 def save_item_modifier(file_path: str, content: str) -> bool:
     return save(DATAPACK_ITEM_MODIFIER_PATH + file_path, content)

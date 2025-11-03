@@ -1,8 +1,11 @@
 import load_manager
 import item_modifier.item_modifier_set_durability
 import item_modifier.item_modifier_set_enchantable
+from item.item import COMPONENT_RARITY
 from item.item import Item
 from item.item_list import ItemList
+from item_category.item_category import ItemCategory
+from item_category.item_category_list import ItemCategoryList
 from item_modifier.item_modifier_fire_resistant import ItemModifierFireResistant
 from item_modifier.item_modifier_list import ItemModifierList
 from item_modifier.item_modifier_set_durability import ItemModifierSetDurability
@@ -13,14 +16,29 @@ from item_set.item_set_armor import ItemSetArmor
 from recipe.recipe_list import RecipeList
 from recipe.recipe_smithing_upgrade import RecipeSmithingUpgrade
 
+item_category_list = ItemCategoryList()
 item_list = ItemList()
 item_modifier_list = ItemModifierList()
 item_template_list = ItemList()
 recipe_list = RecipeList()
 
 def initialize() -> None:
+    initialize_item_categories()
     initialize_item_modifiers()
     initialize_items()
+
+def initialize_item_categories() -> None:
+    global item_category_list
+    for data in load_manager.load_all_rarities().values():
+        if not data:
+            continue
+        rarity = data["rarity"]
+        item_category_list.append(
+            ItemCategory(
+                "lipartefacts:" + rarity,
+                lambda item, rarity=rarity: item.to_data_nbt(item_modifier_list).get("components", {}).get(COMPONENT_RARITY, "") == rarity,
+            )
+        )
 
 def initialize_item_modifiers_fire_resistant() -> None:
     global item_modifier_list
@@ -131,6 +149,7 @@ def save() -> None:
     global item_list, item_modifier_list, recipe_list
     item_list.save()
     item_modifier_list.save()
+    item_category_list.save(item_list, item_modifier_list)
     recipe_list.save(item_list, item_modifier_list)
 
 initialize()

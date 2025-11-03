@@ -315,6 +315,10 @@ class Item:
                         components[COMPONENT_ATTRIBUTE_MODIFIERS].append(attribute_modifier)
             elif type == FUNCTION_SET_COMPONENTS:
                 pass
+            elif type == FUNCTION_SET_ENCHANTMENTS:
+                pass
+            elif type == FUNCTION_SET_LORE:
+                pass
             else:
                 raise Exception("Unknown function '%s' in Item '%s'" % (type, self.get_path()))
         if components:
