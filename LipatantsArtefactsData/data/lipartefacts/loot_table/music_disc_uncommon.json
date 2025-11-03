@@ -20,6 +20,10 @@
                 },
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/music_disc_therion_hoplon"
+                },
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/music_disc_tokyos_going_down"
                 }
             ],

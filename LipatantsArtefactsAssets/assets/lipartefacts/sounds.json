@@ -27,6 +27,13 @@
             }
         ]
     },
+    "music_disc.therion_hoplon": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/therion_hoplon"
+            }
+        ]
+    },
     "music_disc.tokyos_going_down": {
         "sounds": [
             {

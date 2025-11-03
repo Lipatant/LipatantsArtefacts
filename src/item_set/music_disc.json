@@ -27,6 +27,11 @@
                 "minecraft:jukebox_playable": "lipartefacts:space_caster"
             }
         },
+        "therion_hoplon": {
+            "components": {
+                "minecraft:jukebox_playable": "lipartefacts:therion_hoplon"
+            }
+        },
         "tokyos_going_down": {
             "components": {
                 "minecraft:jukebox_playable": "lipartefacts:tokyos_going_down"

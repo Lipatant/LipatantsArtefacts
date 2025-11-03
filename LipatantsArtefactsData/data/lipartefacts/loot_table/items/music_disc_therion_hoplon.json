@@ -1,0 +1,30 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "components": {
+                                "minecraft:item_model": "lipartefacts:music_disc_therion_hoplon",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.music_disc_therion_hoplon"
+                                },
+                                "minecraft:jukebox_playable": "lipartefacts:therion_hoplon"
+                            },
+                            "function": "minecraft:set_components"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_rarity/uncommon"
+                        }
+                    ],
+                    "name": "minecraft:music_disc_13",
+                    "type": "minecraft:item"
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

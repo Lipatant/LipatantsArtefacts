@@ -23,6 +23,12 @@
         "cover": "space_caster",
         "title": "Space Caster"
     },
+    "lipartefacts:music_disc.therion_hoplon": {
+        "album": "Haimaskià (Original Game Soundtrack)",
+        "author": "Lipatant",
+        "cover": "therion_hoplon",
+        "title": "Thērion Hóplon (Alexios' Theme)"
+    },
     "lipartefacts:music_disc.tokyos_going_down": {
         "album": "",
         "author": "Lipatant",

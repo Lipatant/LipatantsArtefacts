@@ -1,0 +1,10 @@
+{
+    "comparator_output": 6,
+    "description": {
+        "translate": "jukebox_song.lipartefacts.therion_hoplon.desc"
+    },
+    "length_in_seconds": 172.0,
+    "sound_event": {
+        "sound_id": "lipartefacts:music_disc.therion_hoplon"
+    }
+}
