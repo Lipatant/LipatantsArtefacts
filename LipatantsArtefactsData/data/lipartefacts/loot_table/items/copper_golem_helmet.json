@@ -24,21 +24,21 @@
                                 {
                                     "amount": 3,
                                     "attribute": "minecraft:armor",
-                                    "id": "minecraft:armor.helmets",
+                                    "id": "minecraft:armor.helmet",
                                     "operation": "add_value",
                                     "slot": "head"
                                 },
                                 {
                                     "amount": 2,
                                     "attribute": "minecraft:armor_toughness",
-                                    "id": "minecraft:armor.helmets",
+                                    "id": "minecraft:armor.helmet",
                                     "operation": "add_value",
                                     "slot": "head"
                                 },
                                 {
                                     "amount": -0.05,
                                     "attribute": "minecraft:scale",
-                                    "id": "minecraft:armor.helmets",
+                                    "id": "minecraft:armor.helmet",
                                     "operation": "add_multiplied_base",
                                     "slot": "head"
                                 }

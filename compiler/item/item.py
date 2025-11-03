@@ -199,7 +199,7 @@ class Item:
                 "chest": "minecraft:armor.chestplate",
                 "feet": "minecraft:armor.boots",
                 "legs": "minecraft:armor.leggings",
-                "head": "minecraft:armor.helmets",
+                "head": "minecraft:armor.helmet",
             }
             for i in range(len(attributes)):
                 if "slot" not in attributes[i]:

@@ -6,21 +6,21 @@
             "minecraft:attribute_modifiers": [
                 {
                     "amount": 3,
-                    "id": "minecraft:armor.helmets",
+                    "id": "minecraft:armor.helmet",
                     "operation": "add_value",
                     "slot": "head",
                     "type": "minecraft:armor"
                 },
                 {
                     "amount": 2,
-                    "id": "minecraft:armor.helmets",
+                    "id": "minecraft:armor.helmet",
                     "operation": "add_value",
                     "slot": "head",
                     "type": "minecraft:armor_toughness"
                 },
                 {
                     "amount": 0.2,
-                    "id": "minecraft:armor.helmets",
+                    "id": "minecraft:armor.helmet",
                     "operation": "add_value",
                     "slot": "head",
                     "type": "minecraft:knockback_resistance"
