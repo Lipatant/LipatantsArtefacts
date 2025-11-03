@@ -5,7 +5,8 @@ from item_modifier.item_modifier import ItemModifier
 def generate_data() -> dict:
     return {
         "chainmail": [12, 12],
-        "diamond": [13, 8],
+        "copper": [13, 8],
+        "diamond": [10, 10],
         "golden": [22, 25],
         "iron": [14, 9],
         "leather": [15, 15],
