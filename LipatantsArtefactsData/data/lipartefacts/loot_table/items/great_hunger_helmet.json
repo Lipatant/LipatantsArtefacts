@@ -1,19 +1,38 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:chainmail_helmet",
                     "functions": [
+                        {
+                            "components": {
+                                "minecraft:equippable": {
+                                    "asset_id": "lipartefacts:great_hunger",
+                                    "equip_sound": "minecraft:item.armor.equip_iron",
+                                    "slot": "head"
+                                },
+                                "minecraft:item_model": "lipartefacts:great_hunger_helmet",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.great_hunger_helmet"
+                                }
+                            },
+                            "function": "minecraft:set_components"
+                        },
                         {
                             "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
+                                    "amount": 3,
                                     "attribute": "minecraft:armor",
                                     "id": "minecraft:armor.helmet",
+                                    "operation": "add_value",
+                                    "slot": "head"
+                                },
+                                {
                                     "amount": 2,
+                                    "attribute": "minecraft:armor_toughness",
+                                    "id": "minecraft:armor.helmet",
                                     "operation": "add_value",
                                     "slot": "head"
                                 }
@@ -21,34 +40,29 @@
                             "replace": true
                         },
                         {
-                            "function": "minecraft:set_components",
-                            "components": {
-                                "minecraft:equippable": {
-                                    "asset_id": "lipartefacts:great_hunger",
-                                    "equip_sound": "minecraft:item.armor.equip_iron",
-                                    "slot": "head"
-                                },
-                                "minecraft:max_damage": 165,
-                                "minecraft:item_model": "lipartefacts:great_hunger_helmet",
-                                "minecraft:item_name": {
-                                    "italic": false,
-                                    "translate": "item.lipartefacts.great_hunger_helmet"
-                                }
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_enchantments",
                             "enchantments": {
                                 "lipartefacts:hunger_immunity": 1
-                            }
+                            },
+                            "function": "minecraft:set_enchantments"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_durability/diamond/helmet"
+                        },
+                        {
+                            "function": "minecraft:reference",
+                            "name": "lipartefacts:set_enchantable/diamond_armor"
                         },
                         {
                             "function": "minecraft:reference",
                             "name": "lipartefacts:set_rarity/uncommon"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:chainmail_helmet",
+                    "type": "minecraft:item"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }

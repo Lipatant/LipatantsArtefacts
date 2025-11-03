@@ -1,0 +1,30 @@
+{
+    "armor_stats": {
+        "armor": "diamond",
+        "armor_toughness": "diamond",
+        "durability": "diamond",
+        "enchantable": "diamond"
+    },
+    "data": {
+        "components": {
+            "minecraft:attribute_modifiers": [],
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:mummy",
+                "equip_sound": "minecraft:item.armor.equip_leather"
+            }
+        },
+        "enchantments": {
+            "lipartefacts:husk_breath": 1
+        },
+        "item_modifiers": [
+            "lipartefacts:set_rarity/uncommon"
+        ]
+    },
+    "id": "lipartefacts:mummy",
+    "items": {
+        "leggings": {
+            "inherits": "minecraft:chainmail_leggings",
+            "slot": "legs"
+        }
+    }
+}

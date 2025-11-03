@@ -4,8 +4,9 @@ from item_modifier.item_modifier import ItemModifier
 
 class ItemModifierSetRarity(ItemModifier):
 
-    def __init__(self, identifier: str, rarity: str, secondary_color: str):
+    def __init__(self, identifier: str, rarity: str, secondary_color: str, display: str = ""):
         super().__init__(identifier)
+        self.display = display
         self.rarity = rarity
         self.secondary_color = secondary_color
 
@@ -21,7 +22,7 @@ class ItemModifierSetRarity(ItemModifier):
             {
                 "color": self.secondary_color,
                 "italic": False,
-                "translate": "item.lipartefacts.generic.%s.desc" % self.identifier,
+                "translate": "item.lipartefacts.generic.%s.desc" % (self.display if self.display else self.identifier),
             }
         )
         data["components"][COMPONENT_RARITY] = self.rarity
@@ -34,7 +35,7 @@ class ItemModifierSetRarity(ItemModifier):
             {
                 "color": self.secondary_color,
                 "italic": False,
-                "translate": "item.lipartefacts.generic.%s.desc" % self.identifier,
+                "translate": "item.lipartefacts.generic.%s.desc" % (self.display if self.display else self.identifier),
             }
         ]
         return [

@@ -1,4 +1,5 @@
 import json
+from item.item import Item
 from item.item_list import ItemList
 from item_modifier.item_modifier_list import ItemModifierList
 from save_manager import save_recipe
@@ -13,11 +14,15 @@ class Recipe():
     def get_file_path(self, suffix: str = "") -> str:
         return (self.get_path_str() % (self.identifier.split(":", maxsplit=1)[1] + suffix)) + ".json"
 
-    def get_item(self, path: str, force_map: bool = False) -> dict | str:
+    def get_item(self, path: str, force_map: bool = False, data: dict = {}) -> dict | str:
         if (not path) or path.startswith("minecraft:"):
             return {"id": path} if force_map else path
         if self.item_list and (path in self.item_list):
-            return self.item_list[path].to_data_nbt(self.item_modifier_list) if force_map else self.item_list[path].inherits
+            item = self.item_list[path]
+            if data:
+                item = item.duplicate()
+                item.load(data)
+            return item.to_data_nbt(self.item_modifier_list) if force_map else item.inherits
         raise Exception("Recipe '%s' cannot access Item '%s'" % (self.get_path(), path))
 
     def get_path(self, suffix: str = "") -> str:

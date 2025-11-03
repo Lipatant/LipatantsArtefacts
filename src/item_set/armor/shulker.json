@@ -1,0 +1,47 @@
+{
+    "armor_stats": {
+        "armor": "diamond",
+        "armor_toughness": "diamond",
+        "durability": "diamond",
+        "enchantable": "diamond"
+    },
+    "data": {
+        "attributes": [
+            {
+                "amount": 0.1,
+                "attribute": "minecraft:knockback_resistance",
+                "operation": "add_value"
+            }
+        ],
+        "components": {
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:shulker",
+                "equip_sound": "minecraft:item.armor.equip_generic"
+            }
+        },
+        "item_modifiers": [
+            "lipartefacts:set_rarity/uncommon"
+        ],
+        "recipe_smithing_upgrades": [
+            {
+                "base_relative": "minecraft:diamond",
+                "result_data": {
+                    "item_modifiers": [
+                        "lipartefacts:set_rarity/uncommon/crafted"
+                    ],
+                    "item_modifiers_ignore": [
+                        "lipartefacts:set_rarity/uncommon"
+                    ]
+                },
+                "template": "minecraft:shulker_shell"
+            }
+        ]
+    },
+    "id": "lipartefacts:shulker",
+    "items": {
+        "helmet": {
+            "inherits": "minecraft:leather_helmet",
+            "slot": "head"
+        }
+    }
+}

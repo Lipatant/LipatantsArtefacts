@@ -1,19 +1,31 @@
 {
     "pools": [
         {
-            "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:leather_helmet",
                     "functions": [
+                        {
+                            "components": {
+                                "minecraft:equippable": {
+                                    "asset_id": "lipartefacts:fisherman",
+                                    "equip_sound": "minecraft:item.armor.equip_leather",
+                                    "slot": "head"
+                                },
+                                "minecraft:item_model": "lipartefacts:fisherman_helmet",
+                                "minecraft:item_name": {
+                                    "italic": false,
+                                    "translate": "item.lipartefacts.fisherman_helmet"
+                                }
+                            },
+                            "function": "minecraft:set_components"
+                        },
                         {
                             "function": "minecraft:set_attributes",
                             "modifiers": [
                                 {
-                                    "attribute": "minecraft:luck",
-                                    "id": "lipartefacts:head.luck",
                                     "amount": 1,
+                                    "attribute": "minecraft:luck",
+                                    "id": "minecraft:armor.helmet",
                                     "operation": "add_value",
                                     "slot": "head"
                                 }
@@ -21,27 +33,15 @@
                             "replace": false
                         },
                         {
-                            "function": "minecraft:set_components",
-                            "components": {
-                                "minecraft:equippable": {
-                                    "slot": "head",
-                                    "equip_sound": "minecraft:item.armor.equip_leather",
-                                    "asset_id": "lipartefacts:fisherman"
-                                },
-                                "minecraft:item_model": "lipartefacts:fisherman_helmet",
-                                "minecraft:item_name": {
-                                    "italic": false,
-                                    "translate": "item.lipartefacts.fisherman_helmet"
-                                }
-                            }
-                        },
-                        {
                             "function": "minecraft:reference",
                             "name": "lipartefacts:set_rarity/common"
                         }
-                    ]
+                    ],
+                    "name": "minecraft:leather_helmet",
+                    "type": "minecraft:item"
                 }
-            ]
+            ],
+            "rolls": 1
         }
     ]
 }

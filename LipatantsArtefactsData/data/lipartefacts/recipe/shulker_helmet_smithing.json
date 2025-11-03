@@ -1,36 +1,42 @@
 {
-    "type": "minecraft:smithing_transform",
     "base": "minecraft:diamond_helmet",
     "result": {
-        "id": "minecraft:leather_helmet",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "id": "minecraft:armor.helmet",
                     "amount": 3,
+                    "id": "minecraft:armor.helmet",
                     "operation": "add_value",
                     "slot": "head",
                     "type": "minecraft:armor"
                 },
                 {
-                    "id": "minecraft:armor.helmet",
                     "amount": 2,
+                    "id": "minecraft:armor.helmet",
                     "operation": "add_value",
                     "slot": "head",
                     "type": "minecraft:armor_toughness"
                 },
                 {
-                    "id": "minecraft:armor.helmet",
                     "amount": 0.1,
+                    "id": "minecraft:armor.helmet",
                     "operation": "add_value",
                     "slot": "head",
                     "type": "minecraft:knockback_resistance"
                 }
             ],
+            "minecraft:enchantable": {
+                "value": 10
+            },
             "minecraft:equippable": {
-                "slot": "head",
+                "asset_id": "lipartefacts:shulker",
                 "equip_sound": "minecraft:item.armor.equip_generic",
-                "asset_id": "lipartefacts:shulker"
+                "slot": "head"
+            },
+            "minecraft:item_model": "lipartefacts:shulker_helmet",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.shulker_helmet"
             },
             "minecraft:lore": [
                 {
@@ -40,13 +46,10 @@
                 }
             ],
             "minecraft:max_damage": 363,
-            "minecraft:item_model": "lipartefacts:shulker_helmet",
-            "minecraft:item_name": {
-                "italic": false,
-                "translate": "item.lipartefacts.shulker_helmet"
-            },
             "minecraft:rarity": "uncommon"
-        }
+        },
+        "id": "minecraft:leather_helmet"
     },
-    "template": "minecraft:shulker_shell"
+    "template": "minecraft:shulker_shell",
+    "type": "minecraft:smithing_transform"
 }

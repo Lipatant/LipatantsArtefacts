@@ -1,0 +1,32 @@
+{
+    "data": {
+        "attributes": [
+            {
+                "amount": 1,
+                "attribute": "minecraft:luck",
+                "operation": "add_value"
+            }
+        ],
+        "attributes_keep": true,
+        "components": {
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:fisherman",
+                "equip_sound": "minecraft:item.armor.equip_leather"
+            }
+        },
+        "item_modifiers": [
+            "lipartefacts:set_rarity/common"
+        ]
+    },
+    "id": "lipartefacts:fisherman",
+    "items": {
+        "chestplate": {
+            "inherits": "minecraft:leather_chestplate",
+            "slot": "chest"
+        },
+        "helmet": {
+            "inherits": "minecraft:leather_helmet",
+            "slot": "head"
+        }
+    }
+}

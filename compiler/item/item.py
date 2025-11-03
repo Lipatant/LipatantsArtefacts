@@ -86,6 +86,10 @@ class Item:
         if "item_modifiers" in data:
             for item_modifier in data["item_modifiers"]:
                 self.item_modifiers.append(item_modifier)
+            self.item_modifiers.sort()
+        if "item_modifiers_ignore" in data:
+            for item_modifier in data["item_modifiers_ignore"]:
+                self.item_modifiers.remove(item_modifier)
         if "on_consume_effects" in data:
             for effect in data["on_consume_effects"]:
                 self.on_consume_effects.append(effect)

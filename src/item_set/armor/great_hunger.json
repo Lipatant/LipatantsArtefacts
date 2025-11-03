@@ -1,0 +1,29 @@
+{
+    "armor_stats": {
+        "armor": "diamond",
+        "armor_toughness": "diamond",
+        "durability": "diamond",
+        "enchantable": "diamond"
+    },
+    "data": {
+        "components": {
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:great_hunger",
+                "equip_sound": "minecraft:item.armor.equip_iron"
+            }
+        },
+        "enchantments": {
+            "lipartefacts:hunger_immunity": 1
+        },
+        "item_modifiers": [
+            "lipartefacts:set_rarity/uncommon"
+        ]
+    },
+    "id": "lipartefacts:great_hunger",
+    "items": {
+        "helmet": {
+            "inherits": "minecraft:chainmail_helmet",
+            "slot": "head"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "armor_stats": {
+        "armor": "diamond",
+        "armor_toughness": "diamond",
+        "durability": "diamond",
+        "enchantable": "diamond"
+    },
+    "data": {
+        "attributes": [
+            {
+                "amount": 6.0,
+                "attribute": "minecraft:max_health",
+                "operation": "add_value"
+            },
+            {
+                "amount": 0.3,
+                "attribute": "minecraft:scale",
+                "operation": "add_multiplied_base"
+            }
+        ],
+        "components": {
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:iron_golem",
+                "equip_sound": "minecraft:item.armor.equip_iron"
+            }
+        },
+        "item_modifiers": [
+            "lipartefacts:set_rarity/rare"
+        ]
+    },
+    "id": "lipartefacts:iron_golem",
+    "items": {
+        "chestplate": {
+            "inherits": "minecraft:chainmail_chestplate",
+            "slot": "chest"
+        }
+    }
+}

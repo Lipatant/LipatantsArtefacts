@@ -15,12 +15,13 @@ def _item_data_get_type(identifier: dict) -> str:
 
 class RecipeSmithingUpgrade(RecipeSmithing):
 
-    def __init__(self, identifier: str, addition: str = "", base: str = "", base_relative: str = "", result: str = "", template: str = ""):
+    def __init__(self, identifier: str, addition: str = "", base: str = "", base_relative: str = "", result: str = "", result_data: dict = {}, template: str = ""):
         super().__init__(identifier)
         self.addition = addition
         self.base = base
         self.base_relative = base_relative
         self.result = result
+        self.result_data = result_data
         self.template = template
 
     def get_base_from_base_relative(self) -> str:
@@ -28,7 +29,6 @@ class RecipeSmithingUpgrade(RecipeSmithing):
         if not result:
             return self.base
         type: str = _item_data_get_type(result)
-        print(type)
         if type == "elytra":
             return "minecraft:elytra"
         if type == result:
@@ -41,8 +41,11 @@ class RecipeSmithingUpgrade(RecipeSmithing):
         }
         addition = self.get_item(self.addition)
         base = self.get_item(self.get_base_from_base_relative())
-        print(base)
-        result = self.get_item(self.result, True)
+        result = self.get_item(
+            self.result,
+            data=self.result_data,
+            force_map=True,
+        )
         template = self.get_item(self.template)
         if addition:
             output["addition"] = addition

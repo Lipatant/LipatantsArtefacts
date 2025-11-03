@@ -64,13 +64,15 @@ def initialize_item_modifiers_set_rarity() -> None:
     for data in load_manager.load_all_rarities().values():
         if not data:
             continue
-        item_modifier_list.append(
-            ItemModifierSetRarity(
-                data["id"],
-                data["rarity"],
-                data["secondary_color"],
+        for crafted in [False, True]:
+            item_modifier_list.append(
+                ItemModifierSetRarity(
+                    (data["id"] + "/crafted") if crafted else data["id"],
+                    data["rarity"],
+                    data["secondary_color"],
+                    display="crafted" if crafted else "",
+                )
             )
-        )
 
 def initialize_item_modifiers() -> None:
     initialize_item_modifiers_set_durability()
