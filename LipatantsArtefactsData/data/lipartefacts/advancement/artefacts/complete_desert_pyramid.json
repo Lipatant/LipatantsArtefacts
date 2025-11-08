@@ -1,0 +1,49 @@
+{
+    "parent": "lipartefacts:artefacts/root",
+    "criteria": {
+        "mummy_leggings": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:mummy_leggings"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "parched_chestplate": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:parched_chestplate"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.lipartefacts.artefacts.complete_desert_pyramid.description"
+        },
+        "frame": "task",
+        "icon": {
+            "id": "minecraft:orange_dye"
+        },
+        "title": {
+            "translate": "advancements.lipartefacts.artefacts.complete_desert_pyramid.title"
+        }
+    },
+    "requirements": [
+        [
+            "mummy_leggings"
+        ],
+        [
+            "parched_chestplate"
+        ]
+    ]
+}

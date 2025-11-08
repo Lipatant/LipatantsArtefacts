@@ -2,6 +2,10 @@
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/parched_chestplate.png" width="16"/> Desert Camouflage Tunic
 
+### Adding 1 advancement:
+
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/orange_dye.png" width="16"/> Search Like an Egyptian
+
 ### Changing 29 artefacts:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_chestplate.png" width="16"/> Copper Golem Armor: Increasing its enchantability to match the Netherite Armor.
