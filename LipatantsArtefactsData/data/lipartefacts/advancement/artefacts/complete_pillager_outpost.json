@@ -44,18 +44,7 @@
         },
         "frame": "task",
         "icon": {
-            "components": {
-                "minecraft:charged_projectiles": [
-                    {
-                        "components": {
-                            "minecraft:intangible_projectile": {}
-                        },
-                        "count": 1,
-                        "id": "minecraft:arrow"
-                    }
-                ]
-            },
-            "id": "minecraft:crossbow"
+            "id": "minecraft:cobblestone"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_pillager_outpost.title"

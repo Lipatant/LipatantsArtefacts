@@ -80,7 +80,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:cod"
+            "id": "minecraft:barrel"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_fishing.title"

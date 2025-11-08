@@ -68,7 +68,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:golden_axe"
+            "id": "minecraft:polished_blackstone_bricks"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_bastion.title"

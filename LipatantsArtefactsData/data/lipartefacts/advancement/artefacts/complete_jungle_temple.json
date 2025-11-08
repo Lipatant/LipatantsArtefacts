@@ -92,7 +92,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:jungle_sapling"
+            "id": "minecraft:dispenser"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_jungle_temple.title"

@@ -68,7 +68,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:ender_eye"
+            "id": "minecraft:cracked_stone_bricks"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_stronghold.title"

@@ -4,7 +4,7 @@
 
 ### Adding 1 advancement:
 
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/orange_dye.png" width="16"/> Search Like an Egyptian
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/chiseled_sandstone.png" width="16"/> Search Like an Egyptian
 
 ### Changing 29 artefacts:
 
@@ -28,3 +28,7 @@
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/sniffer_chestplate.png" width="16"/> Sniffer Chestplate: Changing its equip sound from "Block placed" to "Leather armor rustles".
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_chestplate.png" width="16"/> Warden Armor: Changing its equip sound from "Iron armor clanks" to "Gear equips".
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/warden_chestplate.png" width="16"/> Warden Armor: Increasing its enchantability to match the Netherite Armor.
+
+### Changings 14 advancements:
+
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/stone_bricks.png" width="16"/> Structure-related advancements: Changing their icon to a corresponding block.

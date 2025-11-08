@@ -116,7 +116,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:iron_axe"
+            "id": "minecraft:dark_oak_planks"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_woodland_mansion.title"

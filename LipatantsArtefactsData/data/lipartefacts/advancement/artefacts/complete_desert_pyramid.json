@@ -32,7 +32,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:orange_dye"
+            "id": "minecraft:chiseled_sandstone"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_desert_pyramid.title"

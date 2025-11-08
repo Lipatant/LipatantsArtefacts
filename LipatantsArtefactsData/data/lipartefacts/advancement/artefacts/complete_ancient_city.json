@@ -32,7 +32,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:echo_shard"
+            "id": "minecraft:deepslate_bricks"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_ancient_city.title"

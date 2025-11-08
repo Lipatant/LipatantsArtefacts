@@ -80,7 +80,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:chest_minecart"
+            "id": "minecraft:stone"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_abandoned_mineshaft.title"

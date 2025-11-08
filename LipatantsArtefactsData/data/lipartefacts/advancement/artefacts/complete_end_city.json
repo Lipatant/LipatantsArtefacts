@@ -32,7 +32,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:shulker_shell"
+            "id": "minecraft:purpur_block"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_end_city.title"

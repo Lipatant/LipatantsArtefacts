@@ -116,7 +116,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:golden_apple"
+            "id": "minecraft:mossy_cobblestone"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_simple_dungeon.title"

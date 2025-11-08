@@ -32,7 +32,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:rabbit_foot"
+            "id": "minecraft:white_wool"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_cat_morning_gift.title"

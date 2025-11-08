@@ -32,7 +32,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:trident"
+            "id": "minecraft:stone_bricks"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_underwater_ruin.title"

@@ -128,7 +128,7 @@
         },
         "frame": "task",
         "icon": {
-            "id": "minecraft:trial_key"
+            "id": "minecraft:trial_spawner"
         },
         "title": {
             "translate": "advancements.lipartefacts.artefacts.complete_trial_chambers.title"
