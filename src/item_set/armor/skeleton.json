@@ -1,0 +1,55 @@
+{
+    "armor_stats": {
+        "durability": "leather",
+        "enchantable": "leather"
+    },
+    "data": {
+        "inherits": "minecraft:chainmail_chestplate",
+        "item_modifiers": [
+            "lipartefacts:set_rarity/uncommon"
+        ],
+        "slot": "chest"
+    },
+    "id": "lipartefacts:skeleton",
+    "items": {
+        "bogged_chestplate": {
+            "components": {
+                "minecraft:attribute_modifiers": [],
+                "minecraft:equippable": {
+                    "asset_id": "lipartefacts:bogged",
+                    "equip_sound": "minecraft:item.armor.equip_leather"
+                }
+            },
+            "enchantments": {
+                "lipartefacts:poison_immunity": 1
+            },
+            "id": "lipartefacts:bogged_chestplate"
+        },
+        "parched_chestplate": {
+            "components": {
+                "minecraft:attribute_modifiers": [],
+                "minecraft:equippable": {
+                    "asset_id": "lipartefacts:parched",
+                    "equip_sound": "minecraft:item.armor.equip_leather"
+                }
+            },
+            "enchantments": {
+                "lipartefacts:weakness_immunity": 1
+            },
+            "id": "lipartefacts:parched_chestplate"
+        },
+        "stray_chestplate": {
+            "components": {
+                "minecraft:attribute_modifiers": [],
+                "minecraft:equippable": {
+                    "asset_id": "lipartefacts:stray",
+                    "equip_sound": "minecraft:item.armor.equip_leather"
+                }
+            },
+            "enchantments": {
+                "lipartefacts:slowness_immunity": 1
+            },
+            "id": "lipartefacts:stray_chestplate"
+        }
+    }
+}

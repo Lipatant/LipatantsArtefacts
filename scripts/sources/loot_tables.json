@@ -8,6 +8,10 @@
             {
                 "value": "lipartefacts:items/mummy_leggings",
                 "weight": 1
+            },
+            {
+                "value": "lipartefacts:items/parched_chestplate",
+                "weight": 1
             }
         ]
     },
@@ -129,10 +133,14 @@
                 "entries": [
                     {
                         "type": "minecraft:empty",
-                        "weight": 3
+                        "weight": 2
                     },
                     {
                         "value": "lipartefacts:items/mummy_leggings",
+                        "weight": 1
+                    },
+                    {
+                        "value": "lipartefacts:items/parched_chestplate",
                         "weight": 1
                     }
                 ]
@@ -346,11 +354,15 @@
                 "weight": 2
             },
             {
-                "value": "lipartefacts:items/stray_chestplate",
+                "value": "lipartefacts:items/great_hunger_helmet",
                 "weight": 2
             },
             {
-                "value": "lipartefacts:items/great_hunger_helmet",
+                "value": "lipartefacts:items/parched_chestplate",
+                "weight": 2
+            },
+            {
+                "value": "lipartefacts:items/stray_chestplate",
                 "weight": 2
             }
         ]
@@ -592,6 +604,35 @@
                             "biomes": [
                                 "minecraft:mangrove_swamp",
                                 "minecraft:swamp"
+                            ]
+                        }
+                    }
+                ],
+                "functions": [
+                    {
+                        "add": false,
+                        "damage": {
+                            "type": "minecraft:uniform",
+                            "max": 0.95,
+                            "min": 0.5
+                        },
+                        "function": "minecraft:set_damage"
+                    },
+                    {
+                        "function": "minecraft:enchant_with_levels",
+                        "levels": 30,
+                        "options": "#minecraft:on_random_loot"
+                    }
+                ]
+            },
+            {
+                "value": "lipartefacts:items/parched_chestplate",
+                "conditions": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "biomes": [
+                                "minecraft:desert"
                             ]
                         }
                     }

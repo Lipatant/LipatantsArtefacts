@@ -25,6 +25,18 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "parched_chestplate": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:parched_chestplate"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "sniffer_upgrade_smithing_template": {
             "conditions": {
                 "items": [
@@ -56,6 +68,9 @@
         ],
         [
             "mummy_leggings"
+        ],
+        [
+            "parched_chestplate"
         ],
         [
             "sniffer_upgrade_smithing_template"

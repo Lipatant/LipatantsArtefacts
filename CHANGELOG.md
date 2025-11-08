@@ -1,3 +1,7 @@
+### Adding 1 artefact:
+
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/parched_chestplate.png" width="16"/> Desert Camouflage Tunic
+
 ### Changing 29 artefacts:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_chestplate.png" width="16"/> Copper Golem Armor: Increasing its enchantability to match the Netherite Armor.

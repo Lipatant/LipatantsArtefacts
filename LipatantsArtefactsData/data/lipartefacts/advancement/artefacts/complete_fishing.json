@@ -49,6 +49,18 @@
             },
             "trigger": "minecraft:inventory_changed"
         },
+        "parched_chestplate": {
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:item_model": "lipartefacts:parched_chestplate"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
         "stray_chestplate": {
             "conditions": {
                 "items": [
@@ -86,6 +98,9 @@
         ],
         [
             "fisherman_helmet"
+        ],
+        [
+            "parched_chestplate"
         ],
         [
             "stray_chestplate"

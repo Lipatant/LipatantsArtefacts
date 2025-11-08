@@ -193,12 +193,17 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/stray_chestplate",
+                    "value": "lipartefacts:items/great_hunger_helmet",
                     "weight": 2
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lipartefacts:items/great_hunger_helmet",
+                    "value": "lipartefacts:items/parched_chestplate",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/stray_chestplate",
                     "weight": 2
                 }
             ],

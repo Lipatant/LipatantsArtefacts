@@ -130,6 +130,15 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/parched_chestplate"
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/repair_crystal"
                 }
             ],

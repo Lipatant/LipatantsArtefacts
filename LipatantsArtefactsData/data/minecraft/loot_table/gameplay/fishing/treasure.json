@@ -165,6 +165,36 @@
                             "condition": "minecraft:location_check",
                             "predicate": {
                                 "biomes": [
+                                    "minecraft:desert"
+                                ]
+                            }
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "add": false,
+                            "damage": {
+                                "type": "minecraft:uniform",
+                                "max": 0.95,
+                                "min": 0.5
+                            },
+                            "function": "minecraft:set_damage"
+                        },
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30,
+                            "options": "#minecraft:on_random_loot"
+                        }
+                    ],
+                    "value": "lipartefacts:items/parched_chestplate"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "biomes": [
                                     "minecraft:snowy_plains",
                                     "minecraft:ice_spikes",
                                     "minecraft:frozen_river"

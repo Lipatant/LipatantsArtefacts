@@ -45,6 +45,11 @@
                     "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/mummy_leggings",
                     "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/parched_chestplate",
+                    "weight": 1
                 }
             ],
             "rolls": 1.0
