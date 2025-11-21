@@ -15,11 +15,12 @@ def _item_data_get_type(identifier: dict) -> str:
 
 class RecipeSmithingUpgrade(RecipeSmithing):
 
-    def __init__(self, identifier: str, addition: str = "", base: str = "", base_relative: str = "", result: str = "", result_data: dict = {}, template: str = ""):
+    def __init__(self, identifier: str, addition: str = "", base: str = "", base_relative: str = "", identifier_additional: str = "", result: str = "", result_data: dict = {}, template: str = ""):
         super().__init__(identifier)
         self.addition = addition
         self.base = base
         self.base_relative = base_relative
+        self.identifier_additional = identifier_additional
         self.result = result
         self.result_data = result_data
         self.template = template
@@ -34,6 +35,9 @@ class RecipeSmithingUpgrade(RecipeSmithing):
         if type == result:
             return result
         return self.base_relative + "_" + type
+
+    def get_path_str(self) -> str:
+        return "%s_smithing_" + self.identifier_additional if self.identifier_additional else "%s_smithing"
 
     def to_data(self) -> dict | list:
         output = {

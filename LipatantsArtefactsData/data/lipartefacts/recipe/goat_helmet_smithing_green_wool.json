@@ -1,38 +1,44 @@
 {
-    "type": "minecraft:smithing_transform",
-    "addition": "green_wool",
+    "addition": "minecraft:green_wool",
     "base": "minecraft:diamond_helmet",
     "result": {
-        "id": "minecraft:leather_helmet",
         "components": {
             "minecraft:attribute_modifiers": [
                 {
-                    "id": "minecraft:armor.helmet",
                     "amount": 3,
+                    "id": "minecraft:armor.helmet",
                     "operation": "add_value",
                     "slot": "head",
                     "type": "minecraft:armor"
                 },
                 {
-                    "id": "minecraft:armor.helmet",
                     "amount": 2,
+                    "id": "minecraft:armor.helmet",
                     "operation": "add_value",
                     "slot": "head",
                     "type": "minecraft:armor_toughness"
                 },
                 {
+                    "amount": 1.0,
                     "id": "minecraft:armor.helmet",
-                    "amount": 1,
                     "operation": "add_value",
                     "slot": "head",
                     "type": "minecraft:attack_knockback"
                 }
             ],
             "minecraft:dyed_color": 6192150,
+            "minecraft:enchantable": {
+                "value": 10
+            },
             "minecraft:equippable": {
-                "slot": "head",
+                "asset_id": "lipartefacts:goat",
                 "equip_sound": "minecraft:item.armor.equip_leather",
-                "asset_id": "lipartefacts:goat"
+                "slot": "head"
+            },
+            "minecraft:item_model": "lipartefacts:goat_helmet",
+            "minecraft:item_name": {
+                "italic": false,
+                "translate": "item.lipartefacts.goat_helmet"
             },
             "minecraft:lore": [
                 {
@@ -42,13 +48,10 @@
                 }
             ],
             "minecraft:max_damage": 363,
-            "minecraft:item_model": "lipartefacts:goat_helmet",
-            "minecraft:item_name": {
-                "italic": false,
-                "translate": "item.lipartefacts.goat_helmet"
-            },
             "minecraft:rarity": "uncommon"
-        }
+        },
+        "id": "minecraft:leather_helmet"
     },
-    "template": "goat_horn"
+    "template": "minecraft:goat_horn",
+    "type": "minecraft:smithing_transform"
 }

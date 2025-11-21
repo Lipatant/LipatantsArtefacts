@@ -21,6 +21,98 @@
         },
         "item_modifiers": [
             "lipartefacts:set_rarity/uncommon"
+        ],
+        "recipe_smithing_upgrades": [
+            {
+                "addition": {
+                    "minecraft:black_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 1908001
+                        }
+                    },
+                    "minecraft:blue_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 3949738
+                        }
+                    },
+                    "minecraft:brown_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 8606770
+                        }
+                    },
+                    "minecraft:cyan_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 1481884
+                        }
+                    },
+                    "minecraft:gray_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 4673362
+                        }
+                    },
+                    "minecraft:green_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 6192150
+                        }
+                    },
+                    "minecraft:light_blue_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 3847130
+                        }
+                    },
+                    "minecraft:light_gray_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 10329495
+                        }
+                    },
+                    "minecraft:lime_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 8439583
+                        }
+                    },
+                    "minecraft:magenta_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 13061821
+                        }
+                    },
+                    "minecraft:orange_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 16351261
+                        }
+                    },
+                    "minecraft:pink_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 15961002
+                        }
+                    },
+                    "minecraft:purple_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 8991416
+                        }
+                    },
+                    "minecraft:red_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 11546150
+                        }
+                    },
+                    "minecraft:white_wool": {},
+                    "minecraft:yellow_wool": {
+                        "components": {
+                            "minecraft:dyed_color": 16701501
+                        }
+                    }
+                },
+                "base_relative": "minecraft:diamond",
+                "result_data": {
+                    "item_modifiers": [
+                        "lipartefacts:set_rarity/uncommon/crafted"
+                    ],
+                    "item_modifiers_ignore": [
+                        "lipartefacts:set_rarity/uncommon"
+                    ]
+                },
+                "template": "minecraft:goat_horn"
+            }
         ]
     },
     "id": "lipartefacts:goat",

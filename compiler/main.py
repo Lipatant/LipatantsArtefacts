@@ -130,15 +130,27 @@ def initialize_items() -> None:
             item = Item(data)
         item_list.append(item)
         for recipe in item.recipe_smithing_upgrades:
-            recipe_instance: str = recipe.copy()
-            if "result" not in recipe_instance:
-                recipe_instance["result"] = item.identifier
-            recipe_list.append(
-                RecipeSmithingUpgrade(
-                    item.identifier,
-                    **recipe_instance,
+            addition_list = recipe.copy().get("addition", {})
+            has_variants: bool = isinstance(addition_list, dict)
+            if isinstance(addition_list, str):
+                addition_list = {addition_list: {}}
+            for addition in addition_list:
+                recipe_instance: str = recipe.copy()
+                recipe_instance["addition"] = addition
+                if "result_data" in recipe_instance:
+                    recipe_instance["result_data"] = recipe_instance["result_data"] | addition_list[addition]
+                else:
+                    recipe_instance["result_data"] = addition_list[addition]
+                if "result" not in recipe_instance:
+                    recipe_instance["result"] = item.identifier
+                if has_variants:
+                    recipe_instance["identifier_additional"] = addition.split(":", maxsplit=1)[-1]
+                recipe_list.append(
+                    RecipeSmithingUpgrade(
+                        item.identifier,
+                        **recipe_instance,
+                    )
                 )
-            )
 
 def initialize_items_templates() -> None:
     global item_template_list
