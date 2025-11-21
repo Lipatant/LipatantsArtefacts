@@ -6,12 +6,13 @@
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/chiseled_sandstone.png" width="16"/> Search Like an Egyptian
 
-### Changing 29 artefacts:
+### Changing 30 artefacts:
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_chestplate.png" width="16"/> Copper Golem Armor: Increasing its enchantability to match the Netherite Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/fisherman_chestplate.png" width="16"/> Fisherman Armor: Increasing its enchantability to match the Leather Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/great_hunger_helmet.png" width="16"/> Great Hunger Jaw: Decreasing its enchantability to match the Diamond Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/great_hunger_helmet.png" width="16"/> Great Hunger Jaw: Increasing its bonus armor, bonus armor toughness and durability to match the Diamond Armor.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/goat_helmet.png" width="16"/> Horned Helmet: Decreasing its durability and enchantability to match the Diamond Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/iron_golem_chestplate.png" width="16"/> Iron Golem Armor: Decreasing its durability and enchantability to match the Diamond Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/mummy_leggings.png" width="16"/> Mummy Bandages: Decreasing its enchantability to match the Diamond Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/mummy_leggings.png" width="16"/> Mummy Bandages: Increasing its bonus armor toughness to match the Diamond Armor.
