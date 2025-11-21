@@ -35,4 +35,4 @@
 
 ### Changings 14 advancements:
 
-- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/stone_bricks.png" width="16"/> Structure-related advancements: Changing their icon to a corresponding block.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/stone_bricks.png" width="16"/> Structure-related advancements: Changing their icons to a corresponding block.
