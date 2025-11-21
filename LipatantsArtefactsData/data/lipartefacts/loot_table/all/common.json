@@ -13,6 +13,15 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
+                    "value": "lipartefacts:items/cat_helmet"
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
                     "value": "lipartefacts:items/fisherman_chestplate"
                 }
             ],

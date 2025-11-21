@@ -1,0 +1,28 @@
+{
+    "data": {
+        "attributes": [
+            {
+                "amount": 1.0,
+                "attribute": "minecraft:safe_fall_distance",
+                "operation": "add_value"
+            }
+        ],
+        "attributes_keep": true,
+        "components": {
+            "minecraft:equippable": {
+                "asset_id": "lipartefacts:cat",
+                "equip_sound": "minecraft:item.armor.equip_leather"
+            }
+        },
+        "item_modifiers": [
+            "lipartefacts:set_rarity/common"
+        ]
+    },
+    "id": "lipartefacts:cat",
+    "items": {
+        "helmet": {
+            "inherits": "minecraft:leather_helmet",
+            "slot": "head"
+        }
+    }
+}

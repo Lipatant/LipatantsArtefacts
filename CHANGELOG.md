@@ -6,8 +6,11 @@
 
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/chiseled_sandstone.png" width="16"/> Search Like an Egyptian
 
-### Changing 30 artefacts:
+### Changing 31 artefacts:
 
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/cat_helmet.png" width="16"/> Cat Beanie: Changing its default color from black to gray.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/cat_helmet.png" width="16"/> Cat Beanie: Changing its name from Cat Ears to Cat Beanie.
+- <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/cat_helmet.png" width="16"/> Cat Beanie: Improving its texture.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/copper_golem_chestplate.png" width="16"/> Copper Golem Armor: Increasing its enchantability to match the Netherite Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/fisherman_chestplate.png" width="16"/> Fisherman Armor: Increasing its enchantability to match the Leather Armor.
 - <img alt="" src="https://raw.githubusercontent.com/Lipatant/LipatantsArtefacts/refs/heads/main/docs/img/item/great_hunger_helmet.png" width="16"/> Great Hunger Jaw: Decreasing its enchantability to match the Diamond Armor.
