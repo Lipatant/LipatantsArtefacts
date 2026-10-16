@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "lipartefacts:item/fisherman_chestplate",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    0.2784,
+                    0.3098,
+                    0.3216
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "lipartefacts:copper_golem"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "lipartefacts:copper_golem"
+            }
+        ]
+    }
+}

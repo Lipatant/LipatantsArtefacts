@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "lipartefacts:item/cat_helmet",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    0.278,
+                    0.310,
+                    0.322
+                ]
+            }
+        ]
+    }
+}

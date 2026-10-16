@@ -1,0 +1,9 @@
+{
+    "layers": {
+        "wings": [
+            {
+                "texture": "lipartefacts:piglin_elytra"
+            }
+        ]
+    }
+}

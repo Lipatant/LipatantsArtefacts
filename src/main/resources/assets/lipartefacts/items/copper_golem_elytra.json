@@ -1,0 +1,14 @@
+{
+    "model": {
+        "on_false": {
+            "type": "minecraft:model",
+            "model": "lipartefacts:item/copper_golem_elytra"
+        },
+        "on_true": {
+            "type": "minecraft:model",
+            "model": "lipartefacts:item/copper_golem_elytra_broken"
+        },
+        "property": "minecraft:broken",
+        "type": "minecraft:condition"
+    }
+}

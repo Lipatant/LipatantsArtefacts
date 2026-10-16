@@ -1,0 +1,26 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "dyeable": {
+                    "color_when_undyed": 11546150
+                },
+                "texture": "lipartefacts:little"
+            },
+            {
+                "texture": "lipartefacts:little_overlay"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "dyeable": {
+                    "color_when_undyed": 6192150
+                },
+                "texture": "lipartefacts:little"
+            },
+            {
+                "texture": "lipartefacts:little_overlay"
+            }
+        ]
+    }
+}

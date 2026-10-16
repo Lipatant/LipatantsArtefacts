@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "lipartefacts:item/little_leggings",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    0.3686,
+                    0.4863,
+                    0.0863
+                ]
+            }
+        ]
+    }
+}

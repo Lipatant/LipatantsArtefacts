@@ -1,0 +1,19 @@
+{
+    "model": {
+        "cases": [
+            {
+                "when": "head",
+                "model": {
+                    "model": "lipartefacts:item/copper_golem_helmet_head",
+                    "type": "minecraft:model"
+                }
+            }
+        ],
+        "fallback": {
+            "model": "lipartefacts:item/copper_golem_helmet",
+            "type": "minecraft:model"
+        },
+        "property": "display_context",
+        "type": "select"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "lipartefacts:item/charm",
+    "textures": {
+        "layer0": "lipartefacts:item/ravager_charm"
+    }
+}

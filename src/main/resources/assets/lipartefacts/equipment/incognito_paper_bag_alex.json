@@ -1,0 +1,15 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "dyeable": {
+                    "color_when_undyed": 14595732
+                },
+                "texture": "lipartefacts:incognito_paper_bag"
+            },
+            {
+                "texture": "lipartefacts:incognito_paper_bag_alex_overlay"
+            }
+        ]
+    }
+}

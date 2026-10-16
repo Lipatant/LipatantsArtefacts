@@ -1,0 +1,7 @@
+{
+    "parent": "lipartefacts:item/charm",
+    "textures": {
+        "layer0": "lipartefacts:item/crab_charm",
+        "layer1": "lipartefacts:item/crab_charm_overlay_command_block"
+    }
+}

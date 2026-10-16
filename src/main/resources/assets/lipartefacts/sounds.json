@@ -1,0 +1,37 @@
+{
+    "music_disc.groovotational": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/groovotational"
+            }
+        ]
+    },
+    "music_disc.mineral_winter": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/mineral_winter"
+            }
+        ]
+    },
+    "music_disc.moment_of_melting_solitude": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/moment_of_melting_solitude"
+            }
+        ]
+    },
+    "music_disc.space_caster": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/space_caster"
+            }
+        ]
+    },
+    "music_disc.tokyos_going_down": {
+        "sounds": [
+            {
+                "name": "lipartefacts:records/tokyos_going_down"
+            }
+        ]
+    }
+}

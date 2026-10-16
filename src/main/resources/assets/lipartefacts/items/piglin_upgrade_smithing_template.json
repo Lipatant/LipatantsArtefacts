@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "lipartefacts:item/piglin_upgrade_smithing_template"
+    }
+}

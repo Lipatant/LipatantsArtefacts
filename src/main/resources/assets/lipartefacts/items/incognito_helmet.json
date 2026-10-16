@@ -1,0 +1,107 @@
+{
+    "model": {
+        "type": "select",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "lipartefacts:item/incognito_helmet_paper_bag",
+            "tints": [
+                {
+                    "type": "minecraft:dye",
+                    "default": [
+                        0.8672,
+                        0.7109,
+                        0.5781
+                    ]
+                }
+            ]
+        },
+        "cases": [
+            {
+                "when": "paper_bag_alex",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/incognito_helmet_paper_bag_alex",
+                    "tints": [
+                        {
+                            "type": "minecraft:dye",
+                            "default": [
+                                0.8672,
+                                0.7109,
+                                0.5781
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "when": "paper_bag_creeper",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/incognito_helmet_paper_bag_creeper",
+                    "tints": [
+                        {
+                            "type": "minecraft:dye",
+                            "default": [
+                                0.8672,
+                                0.7109,
+                                0.5781
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "when": "paper_bag_menacing",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/incognito_helmet_paper_bag_menacing",
+                    "tints": [
+                        {
+                            "type": "minecraft:dye",
+                            "default": [
+                                0.8672,
+                                0.7109,
+                                0.5781
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "when": "paper_bag_mumbo",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/incognito_helmet_paper_bag_mumbo",
+                    "tints": [
+                        {
+                            "type": "minecraft:dye",
+                            "default": [
+                                0.8672,
+                                0.7109,
+                                0.5781
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "when": "paper_bag_steve",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/incognito_helmet_paper_bag_steve",
+                    "tints": [
+                        {
+                            "type": "minecraft:dye",
+                            "default": [
+                                0.8672,
+                                0.7109,
+                                0.5781
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

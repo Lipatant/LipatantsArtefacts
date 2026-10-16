@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "lipartefacts:item/shulker_helmet",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    0.59,
+                    0.40,
+                    0.59
+                ]
+            }
+        ]
+    }
+}

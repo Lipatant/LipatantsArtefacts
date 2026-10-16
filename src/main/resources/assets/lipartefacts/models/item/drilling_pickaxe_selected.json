@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+        "layer0": "lipartefacts:item/drilling_pickaxe_selected"
+    }
+}

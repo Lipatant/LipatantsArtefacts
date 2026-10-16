@@ -1,0 +1,47 @@
+{
+    "model": {
+        "type": "select",
+        "property": "custom_model_data",
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "lipartefacts:item/crab_charm_command_block"
+        },
+        "cases": [
+            {
+                "when": "clay",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/crab_charm_clay"
+                }
+            },
+            {
+                "when": "dirt",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/crab_charm_dirt"
+                }
+            },
+            {
+                "when": "gravel",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/crab_charm_gravel"
+                }
+            },
+            {
+                "when": "sand",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/crab_charm_sand"
+                }
+            },
+            {
+                "when": "spruce_planks",
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "lipartefacts:item/crab_charm_spruce_planks"
+                }
+            }
+        ]
+    }
+}
