@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lipartefacts",
+	"version": "${version}",
+	"name": "Lipatant's Artefacts",
+	"description": "Adds an alternative source of content that doesn't make the vanilla one obsolete.",
+	"authors": [
+		"Lipatant"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"icon": "assets/lipartefacts/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lipartefacts.Lipartefacts"
+		],
+		"client": [
+			"lipartefacts.client.LipartefactsClient"
+		],
+		"fabric-datagen": [
+			"lipartefacts.client.LipartefactsDataGenerator"
+		]
+	},
+	"mixins": [
+		"lipartefacts.mixins.json",
+		{
+			"config": "lipartefacts.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
