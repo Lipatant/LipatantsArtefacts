@@ -153,9 +153,14 @@
     "item.lipartefacts.warden_leggings": "Warden Leggings",
     "item.lipartefacts.warden_upgrade_smithing_template": "Warden Upgrade",
     "itemGroup.lipartefacts": "Lipatant's Artefacts",
+    "jukebox_song.lipartefacts.groovotational": "Lipatant - Groovotational",
     "jukebox_song.lipartefacts.groovotational.desc": "Lipatant - Groovotational",
+    "jukebox_song.lipartefacts.mineral_winter": "Lipatant - Mineral Winter",
     "jukebox_song.lipartefacts.mineral_winter.desc": "Lipatant - Mineral Winter",
+    "jukebox_song.lipartefacts.moment_of_melting_solitude": "Lipatant - Moment Of Melting Solitude",
     "jukebox_song.lipartefacts.moment_of_melting_solitude.desc": "Lipatant - Moment Of Melting Solitude",
+    "jukebox_song.lipartefacts.space_caster": "Lipatant - Space Caster",
     "jukebox_song.lipartefacts.space_caster.desc": "Lipatant - Space Caster",
+    "jukebox_song.lipartefacts.tokyos_going_down": "Lipatant - Tokyo's Going Down",
     "jukebox_song.lipartefacts.tokyos_going_down.desc": "Lipatant - Tokyo's Going Down"
 }
