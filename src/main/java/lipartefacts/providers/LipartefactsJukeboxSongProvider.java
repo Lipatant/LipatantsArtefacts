@@ -1,4 +1,4 @@
-package lipartefacts;
+package lipartefacts.providers;
 
 import java.util.concurrent.CompletableFuture;
 

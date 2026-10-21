@@ -1,9 +1,13 @@
 package lipartefacts.artefacts;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import lipartefacts.ItemIdList;
 import lipartefacts.ItemList;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -74,6 +78,34 @@ public class ArtefactCharmList {
             .component(DataComponents.EQUIPPABLE, Equippable.builder(EquipmentSlot.OFFHAND).build())
             .stacksTo(1)
         ;
+    }
+
+    /**
+     * Returns a collection of all charm artefacts.
+     */
+    public static Collection<ResourceKey<Item>> getIdList() {
+        ArrayList<ResourceKey<Item>> list = new ArrayList<ResourceKey<Item>>();
+
+        list.add(ItemIdList.AXOLOTL_CHARM);
+        list.add(ItemIdList.CHICKEN_CHARM);
+        list.add(ItemIdList.CRAB_CHARM);
+        list.add(ItemIdList.ENDERMITE_CHARM);
+        list.add(ItemIdList.STRIDER_CHARM);
+        return list;
+    }
+
+    /**
+     * Returns a collection of all charm artefacts.
+     */
+    public static Collection<Item> getList() {
+        ArrayList<Item> list = new ArrayList<Item>();
+
+        list.add(AXOLOTL_CHARM);
+        list.add(CHICKEN_CHARM);
+        list.add(CRAB_CHARM);
+        list.add(ENDERMITE_CHARM);
+        list.add(STRIDER_CHARM);
+        return list;
     }
 
     /**

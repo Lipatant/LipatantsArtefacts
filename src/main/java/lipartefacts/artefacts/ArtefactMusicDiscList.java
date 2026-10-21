@@ -1,5 +1,8 @@
 package lipartefacts.artefacts;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import lipartefacts.ItemIdList;
 import lipartefacts.ItemList;
 import lipartefacts.Lipartefacts;
@@ -73,6 +76,34 @@ public class ArtefactMusicDiscList {
     }
 
     /**
+     * Returns a collection of all music disc artefacts.
+     */
+    public static Collection<ResourceKey<Item>> getIdList() {
+        ArrayList<ResourceKey<Item>> list = new ArrayList<ResourceKey<Item>>();
+
+        list.add(ItemIdList.MUSIC_DISC_GROOVOTATIONAL);
+        list.add(ItemIdList.MUSIC_DISC_MINERAL_WINTER);
+        list.add(ItemIdList.MUSIC_DISC_MOMENT_OF_MELTING_SOLITUDE);
+        list.add(ItemIdList.MUSIC_DISC_SPACE_CASTER);
+        list.add(ItemIdList.MUSIC_DISC_TOKYOS_GOING_DOWN);
+        return list;
+    }
+
+    /**
+     * Returns a collection of all music disc artefacts.
+     */
+    public static Collection<Item> getList() {
+        ArrayList<Item> list = new ArrayList<Item>();
+
+        list.add(MUSIC_DISC_GROOVOTATIONAL);
+        list.add(MUSIC_DISC_MINERAL_WINTER);
+        list.add(MUSIC_DISC_MOMENT_OF_MELTING_SOLITUDE);
+        list.add(MUSIC_DISC_SPACE_CASTER);
+        list.add(MUSIC_DISC_TOKYOS_GOING_DOWN);
+        return list;
+    }
+
+    /**
      * Initializes the class.
      */
     public static void initialize() {}
@@ -87,7 +118,6 @@ public class ArtefactMusicDiscList {
     /**
      * Registers a sound event.
      */
-    @SuppressWarnings("null")
     protected static Holder.Reference<SoundEvent> registerSoundEvent(String name) {
         Identifier id = Identifier.fromNamespaceAndPath(Lipartefacts.MOD_ID, name);
         return Registry.registerForHolder(BuiltInRegistries.SOUND_EVENT, id, SoundEvent.createVariableRangeEvent(id));

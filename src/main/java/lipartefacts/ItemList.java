@@ -1,10 +1,12 @@
 package lipartefacts;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.function.Function;
 
 import lipartefacts.artefacts.ArtefactCharmList;
 import lipartefacts.artefacts.ArtefactList;
-import lipartefacts.artefacts.ArtefactMusicDiscList;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -20,17 +22,12 @@ public class ItemList {
 
     public static final CreativeModeTab CREATIVE_TAB = FabricCreativeModeTab.builder()
         .displayItems((params, output) -> {
-            output.accept(ArtefactCharmList.AXOLOTL_CHARM);
-            output.accept(ArtefactCharmList.CHICKEN_CHARM);
-            output.accept(ArtefactCharmList.CRAB_CHARM);
-            output.accept(ArtefactCharmList.ENDERMITE_CHARM);
-            output.accept(ArtefactCharmList.RAVAGER_CHARM);
-            output.accept(ArtefactCharmList.STRIDER_CHARM);
-            output.accept(ArtefactMusicDiscList.MUSIC_DISC_GROOVOTATIONAL);
-            output.accept(ArtefactMusicDiscList.MUSIC_DISC_MINERAL_WINTER);
-            output.accept(ArtefactMusicDiscList.MUSIC_DISC_MOMENT_OF_MELTING_SOLITUDE);
-            output.accept(ArtefactMusicDiscList.MUSIC_DISC_SPACE_CASTER);
-            output.accept(ArtefactMusicDiscList.MUSIC_DISC_TOKYOS_GOING_DOWN);
+            Collection<Item> list = ArtefactList.getList();
+            Iterator<Item> iterator = list.iterator();
+
+            while (iterator.hasNext()) {
+                output.accept(iterator.next());
+            }
         })
         .icon(() -> new ItemStack(ArtefactCharmList.ENDERMITE_CHARM))
         .title(Component.translatable("itemGroup.lipartefacts"))
