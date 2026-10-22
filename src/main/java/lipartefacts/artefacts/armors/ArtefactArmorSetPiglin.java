@@ -1,11 +1,8 @@
 package lipartefacts.artefacts.armors;
 
-import java.util.function.Function;
-
 import lipartefacts.artefacts.ArtefactArmorList;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -21,16 +18,12 @@ public class ArtefactArmorSetPiglin extends ArtefactArmorSet {
         ;
     }
 
-	public Function<Item.Properties, Item> getItemFactory(ArtefactArmorSetType type) {
-        return (p) -> {
-            return super.getItemFactory(type).apply(p
-                .rarity(Rarity.RARE)
-            );
-        };
-	}
-
     public String getName() {
         return "piglin";
+    }
+
+    public Rarity getRarity() {
+        return Rarity.RARE;
     }
 
     protected Ingredient getUpgradeSmithingTemplateAddition() {

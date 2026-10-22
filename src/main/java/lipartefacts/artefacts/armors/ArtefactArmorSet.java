@@ -23,6 +23,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.Util;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SmithingTemplateItem;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.equipment.ArmorType;
@@ -32,7 +33,7 @@ import net.minecraft.world.item.equipment.EquipmentAssets;
 abstract public class ArtefactArmorSet {
 
 	private static final ChatFormatting UPGRADE_SMITHING_TEMPLATE_DESCRIPTION_FORMAT = ChatFormatting.BLUE;
-    
+
 	protected static final Identifier EMPTY_SLOT_BOOTS = Identifier.withDefaultNamespace("container/slot/boots");
 	protected static final Identifier EMPTY_SLOT_CHESTPLATE = Identifier.withDefaultNamespace("container/slot/chestplate");
 	protected static final Identifier EMPTY_SLOT_HELMET = Identifier.withDefaultNamespace("container/slot/helmet");
@@ -40,17 +41,20 @@ abstract public class ArtefactArmorSet {
 	protected static final Identifier EMPTY_SLOT_LEGGINGS = Identifier.withDefaultNamespace("container/slot/leggings");
 
     private final ResourceKey<EquipmentAsset> EQUIPMENT_ASSET = createEquipmentAsset();
+    private final ResourceKey<EquipmentAsset> EQUIPMENT_ASSET_ELYTRA = createEquipmentAssetElytra();
 
     private final ArtefactArmorAttribute ARMOR_ATTRIBUTE = createArmorAttribute();
 
     public final ResourceKey<Item> BOOTS_ID = ItemIdList.create(getName() + "_boots");
     public final ResourceKey<Item> CHESTPLATE_ID = ItemIdList.create(getName() + "_chestplate");
+    public final ResourceKey<Item> ELYTRA_ID = ItemIdList.create(getName() + "_elytra");
     public final ResourceKey<Item> HELMET_ID = ItemIdList.create(getName() + "_helmet");
     public final ResourceKey<Item> LEGGINGS_ID = ItemIdList.create(getName() + "_leggings");
     public final ResourceKey<Item> UPGRADE_SMITHING_TEMPLATE_ID = ItemIdList.create(getName() + "_upgrade_smithing_template");
 
     public final Item BOOTS = ItemList.register(BOOTS_ID, getItemFactory(ArtefactArmorSetType.BOOTS), ARMOR_ATTRIBUTE.createProperties(ArmorType.BOOTS, createProperties()));
     public final Item CHESTPLATE = ItemList.register(CHESTPLATE_ID, getItemFactory(ArtefactArmorSetType.CHESTPLATE), ARMOR_ATTRIBUTE.createProperties(ArmorType.CHESTPLATE, createProperties()));
+    public final Item ELYTRA = ItemList.register(ELYTRA_ID, getItemFactory(ArtefactArmorSetType.ELYTRA), ARMOR_ATTRIBUTE.createPropertiesElytra(createProperties()));
     public final Item HELMET = ItemList.register(HELMET_ID, getItemFactory(ArtefactArmorSetType.HELMET), ARMOR_ATTRIBUTE.createProperties(ArmorType.HELMET, createProperties()));
     public final Item LEGGINGS = ItemList.register(LEGGINGS_ID, getItemFactory(ArtefactArmorSetType.LEGGINGS), ARMOR_ATTRIBUTE.createProperties(ArmorType.LEGGINGS, createProperties()));
     public final Item UPGRADE_SMITHING_TEMPLATE = ItemList.register(UPGRADE_SMITHING_TEMPLATE_ID, getItemFactory(ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE), createProperties());
@@ -60,6 +64,7 @@ abstract public class ArtefactArmorSet {
         List<Pair<Ingredient, Item>> smithingPairList = List.of(
             Pair.of(Ingredient.of(Items.DIAMOND_BOOTS), BOOTS),
             Pair.of(Ingredient.of(Items.DIAMOND_CHESTPLATE), CHESTPLATE),
+            Pair.of(Ingredient.of(Items.ELYTRA), ELYTRA),
             Pair.of(Ingredient.of(Items.DIAMOND_HELMET), HELMET),
             Pair.of(Ingredient.of(Items.DIAMOND_LEGGINGS), LEGGINGS)
         );
@@ -84,6 +89,7 @@ abstract public class ArtefactArmorSet {
     public ArtefactArmorAttribute createArmorAttribute() {
         return new ArtefactArmorAttribute()
             .equipmentAsset(EQUIPMENT_ASSET)
+            .equipmentAssetElytra(EQUIPMENT_ASSET_ELYTRA)
         ;
     }
 
@@ -91,20 +97,39 @@ abstract public class ArtefactArmorSet {
         return createEquipmentAssetId();
     }
 
+    public ResourceKey<EquipmentAsset> createEquipmentAssetElytra() {
+        return createEquipmentAssetElytraId();
+    }
+
     public ResourceKey<EquipmentAsset> createEquipmentAssetId() {
         return ResourceKey.create(EquipmentAssets.ROOT_ID, Lipartefacts.id(getName()));
+    }
+
+    public ResourceKey<EquipmentAsset> createEquipmentAssetElytraId() {
+        return ResourceKey.create(EquipmentAssets.ROOT_ID, Lipartefacts.id(getName() + "_elytra"));
     }
 
     public Item.Properties createProperties() {
         return ArtefactList.createProperties();
     }
 
+    public List<ArtefactArmorSetType> getRegisteredList() {
+        return List.of(
+            ArtefactArmorSetType.HELMET,
+            ArtefactArmorSetType.CHESTPLATE,
+            ArtefactArmorSetType.LEGGINGS,
+            ArtefactArmorSetType.BOOTS,
+            ArtefactArmorSetType.ELYTRA,
+            ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE
+        );
+    }
+
     public Collection<ResourceKey<Item>> getIdList() {
         ArrayList<ResourceKey<Item>> list = new ArrayList<ResourceKey<Item>>();
 
-        for (ArtefactArmorSetType type : ArtefactArmorSetType.values()) {
-            list.addAll(getIdList(type));
-        }
+        getRegisteredList().forEach((t) -> {
+            list.addAll(getIdList(t));
+        });
         return list;
     }
 
@@ -117,6 +142,9 @@ abstract public class ArtefactArmorSet {
                 break;
             case ArtefactArmorSetType.CHESTPLATE:
                 list.add(CHESTPLATE_ID);
+                break;
+            case ArtefactArmorSetType.ELYTRA:
+                list.add(ELYTRA_ID);
                 break;
             case ArtefactArmorSetType.HELMET:
                 list.add(HELMET_ID);
@@ -138,12 +166,18 @@ abstract public class ArtefactArmorSet {
             return getItemFactoryUpgradeSmithingTemplate();
         }
         return (p) -> {
+            Rarity rarity = (type == ArtefactArmorSetType.ELYTRA) ? Rarity.EPIC : getRarity();
+
+            if (rarity != null) p.rarity(rarity);
             return new Artefact(p);
         };
 	}
 
 	public Function<Item.Properties, Item> getItemFactoryUpgradeSmithingTemplate() {
         return (p) -> {
+            Rarity rarity = getRarity();
+
+            if (rarity != null) p.rarity(rarity);
             return new SmithingTemplateItem(
                 Component.translatable(
                     Util.makeDescriptionId("item", Lipartefacts.id("smithing_template." + getName() + "_upgrade.applies_to"))
@@ -164,7 +198,7 @@ abstract public class ArtefactArmorSet {
                     EMPTY_SLOT_LEGGINGS
                 ),
                 getUpgradeSmithingTemplateAdditionalSlotEmptyIcons(),
-                p
+                p.rarity(getRarity())
             );
         };
 	}
@@ -172,9 +206,9 @@ abstract public class ArtefactArmorSet {
     public Collection<Item> getList() {
         ArrayList<Item> list = new ArrayList<Item>();
 
-        for (ArtefactArmorSetType type : ArtefactArmorSetType.values()) {
-            list.addAll(getList(type));
-        }
+        getRegisteredList().forEach((t) -> {
+            list.addAll(getList(t));
+        });
         return list;
     }
 
@@ -187,6 +221,9 @@ abstract public class ArtefactArmorSet {
                 break;
             case ArtefactArmorSetType.CHESTPLATE:
                 list.add(CHESTPLATE);
+                break;
+            case ArtefactArmorSetType.ELYTRA:
+                list.add(ELYTRA);
                 break;
             case ArtefactArmorSetType.HELMET:
                 list.add(HELMET);
@@ -205,6 +242,10 @@ abstract public class ArtefactArmorSet {
 
     public String getName() {
         return "unknown";
+    };
+
+    public Rarity getRarity() {
+        return null;
     };
 
     protected Ingredient getUpgradeSmithingTemplateAddition() {

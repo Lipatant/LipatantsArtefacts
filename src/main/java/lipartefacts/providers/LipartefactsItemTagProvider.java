@@ -27,6 +27,11 @@ public class LipartefactsItemTagProvider extends FabricTagsProvider.ItemTagsProv
 
     @Override
     protected void addTags(HolderLookup.Provider wrapperLookup) {
+        builder(ItemTags.CAULDRON_CAN_REMOVE_DYE)
+            .add(ArtefactArmorList.SNIFFER.HELMET_ID)
+            .add(ArtefactArmorList.SNIFFER.LEGGINGS_ID)
+            .setReplace(false)
+        ;
         builder(ItemTags.CHEST_ARMOR)
             .addAll(ArtefactArmorList.getIdList(ArtefactArmorSetType.CHESTPLATE))
             .setReplace(false)

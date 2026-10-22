@@ -13,14 +13,17 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.tags.TagKey;
+import net.minecraft.util.Unit;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.EquipmentAsset;
+import net.minecraft.world.item.equipment.EquipmentAssets;
 import net.minecraft.world.item.equipment.Equippable;
 
 public class ArtefactArmorAttribute {
@@ -50,9 +53,10 @@ public class ArtefactArmorAttribute {
     public int durability = -1;
     public Holder<SoundEvent> equipSound = SoundEvents.ARMOR_EQUIP_GENERIC;
     public ResourceKey<EquipmentAsset> equipmentAsset = null;
+    public ResourceKey<EquipmentAsset> equipmentAssetElytra = null;
     public Set<ArmorType> equipmentAssetIgnored = Set.of();
     public int enchantmentValue = -1;
-    public TagKey<Item> repairIngredient = null;
+    public Item repairIngredient = Items.DIAMOND;
 
     public ArtefactArmorAttribute() {}
 
@@ -61,6 +65,15 @@ public class ArtefactArmorAttribute {
 
         if (equipSound != null) equippable.setEquipSound(equipSound);
         if (equipmentAsset != null && !equipmentAssetIgnored.contains(type)) equippable.setAsset(equipmentAsset);
+        return equippable.build();
+    }
+
+    public Equippable createEquippableElytra() {
+        Equippable.Builder equippable = Equippable.builder(EquipmentSlot.CHEST);
+
+        equippable.setAsset((equipmentAssetElytra != null) ? equipmentAssetElytra : EquipmentAssets.ELYTRA);
+        equippable.setDamageOnHurt(false);
+        equippable.setEquipSound(SoundEvents.ARMOR_EQUIP_ELYTRA);
         return equippable.build();
     }
 
@@ -88,6 +101,38 @@ public class ArtefactArmorAttribute {
         return modifiers;
     }
 
+    public ItemAttributeModifiers createItemAttributeModifiersElytra() {
+        ItemAttributeModifiers.Builder modifiers = createItemAttributeModifiersElytraBuilder();
+
+        return modifiers.build();
+    }
+
+    public ItemAttributeModifiers.Builder createItemAttributeModifiersElytraBuilder() {
+        EquipmentSlotGroup equipmentSlotGroup = EquipmentSlotGroup.bySlot(EquipmentSlot.CHEST);
+        Identifier identifier = Identifier.withDefaultNamespace("armor." + EquipmentSlot.CHEST.getName());
+        ItemAttributeModifiers.Builder modifiers = ItemAttributeModifiers.builder();
+
+        attributes.forEach((attribute) -> {
+            double amount = attribute.amountMap.getOrDefault(EquipmentSlot.CHEST, attribute.amount);
+
+            if (attribute.operation == AttributeModifier.Operation.ADD_VALUE) {
+                if (amount == 0.0) return;
+                if (attribute.attribute == Attributes.ARMOR) {
+                    amount -= 8.0;
+                    if (amount <= 0.0) return;
+                }
+                if (attribute.attribute == Attributes.ARMOR_TOUGHNESS) {
+                    amount -= 2.0;
+                    if (amount <= 0.0) return;
+                }
+            } else {
+                if (amount == 1.0) return;
+            }
+            modifiers.add(attribute.attribute, new AttributeModifier(identifier, amount, attribute.operation), equipmentSlotGroup);
+        });
+        return modifiers;
+    }
+
     public Item.Properties createProperties(final ArmorType type) {
         return createProperties(type, new Item.Properties());
     }
@@ -98,6 +143,15 @@ public class ArtefactArmorAttribute {
         if (repairIngredient != null) source.repairable(repairIngredient);
         source.attributes(createItemAttributeModifiers(type));
         source.component(DataComponents.EQUIPPABLE, createEquippable(type));
+        return source;
+    }
+
+    public Item.Properties createPropertiesElytra(Item.Properties source) {
+        source.attributes(createItemAttributeModifiersElytra());
+        source.component(DataComponents.EQUIPPABLE, createEquippableElytra());
+        source.component(DataComponents.GLIDER, Unit.INSTANCE);
+        source.durability(496);
+        source.repairable(Items.PHANTOM_MEMBRANE);
         return source;
     }
 
@@ -140,12 +194,17 @@ public class ArtefactArmorAttribute {
         return this;
     }
 
+    public ArtefactArmorAttribute equipmentAssetElytra(ResourceKey<EquipmentAsset> equipmentAssetElytra) {
+        this.equipmentAssetElytra = equipmentAssetElytra;
+        return this;
+    }
+
     public ArtefactArmorAttribute equipmentAssetIgnored(Set<ArmorType> equipmentAssetIgnored) {
         this.equipmentAssetIgnored = equipmentAssetIgnored;
         return this;
     }
 
-    public ArtefactArmorAttribute repairIngredient(TagKey<Item> repairIngredient) {
+    public ArtefactArmorAttribute repairIngredient(Item repairIngredient) {
         this.repairIngredient = repairIngredient;
         return this;
     }
