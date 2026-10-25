@@ -1,10 +1,18 @@
 package lipartefacts.artefacts.armors;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
+
 import lipartefacts.artefacts.ArtefactArmorList;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -14,7 +22,7 @@ public class ArtefactArmorSetSniffer extends ArtefactArmorSet {
     public void buildRecipes(RecipeProvider provider, RecipeOutput output) {
         super.buildRecipes(provider, output);
         provider.dyedItem(HELMET, "sniffer_helmet");
-        provider.dyedItem(LEGGINGS, "sniffer_leggnigs");
+        provider.dyedItem(LEGGINGS, "sniffer_leggings");
     }
 
     public ArtefactArmorAttribute createArmorAttribute() {
@@ -25,6 +33,16 @@ public class ArtefactArmorSetSniffer extends ArtefactArmorSet {
             .durability(37)
             .enchantmentValue(10)
         ;
+    }
+
+    public Map<TagKey<Item>, Collection<ResourceKey<Item>>> getItemTagList() {
+        Map<TagKey<Item>, Collection<ResourceKey<Item>>> list = super.getItemTagList();
+        Collection<ResourceKey<Item>> cauldronCanRemoveDyeIdList = new ArrayList<ResourceKey<Item>>();
+
+        cauldronCanRemoveDyeIdList.addAll(getIdList(ArtefactArmorSetType.HELMET));
+        cauldronCanRemoveDyeIdList.addAll(getIdList(ArtefactArmorSetType.LEGGINGS));
+        list.put(ItemTags.CAULDRON_CAN_REMOVE_DYE, cauldronCanRemoveDyeIdList);
+        return list;
     }
 
     public String getName() {

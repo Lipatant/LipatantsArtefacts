@@ -15,34 +15,32 @@ import lipartefacts.artefacts.armors.ArtefactArmorSetWarden;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.equipment.ArmorMaterials;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.EquipmentAsset;
 import net.minecraft.world.item.equipment.EquipmentAssets;
 
-public class ArtefactArmorList {
+public class ArtefactArmorList extends ArtefactListModule {
 
     public static final ArtefactArmorSet COPPER_GOLEM = new ArtefactArmorSetCopperGolem();
     public static final ArtefactArmorSet PIGLIN = new ArtefactArmorSetPiglin();
     public static final ArtefactArmorSet SNIFFER = new ArtefactArmorSetSniffer();
     public static final ArtefactArmorSet WARDEN = new ArtefactArmorSetWarden();
 
-    public static void buildRecipes(RecipeProvider provider, RecipeOutput output) {
+    public void buildRecipes(RecipeProvider provider, RecipeOutput output) {
+        super.buildRecipes(provider, output);
         getArmorSetList().forEach((a) -> {
             a.buildRecipes(provider, output);
         });
     }
 
-    public static Item.Properties createProperties() {
-        return ArtefactList.createProperties();
-    }
-
-    protected static ResourceKey<EquipmentAsset> createEquipmentAssetId(final String name) {
+    protected ResourceKey<EquipmentAsset> createEquipmentAssetId(final String name) {
         return ResourceKey.create(EquipmentAssets.ROOT_ID, Lipartefacts.id(name));
     }
 
-    protected static List<ArtefactArmorSet> getArmorSetList() {
+    protected List<ArtefactArmorSet> getArmorSetList() {
         return List.of(
             COPPER_GOLEM,
             PIGLIN,
@@ -51,8 +49,8 @@ public class ArtefactArmorList {
         );
     }
 
-    public static Collection<ResourceKey<Item>> getIdList() {
-        ArrayList<ResourceKey<Item>> list = new ArrayList<ResourceKey<Item>>();
+    public Collection<ResourceKey<Item>> getIdList() {
+        Collection<ResourceKey<Item>> list = super.getIdList();
 
         getArmorSetList().forEach((a) -> {
             list.addAll(a.getIdList());
@@ -60,8 +58,8 @@ public class ArtefactArmorList {
         return list;
     }
 
-    public static Collection<ResourceKey<Item>> getIdList(ArtefactArmorSetType type) {
-        ArrayList<ResourceKey<Item>> list = new ArrayList<ResourceKey<Item>>();
+    public Collection<ResourceKey<Item>> getIdList(ArtefactArmorSetType type) {
+        Collection<ResourceKey<Item>> list = super.getIdList();
 
         getArmorSetList().forEach((a) -> {
             list.addAll(a.getIdList(type));
@@ -69,8 +67,26 @@ public class ArtefactArmorList {
         return list;
     }
 
-    public static Collection<Item> getList() {
-        ArrayList<Item> list = new ArrayList<Item>();
+    public Map<TagKey<Item>, Collection<ResourceKey<Item>>> getItemTagList() {
+        Map<TagKey<Item>, Collection<ResourceKey<Item>>> list = super.getItemTagList();
+
+        getArmorSetList().forEach((a) -> {
+            a.getItemTagList().forEach((t, l) -> {
+                Collection<ResourceKey<Item>> l2 = list.getOrDefault(t, null);
+                if (l2 == null) {
+                    l2 = new ArrayList<ResourceKey<Item>>();
+                    l2.addAll(l);
+                    list.put(t, l2);
+                } else {
+                    l2.addAll(l);
+                }
+            });
+        });
+        return list;
+    }
+
+    public Collection<Item> getList() {
+        Collection<Item> list = super.getList();
 
         getArmorSetList().forEach((a) -> {
             list.addAll(a.getList());
@@ -78,16 +94,14 @@ public class ArtefactArmorList {
         return list;
     }
 
-    public static Collection<Item> getList(ArtefactArmorSetType type) {
-        ArrayList<Item> list = new ArrayList<Item>();
+    public Collection<Item> getList(ArtefactArmorSetType type) {
+        Collection<Item> list = super.getList();
 
         getArmorSetList().forEach((a) -> {
             list.addAll(a.getList(type));
         });
         return list;
     }
-
-    public static void initialize() {}
 
     public static Map<ArmorType, Integer> makeDefense(final int boots, final int legs, final int chest, final int helm, final int body) {
         return ArmorMaterials.makeDefense(boots, legs, chest, helm, body);

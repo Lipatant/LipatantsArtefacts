@@ -1,10 +1,7 @@
 package lipartefacts;
 
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.function.Function;
 
-import lipartefacts.artefacts.ArtefactCharmList;
 import lipartefacts.artefacts.ArtefactList;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
@@ -21,14 +18,14 @@ public class ItemList {
 
     public static final CreativeModeTab CREATIVE_TAB = FabricCreativeModeTab.builder()
         .displayItems((params, output) -> {
-            Collection<Item> list = ArtefactList.getList();
-            Iterator<Item> iterator = list.iterator();
-
-            while (iterator.hasNext()) {
-                output.accept(iterator.next());
-            }
+            ArtefactList.getList().forEach((i) -> {
+                output.accept(i);
+            });
+            ArtefactList.getItemStackList(params.holders()).forEach((i) -> {
+                output.accept(i);
+            });
         })
-        .icon(() -> new ItemStack(ArtefactCharmList.ENDERMITE_CHARM))
+        .icon(() -> new ItemStack(ArtefactList.CHARM.ENDERMITE_CHARM))
         .title(Component.translatable("itemGroup.lipartefacts"))
         .build();
 

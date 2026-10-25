@@ -4,7 +4,7 @@ import java.util.concurrent.CompletableFuture;
 
 import org.jspecify.annotations.NonNull;
 
-import lipartefacts.artefacts.ArtefactArmorList;
+import lipartefacts.artefacts.ArtefactList;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.advancements.Advancement;
@@ -23,7 +23,7 @@ public class LipartefactsRecipeProvider extends FabricRecipeProvider {
 
         @Override
         public void buildRecipes() {
-            ArtefactArmorList.buildRecipes(this, this.output);
+            ArtefactList.buildRecipes(this, this.output);
         }
 
     }

@@ -2,7 +2,9 @@ package lipartefacts.artefacts.armors;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
 
 import com.mojang.datafixers.util.Pair;
@@ -11,7 +13,6 @@ import lipartefacts.ItemIdList;
 import lipartefacts.ItemList;
 import lipartefacts.Lipartefacts;
 import lipartefacts.artefacts.Artefact;
-import lipartefacts.artefacts.ArtefactList;
 import net.minecraft.ChatFormatting;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -20,6 +21,8 @@ import net.minecraft.data.recipes.SmithingTransformRecipeBuilder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.util.Util;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -110,7 +113,17 @@ abstract public class ArtefactArmorSet {
     }
 
     public Item.Properties createProperties() {
-        return ArtefactList.createProperties();
+        return new Item.Properties();
+    }
+
+    public Map<TagKey<Item>, Collection<ResourceKey<Item>>> getItemTagList() {
+        HashMap<TagKey<Item>, Collection<ResourceKey<Item>>> list = new HashMap<TagKey<Item>, Collection<ResourceKey<Item>>>();
+
+        list.put(ItemTags.CHEST_ARMOR, getIdList(ArtefactArmorSetType.CHESTPLATE));
+        list.put(ItemTags.FOOT_ARMOR, getIdList(ArtefactArmorSetType.BOOTS));
+        list.put(ItemTags.HEAD_ARMOR, getIdList(ArtefactArmorSetType.HELMET));
+        list.put(ItemTags.LEG_ARMOR, getIdList(ArtefactArmorSetType.LEGGINGS));
+        return list;
     }
 
     public List<ArtefactArmorSetType> getRegisteredList() {
@@ -137,6 +150,12 @@ abstract public class ArtefactArmorSet {
         ArrayList<ResourceKey<Item>> list = new ArrayList<ResourceKey<Item>>();
 
         switch (type) {
+            case ArtefactArmorSetType.ARMOR:
+                list.addAll(getIdList(ArtefactArmorSetType.BOOTS));
+                list.addAll(getIdList(ArtefactArmorSetType.CHESTPLATE));
+                list.addAll(getIdList(ArtefactArmorSetType.HELMET));
+                list.addAll(getIdList(ArtefactArmorSetType.LEGGINGS));
+                break;
             case ArtefactArmorSetType.BOOTS:
                 list.add(BOOTS_ID);
                 break;
@@ -216,6 +235,12 @@ abstract public class ArtefactArmorSet {
         ArrayList<Item> list = new ArrayList<Item>();
 
         switch (type) {
+            case ArtefactArmorSetType.ARMOR:
+                list.addAll(getList(ArtefactArmorSetType.BOOTS));
+                list.addAll(getList(ArtefactArmorSetType.CHESTPLATE));
+                list.addAll(getList(ArtefactArmorSetType.HELMET));
+                list.addAll(getList(ArtefactArmorSetType.LEGGINGS));
+                break;
             case ArtefactArmorSetType.BOOTS:
                 list.add(BOOTS);
                 break;
