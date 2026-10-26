@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import lipartefacts.Lipartefacts;
-import lipartefacts.artefacts.ArtefactList;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;

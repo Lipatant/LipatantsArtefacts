@@ -2,15 +2,19 @@ package lipartefacts.providers;
 
 import java.util.concurrent.CompletableFuture;
 
+import lipartefacts.Lipartefacts;
 import lipartefacts.artefacts.ArtefactList;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.enchantment.Enchantment;
 
 public class LipartefactsEnchantmentTagProvider extends FabricTagsProvider<Enchantment> {
+
+    public static final TagKey<Enchantment> EXCLUSIVE_SET_POST_ATTACK_POTION_EFFECTS = TagKey.create(Registries.ENCHANTMENT, Lipartefacts.id("exclusive_set/post_attack_potion_effects"));
 
     public LipartefactsEnchantmentTagProvider(FabricPackOutput output, CompletableFuture<Provider> registriesFuture) {
         super(output, Registries.ENCHANTMENT, registriesFuture);
