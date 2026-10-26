@@ -2,7 +2,6 @@ package lipartefacts.artefacts.enchantments;
 
 import java.util.Collection;
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 import org.jspecify.annotations.NonNull;
