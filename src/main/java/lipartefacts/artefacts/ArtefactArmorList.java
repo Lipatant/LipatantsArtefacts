@@ -7,9 +7,14 @@ import java.util.Map;
 
 import lipartefacts.Lipartefacts;
 import lipartefacts.artefacts.armors.ArtefactArmorSet;
+import lipartefacts.artefacts.armors.ArtefactArmorSetBogged;
+import lipartefacts.artefacts.armors.ArtefactArmorSetCat;
 import lipartefacts.artefacts.armors.ArtefactArmorSetCopperGolem;
+import lipartefacts.artefacts.armors.ArtefactArmorSetFisherman;
+import lipartefacts.artefacts.armors.ArtefactArmorSetParched;
 import lipartefacts.artefacts.armors.ArtefactArmorSetPiglin;
 import lipartefacts.artefacts.armors.ArtefactArmorSetSniffer;
+import lipartefacts.artefacts.armors.ArtefactArmorSetStray;
 import lipartefacts.artefacts.armors.ArtefactArmorSetType;
 import lipartefacts.artefacts.armors.ArtefactArmorSetWarden;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -24,10 +29,15 @@ import net.minecraft.world.item.equipment.EquipmentAssets;
 
 public class ArtefactArmorList extends ArtefactListModule {
 
-    public static final ArtefactArmorSet COPPER_GOLEM = new ArtefactArmorSetCopperGolem();
-    public static final ArtefactArmorSet PIGLIN = new ArtefactArmorSetPiglin();
-    public static final ArtefactArmorSet SNIFFER = new ArtefactArmorSetSniffer();
-    public static final ArtefactArmorSet WARDEN = new ArtefactArmorSetWarden();
+    public final ArtefactArmorSet BOGGED = new ArtefactArmorSetBogged();
+    public final ArtefactArmorSet CAT = new ArtefactArmorSetCat();
+    public final ArtefactArmorSet COPPER_GOLEM = new ArtefactArmorSetCopperGolem();
+    public final ArtefactArmorSet FISHERMAN = new ArtefactArmorSetFisherman();
+    public final ArtefactArmorSet PARCHED = new ArtefactArmorSetParched();
+    public final ArtefactArmorSet PIGLIN = new ArtefactArmorSetPiglin();
+    public final ArtefactArmorSet SNIFFER = new ArtefactArmorSetSniffer();
+    public final ArtefactArmorSet STRAY = new ArtefactArmorSetStray();
+    public final ArtefactArmorSet WARDEN = new ArtefactArmorSetWarden();
 
     public void buildRecipes(RecipeProvider provider, RecipeOutput output) {
         super.buildRecipes(provider, output);
@@ -45,7 +55,12 @@ public class ArtefactArmorList extends ArtefactListModule {
             COPPER_GOLEM,
             PIGLIN,
             SNIFFER,
-            WARDEN
+            WARDEN,
+            BOGGED,
+            CAT,
+            FISHERMAN,
+            PARCHED,
+            STRAY
         );
     }
 
@@ -109,6 +124,10 @@ public class ArtefactArmorList extends ArtefactListModule {
 
     public static Map<ArmorType, Integer> makeDefenseDiamond() {
         return makeDefense(3, 6, 8, 3, 11);
+    }
+
+    public static Map<ArmorType, Integer> makeDefenseLeather() {
+        return makeDefense(1, 2, 3, 1, 3);
     }
 
 }

@@ -23,12 +23,12 @@ import net.minecraft.world.item.enchantment.Enchantment;
 
 public class ArtefactEnchantmentList extends ArtefactListModule {
 
-    public static final ArtefactEnchantment CALL_TO_CHAOS = new ArtefactEnchantmentCallToChaos();
-    public static final ArtefactEnchantment DOUBLE_SHOT = new ArtefactEnchantmentDoubleShot();
-    public static final ArtefactEnchantment FRACTURE = new ArtefactEnchantmentFracture();
-    public static final ArtefactEnchantment ILLAGER_BANE = new ArtefactEnchantmentIllagerBane();
-    public static final ArtefactEnchantment IMPERILMENT = new ArtefactEnchantmentImperilment();
-    public static final ArtefactEnchantment VAMPIRISM = new ArtefactEnchantmentVampirism();
+    public final ArtefactEnchantment CALL_TO_CHAOS = new ArtefactEnchantmentCallToChaos();
+    public final ArtefactEnchantment DOUBLE_SHOT = new ArtefactEnchantmentDoubleShot();
+    public final ArtefactEnchantment FRACTURE = new ArtefactEnchantmentFracture();
+    public final ArtefactEnchantment ILLAGER_BANE = new ArtefactEnchantmentIllagerBane();
+    public final ArtefactEnchantment IMPERILMENT = new ArtefactEnchantmentImperilment();
+    public final ArtefactEnchantment VAMPIRISM = new ArtefactEnchantmentVampirism();
 
     public Map<ResourceKey<Enchantment>, Enchantment.Builder> getEnchantmentDefinitionList(BootstrapContext<Enchantment> context) {
         HashMap<ResourceKey<Enchantment>, Enchantment.Builder> list = new HashMap<ResourceKey<Enchantment>, Enchantment.Builder>();

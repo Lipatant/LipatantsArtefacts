@@ -16,6 +16,7 @@ public class Lipartefacts implements ModInitializer {
     @Override
     public void onInitialize() {
         ItemList.initialize();
+        LootTableList.initialize();
     }
 
     public static Identifier id(String path) {

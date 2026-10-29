@@ -48,21 +48,58 @@ abstract public class ArtefactArmorSet {
 
     private final ArtefactArmorAttribute ARMOR_ATTRIBUTE = createArmorAttribute();
 
-    public final ResourceKey<Item> BOOTS_ID = ItemIdList.create(getName() + "_boots");
-    public final ResourceKey<Item> CHESTPLATE_ID = ItemIdList.create(getName() + "_chestplate");
-    public final ResourceKey<Item> ELYTRA_ID = ItemIdList.create(getName() + "_elytra");
-    public final ResourceKey<Item> HELMET_ID = ItemIdList.create(getName() + "_helmet");
-    public final ResourceKey<Item> LEGGINGS_ID = ItemIdList.create(getName() + "_leggings");
-    public final ResourceKey<Item> UPGRADE_SMITHING_TEMPLATE_ID = ItemIdList.create(getName() + "_upgrade_smithing_template");
+    public final ResourceKey<Item> BOOTS_ID = getRegisteredList().contains(ArtefactArmorSetType.BOOTS)
+        ? ItemIdList.create(getName() + "_boots")
+        : null
+    ;
+    public final ResourceKey<Item> CHESTPLATE_ID = getRegisteredList().contains(ArtefactArmorSetType.CHESTPLATE)
+        ? ItemIdList.create(getName() + "_chestplate")
+        : null
+    ;
+    public final ResourceKey<Item> ELYTRA_ID = getRegisteredList().contains(ArtefactArmorSetType.ELYTRA)
+        ? ItemIdList.create(getName() + "_elytra")
+        : null
+    ;
+    public final ResourceKey<Item> HELMET_ID = getRegisteredList().contains(ArtefactArmorSetType.HELMET)
+        ? ItemIdList.create(getName() + "_helmet")
+        : null
+    ;
+    public final ResourceKey<Item> LEGGINGS_ID = getRegisteredList().contains(ArtefactArmorSetType.LEGGINGS)
+        ? ItemIdList.create(getName() + "_leggings")
+        : null
+    ;
+    public final ResourceKey<Item> UPGRADE_SMITHING_TEMPLATE_ID = getRegisteredList().contains(ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE)
+        ? ItemIdList.create(getName() + "_upgrade_smithing_template")
+        : null
+    ;
 
-    public final Item BOOTS = ItemList.register(BOOTS_ID, getItemFactory(ArtefactArmorSetType.BOOTS), ARMOR_ATTRIBUTE.createProperties(ArmorType.BOOTS, createProperties()));
-    public final Item CHESTPLATE = ItemList.register(CHESTPLATE_ID, getItemFactory(ArtefactArmorSetType.CHESTPLATE), ARMOR_ATTRIBUTE.createProperties(ArmorType.CHESTPLATE, createProperties()));
-    public final Item ELYTRA = ItemList.register(ELYTRA_ID, getItemFactory(ArtefactArmorSetType.ELYTRA), ARMOR_ATTRIBUTE.createPropertiesElytra(createProperties()));
-    public final Item HELMET = ItemList.register(HELMET_ID, getItemFactory(ArtefactArmorSetType.HELMET), ARMOR_ATTRIBUTE.createProperties(ArmorType.HELMET, createProperties()));
-    public final Item LEGGINGS = ItemList.register(LEGGINGS_ID, getItemFactory(ArtefactArmorSetType.LEGGINGS), ARMOR_ATTRIBUTE.createProperties(ArmorType.LEGGINGS, createProperties()));
-    public final Item UPGRADE_SMITHING_TEMPLATE = ItemList.register(UPGRADE_SMITHING_TEMPLATE_ID, getItemFactory(ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE), createProperties());
+    public final Item BOOTS = BOOTS_ID != null
+        ? ItemList.register(BOOTS_ID, getItemFactory(ArtefactArmorSetType.BOOTS), ARMOR_ATTRIBUTE.createProperties(ArmorType.BOOTS, createProperties()))
+        : null
+    ;
+    public final Item CHESTPLATE = CHESTPLATE_ID != null
+        ? ItemList.register(CHESTPLATE_ID, getItemFactory(ArtefactArmorSetType.CHESTPLATE), ARMOR_ATTRIBUTE.createProperties(ArmorType.CHESTPLATE, createProperties()))
+        : null
+    ;
+    public final Item ELYTRA = ELYTRA_ID != null
+        ? ItemList.register(ELYTRA_ID, getItemFactory(ArtefactArmorSetType.ELYTRA), ARMOR_ATTRIBUTE.createPropertiesElytra(createProperties()))
+        : null
+    ;
+    public final Item HELMET = HELMET_ID != null
+        ? ItemList.register(HELMET_ID, getItemFactory(ArtefactArmorSetType.HELMET), ARMOR_ATTRIBUTE.createProperties(ArmorType.HELMET, createProperties()))
+        : null
+    ;
+    public final Item LEGGINGS = LEGGINGS_ID != null
+        ? ItemList.register(LEGGINGS_ID, getItemFactory(ArtefactArmorSetType.LEGGINGS), ARMOR_ATTRIBUTE.createProperties(ArmorType.LEGGINGS, createProperties()))
+        : null
+    ;
+    public final Item UPGRADE_SMITHING_TEMPLATE = UPGRADE_SMITHING_TEMPLATE_ID != null
+        ? ItemList.register(UPGRADE_SMITHING_TEMPLATE_ID, getItemFactory(ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE), createProperties())
+        : null
+    ;
 
     public void buildRecipes(RecipeProvider provider, RecipeOutput output) {
+        if (UPGRADE_SMITHING_TEMPLATE == null) return;
         Ingredient addition = getUpgradeSmithingTemplateAddition();
         List<Pair<Ingredient, Item>> smithingPairList = List.of(
             Pair.of(Ingredient.of(Items.DIAMOND_BOOTS), BOOTS),
@@ -76,6 +113,7 @@ abstract public class ArtefactArmorSet {
             return;
         }
         smithingPairList.forEach((pair) -> {
+            if (pair.getSecond() == null) return;
             SmithingTransformRecipeBuilder.smithing(
                 Ingredient.of(UPGRADE_SMITHING_TEMPLATE),
                 pair.getFirst(),
@@ -118,11 +156,16 @@ abstract public class ArtefactArmorSet {
 
     public Map<TagKey<Item>, Collection<ResourceKey<Item>>> getItemTagList() {
         HashMap<TagKey<Item>, Collection<ResourceKey<Item>>> list = new HashMap<TagKey<Item>, Collection<ResourceKey<Item>>>();
+        List<Pair<TagKey<Item>, Collection<ResourceKey<Item>>>> source = List.of(
+            Pair.of(ItemTags.CHEST_ARMOR, getIdList(ArtefactArmorSetType.CHESTPLATE)),
+            Pair.of(ItemTags.FOOT_ARMOR, getIdList(ArtefactArmorSetType.BOOTS)),
+            Pair.of(ItemTags.HEAD_ARMOR, getIdList(ArtefactArmorSetType.HELMET)),
+            Pair.of(ItemTags.LEG_ARMOR, getIdList(ArtefactArmorSetType.LEGGINGS))
+        );
 
-        list.put(ItemTags.CHEST_ARMOR, getIdList(ArtefactArmorSetType.CHESTPLATE));
-        list.put(ItemTags.FOOT_ARMOR, getIdList(ArtefactArmorSetType.BOOTS));
-        list.put(ItemTags.HEAD_ARMOR, getIdList(ArtefactArmorSetType.HELMET));
-        list.put(ItemTags.LEG_ARMOR, getIdList(ArtefactArmorSetType.LEGGINGS));
+        source.forEach((pair) -> {
+            if (!pair.getSecond().isEmpty()) list.put(pair.getFirst(), pair.getSecond());
+        });
         return list;
     }
 
@@ -157,22 +200,22 @@ abstract public class ArtefactArmorSet {
                 list.addAll(getIdList(ArtefactArmorSetType.LEGGINGS));
                 break;
             case ArtefactArmorSetType.BOOTS:
-                list.add(BOOTS_ID);
+                if (BOOTS_ID != null) list.add(BOOTS_ID);
                 break;
             case ArtefactArmorSetType.CHESTPLATE:
-                list.add(CHESTPLATE_ID);
+                if (CHESTPLATE_ID != null) list.add(CHESTPLATE_ID);
                 break;
             case ArtefactArmorSetType.ELYTRA:
-                list.add(ELYTRA_ID);
+                if (ELYTRA_ID != null) list.add(ELYTRA_ID);
                 break;
             case ArtefactArmorSetType.HELMET:
-                list.add(HELMET_ID);
+                if (HELMET_ID != null) list.add(HELMET_ID);
                 break;
             case ArtefactArmorSetType.LEGGINGS:
-                list.add(LEGGINGS_ID);
+                if (LEGGINGS_ID != null) list.add(LEGGINGS_ID);
                 break;
             case ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE:
-                list.add(UPGRADE_SMITHING_TEMPLATE_ID);
+                if (UPGRADE_SMITHING_TEMPLATE_ID != null) list.add(UPGRADE_SMITHING_TEMPLATE_ID);
                 break;
             default:
                 break;
@@ -242,22 +285,22 @@ abstract public class ArtefactArmorSet {
                 list.addAll(getList(ArtefactArmorSetType.LEGGINGS));
                 break;
             case ArtefactArmorSetType.BOOTS:
-                list.add(BOOTS);
+                if (BOOTS != null) list.add(BOOTS);
                 break;
             case ArtefactArmorSetType.CHESTPLATE:
-                list.add(CHESTPLATE);
+                if (CHESTPLATE != null) list.add(CHESTPLATE);
                 break;
             case ArtefactArmorSetType.ELYTRA:
-                list.add(ELYTRA);
+                if (ELYTRA != null) list.add(ELYTRA);
                 break;
             case ArtefactArmorSetType.HELMET:
-                list.add(HELMET);
+                if (HELMET != null) list.add(HELMET);
                 break;
             case ArtefactArmorSetType.LEGGINGS:
-                list.add(LEGGINGS);
+                if (LEGGINGS != null) list.add(LEGGINGS);
                 break;
             case ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE:
-                list.add(UPGRADE_SMITHING_TEMPLATE);
+                if (UPGRADE_SMITHING_TEMPLATE != null) list.add(UPGRADE_SMITHING_TEMPLATE);
                 break;
             default:
                 break;

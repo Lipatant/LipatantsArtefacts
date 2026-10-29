@@ -1,9 +1,11 @@
 package lipartefacts.artefacts;
 
 import java.util.Collection;
+import java.util.List;
 
 import lipartefacts.ItemIdList;
 import lipartefacts.ItemList;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
@@ -12,7 +14,9 @@ import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.component.CustomModelData;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.equipment.Equippable;
 
@@ -87,12 +91,28 @@ public class ArtefactCharmList extends ArtefactListModule {
         return list;
     }
 
+    public Collection<ItemStack> getItemStackList(HolderLookup.Provider registries) {
+        List<String> axolotlCharmVariantList = List.of("blue", "cyan", "gold", "lucy", "wild");
+        List<String> crabCharmVariantList = List.of("", "clay", "dirt", "gravel", "sand", "spruce_planks");
+        Collection<ItemStack> list = super.getItemStackList(registries);
+
+        axolotlCharmVariantList.forEach((v) -> {
+            ItemStack axolotlCharm = new ItemStack(AXOLOTL_CHARM);
+            axolotlCharm.set(DataComponents.CUSTOM_MODEL_DATA, new CustomModelData(List.of(), List.of(), List.of(v), List.of()));
+            list.add(axolotlCharm);
+        });
+        crabCharmVariantList.forEach((v) -> {
+            ItemStack crabCharm = new ItemStack(CRAB_CHARM);
+            if (!v.isEmpty()) crabCharm.set(DataComponents.CUSTOM_MODEL_DATA, new CustomModelData(List.of(), List.of(), List.of(v), List.of()));
+            list.add(crabCharm);
+        });
+        return list;
+    }
+
     public Collection<Item> getList() {
         Collection<Item> list = super.getList();
 
-        list.add(AXOLOTL_CHARM);
         list.add(CHICKEN_CHARM);
-        list.add(CRAB_CHARM);
         list.add(ENDERMITE_CHARM);
         list.add(STRIDER_CHARM);
         return list;

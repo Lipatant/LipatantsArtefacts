@@ -21,6 +21,8 @@ import net.minecraft.util.Util;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.JukeboxSong;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
 
 public class ArtefactMusicDiscList extends ArtefactListModule {
 
@@ -98,6 +100,15 @@ public class ArtefactMusicDiscList extends ArtefactListModule {
         list.add(MUSIC_DISC_SPACE_CASTER);
         list.add(MUSIC_DISC_TOKYOS_GOING_DOWN);
         return list;
+    }
+
+    public LootPool.Builder getLootPool() {
+        LootPool.Builder lootPool = LootPool.lootPool();
+
+        getList().forEach((m) -> {
+            lootPool.add(LootItem.lootTableItem(m));
+        });
+        return lootPool;
     }
 
     protected  void registerJukeboxSong(BootstrapContext<JukeboxSong> context, ResourceKey<JukeboxSong> key, Holder.Reference<SoundEvent> soundEvent, int lengthInSeconds, int comparatorOutput) {

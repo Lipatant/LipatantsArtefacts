@@ -29,17 +29,11 @@ public class ItemList {
         .title(Component.translatable("itemGroup.lipartefacts"))
         .build();
 
-    /**
-     * Initializes the class.
-     */
     public static void initialize() {
         ArtefactList.initialize();
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CREATIVE_TAB_KEY, CREATIVE_TAB);
     }
 
-    /**
-     * Registers a given item.
-     */
     public static Item register(ResourceKey<Item> itemKey, Function<Item.Properties, Item> itemFactory, Item.Properties settings) {
         Item item = itemFactory.apply(settings.setId(itemKey));
 
@@ -47,9 +41,6 @@ public class ItemList {
         return item;
     }
 
-    /**
-     * Registers a given item.
-     */
     public static Item register(ResourceKey<Item> itemKey, Function<Item.Properties, Item> itemFactory) {
         return register(itemKey, itemFactory, new Item.Properties());
     }
