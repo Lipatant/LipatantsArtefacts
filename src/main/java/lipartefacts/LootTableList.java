@@ -119,6 +119,17 @@ public class LootTableList {
                         .add(ArtefactList.ENCHANTMENT.DOUBLE_SHOT.getEnchantedBookLoot(registries))
                 );
             }
+            if (CHESTS_PILLAGER_OUTPOST.equals(key)) {
+                tableBuilder.withPool(
+                    LootPool.lootPool()
+                        .add(LootItem.lootTableItem(ArtefactList.ARMOR.INCOGNITO_PAPER_BAG_ALEX.HELMET))
+                        .add(LootItem.lootTableItem(ArtefactList.ARMOR.INCOGNITO_PAPER_BAG_CREEPER.HELMET))
+                        .add(LootItem.lootTableItem(ArtefactList.ARMOR.INCOGNITO_PAPER_BAG_MENACING.HELMET))
+                        .add(LootItem.lootTableItem(ArtefactList.ARMOR.INCOGNITO_PAPER_BAG_MUMBO.HELMET))
+                        .add(LootItem.lootTableItem(ArtefactList.ARMOR.INCOGNITO_PAPER_BAG_STEVE.HELMET))
+                        .add(LootItem.lootTableItem(ArtefactList.CHARM.RAVAGER.CHARM).setWeight(5))
+                );
+            }
             if (CHESTS_STRONGHOLD_LIBRARY.equals(key)) {
                 // CRYSTALS
                 tableBuilder.withPool(
