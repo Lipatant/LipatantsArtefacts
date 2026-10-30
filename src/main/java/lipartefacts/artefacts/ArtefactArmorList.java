@@ -12,17 +12,20 @@ import lipartefacts.artefacts.armors.ArtefactArmorSetCat;
 import lipartefacts.artefacts.armors.ArtefactArmorSetCopperGolem;
 import lipartefacts.artefacts.armors.ArtefactArmorSetFisherman;
 import lipartefacts.artefacts.armors.ArtefactArmorSetGoat;
+import lipartefacts.artefacts.armors.ArtefactArmorSetIncognito;
 import lipartefacts.artefacts.armors.ArtefactArmorSetParched;
 import lipartefacts.artefacts.armors.ArtefactArmorSetPiglin;
 import lipartefacts.artefacts.armors.ArtefactArmorSetSniffer;
 import lipartefacts.artefacts.armors.ArtefactArmorSetStray;
 import lipartefacts.artefacts.armors.ArtefactArmorSetType;
 import lipartefacts.artefacts.armors.ArtefactArmorSetWarden;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.equipment.ArmorMaterials;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.minecraft.world.item.equipment.EquipmentAsset;
@@ -35,6 +38,11 @@ public class ArtefactArmorList extends ArtefactListModule {
     public final ArtefactArmorSet COPPER_GOLEM = new ArtefactArmorSetCopperGolem();
     public final ArtefactArmorSet FISHERMAN = new ArtefactArmorSetFisherman();
     public final ArtefactArmorSet GOAT = new ArtefactArmorSetGoat();
+    public final ArtefactArmorSet INCOGNITO_PAPER_BAG_ALEX = new ArtefactArmorSetIncognito("incognito_paper_bag_alex");
+    public final ArtefactArmorSet INCOGNITO_PAPER_BAG_CREEPER = new ArtefactArmorSetIncognito("incognito_paper_bag_creeper");
+    public final ArtefactArmorSet INCOGNITO_PAPER_BAG_MENACING = new ArtefactArmorSetIncognito("incognito_paper_bag_menacing");
+    public final ArtefactArmorSet INCOGNITO_PAPER_BAG_MUMBO = new ArtefactArmorSetIncognito("incognito_paper_bag_mumbo");
+    public final ArtefactArmorSet INCOGNITO_PAPER_BAG_STEVE = new ArtefactArmorSetIncognito("incognito_paper_bag_steve");
     public final ArtefactArmorSet PARCHED = new ArtefactArmorSetParched();
     public final ArtefactArmorSet PIGLIN = new ArtefactArmorSetPiglin();
     public final ArtefactArmorSet SNIFFER = new ArtefactArmorSetSniffer();
@@ -62,6 +70,11 @@ public class ArtefactArmorList extends ArtefactListModule {
             CAT,
             FISHERMAN,
             GOAT,
+            INCOGNITO_PAPER_BAG_ALEX,
+            INCOGNITO_PAPER_BAG_CREEPER,
+            INCOGNITO_PAPER_BAG_MENACING,
+            INCOGNITO_PAPER_BAG_MUMBO,
+            INCOGNITO_PAPER_BAG_STEVE,
             PARCHED,
             STRAY
         );
@@ -85,6 +98,15 @@ public class ArtefactArmorList extends ArtefactListModule {
         return list;
     }
 
+    public Collection<ItemStack> getItemStackList(HolderLookup.Provider registries) {
+        Collection<ItemStack> list = super.getItemStackList(registries);
+
+        getArmorSetList().forEach((a) -> {
+            list.addAll(a.getItemStackList(registries));
+        });
+        return list;
+    }
+
     public Map<TagKey<Item>, Collection<ResourceKey<Item>>> getItemTagList() {
         Map<TagKey<Item>, Collection<ResourceKey<Item>>> list = super.getItemTagList();
 
@@ -99,24 +121,6 @@ public class ArtefactArmorList extends ArtefactListModule {
                     l2.addAll(l);
                 }
             });
-        });
-        return list;
-    }
-
-    public Collection<Item> getList() {
-        Collection<Item> list = super.getList();
-
-        getArmorSetList().forEach((a) -> {
-            list.addAll(a.getList());
-        });
-        return list;
-    }
-
-    public Collection<Item> getList(ArtefactArmorSetType type) {
-        Collection<Item> list = super.getList();
-
-        getArmorSetList().forEach((a) -> {
-            list.addAll(a.getList(type));
         });
         return list;
     }

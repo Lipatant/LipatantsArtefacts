@@ -25,7 +25,7 @@ public class ItemList {
                 output.accept(i);
             });
         })
-        .icon(() -> new ItemStack(ArtefactList.CHARM.ENDERMITE_CHARM))
+        .icon(() -> new ItemStack(ArtefactList.CHARM.ENDERMITE.CHARM))
         .title(Component.translatable("itemGroup.lipartefacts"))
         .build();
 

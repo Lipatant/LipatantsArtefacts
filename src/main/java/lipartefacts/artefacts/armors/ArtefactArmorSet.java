@@ -14,6 +14,7 @@ import lipartefacts.ItemList;
 import lipartefacts.Lipartefacts;
 import lipartefacts.artefacts.Artefact;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
@@ -25,6 +26,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.Util;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SmithingTemplateItem;
@@ -43,60 +45,78 @@ abstract public class ArtefactArmorSet {
 	protected static final Identifier EMPTY_SLOT_INGOT = Identifier.withDefaultNamespace("container/slot/ingot");
 	protected static final Identifier EMPTY_SLOT_LEGGINGS = Identifier.withDefaultNamespace("container/slot/leggings");
 
-    private final ResourceKey<EquipmentAsset> EQUIPMENT_ASSET = createEquipmentAsset();
-    private final ResourceKey<EquipmentAsset> EQUIPMENT_ASSET_ELYTRA = createEquipmentAssetElytra();
+    private final ResourceKey<EquipmentAsset> EQUIPMENT_ASSET;
+    private final ResourceKey<EquipmentAsset> EQUIPMENT_ASSET_ELYTRA;
 
-    private final ArtefactArmorAttribute ARMOR_ATTRIBUTE = createArmorAttribute();
+    protected final ArtefactArmorAttribute ARMOR_ATTRIBUTE;
 
-    public final ResourceKey<Item> BOOTS_ID = getRegisteredList().contains(ArtefactArmorSetType.BOOTS)
-        ? ItemIdList.create(getName() + "_boots")
-        : null
-    ;
-    public final ResourceKey<Item> CHESTPLATE_ID = getRegisteredList().contains(ArtefactArmorSetType.CHESTPLATE)
-        ? ItemIdList.create(getName() + "_chestplate")
-        : null
-    ;
-    public final ResourceKey<Item> ELYTRA_ID = getRegisteredList().contains(ArtefactArmorSetType.ELYTRA)
-        ? ItemIdList.create(getName() + "_elytra")
-        : null
-    ;
-    public final ResourceKey<Item> HELMET_ID = getRegisteredList().contains(ArtefactArmorSetType.HELMET)
-        ? ItemIdList.create(getName() + "_helmet")
-        : null
-    ;
-    public final ResourceKey<Item> LEGGINGS_ID = getRegisteredList().contains(ArtefactArmorSetType.LEGGINGS)
-        ? ItemIdList.create(getName() + "_leggings")
-        : null
-    ;
-    public final ResourceKey<Item> UPGRADE_SMITHING_TEMPLATE_ID = getRegisteredList().contains(ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE)
-        ? ItemIdList.create(getName() + "_upgrade_smithing_template")
-        : null
-    ;
+    public final ResourceKey<Item> BOOTS_ID;
+    public final ResourceKey<Item> CHESTPLATE_ID;
+    public final ResourceKey<Item> ELYTRA_ID;
+    public final ResourceKey<Item> HELMET_ID;
+    public final ResourceKey<Item> LEGGINGS_ID;
+    public final ResourceKey<Item> UPGRADE_SMITHING_TEMPLATE_ID;
 
-    public final Item BOOTS = BOOTS_ID != null
-        ? ItemList.register(BOOTS_ID, getItemFactory(ArtefactArmorSetType.BOOTS), ARMOR_ATTRIBUTE.createProperties(ArmorType.BOOTS, createProperties()))
-        : null
-    ;
-    public final Item CHESTPLATE = CHESTPLATE_ID != null
-        ? ItemList.register(CHESTPLATE_ID, getItemFactory(ArtefactArmorSetType.CHESTPLATE), ARMOR_ATTRIBUTE.createProperties(ArmorType.CHESTPLATE, createProperties()))
-        : null
-    ;
-    public final Item ELYTRA = ELYTRA_ID != null
-        ? ItemList.register(ELYTRA_ID, getItemFactory(ArtefactArmorSetType.ELYTRA), ARMOR_ATTRIBUTE.createPropertiesElytra(createProperties()))
-        : null
-    ;
-    public final Item HELMET = HELMET_ID != null
-        ? ItemList.register(HELMET_ID, getItemFactory(ArtefactArmorSetType.HELMET), ARMOR_ATTRIBUTE.createProperties(ArmorType.HELMET, createProperties()))
-        : null
-    ;
-    public final Item LEGGINGS = LEGGINGS_ID != null
-        ? ItemList.register(LEGGINGS_ID, getItemFactory(ArtefactArmorSetType.LEGGINGS), ARMOR_ATTRIBUTE.createProperties(ArmorType.LEGGINGS, createProperties()))
-        : null
-    ;
-    public final Item UPGRADE_SMITHING_TEMPLATE = UPGRADE_SMITHING_TEMPLATE_ID != null
-        ? ItemList.register(UPGRADE_SMITHING_TEMPLATE_ID, getItemFactory(ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE), createProperties())
-        : null
-    ;
+    public final Item BOOTS;
+    public final Item CHESTPLATE;
+    public final Item ELYTRA;
+    public final Item HELMET;
+    public final Item LEGGINGS;
+    public final Item UPGRADE_SMITHING_TEMPLATE;
+
+    public ArtefactArmorSet() {
+        this.EQUIPMENT_ASSET = createEquipmentAsset();
+        this.EQUIPMENT_ASSET_ELYTRA = createEquipmentAssetElytra();
+        this.ARMOR_ATTRIBUTE = createArmorAttribute();
+        this.BOOTS_ID = getRegisteredList().contains(ArtefactArmorSetType.BOOTS)
+            ? ItemIdList.create(getName() + "_boots")
+            : null
+        ;
+        this.CHESTPLATE_ID = getRegisteredList().contains(ArtefactArmorSetType.CHESTPLATE)
+            ? ItemIdList.create(getName() + "_chestplate")
+            : null
+        ;
+        this.ELYTRA_ID = getRegisteredList().contains(ArtefactArmorSetType.ELYTRA)
+            ? ItemIdList.create(getName() + "_elytra")
+            : null
+        ;
+        this.HELMET_ID = getRegisteredList().contains(ArtefactArmorSetType.HELMET)
+            ? ItemIdList.create(getName() + "_helmet")
+            : null
+        ;
+        this.LEGGINGS_ID = getRegisteredList().contains(ArtefactArmorSetType.LEGGINGS)
+            ? ItemIdList.create(getName() + "_leggings")
+            : null
+        ;
+        this.UPGRADE_SMITHING_TEMPLATE_ID = getRegisteredList().contains(ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE)
+            ? ItemIdList.create(getName() + "_upgrade_smithing_template")
+            : null
+        ;
+        this.BOOTS = BOOTS_ID != null
+            ? ItemList.register(BOOTS_ID, getItemFactory(ArtefactArmorSetType.BOOTS), ARMOR_ATTRIBUTE.createProperties(ArmorType.BOOTS, createProperties()))
+            : null
+        ;
+        this.CHESTPLATE = CHESTPLATE_ID != null
+            ? ItemList.register(CHESTPLATE_ID, getItemFactory(ArtefactArmorSetType.CHESTPLATE), ARMOR_ATTRIBUTE.createProperties(ArmorType.CHESTPLATE, createProperties()))
+            : null
+        ;
+        this.ELYTRA = ELYTRA_ID != null
+            ? ItemList.register(ELYTRA_ID, getItemFactory(ArtefactArmorSetType.ELYTRA), ARMOR_ATTRIBUTE.createPropertiesElytra(createProperties()))
+            : null
+        ;
+        this.HELMET = HELMET_ID != null
+            ? ItemList.register(HELMET_ID, getItemFactory(ArtefactArmorSetType.HELMET), ARMOR_ATTRIBUTE.createProperties(ArmorType.HELMET, createProperties()))
+            : null
+        ;
+        this.LEGGINGS = LEGGINGS_ID != null
+            ? ItemList.register(LEGGINGS_ID, getItemFactory(ArtefactArmorSetType.LEGGINGS), ARMOR_ATTRIBUTE.createProperties(ArmorType.LEGGINGS, createProperties()))
+            : null
+        ;
+        this.UPGRADE_SMITHING_TEMPLATE = UPGRADE_SMITHING_TEMPLATE_ID != null
+            ? ItemList.register(UPGRADE_SMITHING_TEMPLATE_ID, getItemFactory(ArtefactArmorSetType.UPGRADE_SMITHING_TEMPLATE), createProperties())
+            : null
+        ;
+    }
 
     public void buildRecipes(RecipeProvider provider, RecipeOutput output) {
         if (UPGRADE_SMITHING_TEMPLATE == null) return;
@@ -220,6 +240,15 @@ abstract public class ArtefactArmorSet {
             default:
                 break;
         }
+        return list;
+    }
+
+    public Collection<ItemStack> getItemStackList(HolderLookup.Provider registries) {
+        Collection<ItemStack> list = new ArrayList<ItemStack>();
+
+        getList().forEach((i) -> {
+            list.add(new ItemStack(i));
+        });
         return list;
     }
 

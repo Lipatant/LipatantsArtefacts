@@ -1,0 +1,16 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "lipartefacts:item/incognito_paper_bag_creeper_helmet",
+        "tints": [
+            {
+                "type": "minecraft:dye",
+                "default": [
+                    0.8672,
+                    0.7109,
+                    0.5781
+                ]
+            }
+        ]
+    }
+}

@@ -28,19 +28,23 @@ public class LootTableList {
     private static final ResourceKey<LootTable> CHESTS_ANCIENT_CITY = createResourceKey("minecraft", "chests/ancient_city");
     private static final ResourceKey<LootTable> CHESTS_BASTION_HOLGIN_STABLE = createResourceKey("minecraft", "chests/bastion_hoglin_stable");
     private static final ResourceKey<LootTable> CHESTS_BASTION_TREASURE = createResourceKey("minecraft", "chests/bastion_treasure");
+    private static final ResourceKey<LootTable> CHESTS_DESERT_PYRAMID = createResourceKey("minecraft", "chests/desert_pyramid");
+    private static final ResourceKey<LootTable> CHESTS_END_CITY_TREASURE = createResourceKey("minecraft", "chests/end_city_treasure");
+    private static final ResourceKey<LootTable> CHESTS_IGLOO_CHEST = createResourceKey("minecraft", "chests/igloo_chest");
+    private static final ResourceKey<LootTable> CHESTS_JUNGLE_TEMPLE = createResourceKey("minecraft", "chests/jungle_temple");
+    private static final ResourceKey<LootTable> CHESTS_PILLAGER_OUTPOST = createResourceKey("minecraft", "chests/pillager_outpost");
+    private static final ResourceKey<LootTable> CHESTS_SHIPWRECK_TREASURE = createResourceKey("minecraft", "chests/shipwreck_treasure");
+    private static final ResourceKey<LootTable> CHESTS_SIMPLE_DUNGEON = createResourceKey("minecraft", "chests/simple_dungeon");
+    private static final ResourceKey<LootTable> CHESTS_STRONGHOLD_LIBRARY = createResourceKey("minecraft", "chests/stronghold_library");
     private static final ResourceKey<LootTable> CHESTS_TRIAL_CHAMBERS_REWARD_OMINOUS_RARE = createResourceKey("minecraft", "chests/trial_chambers/reward_ominous_rare");
     private static final ResourceKey<LootTable> CHESTS_TRIAL_CHAMBERS_REWARD_RARE = createResourceKey("minecraft", "chests/trial_chambers/reward_rare");
     private static final ResourceKey<LootTable> CHESTS_TRIAL_CHAMBERS_REWARD_UNIQUE = createResourceKey("minecraft", "chests/trial_chambers/reward_unique");
+    private static final ResourceKey<LootTable> CHESTS_UNDERWATER_RUIN_BIG = createResourceKey("minecraft", "chests/underwater_ruin_big");
+    private static final ResourceKey<LootTable> CHESTS_UNDERWATER_RUIN_SMALL = createResourceKey("minecraft", "chests/underwater_ruin_small");
     private static final ResourceKey<LootTable> CHESTS_VILLAGE_VILLAGE_ARMORER = createResourceKey("minecraft", "chests/village/village_armorer");
     private static final ResourceKey<LootTable> CHESTS_VILLAGE_VILLAGE_TANNERY = createResourceKey("minecraft", "chests/village/village_tannery");
     private static final ResourceKey<LootTable> CHESTS_VILLAGE_VILLAGE_TOOLSMITH = createResourceKey("minecraft", "chests/village/village_toolsmith");
     private static final ResourceKey<LootTable> CHESTS_VILLAGE_VILLAGE_WEAPONSMITH = createResourceKey("minecraft", "chests/village/village_weaponsmith");
-    // [...]
-    private static final ResourceKey<LootTable> CHESTS_IGLOO_CHEST = createResourceKey("minecraft", "chests/igloo_chest");
-    private static final ResourceKey<LootTable> CHESTS_JUNGLE_TEMPLE = createResourceKey("minecraft", "chests/jungle_temple");
-    // [...]
-    private static final ResourceKey<LootTable> CHESTS_STRONGHOLD_LIBRARY = createResourceKey("minecraft", "chests/stronghold_library");
-    // [...]
     private static final ResourceKey<LootTable> CHESTS_WOODLAND_MANSION = createResourceKey("minecraft", "chests/woodland_mansion");
     private static final ResourceKey<LootTable> GAMEPLAY_CAT_MORNING_GIFT = createResourceKey("minecraft", "gameplay/cat_morning_gift");
     private static final ResourceKey<LootTable> GAMEPLAY_FISHING_TREASURE = createResourceKey("minecraft", "gameplay/fishing/treasure");
@@ -146,14 +150,14 @@ public class LootTableList {
                 );
                 tableBuilder.withPool(
                     LootPool.lootPool()
-                        .add(LootItem.lootTableItem(ArtefactList.CHARM.RAVAGER_CHARM))
+                        .add(LootItem.lootTableItem(ArtefactList.CHARM.RAVAGER.CHARM))
                 );
             }
             if (GAMEPLAY_CAT_MORNING_GIFT.equals(key)) {
                 ((FabricLootTableBuilder) tableBuilder).modifyPools((pool) -> {
                     pool
                         .add(LootItem.lootTableItem(ArtefactList.ARMOR.CAT.HELMET).setWeight(2))
-                        .add(LootItem.lootTableItem(ArtefactList.CHARM.CHICKEN_CHARM).setWeight(2))
+                        .add(LootItem.lootTableItem(ArtefactList.CHARM.CHICKEN.CHARM).setWeight(2))
                     ;
                 });
             }
@@ -181,6 +185,13 @@ public class LootTableList {
                                 registries.lookupOrThrow(Registries.BIOME).getOrThrow(Biomes.FROZEN_RIVER)
                             ))))
                         )
+                    ;
+                });
+            }
+            if (GAMEPLAY_PIGLIN_BARTERING.equals(key)) {
+                ((FabricLootTableBuilder) tableBuilder).modifyPools((pool) -> {
+                    pool
+                        .add(LootItem.lootTableItem(ArtefactList.CHARM.STRIDER.CHARM).setWeight(5))
                     ;
                 });
             }

@@ -3,7 +3,9 @@
 	"package": "lipartefacts.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
-		"ExampleClientMixin"
+		"AvatarRenderStateMixin",
+		"AvatarRendererMixin",
+		"FirstPersonHandsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
