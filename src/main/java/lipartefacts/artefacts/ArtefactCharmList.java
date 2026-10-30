@@ -87,6 +87,7 @@ public class ArtefactCharmList extends ArtefactListModule {
         list.add(ItemIdList.CHICKEN_CHARM);
         list.add(ItemIdList.CRAB_CHARM);
         list.add(ItemIdList.ENDERMITE_CHARM);
+        list.add(ItemIdList.RAVAGER_CHARM);
         list.add(ItemIdList.STRIDER_CHARM);
         return list;
     }
@@ -114,6 +115,7 @@ public class ArtefactCharmList extends ArtefactListModule {
 
         list.add(CHICKEN_CHARM);
         list.add(ENDERMITE_CHARM);
+        list.add(RAVAGER_CHARM);
         list.add(STRIDER_CHARM);
         return list;
     }
