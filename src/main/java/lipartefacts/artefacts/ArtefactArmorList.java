@@ -11,6 +11,7 @@ import lipartefacts.artefacts.armors.ArtefactArmorSetBogged;
 import lipartefacts.artefacts.armors.ArtefactArmorSetCat;
 import lipartefacts.artefacts.armors.ArtefactArmorSetCopperGolem;
 import lipartefacts.artefacts.armors.ArtefactArmorSetFisherman;
+import lipartefacts.artefacts.armors.ArtefactArmorSetGoat;
 import lipartefacts.artefacts.armors.ArtefactArmorSetParched;
 import lipartefacts.artefacts.armors.ArtefactArmorSetPiglin;
 import lipartefacts.artefacts.armors.ArtefactArmorSetSniffer;
@@ -33,6 +34,7 @@ public class ArtefactArmorList extends ArtefactListModule {
     public final ArtefactArmorSet CAT = new ArtefactArmorSetCat();
     public final ArtefactArmorSet COPPER_GOLEM = new ArtefactArmorSetCopperGolem();
     public final ArtefactArmorSet FISHERMAN = new ArtefactArmorSetFisherman();
+    public final ArtefactArmorSet GOAT = new ArtefactArmorSetGoat();
     public final ArtefactArmorSet PARCHED = new ArtefactArmorSetParched();
     public final ArtefactArmorSet PIGLIN = new ArtefactArmorSetPiglin();
     public final ArtefactArmorSet SNIFFER = new ArtefactArmorSetSniffer();
@@ -59,6 +61,7 @@ public class ArtefactArmorList extends ArtefactListModule {
             BOGGED,
             CAT,
             FISHERMAN,
+            GOAT,
             PARCHED,
             STRAY
         );
