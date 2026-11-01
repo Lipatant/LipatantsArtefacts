@@ -12,6 +12,7 @@ import lipartefacts.artefacts.armors.ArtefactArmorSetCat;
 import lipartefacts.artefacts.armors.ArtefactArmorSetCopperGolem;
 import lipartefacts.artefacts.armors.ArtefactArmorSetFisherman;
 import lipartefacts.artefacts.armors.ArtefactArmorSetGoat;
+import lipartefacts.artefacts.armors.ArtefactArmorSetGreatHunger;
 import lipartefacts.artefacts.armors.ArtefactArmorSetIncognito;
 import lipartefacts.artefacts.armors.ArtefactArmorSetParched;
 import lipartefacts.artefacts.armors.ArtefactArmorSetPiglin;
@@ -38,6 +39,7 @@ public class ArtefactArmorList extends ArtefactListModule {
     public final ArtefactArmorSet COPPER_GOLEM = new ArtefactArmorSetCopperGolem();
     public final ArtefactArmorSet FISHERMAN = new ArtefactArmorSetFisherman();
     public final ArtefactArmorSet GOAT = new ArtefactArmorSetGoat();
+    public final ArtefactArmorSet GREAT_HUNGER = new ArtefactArmorSetGreatHunger();
     public final ArtefactArmorSet INCOGNITO_PAPER_BAG_ALEX = new ArtefactArmorSetIncognito("incognito_paper_bag_alex");
     public final ArtefactArmorSet INCOGNITO_PAPER_BAG_CREEPER = new ArtefactArmorSetIncognito("incognito_paper_bag_creeper");
     public final ArtefactArmorSet INCOGNITO_PAPER_BAG_MENACING = new ArtefactArmorSetIncognito("incognito_paper_bag_menacing");
@@ -70,6 +72,7 @@ public class ArtefactArmorList extends ArtefactListModule {
             CAT,
             FISHERMAN,
             GOAT,
+            GREAT_HUNGER,
             INCOGNITO_PAPER_BAG_ALEX,
             INCOGNITO_PAPER_BAG_CREEPER,
             INCOGNITO_PAPER_BAG_MENACING,

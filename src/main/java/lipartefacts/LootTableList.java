@@ -66,6 +66,15 @@ public class LootTableList {
     public static void initialize() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
             if (!source.isBuiltin()) return;
+            if (ARCHAEOLOGY_TRAIL_DESERT_PYRAMID.equals(key)) {
+                ((FabricLootTableBuilder) tableBuilder).modifyPools((pool) -> {
+                    pool
+                        .add(LootItem.lootTableItem(ArtefactList.ARMOR.GREAT_HUNGER.HELMET))
+                        // MUMMY LEGGINGS
+                        .add(LootItem.lootTableItem(ArtefactList.ARMOR.PARCHED.CHESTPLATE))
+                    ;
+                });
+            }
             if (ARCHAEOLOGY_TRAIL_RUINS_RARE_ID.equals(key)) {
                 ((FabricLootTableBuilder) tableBuilder).modifyPools((pool) -> {
                     pool
