@@ -18,7 +18,6 @@ import net.minecraft.world.item.ItemStack;
 @Mixin(FirstPersonHandsAndItemsRenderer.class)
 public abstract class FirstPersonHandsMixin {
 
-    private static final Identifier INCOGNITO_SKIN = Lipartefacts.id("textures/entity/player/wide/incognito.png");
     private static final Map<Item, Identifier> INCOGNITO_SKIN_LIST = Map.of(
         ArtefactList.ARMOR.INCOGNITO_PAPER_BAG_ALEX.HELMET, Lipartefacts.id("textures/entity/player/wide/incognito_paper_bag_alex.png"),
         ArtefactList.ARMOR.INCOGNITO_PAPER_BAG_CREEPER.HELMET, Lipartefacts.id("textures/entity/player/wide/incognito_paper_bag_creeper.png"),
